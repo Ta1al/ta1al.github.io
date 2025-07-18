@@ -205,6 +205,31 @@
         "Penetration Testing",
         "Security Auditing"
       ]
+    },
+    {
+      "name": "Gaming",
+      "icon": "fa-solid fa-gamepad",
+      "keywords": [
+        "Valorant",
+        "Counter-Strike"
+      ]
+    },
+    {
+      "name": "Sports",
+      "icon": "fa-solid fa-basketball-ball",
+      "keywords": [
+        "Table Tennis",
+        "Chess"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "icon": "fa-brands fa-youtube",
+      "keywords": [
+        "Tech Reviews",
+        "Cybersecurity Tutorials",
+        "ESports"
+      ]
     }
   ]
 }
