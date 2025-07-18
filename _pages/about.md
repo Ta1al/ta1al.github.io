@@ -27,4 +27,6 @@ I'm a cybersecurity enthusiast and computer science undergraduate passionate abo
 
 You’ll usually find me on platforms like [TryHackMe](https://tryhackme.com/p/ta1al), constantly leveling up my skills. You can also catch me on my [Discord Server](https://discord.gg/sQzVNpB6fs) where I talk to my really cool friends about all the random topics in the world.
 
-You can also check out my projects on [GitHub](https://github.com/Ta1al) to see what I've been working on lately.
+Also, check out my projects on [GitHub](https://github.com/Ta1al) to see what I've been working on lately.
+
+Other than that, I enjoy reading, gaming, and exploring new technologies. I mostly play first-person shooters (they're very addictive). I've never been able to get past platinum in Valorant though :(
