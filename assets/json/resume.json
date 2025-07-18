@@ -132,13 +132,53 @@
     {
       "name": "Cybersecurity",
       "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "icon": "fa-solid fa-shield-halved",
       "keywords": [
-        "Threat Detection",
-        "Incident Response",
-        "Network Security",
-        "Penetration Testing",
-        "Security Auditing"
+        "YARA",
+        "Snort",
+        "Wireshark",
+        "Splunk",
+        "Burp Suite",
+        "Metasploit",
+        "Wazuh",
+        "Elastic Stack",
+        "DFIR"
+      ]
+    },
+    {
+      "name": "Programming",
+      "level": "Advanced",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "C++",
+        "HTML/CSS",
+        "MongoDB",
+        "Node.js",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Soft Skills",
+      "level": "Expert",
+      "icon": "fa-solid fa-users",
+      "keywords": [
+        "Communication",
+        "Teamwork",
+        "Problem Solving",
+        "Leadership"
+      ]
+    },
+    {
+      "name": "Extras",
+      "level": "Advanced",
+      "icon": "fa-solid fa-tools",
+      "keywords": [
+        "Table Tennis",
+        "Rubik's Cube",
+        "Chess",
+        "Speed Typing"
       ]
     }
   ],
@@ -146,18 +186,18 @@
     {
       "language": "Urdu",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "fa-solid fa-tag"
     },
     {
       "language": "English",
       "fluency": "Fluent",
-      "icon": ""
+      "icon": "fa-solid fa-tag"
     }
   ],
   "interests": [
     {
       "name": "Cybersecurity",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-laptop",
       "keywords": [
         "Threat Detection",
         "Incident Response",
@@ -165,19 +205,6 @@
         "Penetration Testing",
         "Security Auditing"
       ]
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": [
-        "Quantum Teleportation",
-        "Quantum Cryptography"
-      ],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
     }
   ]
 }
