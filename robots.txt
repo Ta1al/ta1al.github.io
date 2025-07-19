@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ta1al.github.io/sitemap.xml
+Sitemap: https://ta1al.com/sitemap.xml
