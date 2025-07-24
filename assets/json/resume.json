@@ -135,6 +135,20 @@
       "icon": "fa-solid fa-hashtag"
     }
   ],
+  "projects": [
+    {
+      "name": "Machine Learning for Polymorphic Malware Detection",
+      "description": "Developed a machine learning model to detect polymorphic malware using Random Forest and XGBoost algorithms.",
+      "url": "https://github.com/Ta1al/ml-for-malware-detection",
+      "startDate": "2025-06-10",
+      "endDate": "",
+      "highlights": [
+        "Implemented feature extraction techniques",
+        "Achieved 95% accuracy on test dataset",
+        "Utilized Python libraries such as scikit-learn and pandas"
+      ]
+    }
+  ],
   "skills": [
     {
       "name": "Cybersecurity",
