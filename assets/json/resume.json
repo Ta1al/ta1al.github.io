@@ -86,6 +86,13 @@
   ],
   "certificates": [
     {
+      "name": "TryHackMe SOC Level 1 Analyst",
+      "date": "2025-07-24",
+      "issuer": "TryHackMe",
+      "url": "https://tryhackme.com/certificate/THM-M4ZQHRNWOY",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
       "name": "Google Cybersecurity Professional Certificate",
       "date": "2024-01-08",
       "issuer": "Google",
