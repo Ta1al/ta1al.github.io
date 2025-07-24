@@ -168,8 +168,8 @@
       "name": "Machine Learning for Polymorphic Malware Detection",
       "description": "Developed a machine learning model to detect polymorphic malware using Random Forest and XGBoost algorithms.",
       "url": "https://github.com/Ta1al/ml-for-malware-detection",
-      "startDate": "2025-06-10",
-      "endDate": "",
+      "startDate": "2025-05-10",
+      "endDate": "2025-06-10",
       "highlights": [
         "Implemented feature extraction techniques",
         "Achieved 95% accuracy on test dataset",
