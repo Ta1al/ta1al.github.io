@@ -133,6 +133,34 @@
       "issuer": "TryHackMe",
       "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PCPSD0R8PL.pdf",
       "icon": "fa-solid fa-hashtag"
+    },
+    {
+      "name": "Introduction to Psychology",
+      "date": "2025-03-15",
+      "issuer": "University of Toronto (Coursera)",
+      "url": "https://coursera.org/share/f680e4078d6afeb6fe18c8b2b6eeb92d",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "Computer Networks and Network Security",
+      "date": "2025-06-11",
+      "issuer": "IBM",
+      "url": "https://coursera.org/share/e921f91ad5169502f0a13315b6a48742",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "Social Psychology",
+      "date": "2024-02-02",
+      "issuer": "Wesleyan University (Coursera)",
+      "url": "https://coursera.org/share/0a8aefb508b469adde5f774fe995dedd",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "Operating Systems: Overview, Administration, and Security",
+      "date": "2025-06-09",
+      "issuer": "IBM",
+      "url": "https://coursera.org/share/98930696df4fea14a3e00f52969747d0",
+      "icon": "fa-solid fa-certificate"
     }
   ],
   "projects": [
