@@ -74,8 +74,8 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/ta1al", "_blank");
         },
       },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
+        id: 'social-discord',
+        title: 'Discord',
         section: 'Socials',
         handler: () => {
           window.open("https://discord.gg/sQzVNpB6fs", "_blank");
