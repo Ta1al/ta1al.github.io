@@ -1,7 +1,7 @@
 ---
 layout: post
 title: completing thm soc path
-date: 2025-07-18 00:00:00
+date: 2025-07-24 00:00:00
 description: The journey through the TryHackMe SOC path
 categories: cybersecurity
 thumbnail: assets/img/thm.png
