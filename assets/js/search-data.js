@@ -30,7 +30,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-completing-thm-soc-path",
+        },{id: "post-what-is-cybersecurity",
+        
+          title: "What is Cybersecurity?",
+        
+        description: "An introduction to cybersecurity, its importance, key terms, common attack types, and the CIA Triad.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/what-is-cybersecurity/";
+          
+        },
+      },{id: "post-cyber-espionage-incident-2022",
+        
+          title: "Cyber Espionage Incident 2022",
+        
+        description: "A detailed account and analysis of the 2022 cyber espionage incident, a task from the Buildables Fellowship.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/cyber-espionage-incident-2022/";
+          
+        },
+      },{id: "post-completing-thm-soc-path",
         
           title: "completing thm soc path",
         
