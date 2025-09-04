@@ -24,6 +24,19 @@
   },
   "work": [
     {
+      "name": "Buildables Fellowship",
+      "position": "Cybersecurity Intern",
+      "url": "https://www.buildables.dev/#fellowship",
+      "startDate": "2025-08-18",
+      "endDate": "present",
+      "summary": "A 3-month intensive fellowship program focused on practical cybersecurity skills, including threat detection, incident response, and security operations.",
+      "highlights": [
+        "Threat Detection",
+        "Incident Response",
+        "Security Operations"
+      ]
+    },
+    {
       "name": "Jauharabad Suger Mills Pvt Ltd",
       "position": "IT Intern",
       "url": "",
@@ -37,19 +50,6 @@
       ]
     },
     {
-      "name": "Programming Society, Sargodha University",
-      "position": "President",
-      "url": "",
-      "startDate": "2025-02-01",
-      "endDate": "present",
-      "summary": "Leading the Programming Society at Sargodha University, organizing events and workshops to promote programming skills among students.",
-      "highlights": [
-        "Event Organization",
-        "Workshop Facilitation",
-        "Mentorship"
-      ]
-    },
-    {
       "name": "ByteWise",
       "position": "Cybersecurity Fellow",
       "url": "https://verification.givemycertificate.com/v/d906f9c6-3513-4035-9f48-050ed836aba1",
@@ -60,6 +60,21 @@
         "Threat Detection",
         "Incident Response",
         "Security Auditing"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Programming Society, Sargodha University",
+      "position": "President",
+      "url": "",
+      "startDate": "2025-02-01",
+      "endDate": "present",
+      "summary": "Leading the Programming Society at Sargodha University, organizing events and workshops to promote programming skills among students.",
+      "highlights": [
+        "Event Organization",
+        "Workshop Facilitation",
+        "Mentorship"
       ]
     }
   ],
