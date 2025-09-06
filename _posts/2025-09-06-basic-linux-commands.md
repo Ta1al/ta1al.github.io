@@ -4,7 +4,7 @@ title: Basic Linux Commands
 date: 2025-09-06 00:00:00
 description: Essential Linux commands for navigation, system information, user management, and permissions
 categories: cybersecurity, buildables-fellowship
-thumbnail: assets/img/linux-terminal.png
+thumbnail: assets/img/linux-logo.jpg
 giscus_comments: true
 toc:
   sidebar: left
