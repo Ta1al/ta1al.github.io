@@ -30,7 +30,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-what-is-cybersecurity",
+        },{id: "post-networking-fundamentals-osi-model-and-tcp-ip",
+        
+          title: "Networking Fundamentals - OSI Model and TCP/IP",
+        
+        description: "Understanding the OSI model, TCP/IP layers, network protocols, and practical network analysis",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/networking-fundamentals/";
+          
+        },
+      },{id: "post-basic-linux-commands",
+        
+          title: "Basic Linux Commands",
+        
+        description: "Essential Linux commands for navigation, system information, user management, and permissions",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/basic-linux-commands/";
+          
+        },
+      },{id: "post-what-is-cybersecurity",
         
           title: "What is Cybersecurity?",
         
