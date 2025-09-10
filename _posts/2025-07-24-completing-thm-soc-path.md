@@ -1,6 +1,6 @@
 ---
 layout: post
-title: completing thm soc path
+title: TryHackMe SOC Analyst L1 Path
 date: 2025-07-24 00:00:00
 description: The journey through the TryHackMe SOC path
 categories: cybersecurity
