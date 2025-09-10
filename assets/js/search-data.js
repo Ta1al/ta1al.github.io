@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-networking-fundamentals-osi-model-and-tcp-ip",
+        },{id: "post-day-1-starting-the-bug-bounty-journey",
+        
+          title: "Day 1 | Starting the Bug Bounty Journey",
+        
+        description: "Essential Linux commands for navigation, system information, user management, and permissions",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/day-01-htb/";
+          
+        },
+      },{id: "post-networking-fundamentals-osi-model-and-tcp-ip",
         
           title: "Networking Fundamentals - OSI Model and TCP/IP",
         
@@ -74,9 +85,9 @@ ninja.data = [{
             window.location.href = "/blog/2025/cyber-espionage-incident-2022/";
           
         },
-      },{id: "post-completing-thm-soc-path",
+      },{id: "post-tryhackme-soc-analyst-l1-path",
         
-          title: "completing thm soc path",
+          title: "TryHackMe SOC Analyst L1 Path",
         
         description: "The journey through the TryHackMe SOC path",
         section: "Posts",
