@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-day-1-starting-the-bug-bounty-journey",
+        },{id: "post-day-2-web-applications",
+        
+          title: "Day 2 | Web Applications!",
+        
+        description: "Essential Linux commands for navigation, system information, user management, and permissions",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/day-02-htb/";
+          
+        },
+      },{id: "post-day-1-starting-the-bug-bounty-journey",
         
           title: "Day 1 | Starting the Bug Bounty Journey",
         
