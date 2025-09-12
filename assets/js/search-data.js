@@ -30,9 +30,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-day-2-intro-to-web-proxies",
+        },{id: "post-day-3-intro-to-web-proxies",
         
-          title: "Day 2 | Intro to Web Proxies",
+          title: "Day 3 | Intro to Web Proxies",
         
         description: "Burp Suite and OWASP ZAP",
         section: "Posts",
