@@ -34,7 +34,7 @@ ninja.data = [{
         
           title: "Day 2 | Web Applications!",
         
-        description: "Essential Linux commands for navigation, system information, user management, and permissions",
+        description: "Web application components, vulnerabilities, and common security risks",
         section: "Posts",
         handler: () => {
           
