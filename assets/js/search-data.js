@@ -30,9 +30,20 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-day-3-intro-to-web-proxies-pt-2",
+        },{id: "post-day-5-information-gathering",
         
-          title: "Day 3 | Intro to Web Proxies Pt. 2",
+          title: "Day 5 | Information Gathering",
+        
+        description: "Web Reconnaissance is the foundation of a thorough security assessment.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/day-05-htb/";
+          
+        },
+      },{id: "post-day-4-intro-to-web-proxies-pt-2",
+        
+          title: "Day 4 | Intro to Web Proxies Pt. 2",
         
         description: "Burp Suite and OWASP ZAP",
         section: "Posts",
