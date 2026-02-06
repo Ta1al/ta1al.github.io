@@ -10,7 +10,7 @@ giscus_comments: true
 
 Welcome to my writeup for the TryHackMe room "Digital Footprint".
 
-{% include figure.liquid loading="eager" path="assets/img/writeups/digitalfootprint/thumbnail.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/writeups/digitalfootprint/intro.png" class="img-fluid rounded z-depth-1" %}
 
 ## Task 1 - The Leaked Photo
 
