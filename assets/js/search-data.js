@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-day-5-information-gathering",
+        },{id: "post-digital-footprint-tryhackme-room-writeup",
+        
+          title: "Digital Footprint | TryHackMe Room Writeup",
+        
+        description: "Beginner friendly OSINT Challenge",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/digital-footprint-thm/";
+          
+        },
+      },{id: "post-day-5-information-gathering",
         
           title: "Day 5 | Information Gathering",
         
