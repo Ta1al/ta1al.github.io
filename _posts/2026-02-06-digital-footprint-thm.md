@@ -8,6 +8,8 @@ thumbnail: assets/img/writeups/digitalfootprint/thumbnail.png
 giscus_comments: true
 ---
 
+# Digital Footprint | TryHackMe
+
 Welcome to my writeup for the TryHackMe room "Digital Footprint".
 
 {% include figure.liquid loading="eager" path="assets/img/writeups/digitalfootprint/intro.png" class="img-fluid rounded z-depth-1" %}
