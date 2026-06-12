@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import projects from '../data/projects.json';
+---
+
+<BaseLayout title="Projects — ta1al" description="Projects I've worked on.">
+  <div class="container">
+    <h1 class="page-title">Projects</h1>
+    <p class="page-subtitle">Things I've built or contributed to.</p>
+
+    {projects.length > 0 ? (
+      <div class="project-grid">
+        {projects.map(p => <ProjectCard {...p} />)}
+      </div>
+    ) : (
+      <p class="empty-state">Nothing here yet. Check back soon.</p>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.375rem;
+  }
+
+  .page-subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 4rem 0;
+    color: var(--text-muted);
+    font-size: 0.9375rem;
+  }
+
+  @media (max-width: 640px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

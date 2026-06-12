@@ -1,0 +1,50 @@
+---
+
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-text">&copy; {year} ta1al. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://github.com/ta1al" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:hello@ta1al.dev">Email</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    border-top: 1px solid var(--border);
+    margin-top: 4rem;
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-text {
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    margin: 0;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-links a {
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+  }
+
+  .footer-links a:hover {
+    color: var(--accent);
+  }
+</style>

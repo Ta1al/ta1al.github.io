@@ -1,0 +1,84 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  tags: string[];
+  url: string;
+  featured?: boolean;
+}
+
+const { title, description, tags, url, featured } = Astro.props;
+---
+
+<a
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class:list={{ card: true, 'card--featured': featured }}
+>
+  <div class="card-body">
+    <h3 class="card-title">{title}</h3>
+    <p class="card-description">{description}</p>
+    <div class="card-tags">
+      {tags.map(tag => <span class="tag">{tag}</span>)}
+    </div>
+  </div>
+</a>
+
+<style>
+  .card {
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    transition: border-color 0.2s, background 0.2s;
+    background: var(--surface);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card:hover {
+    border-color: var(--accent);
+    background: var(--surface-hover);
+  }
+
+  .card--featured {
+    border-color: var(--accent);
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    transition: color 0.2s;
+  }
+
+  .card:hover .card-title {
+    color: var(--accent);
+  }
+
+  .card-description {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25em 0.625em;
+    border-radius: 999px;
+    background: var(--surface-hover);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    line-height: 1.4;
+  }
+</style>

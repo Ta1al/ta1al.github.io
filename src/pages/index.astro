@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import BlogCard from '../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+import projects from '../data/projects.json';
+
+const featuredProjects = projects.filter(p => p.featured).slice(0, 3);
+const recentPosts = (await getCollection('blog'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
+---
+
+<BaseLayout title="ta1al — Developer & Security Analyst" description="Portfolio and blog of ta1al, a security-focused software engineer.">
+  <div class="container">
+    <section class="hero">
+      <h1 class="hero-title">
+        Security-focused<br />
+        <span class="hero-accent">software engineer.</span>
+      </h1>
+      <p class="hero-description">
+        I build secure, performant systems. Currently working as a SOC analyst,
+        breaking things (ethically), and writing about security and development.
+      </p>
+      <div class="hero-links">
+        <a href="/projects" class="btn btn--primary">View Projects</a>
+        <a href="/cv" class="btn btn--secondary">Resume / CV</a>
+      </div>
+    </section>
+
+    {featuredProjects.length > 0 && (
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <a href="/projects" class="section-link">View all &rarr;</a>
+        </div>
+        <div class="project-grid">
+          {featuredProjects.map(p => <ProjectCard {...p} />)}
+        </div>
+      </section>
+    )}
+
+    {recentPosts.length > 0 && (
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Latest Posts</h2>
+          <a href="/blog" class="section-link">All posts &rarr;</a>
+        </div>
+        <div class="blog-list">
+          {recentPosts.map(post => <BlogCard post={post} />)}
+        </div>
+      </section>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+  }
+
+  .hero-accent {
+    color: var(--accent);
+  }
+
+  .hero-description {
+    font-size: 1.0625rem;
+    max-width: 540px;
+    margin-bottom: 2rem;
+  }
+
+  .hero-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--radius);
+    transition: all 0.2s;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+
+  .btn--primary {
+    background: var(--accent);
+    color: var(--btn-text);
+    border-color: var(--accent);
+  }
+
+  .btn--primary:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+    color: var(--btn-text);
+  }
+
+  .btn--secondary {
+    background: transparent;
+    color: var(--text-secondary);
+    border-color: var(--border);
+  }
+
+  .btn--secondary:hover {
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .section-link {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .section-link:hover {
+    color: var(--accent);
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      padding: 2.5rem 0 2rem;
+    }
+
+    .hero-title {
+      font-size: 1.875rem;
+    }
+
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

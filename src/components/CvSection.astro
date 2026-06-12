@@ -1,0 +1,185 @@
+---
+export interface Props {
+  section: string;
+  items: Record<string, unknown>[];
+  type: 'work' | 'education' | 'skills' | 'certificates';
+}
+
+const { section, items, type } = Astro.props;
+
+function formatDate(dateStr: string): string {
+  return new Date(dateStr).toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
+}
+---
+
+<section class="cv-section">
+  <h2 class="cv-section-title">{section}</h2>
+  <div class="cv-section-body">
+    {type === 'work' && items.map(item => (
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <div>
+            <h3 class="cv-entry-role">{item.position as string}</h3>
+            <a href={item.url as string} class="cv-entry-org" target="_blank" rel="noopener noreferrer">{item.name as string}</a>
+          </div>
+          <span class="cv-entry-date">
+            {formatDate(item.startDate as string)} — {item.endDate ? formatDate(item.endDate as string) : 'Present'}
+          </span>
+        </div>
+        <p class="cv-entry-summary">{item.summary as string}</p>
+        {(item.highlights as string[])?.length > 0 && (
+          <ul class="cv-entry-highlights">
+            {(item.highlights as string[]).map(h => <li>{h}</li>)}
+          </ul>
+        )}
+      </div>
+    ))}
+
+    {type === 'education' && items.map(item => (
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <div>
+            <h3 class="cv-entry-org">{item.institution as string}</h3>
+            <span class="cv-entry-role">{item.area as string} — {item.studyType as string}</span>
+          </div>
+          <span class="cv-entry-date">
+            {formatDate(item.startDate as string)} — {item.endDate ? formatDate(item.endDate as string) : 'Present'}
+          </span>
+        </div>
+      </div>
+    ))}
+
+    {type === 'skills' && items.map(item => (
+      <div class="cv-skill-group">
+        <h3 class="cv-skill-name">{item.name as string}</h3>
+        <div class="cv-skill-keywords">
+          {(item.keywords as string[]).map(k => <span class="tag">{k}</span>)}
+        </div>
+      </div>
+    ))}
+
+    {type === 'certificates' && items.map(item => (
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <div>
+            <h3 class="cv-entry-role">{item.name as string}</h3>
+            <span class="cv-entry-org">{item.issuer as string}</span>
+          </div>
+          <span class="cv-entry-date">{formatDate(item.date as string)}</span>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .cv-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .cv-section-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .cv-entry {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--border);
+  }
+
+  .cv-entry:last-child {
+    margin-bottom: 0;
+  }
+
+  .cv-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.375rem;
+    flex-wrap: wrap;
+  }
+
+  .cv-entry-role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .cv-entry-org {
+    font-size: 0.875rem;
+    color: var(--accent);
+    display: block;
+    margin-top: 0.125rem;
+  }
+
+  .cv-entry-summary {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .cv-entry-date {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+
+  .cv-entry-highlights {
+    list-style: none;
+    padding: 0;
+  }
+
+  .cv-entry-highlights li {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    padding-left: 1rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+  }
+
+  .cv-entry-highlights li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--text-muted);
+  }
+
+  .cv-skill-group {
+    margin-bottom: 1rem;
+  }
+
+  .cv-skill-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.375rem;
+  }
+
+  .cv-skill-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25em 0.625em;
+    border-radius: 999px;
+    background: var(--surface-hover);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    line-height: 1.4;
+  }
+</style>
+
+

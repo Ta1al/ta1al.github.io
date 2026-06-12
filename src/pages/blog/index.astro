@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+
+const published = allPosts
+  .filter(p => !p.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const allCategories = [...new Set(published.flatMap(p => p.data.categories))].sort();
+---
+
+<BaseLayout title="Blog — ta1al" description="Thoughts on security, development, and technology.">
+  <div class="container">
+    <h1 class="page-title">Blog</h1>
+    <p class="page-subtitle">Thoughts on security, development, and technology.</p>
+
+    {allCategories.length > 0 && (
+      <div class="category-filter" id="category-filter">
+        <button class="filter-pill filter-pill--active" data-category="all">All</button>
+        {allCategories.map(cat => (
+          <button class="filter-pill" data-category={cat}>{cat}</button>
+        ))}
+      </div>
+    )}
+
+    {published.length > 0 ? (
+      <div class="blog-list" id="blog-list">
+        {published.map(post => (
+          <div class="blog-item" data-categories={post.data.categories.join(',')}>
+            <BlogCard post={post} />
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p class="empty-state">No posts yet. Check back soon.</p>
+    )}
+  </div>
+</BaseLayout>
+
+<script>
+  const filter = document.getElementById('category-filter');
+  const items = document.querySelectorAll('#blog-list .blog-item');
+
+  if (filter) {
+    filter.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-pill');
+      if (!btn) return;
+
+      const category = btn.dataset.category;
+
+      filter.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('filter-pill--active'));
+      btn.classList.add('filter-pill--active');
+
+      items.forEach(item => {
+        if (category === 'all') {
+          item.style.display = '';
+        } else {
+          const cats = item.dataset.categories.split(',');
+          item.style.display = cats.includes(category) ? '' : 'none';
+        }
+      });
+    });
+  }
+</script>
+
+<style>
+  .page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.375rem;
+  }
+
+  .page-subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+
+  .category-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-pill {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    padding: 0.375em 0.875em;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+
+  .filter-pill:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .filter-pill--active {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+  }
+
+  .filter-pill--active:hover {
+    background: var(--accent-hover);
+    color: #000;
+    border-color: var(--accent-hover);
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 4rem 0;
+    color: var(--text-muted);
+    font-size: 0.9375rem;
+  }
+</style>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ta1al.com/sitemap-index.xml

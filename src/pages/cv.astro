@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CvSection from '../components/CvSection.astro';
+import resume from '../data/cv.json';
+
+const basics = resume.basics;
+const sectionConfig = [
+  { key: 'work', label: 'Experience', type: 'work' as const },
+  { key: 'education', label: 'Education', type: 'education' as const },
+  { key: 'skills', label: 'Skills', type: 'skills' as const },
+  { key: 'certificates', label: 'Certifications', type: 'certificates' as const },
+];
+
+const sections = sectionConfig
+  .map(cfg => ({
+    ...cfg,
+    items: resume[cfg.key as keyof typeof resume] as Record<string, unknown>[] | undefined,
+  }))
+  .filter(s => s.items && s.items.length > 0);
+---
+
+<BaseLayout title="CV / Resume — ta1al" description="Professional resume and CV.">
+  <div class="container">
+    <div class="cv-header">
+      <div>
+        <h1 class="cv-name">{basics.name}</h1>
+        <p class="cv-label">{basics.label}</p>
+        <p class="cv-location">
+          {basics.location?.city}{basics.location?.countryCode ? `, ${basics.location.countryCode}` : ''}
+        </p>
+      </div>
+      <div class="cv-contact">
+        {basics.email && <a href={`mailto:${basics.email}`}>{basics.email}</a>}
+        {basics.url && <a href={basics.url} target="_blank" rel="noopener noreferrer">{basics.url.replace(/^https?:\/\//, '')}</a>}
+        {basics.profiles?.map(p => (
+          <a href={p.url} target="_blank" rel="noopener noreferrer">{p.network}</a>
+        ))}
+      </div>
+    </div>
+
+    {basics.summary && (
+      <section class="cv-summary">
+        <p>{basics.summary}</p>
+      </section>
+    )}
+
+    {sections.map(s => <CvSection section={s.label} items={s.items!} type={s.type} />)}
+  </div>
+</BaseLayout>
+
+<style>
+  .cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .cv-name {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.25rem;
+  }
+
+  .cv-label {
+    font-size: 1.0625rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+  }
+
+  .cv-location {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+  }
+
+  .cv-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-end;
+    font-size: 0.8125rem;
+  }
+
+  .cv-contact a {
+    color: var(--text-secondary);
+  }
+
+  .cv-contact a:hover {
+    color: var(--accent);
+  }
+
+  .cv-summary {
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    margin-bottom: 2.5rem;
+  }
+
+  .cv-summary p {
+    font-size: 0.9375rem;
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 640px) {
+    .cv-header {
+      flex-direction: column;
+    }
+
+    .cv-contact {
+      align-items: flex-start;
+    }
+  }
+</style>

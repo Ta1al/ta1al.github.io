@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Project Alpha",
+    "description": "A full-stack web application built with React and Node.js. Features real-time collaboration, user authentication, and a RESTful API.",
+    "tags": ["React", "Node.js", "MongoDB", "WebSocket"],
+    "url": "https://github.com/ta1al/project-alpha",
+    "featured": true
+  },
+  {
+    "title": "CLI Toolkit",
+    "description": "A collection of command-line utilities for automating common development workflows. Written in Rust for maximum performance.",
+    "tags": ["Rust", "CLI", "Automation"],
+    "url": "https://github.com/ta1al/cli-toolkit",
+    "featured": true
+  },
+  {
+    "title": "Packet Analyzer",
+    "description": "A network packet analysis tool built with Python and Scapy. Captures, decodes, and visualizes network traffic in real time.",
+    "tags": ["Python", "Networking", "Security"],
+    "url": "https://github.com/ta1al/packet-analyzer",
+    "featured": true
+  },
+  {
+    "title": "dotfiles",
+    "description": "My personal dotfiles and system configuration. Automated setup with Ansible for consistent development environments.",
+    "tags": ["Ansible", "Linux", "Zsh", "Neovim"],
+    "url": "https://github.com/ta1al/dotfiles",
+    "featured": false
+  },
+  {
+    "title": "Weather Dashboard",
+    "description": "A minimal weather dashboard that displays forecasts using OpenWeatherMap API. Built with vanilla JS and CSS Grid.",
+    "tags": ["JavaScript", "CSS", "API"],
+    "url": "https://github.com/ta1al/weather-dashboard",
+    "featured": false
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "This very site — a fast, responsive static portfolio built with Astro. Dark mode, JSON-driven CV, and markdown blog.",
+    "tags": ["Astro", "CSS", "JavaScript", "GitHub Pages"],
+    "url": "https://github.com/ta1al/ta1al.com",
+    "featured": true
+  }
+]

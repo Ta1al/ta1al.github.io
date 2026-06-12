@@ -1,0 +1,89 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Ta1al",
+    "label": "Security Analyst & Developer",
+    "email": "hello@ta1al.dev",
+    "url": "https://ta1al.com",
+    "summary": "Security-focused software engineer with experience in SOC operations, penetration testing, and full-stack development. Passionate about building secure, performant systems.",
+    "location": {
+      "city": "London",
+      "countryCode": "UK"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "ta1al",
+        "url": "https://github.com/ta1al"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "CyberSec Corp",
+      "position": "SOC Analyst",
+      "url": "https://example.com",
+      "startDate": "2024-01-01",
+      "endDate": null,
+      "summary": "Monitor and analyze security events, triage alerts, and coordinate incident response across enterprise infrastructure.",
+      "highlights": [
+        "Reduced mean time to detect by 40% through improved detection rules",
+        "Led incident response for 20+ security incidents",
+        "Developed automation scripts for log analysis and enrichment"
+      ]
+    },
+    {
+      "name": "TechStartup Inc",
+      "position": "Junior Developer",
+      "url": "https://example.com",
+      "startDate": "2022-06-01",
+      "endDate": "2023-12-31",
+      "summary": "Full-stack development of internal tools and customer-facing web applications in an agile team.",
+      "highlights": [
+        "Built internal dashboard serving 100+ daily users",
+        "Implemented CI/CD pipelines reducing deployment time by 60%",
+        "Contributed to open-source security tools"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Example",
+      "url": "https://example.edu",
+      "area": "Computer Science",
+      "studyType": "BSc",
+      "startDate": "2019-09-01",
+      "endDate": "2022-06-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": ["Python", "JavaScript", "TypeScript", "Rust", "Bash"]
+    },
+    {
+      "name": "Security",
+      "keywords": ["SIEM", "Threat Intelligence", "Incident Response", "Penetration Testing", "Network Security"]
+    },
+    {
+      "name": "Web Development",
+      "keywords": ["React", "Node.js", "Astro", "CSS", "REST APIs"]
+    },
+    {
+      "name": "DevOps",
+      "keywords": ["Docker", "CI/CD", "Linux", "Cloud (AWS/GCP)"]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "SOC Level 1",
+      "issuer": "TryHackMe",
+      "date": "2025-01-01"
+    },
+    {
+      "name": "Security+",
+      "issuer": "CompTIA",
+      "date": "2024-06-01"
+    }
+  ]
+}
