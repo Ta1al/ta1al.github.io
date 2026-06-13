@@ -25,10 +25,10 @@ const recentPosts = (await getCollection('blog'))
         and developing tools to automate SOC workflows. I also enjoy sharing 
         my knowledge through blog posts and open-source projects.
       </p>
-      <div class="hero-links">
+      <!-- <div class="hero-links">
         <a href="/projects" class="btn btn--primary">View Projects</a>
         <a href="/cv" class="btn btn--secondary">Resume / CV</a>
-      </div>
+      </div> -->
     </section>
 
     {featuredProjects.length > 0 && (
@@ -38,7 +38,7 @@ const recentPosts = (await getCollection('blog'))
           <a href="/projects" class="section-link">View all &rarr;</a>
         </div>
         <div class="project-grid">
-          {featuredProjects.map(p => <ProjectCard {...p} />)}
+          {featuredProjects.map(p => <ProjectCard {...p} url={p.url!} />)}
         </div>
       </section>
     )}
