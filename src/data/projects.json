@@ -1,44 +1,50 @@
 [
   {
-    "title": "Project Alpha",
-    "description": "A full-stack web application built with React and Node.js. Features real-time collaboration, user authentication, and a RESTful API.",
-    "tags": ["React", "Node.js", "MongoDB", "WebSocket"],
-    "url": "https://github.com/ta1al/project-alpha",
+    "title": "University Department Website",
+    "description": "A modern, responsive website for a university department. Built with Astro for fast performance and easy content management.",
+    "tags": ["Astro", "Node.js", "Tailwind CSS"],
+    "url": "https://github.com/Ta1al/cs-dept-website",
     "featured": true
   },
   {
-    "title": "CLI Toolkit",
-    "description": "A collection of command-line utilities for automating common development workflows. Written in Rust for maximum performance.",
-    "tags": ["Rust", "CLI", "Automation"],
-    "url": "https://github.com/ta1al/cli-toolkit",
+    "title": "Automated SRS Generator",
+    "description": "Converts a vague stakeholder idea into a full IEEE 830-compliant SRS document.",
+    "tags": ["Python", "TypeScript", "LangGraph", "FastAPI", "OpenRouter"],
+    "url": "https://github.com/Ta1al/automated-SRS-generator",
     "featured": true
   },
   {
-    "title": "Packet Analyzer",
-    "description": "A network packet analysis tool built with Python and Scapy. Captures, decodes, and visualizes network traffic in real time.",
-    "tags": ["Python", "Networking", "Security"],
-    "url": "https://github.com/ta1al/packet-analyzer",
+    "title": "Countr",
+    "description": "An advanced counting bot which can manage a counting channel in your Discord server.",
+    "tags": ["Discord.js", "Node.js", "TypeScript", "MongoDB"],
+    "url": "https://github.com/countr/countr",
     "featured": true
   },
   {
-    "title": "dotfiles",
-    "description": "My personal dotfiles and system configuration. Automated setup with Ansible for consistent development environments.",
-    "tags": ["Ansible", "Linux", "Zsh", "Neovim"],
-    "url": "https://github.com/ta1al/dotfiles",
+    "title": "Tickets",
+    "description": "Ticketing system for Discord servers. Create support channels with a simple command.",
+    "tags": ["Discord.js", "Node.js", "TypeScript", "MongoDB"],
+    "url": "https://github.com/biaw/tickets",
     "featured": false
   },
   {
-    "title": "Weather Dashboard",
-    "description": "A minimal weather dashboard that displays forecasts using OpenWeatherMap API. Built with vanilla JS and CSS Grid.",
-    "tags": ["JavaScript", "CSS", "API"],
-    "url": "https://github.com/ta1al/weather-dashboard",
-    "featured": false
+    "title": "Timetable Parser",
+    "description": "A robust timetable parser for extracting classes from a complex PDF my university sends.",
+    "tags": ["Python", "camelot-py", "pdfplumber"],
+    "url": "https://github.com/ta1al/timetable-parser",
+    "featured": true
   },
   {
     "title": "Portfolio Website",
     "description": "This very site — a fast, responsive static portfolio built with Astro. Dark mode, JSON-driven CV, and markdown blog.",
     "tags": ["Astro", "CSS", "JavaScript", "GitHub Pages"],
-    "url": "https://github.com/ta1al/ta1al.com",
-    "featured": true
+    "featured": false
+  },
+  {
+    "title": "Malware Detection with ML",
+    "description": "A machine learning model for detecting malware in files.",
+    "tags": ["Python", "scikit-learn", "pandas"],
+    "url": "https://github.com/Ta1al/ml-for-malware-detection",
+    "featured": false
   }
 ]
