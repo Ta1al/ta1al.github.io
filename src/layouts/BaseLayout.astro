@@ -10,7 +10,7 @@ export interface Props {
   image?: string;
 }
 
-const { title = 'Ta1al', description = 'Portfolio', image = '/favicon.svg' } = Astro.props;
+const { title = 'Ta1al', description = 'Portfolio', image = '/favicon.ico' } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
@@ -23,7 +23,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="description" content={description} />
     <meta name="theme-color" content="#0a0a0b" />
     <link rel="canonical" href={canonicalURL} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
