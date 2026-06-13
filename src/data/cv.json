@@ -28,28 +28,42 @@
   },
   "work": [
     {
-      "name": "CyberSec Corp",
+      "name": "ITSOLERA PVT LTD",
       "position": "SOC Analyst",
-      "url": "https://example.com",
-      "startDate": "2024-01-01",
-      "summary": "Monitor and analyze security events, triage alerts, and coordinate incident response across enterprise infrastructure.",
+      "url": "https://media.licdn.com/dms/image/v2/D4D2DAQGhaZq4Rm6KNg/profile-treasury-document-images_1280/B4DZ2RWOFpJYAU-/1/1776260016287?e=1782345600&v=beta&t=5Lfw00YWzcydV_Iu8nRgFJuX4ohvExy6fJ-Jjs5okiA",
+      "startDate": "2026-01-01",
+      "endDate": "2026-04-01",
+      "summary": "Monitored and analyzed security events in a self-hosted SOC and developed automated alerting pipelines to enhance threat detection and response capabilities.",
       "highlights": [
-        "Reduced mean time to detect by 40% through improved detection rules",
-        "Led incident response for 20+ security incidents",
-        "Developed automation scripts for log analysis and enrichment"
+        "Deployed and configured Wazuh SIEM integrated with pfSense firewall for centralized security monitoring",
+        "Built automated incident alert pipeline using Python and n8n to forward high-severity security events",
+        "Analyzed firewall logs, blocked traffic, and security alerts using Wazuh dashboard for threat investigation"
       ]
     },
     {
-      "name": "TechStartup Inc",
-      "position": "Junior Developer",
-      "url": "https://example.com",
-      "startDate": "2022-06-01",
-      "endDate": "2023-12-31",
-      "summary": "Full-stack development of internal tools and customer-facing web applications in an agile team.",
+      "name": "Buildables",
+      "position": "Cybersecurity Fellowship",
+      "url": "https://verification.givemycertificate.com/v/6d10fa87-ca67-4b6f-bd6a-60b10ab936d8",
+      "startDate": "2025-08-17",
+      "endDate": "2025-11-14",
+      "summary": "Gained hands-on experience with attack simulations, vulnerability assessments, and security monitoring using industry tools and techniques.",
       "highlights": [
-        "Built internal dashboard serving 100+ daily users",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Contributed to open-source security tools"
+        "Conducted controlled attack simulations and vulnerability assessments to evaluate system security posture",
+        "Performed SOC monitoring and intrusion detection analysis using logs and traffic inspection tools",
+        "Identified and mapped Indicators of Compromise (IOCs) from simulated attack environments",
+        "Produced incident response reports and security hardening recommendations"
+      ]
+    },
+    {
+      "name": "Jauharabad Sugar Mills Pvt Ltd",
+      "position": "IT Intern",
+      "startDate": "2025-07-01",
+      "endDate": "2025-09-01",
+      "summary": "Assisted in enterprise network deployment and provided technical support for hardware, software, and network troubleshooting in a production environment.",
+      "highlights": [
+        "Assisted in enterprise network deployment, including CCTV systems and OLT configuration",
+        "Gained exposure to VLANs, routing, access control, and network segmentation",
+        "Provided technical support for hardware, software, and network troubleshooting in production environment"
       ]
     }
   ],
