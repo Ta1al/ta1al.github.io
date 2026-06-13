@@ -37,19 +37,22 @@ const links = [
 <script>
   const hamburger = document.getElementById('hamburger');
   const nav = document.getElementById('nav');
-  hamburger.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('nav--open');
-    hamburger.classList.toggle('hamburger--active');
-    hamburger.setAttribute('aria-expanded', isOpen);
-  });
-
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('nav--open');
-      hamburger.classList.remove('hamburger--active');
-      hamburger.setAttribute('aria-expanded', 'false');
+  
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav--open');
+      hamburger.classList.toggle('hamburger--active');
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
-  });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('nav--open');
+        hamburger.classList.remove('hamburger--active');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 </script>
 
 <style>
@@ -64,7 +67,6 @@ const links = [
   .header-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 56px;
   }
 
@@ -73,10 +75,15 @@ const links = [
     font-size: 1.125rem;
     color: var(--text-primary);
     letter-spacing: -0.02em;
+    margin-right: auto;
   }
 
   .logo:hover {
     color: var(--accent);
+  }
+
+  .nav {
+    margin-left: auto;
   }
 
   .nav-list {
@@ -150,6 +157,7 @@ const links = [
 
   @media (max-width: 640px) {
     .nav {
+      margin-left: 0;
       display: none;
       position: absolute;
       top: 56px;
