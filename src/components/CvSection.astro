@@ -68,7 +68,10 @@ function formatDate(dateStr: string): string {
       <div class="cv-entry">
         <div class="cv-entry-header">
           <div>
-            <h3 class="cv-entry-role">{item.name as string}</h3>
+            {item.url
+              ? <h3 class="cv-entry-role"><a href={item.url as string} target="_blank" rel="noopener noreferrer">{item.name as string}</a></h3>
+              : <h3 class="cv-entry-role">{item.name as string}</h3>
+            }
             <span class="cv-entry-org">{item.issuer as string}</span>
           </div>
           <span class="cv-entry-date">{formatDate(item.date as string)}</span>
@@ -117,6 +120,14 @@ function formatDate(dateStr: string): string {
     font-size: 1rem;
     font-weight: 600;
     color: var(--text-primary);
+  }
+
+  .cv-entry-role a {
+    color: var(--text-primary);
+  }
+
+  .cv-entry-role a:hover {
+    color: var(--accent);
   }
 
   .cv-entry-org {
