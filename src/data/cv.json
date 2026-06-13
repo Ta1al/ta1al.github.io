@@ -4,7 +4,7 @@
     "name": "Ta1al",
     "label": "Security Analyst & Developer",
     "email": "mail@ta1al.com",
-    "summary": "Cybersecurity-focused Computer Science student with hands-on experience in SOC operations, SIEM (Wazuh), network security, and incident response. Experienced in deploying and monitoring security infrastructures using pfSense firewalls, ELK/Wazuh SIEM, and log analysis tools. Strong understanding of network protocols, intrusion detection concepts, vulnerability assessment, and malware analysis through internships and security labs.",
+    "summary": "Cybersecurity-focused Computer Science graduate with hands-on experience in SOC operations, SIEM (Wazuh), network security, and incident response. Experienced in deploying and monitoring security infrastructures using pfSense firewalls, ELK/Wazuh SIEM, and log analysis tools. Strong understanding of network protocols, intrusion detection concepts, vulnerability assessment, and malware analysis through internships and security labs.",
     "location": {
       "country": "Pakistan"
     },
@@ -32,7 +32,6 @@
       "position": "SOC Analyst",
       "url": "https://example.com",
       "startDate": "2024-01-01",
-      "endDate": null,
       "summary": "Monitor and analyze security events, triage alerts, and coordinate incident response across enterprise infrastructure.",
       "highlights": [
         "Reduced mean time to detect by 40% through improved detection rules",
@@ -56,12 +55,16 @@
   ],
   "education": [
     {
-      "institution": "University of Example",
-      "url": "https://example.edu",
+      "institution": "University of Sargodha",
       "area": "Computer Science",
-      "studyType": "BSc",
-      "startDate": "2019-09-01",
-      "endDate": "2022-06-01"
+      "studyType": "BS",
+      "startDate": "2022-12-22",
+      "endDate": "2026-06-19",
+      "score": "3.8/4.0",
+      "courses": [
+        "President of Programming Society",
+        "Relevant Coursework:  Operating Systems, Information Security, Artificial Intelligence"
+      ]
     }
   ],
   "skills": [
@@ -69,19 +72,17 @@
       "name": "Languages",
       "keywords": [
         "Python",
-        "JavaScript",
         "TypeScript",
-        "Rust",
-        "Bash"
+        "JavaScript",
+        "C++"
       ]
     },
     {
       "name": "Security",
       "keywords": [
-        "SIEM",
+        "SIEM (ELK/Wazuh/Splunk)",
         "Threat Intelligence",
         "Incident Response",
-        "Penetration Testing",
         "Network Security"
       ]
     },
@@ -89,9 +90,10 @@
       "name": "Web Development",
       "keywords": [
         "React",
+        "Next.js",
         "Node.js",
         "Astro",
-        "CSS",
+        "MongoDB",
         "REST APIs"
       ]
     },
@@ -100,8 +102,7 @@
       "keywords": [
         "Docker",
         "CI/CD",
-        "Linux",
-        "Cloud (AWS/GCP)"
+        "Linux"
       ]
     }
   ],
