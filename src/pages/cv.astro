@@ -26,12 +26,11 @@ const sections = sectionConfig
         <h1 class="cv-name">{basics.name}</h1>
         <p class="cv-label">{basics.label}</p>
         <p class="cv-location">
-          {basics.location?.city}{basics.location?.countryCode ? `, ${basics.location.countryCode}` : ''}
+          {basics.location?.country}
         </p>
       </div>
       <div class="cv-contact">
         {basics.email && <a href={`mailto:${basics.email}`}>{basics.email}</a>}
-        {basics.url && <a href={basics.url} target="_blank" rel="noopener noreferrer">{basics.url.replace(/^https?:\/\//, '')}</a>}
         {basics.profiles?.map(p => (
           <a href={p.url} target="_blank" rel="noopener noreferrer">{p.network}</a>
         ))}
