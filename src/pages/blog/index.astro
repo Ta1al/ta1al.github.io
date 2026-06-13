@@ -44,23 +44,29 @@ const allCategories = [...new Set(published.flatMap(p => p.data.categories))].so
 
 <script>
   const filter = document.getElementById('category-filter');
-  const items = document.querySelectorAll('#blog-list .blog-item');
+  const items = Array.from(document.querySelectorAll('#blog-list .blog-item')) as HTMLElement[];
 
-  if (filter) {
+  if (filter instanceof HTMLElement) {
     filter.addEventListener('click', (e) => {
-      const btn = e.target.closest('.filter-pill');
-      if (!btn) return;
+      const target = e.target;
+      if (!(target instanceof Element)) return;
+      const btn = target.closest('.filter-pill');
+      if (!(btn instanceof HTMLElement)) return;
 
       const category = btn.dataset.category;
+      if (!category) return;
 
-      filter.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('filter-pill--active'));
+      filter.querySelectorAll('.filter-pill').forEach(p => {
+        if (p instanceof HTMLElement) p.classList.remove('filter-pill--active');
+      });
       btn.classList.add('filter-pill--active');
 
       items.forEach(item => {
         if (category === 'all') {
           item.style.display = '';
         } else {
-          const cats = item.dataset.categories.split(',');
+          const catsString = item.dataset.categories ?? '';
+          const cats = catsString.split(',');
           item.style.display = cats.includes(category) ? '' : 'none';
         }
       });
