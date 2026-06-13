@@ -31,19 +31,37 @@ const { title, description, tags, url, featured } = Astro.props;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 1.5rem;
-    transition: border-color 0.2s, background 0.2s;
+    transition: border-color 0.3s, background 0.3s, transform 0.3s, box-shadow 0.3s;
     background: var(--surface);
     text-decoration: none;
     color: inherit;
+    position: relative;
+    animation: borderGlow 5s ease-in-out infinite;
   }
 
   .card:hover {
     border-color: var(--accent);
     background: var(--surface-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   }
 
   .card--featured {
     border-color: var(--accent);
+    animation: borderGlow 3s ease-in-out infinite;
+  }
+
+  .card--featured::before {
+    content: '';
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+    animation: statusPulse 2s ease-in-out infinite;
   }
 
   .card-title {

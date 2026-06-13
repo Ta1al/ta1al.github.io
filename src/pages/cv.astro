@@ -62,6 +62,15 @@ const sections = sectionConfig
     font-weight: 700;
     letter-spacing: -0.03em;
     margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .cv-name::before {
+    content: '◆';
+    color: var(--accent);
+    font-size: 0.875rem;
   }
 
   .cv-label {
@@ -95,8 +104,11 @@ const sections = sectionConfig
     padding: 1.25rem;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    background: var(--surface);
+    background: rgba(24, 24, 27, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     margin-bottom: 2.5rem;
+    animation: borderGlow 5s ease-in-out infinite;
   }
 
   .cv-summary p {

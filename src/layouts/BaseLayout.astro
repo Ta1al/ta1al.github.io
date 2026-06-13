@@ -2,7 +2,6 @@
 import '../styles/base.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Particles from '../components/Particles.astro';
 
 export interface Props {
   title?: string;
@@ -34,7 +33,23 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="twitter:description" content={description} />
   </head>
   <body>
-    <Particles />
+    <div class="ambient-bg" aria-hidden="true">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+      <div class="scan-line"></div>
+      <div class="grid-overlay"></div>
+      <div class="float-dot" style="top:15%;left:12%;--d:0s;--s:5s"></div>
+      <div class="float-dot" style="top:75%;left:85%;--d:2s;--s:7s"></div>
+      <div class="float-dot" style="top:45%;left:92%;--d:4s;--s:6s"></div>
+      <div class="float-dot" style="top:85%;left:18%;--d:1s;--s:8s"></div>
+      <div class="float-dot" style="top:30%;left:88%;--d:3s;--s:4s"></div>
+      <div class="float-dot float-dot--sm" style="top:60%;left:8%;--d:5s;--s:9s"></div>
+      <div class="float-dot float-dot--sm" style="top:10%;left:80%;--d:0.5s;--s:6.5s"></div>
+      <div class="float-dot float-dot--sm" style="top:90%;left:50%;--d:2.5s;--s:5.5s"></div>
+      <div class="float-dot float-dot--sm" style="top:50%;left:95%;--d:3.5s;--s:7.5s"></div>
+      <div class="float-dot float-dot--sm" style="top:20%;left:5%;--d:1.5s;--s:4.5s"></div>
+    </div>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <Header />
     <main class="main" id="main-content" tabindex="-1">
@@ -49,6 +64,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     padding: 3rem 0 2rem;
     min-height: calc(100vh - 56px - 97px);
     outline: none;
+    position: relative;
+    z-index: 1;
   }
 
   .skip-link {
@@ -74,9 +91,131 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     outline-offset: 2px;
   }
 
+  .ambient-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .blob {
+    position: absolute;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    filter: blur(80px);
+    opacity: 0.4;
+    animation: morphBlob 18s ease-in-out infinite alternate;
+  }
+
+  .blob--1 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle at 30% 50%, rgba(46, 245, 11, 0.25), transparent 70%);
+    top: -10%;
+    right: -10%;
+    animation-duration: 18s;
+    animation-delay: 0s;
+  }
+
+  .blob--2 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at 70% 30%, rgba(0, 200, 255, 0.15), transparent 70%);
+    bottom: -5%;
+    left: -10%;
+    animation-duration: 22s;
+    animation-delay: -6s;
+  }
+
+  .blob--3 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.1), transparent 70%);
+    top: 40%;
+    left: 50%;
+    animation-duration: 26s;
+    animation-delay: -12s;
+  }
+
+  .scan-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(46, 245, 11, 0.6), transparent);
+    animation: scanLine 8s linear infinite;
+    box-shadow: 0 0 12px rgba(46, 245, 11, 0.3), 0 0 24px rgba(46, 245, 11, 0.1);
+  }
+
+  .grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(46, 245, 11, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(46, 245, 11, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .float-dot {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.3;
+    animation: floatDrift var(--s, 6s) ease-in-out var(--d, 0s) infinite alternate;
+    box-shadow: 0 0 6px var(--accent);
+  }
+
+  .float-dot--sm {
+    width: 2px;
+    height: 2px;
+    opacity: 0.2;
+    box-shadow: none;
+  }
+
   @media (max-width: 640px) {
     .main {
       padding: 2rem 0;
+    }
+
+    .blob--1 {
+      width: 350px;
+      height: 350px;
+      right: -30%;
+      top: -15%;
+      opacity: 0.5;
+    }
+
+    .blob--2 {
+      width: 280px;
+      height: 280px;
+      left: -40%;
+      bottom: 0;
+      opacity: 0.35;
+    }
+
+    .blob--3 {
+      display: none;
+    }
+
+    .grid-overlay {
+      background-size: 40px 40px;
+    }
+
+    .float-dot {
+      display: none;
+    }
+
+    .float-dot:nth-child(-n+5) {
+      display: block;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .blob,
+    .scan-line {
+      animation: none;
     }
   }
 </style>

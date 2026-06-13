@@ -6,8 +6,10 @@ import projects from '../data/projects.json';
 
 <BaseLayout title="Projects — ta1al" description="Projects I've worked on.">
   <div class="container">
-    <h1 class="page-title">Projects</h1>
-    <p class="page-subtitle">Things I've built or contributed to.</p>
+    <div class="page-head">
+      <h1 class="page-title"><span class="page-title-icon">◆</span> Projects</h1>
+      <p class="page-subtitle">Things I've built or contributed to.</p>
+    </div>
 
     {projects.length > 0 ? (
       <div class="project-grid">
@@ -20,16 +22,27 @@ import projects from '../data/projects.json';
 </BaseLayout>
 
 <style>
+  .page-head {
+    margin-bottom: 2rem;
+  }
+
   .page-title {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -0.03em;
     margin-bottom: 0.375rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .page-title-icon {
+    color: var(--accent);
+    font-size: 0.875rem;
   }
 
   .page-subtitle {
     color: var(--text-secondary);
-    margin-bottom: 2rem;
   }
 
   .project-grid {
