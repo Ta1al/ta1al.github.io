@@ -15,19 +15,6 @@
   --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
 
-[data-theme='light'] {
-  --bg: #fafafa;
-  --surface: #ffffff;
-  --surface-hover: #f4f4f5;
-  --border: #e4e4e7;
-  --text-primary: #18181b;
-  --text-secondary: #52525b;
-  --text-muted: #71717a;
-  --accent: #2ef50bd6;
-  --accent-hover: #26ff00;
-  --btn-text: #fff;
-}
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;

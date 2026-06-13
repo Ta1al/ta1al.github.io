@@ -1,6 +1,4 @@
 ---
-import ThemeToggle from './ThemeToggle.astro';
-
 const currentPath = Astro.url.pathname;
 const links = [
   { href: '/', label: 'Home' },
@@ -27,7 +25,6 @@ const links = [
       </ul>
     </nav>
     <div class="header-actions">
-      <ThemeToggle />
       <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="nav" aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
