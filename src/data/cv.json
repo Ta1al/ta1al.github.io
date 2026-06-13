@@ -94,7 +94,7 @@
     {
       "name": "Security",
       "keywords": [
-        "SIEM (ELK/Wazuh/Splunk)",
+        "SIEM & EDR",
         "Threat Intelligence",
         "Incident Response",
         "Network Security"
@@ -124,12 +124,33 @@
     {
       "name": "SOC Level 1",
       "issuer": "TryHackMe",
-      "date": "2025-01-01"
+      "date": "2025-07-24",
+      "url": "https://tryhackme.com/certificate/THM-M4ZQHRNWOY"
     },
     {
-      "name": "Security+",
-      "issuer": "CompTIA",
-      "date": "2024-06-01"
+      "name": "Google Cybersecurity Professional",
+      "issuer": "Google",
+      "date": "2025-02-04",
+      "url": "https://coursera.org/share/3349be5371aeba4a6d5fc8b498740d9e"
+    },
+    {
+      "name": "API Security Fundamentals ",
+      "issuer": "APIsec University",
+      "date": "2025-11-05",
+      "url": "https://www.credly.com/badges/fe3a79f0-3976-4ad0-9795-56726b0ac3d0"
+    },
+    {
+      "name": "Python for Everybody",
+      "issuer": "University of Michigan",
+      "date": "2024-02-14",
+      "url": "https://coursera.org/share/c86d3ff005beb9afd8dd536944e3445d"
+    },
+    {
+      "name": "Social Psychology",
+      "issuer": "Wesleyan University",
+      "date": "2024-02-02",
+      "url": "https://coursera.org/share/0a8aefb508b469adde5f774fe995dedd"
     }
+    
   ]
 }
