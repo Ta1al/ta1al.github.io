@@ -3,14 +3,22 @@
   "basics": {
     "name": "Ta1al",
     "label": "Security Analyst & Developer",
-    "email": "hello@ta1al.dev",
-    "url": "https://ta1al.com",
-    "summary": "Security-focused software engineer with experience in SOC operations, penetration testing, and full-stack development. Passionate about building secure, performant systems.",
+    "email": "mail@ta1al.com",
+    "summary": "Cybersecurity-focused Computer Science student with hands-on experience in SOC operations, SIEM (Wazuh), network security, and incident response. Experienced in deploying and monitoring security infrastructures using pfSense firewalls, ELK/Wazuh SIEM, and log analysis tools. Strong understanding of network protocols, intrusion detection concepts, vulnerability assessment, and malware analysis through internships and security labs.",
     "location": {
-      "city": "London",
-      "countryCode": "UK"
+      "country": "Pakistan"
     },
     "profiles": [
+      {
+        "network": "TryHackMe",
+        "username": "ta1al",
+        "url": "https://tryhackme.com/p/ta1al"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "ta1al",
+        "url": "https://linkedin.com/in/ta1al"
+      },
       {
         "network": "GitHub",
         "username": "ta1al",
@@ -59,19 +67,42 @@
   "skills": [
     {
       "name": "Languages",
-      "keywords": ["Python", "JavaScript", "TypeScript", "Rust", "Bash"]
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Rust",
+        "Bash"
+      ]
     },
     {
       "name": "Security",
-      "keywords": ["SIEM", "Threat Intelligence", "Incident Response", "Penetration Testing", "Network Security"]
+      "keywords": [
+        "SIEM",
+        "Threat Intelligence",
+        "Incident Response",
+        "Penetration Testing",
+        "Network Security"
+      ]
     },
     {
       "name": "Web Development",
-      "keywords": ["React", "Node.js", "Astro", "CSS", "REST APIs"]
+      "keywords": [
+        "React",
+        "Node.js",
+        "Astro",
+        "CSS",
+        "REST APIs"
+      ]
     },
     {
       "name": "DevOps",
-      "keywords": ["Docker", "CI/CD", "Linux", "Cloud (AWS/GCP)"]
+      "keywords": [
+        "Docker",
+        "CI/CD",
+        "Linux",
+        "Cloud (AWS/GCP)"
+      ]
     }
   ],
   "certificates": [
