@@ -15,7 +15,9 @@ const allCategories = [...new Set(published.flatMap(p => p.data.categories))].so
 <BaseLayout title="Blog — ta1al" description="Thoughts on security, development, and technology.">
   <div class="container">
     <h1 class="page-title">Blog</h1>
-    <p class="page-subtitle">Thoughts on security, development, and technology.</p>
+    <p class="page-subtitle">Thoughts on security, development, and technology.
+      <br />Current posts are just placeholders while I work on migrating content and setting up a new writing workflow. Check back soon for real posts!
+    </p>
 
     {allCategories.length > 0 && (
       <div class="category-filter" id="category-filter">
