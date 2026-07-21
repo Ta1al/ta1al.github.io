@@ -1,4 +1,23 @@
 (() => {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  let updateQueued = false;
+  const updateHeader = () => {
+    header.classList.toggle('site-header--scrolled', window.scrollY > 16);
+    updateQueued = false;
+  };
+  const queueUpdate = () => {
+    if (updateQueued) return;
+    updateQueued = true;
+    requestAnimationFrame(updateHeader);
+  };
+
+  updateHeader();
+  window.addEventListener('scroll', queueUpdate, { passive: true });
+})();
+
+(() => {
   const button = document.querySelector('.menu-toggle');
   const menu = document.querySelector('#site-menu');
   if (!button || !menu) return;
