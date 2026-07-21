@@ -37,7 +37,7 @@
   {
     "title": "Portfolio Website",
     "description": "This very site—a fast, responsive static portfolio built with Hugo. Dark theme, JSON-driven CV, filtered projects, and a Markdown blog.",
-    "tags": ["Hugo", "CSS", "JavaScript", "GitHub Pages"],
+    "tags": ["Hugo", "CSS", "JavaScript", "GitHub Pages", "Markdown"],
     "url": "https://github.com/Ta1al/ta1al.github.io",
     "featured": false
   },
