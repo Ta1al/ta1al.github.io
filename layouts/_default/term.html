@@ -1,6 +1,0 @@
-{{ define "main" }}
-<section class="shell listing">
-  <header class="page-heading"><p class="eyebrow">Archive // {{ .Data.Singular | humanize }}</p><h1>{{ .Title }}</h1><p class="lede">{{ len .Pages }} published {{ cond (eq (len .Pages) 1) "entry" "entries" }}.</p></header>
-  <div class="post-list">{{ range .Pages.ByDate.Reverse }}{{ partial "post-card.html" . }}{{ end }}</div>
-</section>
-{{ end }}
