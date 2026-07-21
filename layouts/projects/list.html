@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $softwareProjects := index hugo.Data "projects-software" }}
 <section class="shell listing" aria-labelledby="projects-title">
   <header class="page-heading">
     <p class="eyebrow">Selected work // Case studies</p>
@@ -13,13 +14,15 @@
   </div>
   <p class="filter-status sr-only" aria-live="polite"></p>
 
-  {{ if .Pages }}
+  {{ if or .Pages $softwareProjects }}
   <div class="project-grid">
-    {{ $pages := .Pages.ByTitle }}
-    {{ range where $pages "Params.featured" true }}
-      {{ partial "project-card.html" . }}
+    {{ range where $softwareProjects "featured" true }}
+      {{ partial "project-card-data.html" . }}
     {{ end }}
-    {{ range where $pages "Params.featured" false }}
+    {{ range where $softwareProjects "featured" false }}
+      {{ partial "project-card-data.html" . }}
+    {{ end }}
+    {{ range .Pages.ByDate.Reverse }}
       {{ partial "project-card.html" . }}
     {{ end }}
   </div>

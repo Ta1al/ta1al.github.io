@@ -1,0 +1,7 @@
+<a class="project-card project-card--linked{{ if .featured }} project-card--featured{{ end }}" href="{{ .url }}" data-project-discipline="software" aria-label="Open {{ .title }} project">
+  <div class="project-card__meta"><span>Software</span><span>{{ if .featured }}Featured{{ else }}Project{{ end }}</span></div>
+  <h2>{{ .title }}</h2>
+  <p>{{ .description }}</p>
+  {{ with .tags }}<ul class="tag-list" aria-label="Technologies">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+  <span class="text-link">Open project <span aria-hidden="true">↗</span></span>
+</a>
