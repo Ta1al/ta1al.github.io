@@ -7,18 +7,18 @@ description = 'A beginner-friendly OSINT walkthrough of the TryHackMe Digital Fo
 categories = ['Writeups']
 tags = ['TryHackMe', 'OSINT']
 toc = true
-image = '/images/digitalfootprint/thumbnail.png'
+image = 'images/thumbnail.png'
 +++
 
 Welcome to my writeup for the TryHackMe room **Digital Footprint**. The room works through a series of beginner-friendly OSINT challenges involving image analysis, web archives, landmark identification, and document metadata.
 
-![Digital Footprint room introduction](/images/digitalfootprint/intro.png)
+![Digital Footprint room introduction](images/intro.png)
 
 ## Task 1 — The Leaked Photo
 
 The first task asks us to identify the city where a photo of a residential property was taken. The required flag format is `THM{City}`.
 
-![Residential property provided in the challenge](/images/digitalfootprint/edited-house-1763031553617.jpg)
+![Residential property provided in the challenge](images/edited-house-1763031553617.jpg)
 
 Two details stood out immediately: **The Rectory** and **ADT Armed Response**. Searching for “The Rectory” did not reveal much, but searching for “ADT Armed Response” led me to ADT, a security company operating in South Africa.
 
@@ -43,7 +43,7 @@ This one took a while. I started with the [Wayback Machine](https://archive.org/
 
 After more digging, I found [Archive Team: WARC Grabs](https://archive.org/details/archiveteam_earlywarcs) on the Internet Archive. That suggested that “warc” in the challenge domain was a hint toward **Web ARChive** files. Searching the collection for `acme.com` revealed the relevant capture.
 
-![WARC archive results for ACME](/images/digitalfootprint/warc.png)
+![WARC archive results for ACME](images/warc.png)
 
 The timestamp of the first file in the WARC was the flag required by the task.
 
@@ -51,11 +51,11 @@ The timestamp of the first file in the WARC was the flag required by the task.
 
 The third task provides an image of a landmark and asks for the English name of a nearby building connected to a country’s fight for independence. The flag format is `THM{Landmark}`.
 
-![Landmark image provided in the challenge](/images/digitalfootprint/landmark-1763035881792.JPG)
+![Landmark image provided in the challenge](images/landmark-1763035881792.JPG)
 
 A reverse-image search quickly identified the landmark as the **Spire of Dublin** in Ireland. I then found the viewpoint on [Google Maps](https://maps.app.goo.gl/npuX5H8Ur3FcyL9A6).
 
-![Google Maps view of the Spire of Dublin](/images/digitalfootprint/dublin.png)
+![Google Maps view of the Spire of Dublin](images/dublin.png)
 
 The building to the right of the Spire is the **General Post Office (GPO)**. It played an important role in Ireland’s fight for independence by serving as the headquarters of the 1916 Easter Rising. Its translated English name was the answer required by the task.
 
@@ -65,18 +65,18 @@ The final task revolves around an internal document accidentally leaked by one o
 
 We are given an ODT file with very little useful information in its visible text.
 
-![Visible contents of the leaked ODT document](/images/digitalfootprint/odt.png)
+![Visible contents of the leaked ODT document](images/odt.png)
 
 Inspecting the document metadata revealed user-defined fields containing a username.
 
-![Username discovered in the document metadata](/images/digitalfootprint/username.png)
+![Username discovered in the document metadata](images/username.png)
 
 I checked that username with a username-search tool and found a matching YouTube channel.
 
-![Username checker results](/images/digitalfootprint/checker.png)
+![Username checker results](images/checker.png)
 
 The channel had only one post, and that post contained the final flag.
 
-![YouTube channel containing the final clue](/images/digitalfootprint/youtube.png)
+![YouTube channel containing the final clue](images/youtube.png)
 
 And we’re done!
