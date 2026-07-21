@@ -1,0 +1,17 @@
+{{ $resume := .resume }}{{ $id := .id }}
+<section id="cv-panel-{{ $id }}" class="cv-panel{{ if .active }} is-active{{ end }}" role="tabpanel" aria-labelledby="cv-tab-{{ $id }}" data-cv-panel="{{ $id }}"{{ if not .active }} tabindex="0"{{ end }}>
+  <p class="cv-panel__label">{{ $resume.basics.label }}</p>
+  <div class="cv__grid">
+    <aside class="cv__sidebar">
+      <section aria-labelledby="{{ $id }}-contact"><h2 id="{{ $id }}-contact">Contact</h2><ul class="plain-list"><li><a href="mailto:{{ $resume.basics.email }}">{{ $resume.basics.email }}</a></li><li><a href="{{ $resume.basics.url }}">{{ strings.TrimPrefix "https://" $resume.basics.url }}</a></li>{{ range $resume.basics.profiles }}<li><a href="{{ .url }}">{{ .network }} / {{ .username }}</a></li>{{ end }}</ul></section>
+      {{ with $resume.skills }}<section aria-labelledby="{{ $id }}-skills"><h2 id="{{ $id }}-skills">Skills</h2>{{ range . }}<div class="skill-group"><h3>{{ .name }}</h3><ul class="tag-list">{{ range .keywords }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}</section>{{ end }}
+    </aside>
+    <div class="cv__main">
+      <section aria-labelledby="{{ $id }}-profile"><h2 id="{{ $id }}-profile">Profile</h2><p>{{ $resume.basics.summary }}</p></section>
+      {{ with $resume.work }}<section aria-labelledby="{{ $id }}-experience"><h2 id="{{ $id }}-experience">Experience</h2>{{ range . }}<article class="timeline-item"><header><h3>{{ .position }} — {{ .name }}</h3><p>{{ .startDate }}{{ with .endDate }}–{{ . }}{{ end }}</p></header><p>{{ .summary }}</p>{{ with .highlights }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}</article>{{ end }}</section>{{ end }}
+      {{ with $resume.projects }}<section aria-labelledby="{{ $id }}-projects"><h2 id="{{ $id }}-projects">Selected projects</h2>{{ range . }}<article class="timeline-item"><h3>{{ .name }}</h3><p>{{ .description }}</p>{{ with .highlights }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}</article>{{ end }}</section>{{ end }}
+      {{ with $resume.certificates }}<section aria-labelledby="{{ $id }}-certificates"><h2 id="{{ $id }}-certificates">Certifications</h2>{{ range . }}<article class="timeline-item"><h3>{{ .name }}</h3><p>{{ .issuer }} · {{ .date }}</p></article>{{ end }}</section>{{ end }}
+      {{ with $resume.education }}<section aria-labelledby="{{ $id }}-education"><h2 id="{{ $id }}-education">Education</h2>{{ range . }}<article class="timeline-item"><h3>{{ .studyType }}{{ with .area }} in {{ . }}{{ end }}</h3><p>{{ .institution }} · {{ .startDate }}–{{ .endDate }}</p></article>{{ end }}</section>{{ end }}
+    </div>
+  </div>
+</section>

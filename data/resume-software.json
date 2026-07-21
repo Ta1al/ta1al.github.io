@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Talal Ahmed",
+    "label": "Software Engineer",
+    "email": "mail@ta1al.com",
+    "url": "https://ta1al.com",
+    "summary": "Computer Science graduate and software engineer interested in building dependable web applications, backend services, automation, and small tools that solve practical problems. Comfortable moving from an idea to an implementation, working across systems, and using a security-minded approach throughout development.",
+    "profiles": [
+      { "network": "GitHub", "username": "ta1al", "url": "https://github.com/ta1al" },
+      { "network": "LinkedIn", "username": "ta1al", "url": "https://www.linkedin.com/in/ta1al/" }
+    ]
+  },
+  "work": [],
+  "education": [],
+  "certificates": [],
+  "skills": [
+    { "name": "Software Development", "keywords": ["Backend development", "Web development", "API design", "Automation"] },
+    { "name": "Engineering Practice", "keywords": ["Git", "Testing", "Debugging", "Documentation"] },
+    { "name": "Systems", "keywords": ["Linux", "Windows", "Networking", "Security-minded development"] }
+  ],
+  "projects": []
+}

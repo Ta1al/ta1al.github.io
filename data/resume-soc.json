@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Talal Ahmed",
+    "label": "SOC Analyst",
+    "email": "mail@ta1al.com",
+    "url": "https://ta1al.com",
+    "summary": "CompTIA Security+ certified Computer Science graduate with hands-on experience deploying and monitoring Wazuh, integrating pfSense and endpoint logs, investigating security alerts, and automating high-severity notifications. Skilled in alert triage, IOC analysis, incident documentation, Windows and Linux systems, TCP/IP networking, and network traffic analysis. Seeking an L1 SOC Analyst role where I can contribute to security monitoring, incident investigation, and continuous improvement of SOC operations.",
+    "profiles": [
+      { "network": "GitHub", "username": "ta1al", "url": "https://github.com/ta1al" },
+      { "network": "LinkedIn", "username": "ta1al", "url": "https://www.linkedin.com/in/ta1al/" }
+    ]
+  },
+  "work": [],
+  "education": [],
+  "certificates": [],
+  "skills": [
+    { "name": "Security Operations", "keywords": ["Alert triage", "Incident investigation", "IOC analysis", "Incident documentation"] },
+    { "name": "Detection & Monitoring", "keywords": ["Wazuh", "SIEM", "Log analysis", "Security automation"] },
+    { "name": "Systems & Networking", "keywords": ["Windows", "Linux", "pfSense", "TCP/IP", "Network traffic analysis"] }
+  ],
+  "projects": []
+}
