@@ -37,3 +37,26 @@
     }
   });
 })();
+
+(() => {
+  const filters = [...document.querySelectorAll('[data-project-filter]')];
+  const projects = [...document.querySelectorAll('[data-project-discipline]')];
+  const status = document.querySelector('.filter-status');
+  if (!filters.length || !projects.length) return;
+
+  filters.forEach((button) => button.addEventListener('click', () => {
+    const selected = button.dataset.projectFilter;
+    let visible = 0;
+    filters.forEach((item) => {
+      const active = item === button;
+      item.classList.toggle('is-active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
+    projects.forEach((project) => {
+      const show = selected === 'all' || project.dataset.projectDiscipline === selected;
+      project.hidden = !show;
+      if (show) visible += 1;
+    });
+    if (status) status.textContent = `${visible} project${visible === 1 ? '' : 's'} shown.`;
+  }));
+})();
