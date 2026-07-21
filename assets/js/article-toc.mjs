@@ -94,3 +94,65 @@ if (toc) {
   closeToc();
   setActiveSection();
 }
+
+const lightbox = document.querySelector('[data-article-lightbox]');
+
+if (lightbox) {
+  const lightboxImage = lightbox.querySelector('[data-lightbox-image]');
+  const caption = lightbox.querySelector('[data-lightbox-caption]');
+  const closeButton = lightbox.querySelector('[data-lightbox-close]');
+  const images = [...document.querySelectorAll('.article .prose img')];
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let activeImage;
+  let closeTimer;
+
+  const closeLightbox = () => {
+    if (!lightbox.open) return;
+    window.clearTimeout(closeTimer);
+    lightbox.classList.remove('is-open');
+    const finish = () => {
+      lightbox.close();
+      document.body.classList.remove('lightbox-open');
+      activeImage?.focus();
+    };
+    if (reducedMotion.matches) finish();
+    else closeTimer = window.setTimeout(finish, 200);
+  };
+
+  const openLightbox = (image) => {
+    window.clearTimeout(closeTimer);
+    activeImage = image;
+    lightboxImage.src = image.currentSrc || image.src;
+    lightboxImage.alt = image.alt;
+    caption.textContent = image.alt;
+    caption.hidden = !image.alt;
+    document.body.classList.add('lightbox-open');
+    lightbox.showModal();
+    requestAnimationFrame(() => lightbox.classList.add('is-open'));
+    closeButton?.focus();
+  };
+
+  images.forEach((image) => {
+    image.dataset.lightboxSource = '';
+    image.tabIndex = 0;
+    image.setAttribute('role', 'button');
+    image.setAttribute('aria-label', `Enlarge image: ${image.alt || 'article image'}`);
+    image.addEventListener('click', () => openLightbox(image));
+    image.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      openLightbox(image);
+    });
+  });
+
+  closeButton?.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (event) => {
+    const clickedImage = event.target === lightboxImage;
+    const clickedCloseButton = event.target.closest('[data-lightbox-close]');
+    if (!clickedImage && !clickedCloseButton) closeLightbox();
+  });
+  lightbox.addEventListener('cancel', (event) => {
+    event.preventDefault();
+    closeLightbox();
+  });
+}
