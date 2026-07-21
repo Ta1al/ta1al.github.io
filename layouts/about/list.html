@@ -45,10 +45,14 @@
       <p class="game-disclaimer">VALORANT is a trademark of Riot Games. This site is not affiliated with or sponsored by Riot Games.</p>
     </article>
 
-    <article class="about-card about-card--wide discord-card">
-      <div class="about-card__top"><span>Discord // Community</span><span class="status-dot">Public</span></div>
-      <div class="discord-card__body"><div><p class="discord-mark" aria-hidden="true">#</p><h2>✨House of Talal✨</h2><p>A small corner of Discord where I usually hang out.</p></div><a class="button" href="https://discord.com/invite/EqbAQHrB" target="_blank" rel="noreferrer">Join server</a></div>
+    <article class="about-card about-card--wide discord-card" data-discord-widget="https://discord.com/api/guilds/823790824646639617/widget.json">
+      <div class="about-card__top"><span>Discord // Community</span><span class="status-dot" data-discord-state>Checking</span></div>
+      <div class="discord-card__body"><div><p class="discord-mark" aria-hidden="true">#</p><h2 data-discord-name>✨House of Talal✨</h2><p>A small corner of Discord where I usually hang out. <span class="discord-presence" data-discord-presence aria-live="polite">Checking who’s around…</span></p></div><a class="button" data-discord-invite href="https://discord.com/invite/EqbAQHrB" target="_blank" rel="noreferrer">Join server</a></div>
     </article>
   </div>
 </section>
+{{ end }}
+
+{{ define "scripts" }}
+{{ with resources.Get "js/discord-status.mjs" | minify | fingerprint }}<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>{{ end }}
 {{ end }}

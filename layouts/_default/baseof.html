@@ -9,5 +9,6 @@
     {{ with resources.Get "js/site.js" | minify | fingerprint }}
       <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
     {{ end }}
+    {{ block "scripts" . }}{{ end }}
   </body>
 </html>
