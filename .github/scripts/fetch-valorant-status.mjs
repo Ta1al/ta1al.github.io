@@ -32,14 +32,20 @@ export function parseRankText(text, updatedAt = new Date().toISOString()) {
   };
 }
 
-export async function refreshRank({ endpoint = RANK_ENDPOINT, output = 'data/valorant.json' } = {}) {
-  const response = await fetch(endpoint, { signal: AbortSignal.timeout(10_000) });
-  if (!response.ok) throw new Error(`Valorant rank request failed with HTTP ${response.status}`);
-  const status = parseRankText(await response.text());
-  const target = resolve(output);
-  await mkdir(dirname(target), { recursive: true });
-  await writeFile(target, `${JSON.stringify(status, null, 2)}\n`, 'utf8');
-  return status;
+export async function refreshRank({ endpoint = RANK_ENDPOINT, output = 'data/valorant.json', fetcher = fetch, timeoutMs = 10_000 } = {}) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(new DOMException('Rank request timed out', 'TimeoutError')), timeoutMs);
+  try {
+    const response = await fetcher(endpoint, { signal: controller.signal });
+    if (!response.ok) throw new Error(`Valorant rank request failed with HTTP ${response.status}`);
+    const status = parseRankText(await response.text());
+    const target = resolve(output);
+    await mkdir(dirname(target), { recursive: true });
+    await writeFile(target, `${JSON.stringify(status, null, 2)}\n`, 'utf8');
+    return status;
+  } finally {
+    clearTimeout(timeout);
+  }
 }
 
 const isMain = process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href;

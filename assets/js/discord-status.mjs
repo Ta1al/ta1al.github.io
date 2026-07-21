@@ -17,9 +17,9 @@ export function validateDiscordWidget(payload) {
   return { name: payload.name, presenceCount: payload.presence_count, invite: invite.href };
 }
 
-export async function fetchDiscordWidget(endpoint, fetcher = fetch) {
+export async function fetchDiscordWidget(endpoint, fetcher = fetch, timeoutMs = 7000) {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 7000);
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
   try {
     const response = await fetcher(endpoint, { signal: controller.signal, credentials: 'omit' });
     if (!response.ok) throw new Error(`Discord widget request failed with HTTP ${response.status}`);

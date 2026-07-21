@@ -23,3 +23,10 @@ test('rejects failed responses and network failures', async () => {
   await assert.rejects(fetchDiscordWidget('test', async () => ({ ok: false, status: 503 })), /HTTP 503/);
   await assert.rejects(fetchDiscordWidget('test', async () => { throw new Error('network down'); }), /network down/);
 });
+
+test('times out stalled requests', async () => {
+  const stalled = (_url, { signal }) => new Promise((_, reject) => {
+    signal.addEventListener('abort', () => reject(new DOMException('Aborted', 'AbortError')));
+  });
+  await assert.rejects(fetchDiscordWidget('test', stalled, 1), { name: 'AbortError' });
+});

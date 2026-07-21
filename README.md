@@ -26,3 +26,5 @@ hugo --gc --minify
 ```
 
 Pushes to `hugo-main` deploy through GitHub Actions. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**.
+
+The deployment workflow validates the live-status integrations and refreshes the Valorant rank before each build. A scheduled run at 03:17 UTC refreshes and redeploys the rank daily; a failed or malformed rank response stops deployment so the last successful site remains online. Discord presence is progressively loaded in visitors' browsers from the public server widget.

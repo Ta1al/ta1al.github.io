@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { iconTierForRank, parseRankText } from './fetch-valorant-status.mjs';
+import { iconTierForRank, parseRankText, refreshRank } from './fetch-valorant-status.mjs';
 
 const timestamp = '2026-07-21T10:53:25.000Z';
 
@@ -24,4 +24,11 @@ test('maps current ranks and falls back for unknown ranks', () => {
 test('rejects malformed or incomplete responses', () => {
   assert.throws(() => parseRankText('Diamond 1 — 20 RR', timestamp), /Unexpected Valorant rank response/);
   assert.throws(() => parseRankText('', timestamp), /Unexpected Valorant rank response/);
+});
+
+test('times out stalled rank requests', async () => {
+  const stalled = (_url, { signal }) => new Promise((_, reject) => {
+    signal.addEventListener('abort', () => reject(signal.reason));
+  });
+  await assert.rejects(refreshRank({ endpoint: 'test', output: 'unused.json', fetcher: stalled, timeoutMs: 1 }), { name: 'TimeoutError' });
 });
