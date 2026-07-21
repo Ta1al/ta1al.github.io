@@ -44,6 +44,26 @@
       </div>
     </article>
 
+    <article class="about-card about-card--wide thm-card" data-thm-profile="https://tryhackme.com/api/v2/public-profile?username=ta1al">
+      <div class="about-card__top"><span>TryHackMe // ta1al</span><span class="status-dot" data-thm-state>Cached</span></div>
+      <div class="thm-card__body">
+        <div class="thm-mark" aria-hidden="true">THM</div>
+        <div class="thm-card__content">
+          <div><p class="player-handle">Offensive security // Training</p><h2>Hacking progress</h2></div>
+          <dl class="thm-stats">
+            <div><dt>Level</dt><dd data-thm-level>13</dd></div>
+            <div><dt>Badges</dt><dd data-thm-badges>40</dd></div>
+            <div><dt>Rooms</dt><dd data-thm-rooms>254</dd></div>
+            <div><dt>Streak</dt><dd><span data-thm-streak>371</span> days</dd></div>
+            <div><dt>Rank</dt><dd>#<span data-thm-rank>9,731</span></dd></div>
+            <div><dt>Top</dt><dd><span data-thm-top>1</span>%</dd></div>
+            <div><dt>Capability</dt><dd><span data-thm-capability>64.69</span> <small data-thm-pov>blue</small></dd></div>
+          </dl>
+          <a class="text-link" href="https://tryhackme.com/p/ta1al" target="_blank" rel="noreferrer">View profile <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </article>
+
     <article class="about-card about-card--wide discord-card" data-discord-widget="https://discord.com/api/guilds/823790824646639617/widget.json">
       <div class="about-card__top"><span>Discord // Community</span><span class="status-dot" data-discord-state>Checking</span></div>
       <div class="discord-card__body"><div><div class="discord-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.89 3l-.54 1.1a18.3 18.3 0 0 0-6.7 0L8.1 3a19.7 19.7 0 0 0-4.42 1.38C.88 8.52.12 12.55.5 16.52a19.9 19.9 0 0 0 5.42 2.75l1.33-1.8a12.8 12.8 0 0 1-2.1-1.02l.52-.4c4.05 1.88 8.45 1.88 12.45 0l.53.4c-.67.4-1.37.74-2.1 1.02l1.33 1.8a19.8 19.8 0 0 0 5.42-2.75c.46-4.6-.78-8.6-2.98-12.15ZM8.02 14.09c-1.22 0-2.22-1.13-2.22-2.52s.98-2.52 2.22-2.52c1.25 0 2.24 1.14 2.22 2.52 0 1.39-.98 2.52-2.22 2.52Zm7.96 0c-1.22 0-2.22-1.13-2.22-2.52s.98-2.52 2.22-2.52c1.25 0 2.24 1.14 2.22 2.52 0 1.39-.97 2.52-2.22 2.52Z"/></svg></div><h2 data-discord-name>✨House of Talal✨</h2><p>A small corner of Discord where I usually hang out. <span class="discord-presence" data-discord-presence aria-live="polite">Checking who’s around…</span></p></div><a class="button" data-discord-invite href="https://discord.com/invite/EqbAQHrB" target="_blank" rel="noreferrer">Join server</a></div>
@@ -54,4 +74,5 @@
 
 {{ define "scripts" }}
 {{ with resources.Get "js/discord-status.mjs" | minify | fingerprint }}<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>{{ end }}
+{{ with resources.Get "js/tryhackme-status.mjs" | minify | fingerprint }}<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>{{ end }}
 {{ end }}
