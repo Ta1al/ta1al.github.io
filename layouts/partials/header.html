@@ -1,5 +1,7 @@
-<header class="site-header">
+<header class="site-header{{ if .IsHome }} site-header--home{{ end }}">
+  {{ if not .IsHome }}
   <a class="site-mark" href="{{ site.Home.RelPermalink }}" aria-label="Talal Ahmed, home">TA<span aria-hidden="true">.</span></a>
+  {{ end }}
   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
     <span>Menu</span><span class="menu-toggle__lines" aria-hidden="true"></span>
   </button>
