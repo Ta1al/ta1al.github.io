@@ -7,9 +7,15 @@
     <h1>{{ $soc.basics.name }}</h1>
     <div class="cv-focus no-print">
       <p class="cv-focus__label">Choose focus</p>
-      <div class="cv-tabs" role="tablist" aria-label="Choose CV focus">
-        <button id="cv-tab-soc" type="button" role="tab" aria-selected="true" aria-controls="cv-panel-soc" data-cv-tab="soc">SOC Analyst</button>
-        <button id="cv-tab-software" type="button" role="tab" aria-selected="false" aria-controls="cv-panel-software" tabindex="-1" data-cv-tab="software">Software Engineer</button>
+      <div class="cv-focus__row">
+        <div class="cv-tabs" role="tablist" aria-label="Choose CV focus">
+          <button id="cv-tab-soc" type="button" role="tab" aria-selected="true" aria-controls="cv-panel-soc" data-cv-tab="soc">SOC Analyst</button>
+          <button id="cv-tab-software" type="button" role="tab" aria-selected="false" aria-controls="cv-panel-software" tabindex="-1" data-cv-tab="software">Software Engineer</button>
+        </div>
+        <div class="cv-downloads">
+          <a class="cv-download" href="{{ relURL $soc.basics.download }}" data-cv-download="soc" download>Download PDF <span aria-hidden="true">↓</span></a>
+          <a class="cv-download" href="{{ relURL $software.basics.download }}" data-cv-download="software" download hidden>Download PDF <span aria-hidden="true">↓</span></a>
+        </div>
       </div>
     </div>
   </header>

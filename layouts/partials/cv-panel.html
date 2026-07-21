@@ -1,6 +1,5 @@
 {{ $resume := .resume }}{{ $id := .id }}{{ $featuredCertificates := where $resume.certificates "featured" true }}
 <section id="cv-panel-{{ $id }}" class="cv-panel{{ if .active }} is-active{{ end }}" role="tabpanel" aria-labelledby="cv-tab-{{ $id }}" data-cv-panel="{{ $id }}"{{ if not .active }} tabindex="0"{{ end }}>
-  <div class="cv-panel__bar"><p class="cv-panel__label">{{ $resume.basics.label }}</p>{{ with $resume.basics.download }}<a class="cv-download no-print" href="{{ relURL . }}" download>Download PDF <span aria-hidden="true">↓</span></a>{{ end }}</div>
   {{ range first 1 $featuredCertificates }}{{ $certificateName := .name }}<article class="cv-featured-cert"><small>Featured credential</small><span class="cv-featured-cert__title"><strong>{{ $certificateName }}</strong>{{ with .url }}<a href="{{ . }}" aria-label="View {{ $certificateName }} credential">↗</a>{{ end }}</span>{{ with .summary }}<span>{{ . }}</span>{{ end }}</article>{{ end }}
   <div class="cv__grid">
     <aside class="cv__sidebar">

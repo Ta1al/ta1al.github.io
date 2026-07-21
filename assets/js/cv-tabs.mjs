@@ -4,6 +4,7 @@ const tabsRoot = document.querySelector('[data-cv-tabs]');
 if (tabList && tabsRoot) {
   const tabs = [...tabList.querySelectorAll('[data-cv-tab]')];
   const panels = [...tabsRoot.querySelectorAll('[data-cv-panel]')];
+  const downloads = [...document.querySelectorAll('[data-cv-download]')];
   const validIds = new Set(tabs.map((tab) => tab.dataset.cvTab));
 
   const activate = (id, { focus = false, updateHash = true } = {}) => {
@@ -19,6 +20,7 @@ if (tabList && tabsRoot) {
       panel.classList.toggle('is-active', active);
       panel.hidden = !active;
     });
+    downloads.forEach((download) => { download.hidden = download.dataset.cvDownload !== id; });
     if (updateHash) history.replaceState(null, '', `#cv-${id}`);
   };
 
