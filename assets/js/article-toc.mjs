@@ -122,7 +122,7 @@ if (lightbox) {
   const openLightbox = (image) => {
     window.clearTimeout(closeTimer);
     activeImage = image;
-    lightboxImage.src = image.currentSrc || image.src;
+    lightboxImage.src = image.dataset.lightboxSource || image.currentSrc || image.src;
     lightboxImage.alt = image.alt;
     caption.textContent = image.alt;
     caption.hidden = !image.alt;

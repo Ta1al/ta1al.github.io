@@ -1,0 +1,33 @@
+{{- $destination := .Destination -}}
+{{- $image := .Page.Resources.GetMatch $destination -}}
+{{- $processable := and $image (eq $image.MediaType.MainType "image") (in (slice "jpeg" "png") $image.MediaType.SubType) -}}
+{{- if $processable -}}
+  {{- $quality := "q85" -}}
+  {{- $inlineWidth := int (math.Min 800 $image.Width) -}}
+  {{- $lightboxWidth := int (math.Min 1920 $image.Width) -}}
+  {{- $inline := $image.Resize (printf "%dx webp %s" $inlineWidth $quality) -}}
+  {{- $lightbox := $image.Resize (printf "%dx webp %s" $lightboxWidth $quality) -}}
+  {{- $variants := slice -}}
+  {{- range slice 480 800 1200 -}}
+    {{- if le . $image.Width -}}
+      {{- $variant := $image.Resize (printf "%dx webp %s" . $quality) -}}
+      {{- $variants = append (printf "%s %dw" $variant.RelPermalink $variant.Width) $variants -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not (in (slice 480 800 1200) $image.Width) -}}
+    {{- $fullWidth := int (math.Min 1200 $image.Width) -}}
+    {{- $full := $image.Resize (printf "%dx webp %s" $fullWidth $quality) -}}
+    {{- $variants = append (printf "%s %dw" $full.RelPermalink $full.Width) $variants -}}
+  {{- end -}}
+  <img src="{{ $inline.RelPermalink }}"
+    srcset="{{ delimit $variants ", " }}"
+    sizes="(max-width: 46rem) calc(100vw - 2rem), (max-width: 80rem) calc(100vw - 6rem), 900px"
+    width="{{ $inline.Width }}"
+    height="{{ $inline.Height }}"
+    loading="lazy"
+    decoding="async"
+    alt="{{ .Text }}"
+    data-lightbox-source="{{ $lightbox.RelPermalink }}"{{ with .Title }} title="{{ . }}"{{ end }}>
+{{- else -}}
+  <img src="{{ $destination | safeURL }}" loading="lazy" decoding="async" alt="{{ .Text }}" data-lightbox-source="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>
+{{- end -}}
