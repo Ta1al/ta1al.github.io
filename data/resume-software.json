@@ -37,7 +37,14 @@
       ]
     }
   ],
-  "certificates": [],
+  "certificates": [
+    {
+      "name": "National Skills Competency Test",
+      "summary": "Rank 65 Nationwide | Top 0.2%",
+      "featured": true,
+      "url": "https://www.hec.gov.pk/english/scholarshipsgrants/Pages/Sites/NSCT-Students.aspx#:~:text=Muhammad%20Talal%20Ahmed,University%20of%20Sargodha"
+    }
+  ],
   "skills": [
     { "name": "Software Development", "keywords": ["Backend development", "Web development", "API design", "Automation"] },
     { "name": "Engineering Practice", "keywords": ["Git", "Testing", "Debugging", "Documentation"] },
