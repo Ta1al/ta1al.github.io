@@ -53,5 +53,32 @@
       ]
     }
   ],
-  "projects": []
+  "projects": [
+    {
+      "name": "pfSense Firewall Security Monitoring",
+      "startDate": "2026-02-01",
+      "highlights": [
+        "Configured pfSense firewall rules and network segmentation policies",
+        "Integrated firewall logs into Wazuh using rsyslog for centralized monitoring",
+        "Analyzed blocked traffic and intrusion attempts via SIEM dashboard"
+      ]
+    },
+    {
+      "name": "Alert Automation with Wazuh and n8n",
+      "startDate": "2026-01-01",
+      "highlights": [
+        "Built automated SOC alerting pipeline using Wazuh, Python, n8n, and Discord API",
+        "Enabled real-time forwarding of high-severity security alerts for faster response"
+      ]
+    },
+    {
+      "name": "Attack Chain Analysis | TryHackMe SOC L1 Capstone",
+      "startDate": "2025-07-01",
+      "highlights": [
+        "Investigated full attack chain using ELK, Kibana, and Wireshark",
+        "Analyzed PowerShell, macros, and LNK-based attack artifacts",
+        "Reconstructed attacker lifecycle including lateral movement and persistence"
+      ]
+    }
+  ]
 }
