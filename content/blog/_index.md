@@ -1,6 +1,6 @@
 +++
 title = 'Blog'
-description = 'Notes on security operations, threat detection, incident response, and software engineering.'
+description = 'Thoughts on security, development, and technology.'
 +++
 
-Field notes on defensive security and building dependable software.
+Thoughts on security, development, and technology.
