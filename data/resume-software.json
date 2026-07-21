@@ -60,6 +60,7 @@
     {
       "name": "AI-Driven SRS Generator (FYP)",
       "featured": true,
+      "url": "https://github.com/Ta1al/automated-SRS-generator",
       "keywords": ["Python", "FastAPI", "LangGraph", "Next.js", "PostgreSQL", "ChromaDB"],
       "highlights": [
         "Built a full-stack AI-powered platform that generates IEEE 830-compliant SRS documents.",
@@ -69,6 +70,7 @@
     },
     {
       "name": "ML for Malware Detection",
+      "url": "https://github.com/Ta1al/ml-for-malware-detection",
       "keywords": ["Python", "Scikit-learn", "Malware Detection"],
       "highlights": [
         "Built a Python ML project for polymorphic malware detection.",
@@ -78,6 +80,7 @@
     },
     {
       "name": "Timetable Parser",
+      "url": "https://github.com/Ta1al/timetable-parser",
       "keywords": ["Python", "PDF Processing", "Data Extraction"],
       "highlights": [
         "Developed a Python-based PDF parsing pipeline to extract timetable data from unstructured university documents.",
@@ -87,6 +90,7 @@
     },
     {
       "name": "Department Website",
+      "url": "https://github.com/Ta1al/cs-dept-website",
       "keywords": ["Astro", "TypeScript", "JavaScript"],
       "highlights": [
         "Developed the official department website with Astro.",
