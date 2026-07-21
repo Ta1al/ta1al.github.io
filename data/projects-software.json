@@ -4,7 +4,7 @@
     "description": "A modern, responsive website for a university department. Built with Astro for fast performance and easy content management.",
     "tags": ["Astro", "Node.js", "Tailwind CSS"],
     "url": "https://github.com/Ta1al/cs-dept-website",
-    "featured": true
+    "featured": false
   },
   {
     "title": "Automated SRS Generator",
@@ -18,7 +18,7 @@
     "description": "An advanced counting bot which can manage a counting channel in your Discord server.",
     "tags": ["Discord.js", "Node.js", "TypeScript", "MongoDB"],
     "url": "https://github.com/countr/countr",
-    "featured": true
+    "featured": false
   },
   {
     "title": "Tickets",
