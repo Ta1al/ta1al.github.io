@@ -15,7 +15,11 @@
 
   {{ if .Pages }}
   <div class="project-grid">
-    {{ range .Pages.ByDate.Reverse }}
+    {{ $pages := .Pages.ByTitle }}
+    {{ range where $pages "Params.featured" true }}
+      {{ partial "project-card.html" . }}
+    {{ end }}
+    {{ range where $pages "Params.featured" false }}
       {{ partial "project-card.html" . }}
     {{ end }}
   </div>

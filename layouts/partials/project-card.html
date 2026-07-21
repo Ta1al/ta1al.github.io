@@ -1,5 +1,5 @@
-<article class="project-card" data-project-discipline="{{ .Params.discipline | default "software" }}">
-  <div class="project-card__meta"><span>{{ .Params.discipline | default "Project" | humanize }}</span><span>{{ .Date.Format "2006" }}</span></div>
+<article class="project-card{{ if .Params.featured }} project-card--featured{{ end }}" data-project-discipline="{{ .Params.discipline | default "software" }}">
+  <div class="project-card__meta"><span>{{ .Params.discipline | default "Project" | humanize }}</span><span>{{ if .Params.featured }}Featured{{ else }}{{ .Date.Format "2006" }}{{ end }}</span></div>
   <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   <p>{{ .Description | default .Summary }}</p>
   {{ with .Params.technologies }}<ul class="tag-list" aria-label="Technologies">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
