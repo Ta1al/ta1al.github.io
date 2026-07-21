@@ -7,17 +7,51 @@
     "url": "https://ta1al.com",
     "summary": "CompTIA Security+ certified Computer Science graduate with hands-on experience deploying and monitoring Wazuh, integrating pfSense and endpoint logs, investigating security alerts, and automating high-severity notifications. Skilled in alert triage, IOC analysis, incident documentation, Windows and Linux systems, TCP/IP networking, and network traffic analysis. Seeking an L1 SOC Analyst role where I can contribute to security monitoring, incident investigation, and continuous improvement of SOC operations.",
     "profiles": [
-      { "network": "GitHub", "username": "ta1al", "url": "https://github.com/ta1al" },
-      { "network": "LinkedIn", "username": "ta1al", "url": "https://www.linkedin.com/in/ta1al/" }
+      {
+        "network": "GitHub",
+        "username": "ta1al",
+        "url": "https://github.com/ta1al"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "ta1al",
+        "url": "https://www.linkedin.com/in/ta1al/"
+      }
     ]
   },
   "work": [],
   "education": [],
   "certificates": [],
   "skills": [
-    { "name": "Security Operations", "keywords": ["Alert triage", "Incident investigation", "IOC analysis", "Incident documentation"] },
-    { "name": "Detection & Monitoring", "keywords": ["Wazuh", "SIEM", "Log analysis", "Security automation"] },
-    { "name": "Systems & Networking", "keywords": ["Windows", "Linux", "pfSense", "TCP/IP", "Network traffic analysis"] }
+    {
+      "name": "Security Operations",
+      "keywords": [
+        "SIEM: Wazuh, ELK Stack, Splunk",
+        "Security Monitoring and Alert Triage",
+        "Log Analysis and Event Correlation",
+        "IOC Analysis and Threat Intelligence",
+        "Incident Documentation and Reporting"
+      ]
+    },
+    {
+      "name": "Systems and Network Security",
+      "keywords": [
+        "Windows and Linux",
+        "TCP/IP, VLANs and Network Segmentation",
+        "pfSense Firewall Configuration",
+        "Wireshark and Network Traffic Analysis",
+        "IDS/IPS Concepts and Implementation"
+      ]
+    },
+    {
+      "name": "Programming & Scripting",
+      "keywords": [
+        "Python (automation, alerting scripts)",
+        "JavaScript / TypeScript",
+        "Bash / PowerShell scripting",
+        "C++"
+      ]
+    }
   ],
   "projects": []
 }
