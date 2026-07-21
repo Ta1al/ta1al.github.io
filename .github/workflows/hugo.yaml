@@ -2,7 +2,7 @@ name: Build and deploy Hugo site
 
 on:
   push:
-    branches: [hugo-main]
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: '17 3 * * *'
@@ -42,7 +42,13 @@ jobs:
         run: node --test .github/scripts/*.test.mjs
 
       - name: Refresh Valorant rank
+        id: valorant-rank
+        continue-on-error: true
         run: node .github/scripts/fetch-valorant-status.mjs
+
+      - name: Report cached Valorant rank fallback
+        if: steps.valorant-rank.outcome == 'failure'
+        run: echo "::warning::Valorant rank refresh failed; deploying with the committed cached rank data."
 
       - name: Install Hugo Extended
         run: |
