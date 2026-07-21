@@ -1,0 +1,11 @@
+# Hugo build output and generated resources
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Local tooling and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
