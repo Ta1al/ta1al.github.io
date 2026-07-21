@@ -41,9 +41,12 @@
     trackingSwipe = false;
     const deltaX = event.changedTouches[0].clientX - touchStartX;
     const deltaY = event.changedTouches[0].clientY - touchStartY;
-    if (deltaX < -56 && Math.abs(deltaX) > Math.abs(deltaY) * 1.35) {
+    const isHorizontalSwipe = Math.abs(deltaX) > 56 && Math.abs(deltaX) > Math.abs(deltaY) * 1.35;
+    if (isHorizontalSwipe) {
+      const menuIsOpen = button.getAttribute('aria-expanded') === 'true';
+      if (!menuIsOpen && deltaX > 0) return;
       event.preventDefault();
-      button.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu();
+      menuIsOpen ? closeMenu() : openMenu();
     }
   }, { passive: false });
   document.addEventListener('touchcancel', () => { trackingSwipe = false; }, { passive: true });
