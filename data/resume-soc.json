@@ -19,9 +19,90 @@
       }
     ]
   },
-  "work": [],
-  "education": [],
-  "certificates": [],
+  "work": [
+    {
+      "name": "ITSOLERA PVT LTD",
+      "position": "SOC Analyst Intern",
+      "startDate": "2026-01-01",
+      "endDate": "2026-04-01",
+      "highlights": [
+        "Deployed and configured Wazuh SIEM with pfSense and endpoint log integration for centralized security monitoring.",
+        "Reviewed firewall and endpoint alerts, analyzed supporting logs, and investigated suspicious activity.",
+        "Built a Python and n8n workflow to forward high-severity security alerts for faster review.",
+        "Documented deployment procedures, investigation findings, and recommended security improvements."
+      ]
+    },
+    {
+      "name": "Jauharabad Sugar Mills Pvt Ltd",
+      "position": "IT Intern",
+      "startDate": "2025-07-01",
+      "endDate": "2025-09-01",
+      "highlights": [
+        "Assisted with deployment and maintenance of enterprise network infrastructure.",
+        "Supported OLT configuration and CCTV network deployment.",
+        "Assisted in troubleshooting Windows systems, network connectivity, and hardware issues for end users.",
+        "Worked alongside senior IT staff on VLAN configuration, routing, and access control.",
+        "Participated in monitoring and maintaining production network infrastructure."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Sargodha University",
+      "area": "Computer Science",
+      "studyType": "BS",
+      "startDate": "2022-01-01",
+      "endDate": "2026-01-01",
+      "score": "3.8 CGPA (Bronze Medal)",
+      "courses": [
+        "Network Security",
+        "Information Security",
+        "Artificial Intelligence"
+      ],
+      "highlights": [
+        "President - Programming Society",
+        "Managed university CTF team"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Programming Society",
+      "position": "President",
+      "location": "Sargodha University",
+      "startDate": "2025-02-01",
+      "endDate": "2026-06-01",
+      "highlights": [
+        "Lead a team to organize workshops, competitions, and collaborative projects for students across all semesters",
+        "Mentored junior members and coordinated with faculty to align events with academic and career development goals"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "CompTIA Security+",
+      "date": "2026-07-01",
+      "summary": "Passed July 2026",
+      "url": "https://www.credly.com/badges/82684309-dcf3-4c20-8369-5e20e1ccab49"
+    },
+    {
+      "name": "TryHackMe SOC Analyst L1",
+      "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-M4ZQHRNWOY.pdf"
+    },
+    {
+      "name": "National Skills Competency Test",
+      "summary": "Rank 65 Nationwide | Top 0.2%",
+      "url": "https://www.hec.gov.pk/english/scholarshipsgrants/Pages/Sites/NSCT-Students.aspx#:~:text=Muhammad%20Talal%20Ahmed,University%20of%20Sargodha"
+    },
+    {
+      "name": "Google Cybersecurity Professional",
+      "url": "https://coursera.org/share/3349be5371aeba4a6d5fc8b498740d9e"
+    },
+    {
+      "name": "IBM Cybersecurity Essentials",
+      "url": "https://coursera.org/share/38b7bb5f6eed4977b835ddd51c521902"
+    }
+  ],
   "skills": [
     {
       "name": "Security Operations",

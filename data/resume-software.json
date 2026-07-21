@@ -12,7 +12,31 @@
     ]
   },
   "work": [],
-  "education": [],
+  "education": [
+    {
+      "institution": "Sargodha University",
+      "area": "Computer Science",
+      "studyType": "BS",
+      "startDate": "2022-01-01",
+      "endDate": "2026-01-01",
+      "score": "3.8 CGPA (Bronze Medal)",
+      "courses": ["Network Security", "Information Security", "Artificial Intelligence"],
+      "highlights": ["President - Programming Society", "Managed university CTF team"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Programming Society",
+      "position": "President",
+      "location": "Sargodha University",
+      "startDate": "2025-02-01",
+      "endDate": "2026-06-01",
+      "highlights": [
+        "Lead a team to organize workshops, competitions, and collaborative projects for students across all semesters",
+        "Mentored junior members and coordinated with faculty to align events with academic and career development goals"
+      ]
+    }
+  ],
   "certificates": [],
   "skills": [
     { "name": "Software Development", "keywords": ["Backend development", "Web development", "API design", "Automation"] },
