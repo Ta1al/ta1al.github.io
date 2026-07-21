@@ -2,7 +2,6 @@ baseURL = 'https://ta1al.github.io/'
 locale = 'en-US'
 title = 'Talal Ahmed'
 enableRobotsTXT = true
-enableGitInfo = true
 
 [params]
   description = 'Portfolio of Talal Ahmed, a SOC Analyst and Software Engineer.'

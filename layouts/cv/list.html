@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ $resume := hugo.Data.resume }}
+<article class="cv shell">
+  <header class="page-heading cv__heading">
+    <p class="eyebrow">Curriculum Vitae // JSON Resume</p>
+    <h1>{{ $resume.basics.name }}</h1>
+    <p class="lede">{{ $resume.basics.label }}</p>
+    <div class="cv__actions no-print">
+      <a class="button" href="mailto:{{ $resume.basics.email }}">Contact me</a>
+      <button class="button button--secondary" type="button" onclick="window.print()">Print / Save PDF</button>
+    </div>
+  </header>
+
+  <div class="cv__grid">
+    <aside class="cv__sidebar">
+      <section aria-labelledby="cv-contact"><h2 id="cv-contact">Contact</h2><ul class="plain-list"><li><a href="mailto:{{ $resume.basics.email }}">{{ $resume.basics.email }}</a></li><li><a href="{{ $resume.basics.url }}">{{ strings.TrimPrefix "https://" $resume.basics.url }}</a></li>{{ range $resume.basics.profiles }}<li><a href="{{ .url }}">{{ .network }} / {{ .username }}</a></li>{{ end }}</ul></section>
+      {{ with $resume.skills }}<section aria-labelledby="cv-skills"><h2 id="cv-skills">Skills</h2>{{ range . }}<div class="skill-group"><h3>{{ .name }}</h3><ul class="tag-list">{{ range .keywords }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}</section>{{ end }}
+    </aside>
+    <div class="cv__main">
+      <section aria-labelledby="cv-profile"><h2 id="cv-profile">Profile</h2><p>{{ $resume.basics.summary }}</p></section>
+      {{ with $resume.work }}<section aria-labelledby="cv-experience"><h2 id="cv-experience">Experience</h2>{{ range . }}<article class="timeline-item"><header><h3>{{ .position }} — {{ .name }}</h3><p>{{ .startDate }}{{ with .endDate }}–{{ . }}{{ end }}</p></header><p>{{ .summary }}</p>{{ with .highlights }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}</article>{{ end }}</section>{{ end }}
+      {{ with $resume.projects }}<section aria-labelledby="cv-projects"><h2 id="cv-projects">Selected projects</h2>{{ range . }}<article class="timeline-item"><h3>{{ .name }}</h3><p>{{ .description }}</p>{{ with .highlights }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}</article>{{ end }}</section>{{ end }}
+      {{ with $resume.certificates }}<section aria-labelledby="cv-certificates"><h2 id="cv-certificates">Certifications</h2>{{ range . }}<article class="timeline-item"><h3>{{ .name }}</h3><p>{{ .issuer }} · {{ .date }}</p></article>{{ end }}</section>{{ end }}
+      {{ with $resume.education }}<section aria-labelledby="cv-education"><h2 id="cv-education">Education</h2>{{ range . }}<article class="timeline-item"><h3>{{ .studyType }}{{ with .area }} in {{ . }}{{ end }}</h3><p>{{ .institution }} · {{ .startDate }}–{{ .endDate }}</p></article>{{ end }}</section>{{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}
