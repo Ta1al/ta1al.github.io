@@ -1,3 +1,39 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://ta1al.github.io/'
+locale = 'en-US'
+title = 'Talal Ahmed'
+enableRobotsTXT = true
+enableGitInfo = true
+
+[params]
+  description = 'Portfolio of Talal Ahmed, a SOC Analyst and Software Engineer.'
+  author = 'Talal Ahmed'
+
+[[params.socials]]
+  name = 'GitHub'
+  url = 'https://github.com/ta1al'
+  icon = 'github'
+
+[[params.socials]]
+  name = 'LinkedIn'
+  url = 'https://www.linkedin.com/in/ta1al/'
+  icon = 'linkedin'
+
+[[params.socials]]
+  name = 'Email'
+  url = 'mailto:mail@ta1al.com'
+  icon = 'email'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  series = 'series'
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = false
+
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']

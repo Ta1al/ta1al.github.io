@@ -1,0 +1,14 @@
+<header class="site-header">
+  <a class="site-mark" href="{{ site.Home.RelPermalink }}" aria-label="Talal Ahmed, home">TA<span aria-hidden="true">.</span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+    <span>Menu</span><span class="menu-toggle__lines" aria-hidden="true"></span>
+  </button>
+  <div class="menu" id="site-menu" hidden>
+    <nav aria-label="Primary navigation">
+      <a href="{{ site.Home.RelPermalink }}">Home</a>
+      <a href="{{ relURL "cv/" }}">CV</a>
+      <a href="{{ relURL "projects/" }}">Projects</a>
+      <a href="{{ relURL "blog/" }}">Blog</a>
+    </nav>
+  </div>
+</header>

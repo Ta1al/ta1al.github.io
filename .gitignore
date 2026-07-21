@@ -2,10 +2,10 @@
 /public/
 /resources/_gen/
 .hugo_build.lock
+/.hugo_cache/
 
 # Local tooling and operating-system files
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
-
