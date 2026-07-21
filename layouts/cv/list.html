@@ -5,9 +5,12 @@
   <header class="page-heading cv__heading">
     <p class="eyebrow">Curriculum Vitae // Resume</p>
     <h1>{{ $soc.basics.name }}</h1>
-    <div class="cv-tabs no-print" role="tablist" aria-label="Choose CV focus">
-      <button id="cv-tab-soc" type="button" role="tab" aria-selected="true" aria-controls="cv-panel-soc" data-cv-tab="soc">SOC Analyst</button>
-      <button id="cv-tab-software" type="button" role="tab" aria-selected="false" aria-controls="cv-panel-software" tabindex="-1" data-cv-tab="software">Software Engineer</button>
+    <div class="cv-focus no-print">
+      <p class="cv-focus__label">Choose focus</p>
+      <div class="cv-tabs" role="tablist" aria-label="Choose CV focus">
+        <button id="cv-tab-soc" type="button" role="tab" aria-selected="true" aria-controls="cv-panel-soc" data-cv-tab="soc">SOC Analyst</button>
+        <button id="cv-tab-software" type="button" role="tab" aria-selected="false" aria-controls="cv-panel-software" tabindex="-1" data-cv-tab="software">Software Engineer</button>
+      </div>
     </div>
     <div class="cv__actions no-print">
       <a class="button" href="mailto:{{ $soc.basics.email }}">Contact me</a>
