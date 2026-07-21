@@ -44,8 +44,8 @@
       </div>
     </article>
 
-    <article class="about-card about-card--wide thm-card" data-thm-profile="https://tryhackme.com/api/v2/public-profile?username=ta1al">
-      <div class="about-card__top"><span>TryHackMe // ta1al</span><span class="status-dot" data-thm-state>Cached</span></div>
+    <article class="about-card about-card--wide thm-card">
+      <div class="about-card__top"><span>TryHackMe // ta1al</span><span class="status-dot is-cached">Snapshot</span></div>
       <div class="thm-card__body">
         <div class="thm-mark" aria-hidden="true">THM</div>
         <div class="thm-card__content">
@@ -74,5 +74,4 @@
 
 {{ define "scripts" }}
 {{ with resources.Get "js/discord-status.mjs" | minify | fingerprint }}<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>{{ end }}
-{{ with resources.Get "js/tryhackme-status.mjs" | minify | fingerprint }}<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>{{ end }}
 {{ end }}
