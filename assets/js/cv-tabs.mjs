@@ -42,6 +42,20 @@ if (tabList && tabsRoot) {
     });
   });
 
+  const feedbackTimers = new WeakMap();
+  downloads.forEach((download) => {
+    download.addEventListener('click', () => {
+      window.clearTimeout(feedbackTimers.get(download));
+      download.classList.remove('is-downloading');
+      void download.offsetWidth;
+      download.classList.add('is-downloading');
+      feedbackTimers.set(download, window.setTimeout(() => {
+        download.classList.remove('is-downloading');
+        feedbackTimers.delete(download);
+      }, 750));
+    });
+  });
+
   window.addEventListener('hashchange', () => {
     const id = location.hash.replace('#cv-', '');
     if (validIds.has(id)) activate(id, { updateHash: false });
