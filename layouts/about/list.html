@@ -42,7 +42,6 @@
         <img class="rank-icon" src="{{ printf "images/ranks/%d.png" (int $valorant.iconTier) | relURL }}" width="160" height="160" alt="{{ $valorant.rank }} competitive rank icon">
         <div><p class="player-handle">{{ $valorant.accountName }}<span>#{{ $valorant.tag }}</span></p><h2>{{ $valorant.rank }}</h2><div class="rank-stats"><span><b>{{ $valorant.rr }}</b> RR</span><span><b{{ if lt $valorant.lastMatchRr 0 }} class="is-negative"{{ else if gt $valorant.lastMatchRr 0 }} class="is-positive"{{ end }}>{{ if gt $valorant.lastMatchRr 0 }}+{{ end }}{{ $valorant.lastMatchRr }}</b> last match</span><span><b>{{ $valorant.shields }}</b> {{ cond (eq $valorant.shields 1) "shield" "shields" }}</span></div><p class="rank-updated">Updated <time datetime="{{ $valorant.updatedAt }}">{{ time.Format "02 Jan 2006, 15:04 MST" (time.AsTime $valorant.updatedAt) }}</time></p></div>
       </div>
-      <p class="game-disclaimer">VALORANT is a trademark of Riot Games. This site is not affiliated with or sponsored by Riot Games.</p>
     </article>
 
     <article class="about-card about-card--wide discord-card" data-discord-widget="https://discord.com/api/guilds/823790824646639617/widget.json">
