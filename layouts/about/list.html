@@ -1,0 +1,52 @@
+{{ define "main" }}
+<section class="shell about" aria-labelledby="about-title">
+  <header class="page-heading about__heading">
+    <p class="eyebrow">Player profile // Offline lore</p>
+    <h1 id="about-title">More than alerts and commits.</h1>
+    <p class="lede">I’m Talal. When I’m not investigating security alerts or building software, I’m usually chasing flags, coding something unnecessary, playing games, or being distracted by a cat.</p>
+  </header>
+
+  <div class="about-grid">
+    <article class="about-card about-card--ctf">
+      <div class="about-card__top"><span>01</span><span class="status-dot">Active</span></div>
+      <p class="about-card__glyph" aria-hidden="true">{⚑}</p>
+      <h2>CTF mode</h2>
+      <p>I play capture-the-flag challenges to break things safely, sharpen security instincts, and learn the odd technique that only makes sense at 2 AM.</p>
+    </article>
+
+    <article class="about-card about-card--code">
+      <div class="about-card__top"><span>02</span><span>Side quests</span></div>
+      <p class="about-card__glyph" aria-hidden="true">&lt;/&gt;</p>
+      <h2>Random code</h2>
+      <p>I build small tools, experiments, and whatever idea refuses to leave my head. Some become projects; others become very educational folders.</p>
+    </article>
+
+    <article class="about-card about-card--cats">
+      <div class="about-card__top"><span>03</span><span>Critical priority</span></div>
+      <p class="cat-face" aria-hidden="true"><span>/\_/\\</span><span>( o.o )</span><span>&gt; ^ &lt;</span></p>
+      <h2>Cats</h2>
+      <p>I like cats. This is important operational context.</p>
+    </article>
+
+    <article class="about-card about-card--gaming">
+      <div class="about-card__top"><span>04</span><span>Queueing…</span></div>
+      <p class="about-card__glyph" aria-hidden="true">[+]</p>
+      <h2>Games</h2>
+      <p>Gaming is where I unwind, compete, and occasionally develop very strong opinions about matchmaking.</p>
+    </article>
+
+    <article class="about-card about-card--wide valorant-card">
+      <div class="about-card__top"><span>Valorant // EU</span><span>Competitive</span></div>
+      <div class="valorant-card__body">
+        <div class="rank-placeholder" aria-hidden="true">D1</div>
+        <div><p class="player-handle">PerryThePlatypus<span>#257</span></p><h2>Diamond 1</h2><div class="rank-stats"><span><b>0</b> RR</span><span><b class="is-negative">−18</b> last match</span><span><b>2</b> shields</span></div></div>
+      </div>
+    </article>
+
+    <article class="about-card about-card--wide discord-card">
+      <div class="about-card__top"><span>Discord // Community</span><span class="status-dot">Public</span></div>
+      <div class="discord-card__body"><div><p class="discord-mark" aria-hidden="true">#</p><h2>✨House of Talal✨</h2><p>A small corner of Discord where I usually hang out.</p></div><a class="button" href="https://discord.com/invite/EqbAQHrB" target="_blank" rel="noreferrer">Join server</a></div>
+    </article>
+  </div>
+</section>
+{{ end }}
