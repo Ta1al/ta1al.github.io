@@ -42,14 +42,56 @@
     {
       "name": "National Skills Competency Test",
       "summary": "Rank 65 Nationwide | Top 0.2%",
-      "featured": true,
       "url": "https://www.hec.gov.pk/english/scholarshipsgrants/Pages/Sites/NSCT-Students.aspx#:~:text=Muhammad%20Talal%20Ahmed,University%20of%20Sargodha"
+    },
+    {
+      "name": "Python for Everybody Specialization",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/8XDCBFFKQHL6"
     }
   ],
   "skills": [
-    { "name": "Software Development", "keywords": ["Backend development", "Web development", "API design", "Automation"] },
-    { "name": "Engineering Practice", "keywords": ["Git", "Testing", "Debugging", "Documentation"] },
-    { "name": "Systems", "keywords": ["Linux", "Windows", "Networking", "Security-minded development"] }
+    { "name": "Languages", "keywords": ["Python", "JavaScript/TypeScript", "SQL", "C++"] },
+    { "name": "Frameworks", "keywords": ["FastAPI", "React", "Next.js", "Node.js"] },
+    { "name": "Databases", "keywords": ["PostgreSQL", "MongoDB"] },
+    { "name": "Tools", "keywords": ["Git", "GitHub", "Docker", "Linux"] },
+    { "name": "Concepts", "keywords": ["OOP", "REST APIs", "MVC", "Data Structures"] }
   ],
-  "projects": []
+  "projects": [
+    {
+      "name": "AI-Driven SRS Generator (FYP)",
+      "featured": true,
+      "keywords": ["Python", "FastAPI", "LangGraph", "Next.js", "PostgreSQL", "ChromaDB"],
+      "highlights": [
+        "Built a full-stack AI-powered platform that generates IEEE 830-compliant SRS documents.",
+        "Developed a multi-agent workflow with PostgreSQL-backed state management.",
+        "Integrated RAG, document export, and human-in-the-loop requirement elicitation."
+      ]
+    },
+    {
+      "name": "ML for Malware Detection",
+      "keywords": ["Python", "Scikit-learn", "Malware Detection"],
+      "highlights": [
+        "Built a Python ML project for polymorphic malware detection.",
+        "Used machine learning techniques for security-focused binary classification.",
+        "Applied Python, data analysis, and predictive modeling to cybersecurity."
+      ]
+    },
+    {
+      "name": "Timetable Parser",
+      "keywords": ["Python", "PDF Processing", "Data Extraction"],
+      "highlights": [
+        "Developed a Python-based PDF parsing pipeline to extract timetable data from unstructured university documents.",
+        "Transformed semi-structured PDF content into normalized JSON output for downstream automation and integration.",
+        "Implemented document processing logic to handle data extraction, parsing, and structured serialization in Python."
+      ]
+    },
+    {
+      "name": "Department Website",
+      "keywords": ["Astro", "TypeScript", "JavaScript"],
+      "highlights": [
+        "Developed the official department website with Astro.",
+        "Designed reusable components and optimized performance for fast page loads."
+      ]
+    }
+  ]
 }
