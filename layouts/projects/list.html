@@ -16,14 +16,26 @@
 
   {{ if or .Pages $softwareProjects }}
   <div class="project-grid">
+    {{ $pages := .Pages.ByTitle }}
+    {{ $featuredPages := where $pages "Params.featured" true }}
+    {{ $regularPages := where $pages "Params.featured" false }}
+    {{ range where $featuredPages "Params.discipline" "cybersecurity" }}
+      {{ partial "project-card.html" . }}
+    {{ end }}
+    {{ range where $featuredPages "Params.discipline" "ne" "cybersecurity" }}
+      {{ partial "project-card.html" . }}
+    {{ end }}
     {{ range where $softwareProjects "featured" true }}
       {{ partial "project-card-data.html" . }}
     {{ end }}
+    {{ range where $regularPages "Params.discipline" "cybersecurity" }}
+      {{ partial "project-card.html" . }}
+    {{ end }}
+    {{ range where $regularPages "Params.discipline" "ne" "cybersecurity" }}
+      {{ partial "project-card.html" . }}
+    {{ end }}
     {{ range where $softwareProjects "featured" false }}
       {{ partial "project-card-data.html" . }}
-    {{ end }}
-    {{ range .Pages.ByDate.Reverse }}
-      {{ partial "project-card.html" . }}
     {{ end }}
   </div>
   {{ else }}
