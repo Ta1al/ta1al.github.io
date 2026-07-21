@@ -37,7 +37,7 @@ async function enhanceDiscordCard(card) {
     card.querySelector('[data-discord-name]').textContent = widget.name;
     card.querySelector('[data-discord-invite]').href = widget.invite;
     presence.textContent = `${widget.presenceCount} ${widget.presenceCount === 1 ? 'person' : 'people'} online now.`;
-    state.textContent = 'Live';
+    state.textContent = 'Join the conversation';
     state.classList.add('is-live');
   } catch {
     presence.textContent = 'Live presence is unavailable — the server is still open.';
