@@ -25,6 +25,29 @@
 
   button.addEventListener('click', () => button.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu());
   menu.addEventListener('click', (event) => { if (event.target === menu) closeMenu(); });
+
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let trackingSwipe = false;
+  const mobileViewport = window.matchMedia('(max-width: 35rem)');
+  document.addEventListener('touchstart', (event) => {
+    trackingSwipe = mobileViewport.matches && event.touches.length === 1;
+    if (!trackingSwipe) return;
+    touchStartX = event.touches[0].clientX;
+    touchStartY = event.touches[0].clientY;
+  }, { passive: true });
+  document.addEventListener('touchend', (event) => {
+    if (!trackingSwipe || event.changedTouches.length !== 1) return;
+    trackingSwipe = false;
+    const deltaX = event.changedTouches[0].clientX - touchStartX;
+    const deltaY = event.changedTouches[0].clientY - touchStartY;
+    if (deltaX < -56 && Math.abs(deltaX) > Math.abs(deltaY) * 1.35) {
+      event.preventDefault();
+      button.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu();
+    }
+  }, { passive: false });
+  document.addEventListener('touchcancel', () => { trackingSwipe = false; }, { passive: true });
+
   document.addEventListener('keydown', (event) => {
     if (button.getAttribute('aria-expanded') !== 'true') return;
     if (event.key === 'Escape') closeMenu();
