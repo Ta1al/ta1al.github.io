@@ -1,0 +1,146 @@
+{{ define "main" }}
+{{ $personal := index hugo.Data "personal-achievements" }}
+{{ $credly := (index hugo.Data "credly-badges").data }}
+{{ $coursePages := index hugo.Data "coursera-courses" }}
+{{ $specializationPages := index hugo.Data "coursera-specializations" }}
+{{ $courses := (index $coursePages 0).data.Certificate.getMyCertificatesPaginated.elements }}
+{{ $specializations := (index $specializationPages 0).data.Certificate.getMyCertificatesPaginated.elements }}
+{{ $thmBadges := (index hugo.Data "tryhackme-badges").data.docs }}
+{{ $thmCerts := (index hugo.Data "tryhackme-certs").data.docs }}
+{{ $certTitles := dict "loveatfirstbreach" "Love at First Breach" "pathway-soclevel1legacy" "SOC Level 1 (Legacy)" "HackfinityBattle" "Hackfinity Battle" }}
+
+<section class="shell achievements" aria-labelledby="achievements-title" data-achievement-tabs>
+  <header class="page-heading achievements__heading">
+    <p class="eyebrow">Proof of progress // Earned</p>
+    <h1 id="achievements-title">Achievements</h1>
+    <p class="lede">Academic distinctions, professional credentials, structured learning, and hands-on cybersecurity milestones.</p>
+  </header>
+
+  <div class="achievement-tabs" role="tablist" aria-label="Achievement categories">
+    <button id="achievement-tab-personal" type="button" role="tab" aria-selected="true" aria-controls="achievement-panel-personal" data-achievement-tab="personal">Personal <span>{{ len $personal }}</span></button>
+    <button id="achievement-tab-credly" type="button" role="tab" aria-selected="false" aria-controls="achievement-panel-credly" tabindex="-1" data-achievement-tab="credly">Credly <span>{{ len $credly }}</span></button>
+    <button id="achievement-tab-coursera" type="button" role="tab" aria-selected="false" aria-controls="achievement-panel-coursera" tabindex="-1" data-achievement-tab="coursera">Coursera <span>{{ add (len $specializations) (len $courses) }}</span></button>
+    <button id="achievement-tab-tryhackme" type="button" role="tab" aria-selected="false" aria-controls="achievement-panel-tryhackme" tabindex="-1" data-achievement-tab="tryhackme">TryHackMe <span>{{ add (len $thmCerts) (len $thmBadges) }}</span></button>
+  </div>
+
+  <div class="achievement-panels">
+    <section id="achievement-panel-personal" class="achievement-panel" role="tabpanel" aria-labelledby="achievement-tab-personal" data-achievement-panel="personal">
+      <div class="achievement-grid achievement-grid--personal">
+        {{ range $personal }}
+        <article class="achievement-card achievement-card--personal">
+          <div class="achievement-card__visual achievement-medal" aria-hidden="true"><span>03</span></div>
+          <div class="achievement-card__body">
+            <div class="achievement-card__kicker"><span>Academic distinction</span><span>{{ .period }}</span></div>
+            <h2>{{ .title }}</h2>
+            <p class="achievement-card__issuer">{{ .institution }} // {{ .degree }}</p>
+            <p>{{ .description }}</p>
+            <dl class="achievement-metrics"><div><dt>Academic record</dt><dd>{{ .metric }}</dd></div></dl>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+
+    <section id="achievement-panel-credly" class="achievement-panel" role="tabpanel" aria-labelledby="achievement-tab-credly" data-achievement-panel="credly" hidden tabindex="0">
+      <header class="achievement-section-heading"><div><p class="eyebrow">Verified credentials</p><h2>Credly badges</h2></div><span>{{ len $credly }} earned</span></header>
+      <div class="achievement-grid">
+        {{ range sort $credly "issued_at" "desc" }}
+        {{ $issuer := "Credly" }}{{ range first 1 .issuer.entities }}{{ $issuer = .entity.name }}{{ end }}
+        <article class="achievement-card">
+          <div class="achievement-card__visual"><img src="{{ .image_url }}" width="144" height="144" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="{{ .badge_template.name }} badge" data-achievement-image></div>
+          <div class="achievement-card__body">
+            <div class="achievement-card__kicker"><span>{{ $issuer }}</span><span>Credly</span></div>
+            <h3>{{ .badge_template.name }}</h3>
+            <p>{{ .badge_template.description }}</p>
+            <dl class="achievement-metrics">
+              <div><dt>Issued</dt><dd><time datetime="{{ .issued_at }}">{{ time.Format "02 Jan 2006" (time.AsTime .issued_at) }}</time></dd></div>
+              {{ with .expires_at }}<div><dt>Expires</dt><dd><time datetime="{{ . }}">{{ time.Format "02 Jan 2006" (time.AsTime .) }}</time></dd></div>{{ end }}
+            </dl>
+            {{ with .badge_template.skills }}<ul class="achievement-skills" aria-label="Selected skills">{{ range first 6 . }}<li>{{ .name }}</li>{{ end }}</ul>{{ end }}
+            <a class="text-link" href="https://www.credly.com/badges/{{ .id }}/public_url" target="_blank" rel="noopener noreferrer">Verify badge <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+
+    <section id="achievement-panel-coursera" class="achievement-panel" role="tabpanel" aria-labelledby="achievement-tab-coursera" data-achievement-panel="coursera" hidden tabindex="0">
+      <header class="achievement-section-heading"><div><p class="eyebrow">Learning paths</p><h2>Specializations</h2></div><span>{{ len $specializations }} completed</span></header>
+      <div class="achievement-grid">
+        {{ range sort $specializations "grantedAt" "desc" }}
+        <article class="achievement-card achievement-card--course">
+          {{ range first 1 .product.partners }}<div class="achievement-card__visual"><img src="{{ replace .squareLogo "http://" "https://" }}" width="120" height="120" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="" data-achievement-image></div>{{ end }}
+          <div class="achievement-card__body">
+            <div class="achievement-card__kicker"><span>{{ range first 1 .product.partners }}{{ .name }}{{ end }}</span><span>{{ if eq .product.productVariant "PROFESSIONAL_CERTIFICATE_S12N" }}Professional certificate{{ else }}Specialization{{ end }}</span></div>
+            <h3>{{ .product.name }}</h3>
+            <dl class="achievement-metrics"><div><dt>Completed</dt><dd><time datetime="{{ .grantedAt }}">{{ time.Format "02 Jan 2006" (time.AsTime .grantedAt) }}</time></dd></div></dl>
+            <a class="text-link" href="https://www.coursera.org/account/accomplishments/specialization/{{ .verifyCode }}" target="_blank" rel="noopener noreferrer">View credential <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+
+      <header class="achievement-section-heading achievement-section-heading--sub"><div><p class="eyebrow">Individual study</p><h2>Courses</h2></div><span>{{ len $courses }} completed</span></header>
+      <div class="achievement-grid">
+        {{ range sort $courses "grantedAt" "desc" }}
+        <article class="achievement-card achievement-card--course">
+          {{ range first 1 .product.partners }}<div class="achievement-card__visual"><img src="{{ replace .squareLogo "http://" "https://" }}" width="120" height="120" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="" data-achievement-image></div>{{ end }}
+          <div class="achievement-card__body">
+            <div class="achievement-card__kicker"><span>{{ range first 1 .product.partners }}{{ .name }}{{ end }}</span><span>Course</span></div>
+            <h3>{{ .product.name }}</h3>
+            <dl class="achievement-metrics">
+              <div><dt>Completed</dt><dd><time datetime="{{ .grantedAt }}">{{ time.Format "02 Jan 2006" (time.AsTime .grantedAt) }}</time></dd></div>
+              {{ with .grade }}<div><dt>Grade</dt><dd>{{ lang.FormatNumber 1 (mul . 100) }}%</dd></div>{{ end }}
+            </dl>
+            <a class="text-link" href="https://www.coursera.org/account/accomplishments/verify/{{ .verifyCode }}" target="_blank" rel="noopener noreferrer">View credential <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+
+    <section id="achievement-panel-tryhackme" class="achievement-panel" role="tabpanel" aria-labelledby="achievement-tab-tryhackme" data-achievement-panel="tryhackme" hidden tabindex="0">
+      <header class="achievement-section-heading"><div><p class="eyebrow">Completed pathways</p><h2>TryHackMe certificates</h2></div><span>{{ len $thmCerts }} earned</span></header>
+      <div class="achievement-grid">
+        {{ range sort $thmCerts "achieved" "desc" }}
+        {{ $title := .title | default (index $certTitles .name) | default (.name | humanize) }}
+        <article class="achievement-card achievement-card--certificate">
+          <div class="achievement-card__visual"><img src="{{ .imageUrl }}" width="240" height="170" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="{{ $title }} certificate preview" data-achievement-image></div>
+          <div class="achievement-card__body">
+            <div class="achievement-card__kicker"><span>TryHackMe</span><span>Certificate</span></div>
+            <h3>{{ $title }}</h3>
+            {{ with .description }}<p>{{ . | plainify }}</p>{{ end }}
+            <dl class="achievement-metrics"><div><dt>Achieved</dt><dd><time datetime="{{ .achieved }}">{{ time.Format "02 Jan 2006" (time.AsTime .achieved) }}</time></dd></div><div><dt>Credential</dt><dd>{{ .certId }}</dd></div></dl>
+            <a class="text-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">Open certificate <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+
+      <header class="achievement-section-heading achievement-section-heading--sub"><div><p class="eyebrow">Hands-on milestones</p><h2>TryHackMe badges</h2></div><span>{{ len $thmBadges }} earned</span></header>
+      {{ $datedBadges := slice }}{{ $undatedBadges := slice }}{{ range $thmBadges }}{{ if .earnedAt }}{{ $datedBadges = append . $datedBadges }}{{ else }}{{ $undatedBadges = append . $undatedBadges }}{{ end }}{{ end }}
+      {{ $sortedBadges := slice }}{{ range sort $datedBadges "earnedAt" "desc" }}{{ $sortedBadges = append . $sortedBadges }}{{ end }}{{ range $undatedBadges }}{{ $sortedBadges = append . $sortedBadges }}{{ end }}
+      <div class="achievement-grid achievement-grid--badges">
+        {{ range $sortedBadges }}
+        <article class="achievement-card achievement-card--badge">
+          <div class="achievement-card__visual"><img src="{{ .image }}" width="120" height="120" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="{{ .title }} badge" data-achievement-image></div>
+          <div class="achievement-card__body">
+            <div class="achievement-card__kicker"><span>TryHackMe</span><span class="rarity rarity--{{ .rarityTier | urlize }}">{{ .rarityTier }}</span></div>
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+            <dl class="achievement-metrics">
+              {{ with .earnedAt }}<div><dt>Earned</dt><dd><time datetime="{{ . }}">{{ time.Format "02 Jan 2006" (time.AsTime .) }}</time></dd></div>{{ end }}
+              <div><dt>Rarity</dt><dd>{{ .rarityPercent }}%</dd></div>
+            </dl>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+{{ with resources.Get "js/achievement-tabs.mjs" | minify | fingerprint }}<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>{{ end }}
+{{ end }}
