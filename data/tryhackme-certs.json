@@ -24,7 +24,7 @@
                 "imageUrl": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PAJVW9UWAL.png",
                 "achieved": "2025-07-31T11:49:23.140Z",
                 "__v": 0,
-                "title": "Web Fundamentals (Legacy)",
+                "title": "Web Fundamentals",
                 "description": "<p>A pathway to web application security.</p><ul><li style=\"text-align: left;\">Understand web fundamentals</li><li style=\"text-align: left;\">Major vulnerabilities explained</li><li style=\"text-align: left;\">Learn industry-used tools</li><li style=\"text-align: left;\">Web application assessments</li></ul>",
                 "isUserOwner": true
             },

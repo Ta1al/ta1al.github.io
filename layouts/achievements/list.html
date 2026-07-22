@@ -7,7 +7,7 @@
 {{ $specializations := (index $specializationPages 0).data.Certificate.getMyCertificatesPaginated.elements }}
 {{ $thmBadges := (index hugo.Data "tryhackme-badges").data.docs }}
 {{ $thmCerts := (index hugo.Data "tryhackme-certs").data.docs }}
-{{ $certTitles := dict "loveatfirstbreach" "Love at First Breach" "pathway-soclevel1legacy" "SOC Level 1 (Legacy)" "HackfinityBattle" "Hackfinity Battle" }}
+{{ $certTitles := dict "loveatfirstbreach" "Love at First Breach" "pathway-soclevel1legacy" "SOC Level 1" "HackfinityBattle" "Hackfinity Battle" }}
 
 <section class="shell achievements" aria-labelledby="achievements-title" data-achievement-tabs>
   <header class="page-heading achievements__heading">
