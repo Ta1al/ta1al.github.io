@@ -6,7 +6,7 @@ if (root) {
   const validIds = new Set(tabs.map((tab) => tab.dataset.achievementTab));
 
   const activate = (id, { focus = false, updateHash = true } = {}) => {
-    if (!validIds.has(id)) id = 'personal';
+    if (!validIds.has(id)) id = 'distinctions';
     tabs.forEach((tab) => {
       const active = tab.dataset.achievementTab === id;
       tab.setAttribute('aria-selected', String(active));
@@ -18,7 +18,7 @@ if (root) {
   };
 
   root.classList.add('achievement-tabs--ready');
-  activate(validIds.has(location.hash.slice(1)) ? location.hash.slice(1) : 'personal', { updateHash: false });
+  activate(validIds.has(location.hash.slice(1)) ? location.hash.slice(1) : 'distinctions', { updateHash: false });
 
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => activate(tab.dataset.achievementTab));

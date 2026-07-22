@@ -1,10 +1,35 @@
 [
   {
     "title": "Bronze Medal",
+    "category": "Academic distinction",
     "institution": "Sargodha University",
     "degree": "BS Computer Science",
     "period": "2022–2026",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Bronze_medal_icon.svg",
+    "imageAlt": "Bronze medal with the number three",
     "metric": "3.8 CGPA",
+    "metricLabel": "Academic record",
     "description": "Awarded the university Bronze Medal in recognition of sustained academic excellence throughout the degree."
+  },
+  {
+    "title": "CompTIA Security+",
+    "category": "Professional certification",
+    "institution": "CompTIA",
+    "degree": "Vendor-neutral cybersecurity certification",
+    "period": "Passed 18 Jul 2026",
+    "image": "https://images.credly.com/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob",
+    "imageAlt": "CompTIA Security+ ce Certification badge",
+    "metric": "SY0-701",
+    "metricLabel": "Exam",
+    "description": "Earned by passing a paid, independently proctored certification exam that tests applied cybersecurity knowledge rather than course completion alone.",
+    "importance": "Security+ is important because it validates vendor-neutral baseline skills across threats and mitigations, security architecture, security operations, incident response, governance, risk, and compliance—core knowledge for SOC and defensive-security work.",
+    "facts": [
+      { "label": "Duration", "value": "90 minutes" },
+      { "label": "Questions", "value": "Up to 90" },
+      { "label": "Format", "value": "Multiple-choice + performance-based" },
+      { "label": "Passing score", "value": "750 / 900" }
+    ],
+    "url": "https://www.credly.com/badges/82684309-dcf3-4c20-8369-5e20e1ccab49/public_url",
+    "linkLabel": "Verify certification"
   }
 ]
