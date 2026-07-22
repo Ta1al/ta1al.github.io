@@ -41,6 +41,65 @@ if (root) {
     });
   });
 
+  const lightbox = root.querySelector('[data-achievement-lightbox]');
+  const lightboxImage = lightbox?.querySelector('[data-achievement-lightbox-image]');
+  const lightboxCaption = lightbox?.querySelector('[data-achievement-lightbox-caption]');
+  const lightboxClose = lightbox?.querySelector('[data-achievement-lightbox-close]');
+  const achievementImages = [...root.querySelectorAll('[data-achievement-image]')];
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let activeImage;
+  let closeTimer;
+
+  const closeLightbox = () => {
+    if (!lightbox?.open) return;
+    window.clearTimeout(closeTimer);
+    lightbox.classList.remove('is-open');
+    const finish = () => {
+      lightbox.close();
+      document.body.classList.remove('lightbox-open');
+      activeImage?.focus();
+    };
+    if (reducedMotion.matches) finish();
+    else closeTimer = window.setTimeout(finish, 200);
+  };
+
+  const openLightbox = (image) => {
+    if (!lightbox || !lightboxImage || image.hidden) return;
+    window.clearTimeout(closeTimer);
+    activeImage = image;
+    lightboxImage.src = image.currentSrc || image.src;
+    lightboxImage.alt = image.alt;
+    lightboxCaption.textContent = image.alt;
+    lightboxCaption.hidden = !image.alt;
+    document.body.classList.add('lightbox-open');
+    lightbox.showModal();
+    requestAnimationFrame(() => lightbox.classList.add('is-open'));
+    lightboxClose?.focus();
+  };
+
+  achievementImages.forEach((image) => {
+    image.tabIndex = 0;
+    image.setAttribute('role', 'button');
+    image.setAttribute('aria-label', `Enlarge image: ${image.alt || 'achievement image'}`);
+    image.addEventListener('click', () => openLightbox(image));
+    image.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      openLightbox(image);
+    });
+  });
+
+  lightboxClose?.addEventListener('click', closeLightbox);
+  lightbox?.addEventListener('click', (event) => {
+    const clickedImage = event.target === lightboxImage;
+    const clickedClose = event.target.closest('[data-achievement-lightbox-close]');
+    if (!clickedImage && !clickedClose) closeLightbox();
+  });
+  lightbox?.addEventListener('cancel', (event) => {
+    event.preventDefault();
+    closeLightbox();
+  });
+
   window.addEventListener('hashchange', () => {
     const id = location.hash.slice(1);
     if (validIds.has(id)) activate(id, { updateHash: false });

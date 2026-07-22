@@ -118,10 +118,8 @@
       </div>
 
       <header class="achievement-section-heading achievement-section-heading--sub"><div><p class="eyebrow">Hands-on milestones</p><h2>TryHackMe badges</h2></div><span>{{ len $thmBadges }} earned</span></header>
-      {{ $datedBadges := slice }}{{ $undatedBadges := slice }}{{ range $thmBadges }}{{ if .earnedAt }}{{ $datedBadges = append . $datedBadges }}{{ else }}{{ $undatedBadges = append . $undatedBadges }}{{ end }}{{ end }}
-      {{ $sortedBadges := slice }}{{ range sort $datedBadges "earnedAt" "desc" }}{{ $sortedBadges = append . $sortedBadges }}{{ end }}{{ range $undatedBadges }}{{ $sortedBadges = append . $sortedBadges }}{{ end }}
       <div class="achievement-grid achievement-grid--badges">
-        {{ range $sortedBadges }}
+        {{ range sort $thmBadges "rarityPercent" "asc" }}
         <article class="achievement-card achievement-card--badge">
           <div class="achievement-card__visual"><img src="{{ .image }}" width="120" height="120" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="{{ .title }} badge" data-achievement-image></div>
           <div class="achievement-card__body">
@@ -138,6 +136,7 @@
       </div>
     </section>
   </div>
+  <dialog class="article-lightbox achievement-lightbox" data-achievement-lightbox aria-label="Enlarged achievement image"><div class="article-lightbox__frame"><button type="button" data-achievement-lightbox-close aria-label="Close enlarged image">×</button><img data-achievement-lightbox-image alt=""><p data-achievement-lightbox-caption></p></div></dialog>
 </section>
 {{ end }}
 
