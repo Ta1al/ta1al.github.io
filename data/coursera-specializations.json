@@ -1,0 +1,59 @@
+[
+    {
+        "data": {
+            "Certificate": {
+                "getMyCertificatesPaginated": {
+                    "elements": [
+                        {
+                            "grade": null,
+                            "product": {
+                                "name": "Google Cybersecurity",
+                                "id": "Dy6K-2UKEe2PIRJn6nL9pQ",
+                                "slug": "google-cybersecurity",
+                                "partners": [
+                                    {
+                                        "name": "Google",
+                                        "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+                                        "__typename": "Partner_Partner"
+                                    }
+                                ],
+                                "productVariant": "PROFESSIONAL_CERTIFICATE_S12N",
+                                "__typename": "Specialization_Specialization"
+                            },
+                            "verifyCode": "AEDD0QSM9V4D",
+                            "grantedAt": "2025-02-04T08:46:31.209Z",
+                            "__typename": "Certificates_Certificate"
+                        },
+                        {
+                            "grade": null,
+                            "product": {
+                                "name": "Python for Everybody",
+                                "id": "F-h1g0w7EeWeOApO_l5R1w",
+                                "slug": "python",
+                                "partners": [
+                                    {
+                                        "name": "University of Michigan",
+                                        "squareLogo": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+                                        "__typename": "Partner_Partner"
+                                    }
+                                ],
+                                "productVariant": "NORMAL_S12N",
+                                "__typename": "Specialization_Specialization"
+                            },
+                            "verifyCode": "8XDCBFFKQHL6",
+                            "grantedAt": "2024-02-13T23:01:25.623Z",
+                            "__typename": "Certificates_Certificate"
+                        }
+                    ],
+                    "pagination": {
+                        "cursor": "",
+                        "totalElements": 2,
+                        "__typename": "Pagination"
+                    },
+                    "__typename": "Certificates_PaginatedResult"
+                },
+                "__typename": "CertificateQueries"
+            }
+        }
+    }
+]

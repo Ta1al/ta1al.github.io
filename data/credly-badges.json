@@ -1,0 +1,2075 @@
+{
+  "data": [
+    {
+      "id": "82684309-dcf3-4c20-8369-5e20e1ccab49",
+      "expires_at_date": "2029-07-18",
+      "issued_at_date": "2026-07-18",
+      "issued_to": "Muhammad Talal Ahmed",
+      "locale": "en",
+      "public": true,
+      "state": "accepted",
+      "translate_metadata": false,
+      "accepted_at": "2026-07-19T17:13:15.597+05:00",
+      "expires_at": "2029-07-18T05:00:00.000+05:00",
+      "issued_at": "2026-07-18T05:00:00.000+05:00",
+      "last_updated_at": "2026-07-19T17:13:15.597+05:00",
+      "updated_at": "2026-07-19T17:13:15.598+05:00",
+      "earner_path": "/users/ta1al",
+      "earner_photo_url": null,
+      "is_private_badge": false,
+      "user_is_earner": false,
+      "printable": false,
+      "issuer": {
+        "summary": "issued by CompTIA",
+        "entities": [
+          {
+            "label": "Issued by",
+            "primary": true,
+            "entity": {
+              "type": "Organization",
+              "id": "1a1a5349-437e-44ca-88a9-ba62712807e9",
+              "name": "CompTIA",
+              "url": "https://www.credly.com/api/v1/organizations/1a1a5349-437e-44ca-88a9-ba62712807e9",
+              "vanity_url": "https://www.credly.com/org/comptia",
+              "internationalize_badge_templates": false,
+              "share_to_ziprecruiter": true,
+              "twitter_url": "https://twitter.com/comptia",
+              "verified": false
+            }
+          }
+        ]
+      },
+      "badge_template": {
+        "id": "3cffc617-38a0-4d48-a1d5-9d2f5ff6f169",
+        "description": "Earners of the CompTIA Security+ certification have the knowledge and skills necessary to perform core security functions required of any cybersecurity role. CompTIA Security+ professionals know how to identify and address potential threats, attacks and vulnerabilities and they have established techniques in risk management, risk mitigation, threat management and intrusion detection.",
+        "global_activity_url": "https://www.comptia.org/certifications/security",
+        "earn_this_badge_url": null,
+        "enable_earn_this_badge": false,
+        "enable_detail_attribute_visibility": true,
+        "job_board_url": null,
+        "name": "CompTIA Security+ ce Certification",
+        "public": true,
+        "recipient_type": "User",
+        "vanity_slug": "comptia-security-ce-certification",
+        "show_badge_lmi": true,
+        "show_skill_tag_links": true,
+        "settings_enable_related_badges": true,
+        "translatable": false,
+        "updated_at": "2025-08-11T23:49:39.268+05:00",
+        "level": null,
+        "time_to_earn": null,
+        "cost": null,
+        "type_category": null,
+        "image": {
+          "id": "80d8a06a-c384-42bf-ad36-db81bce5adce",
+          "url": "https://images.credly.com/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob"
+        },
+        "image_url": "https://images.credly.com/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob",
+        "url": "https://www.credly.com/org/comptia/badge/comptia-security-ce-certification",
+        "owner_vanity_slug": "comptia",
+        "badge_template_earnable": false,
+        "recommendable": true,
+        "issuer": {
+          "summary": "issued by CompTIA",
+          "entities": [
+            {
+              "label": "Issued by",
+              "primary": true,
+              "entity": {
+                "type": "Organization",
+                "id": "1a1a5349-437e-44ca-88a9-ba62712807e9",
+                "name": "CompTIA",
+                "url": "https://www.credly.com/api/v1/organizations/1a1a5349-437e-44ca-88a9-ba62712807e9",
+                "vanity_url": "https://www.credly.com/org/comptia",
+                "internationalize_badge_templates": false,
+                "share_to_ziprecruiter": true,
+                "twitter_url": "https://twitter.com/comptia",
+                "verified": false
+              }
+            }
+          ]
+        },
+        "related_badge_templates": [
+          {
+            "id": "a399bb0f-cd41-4b4c-9af9-3d4678adcf6b",
+            "name": "CompTIA Secure Infrastructure Expert – CSIE Stackable Certification",
+            "image": {
+              "id": "4e8cb067-ff0a-4b3e-bf5d-7290ba25d0d6",
+              "url": "https://images.credly.com/images/4e8cb067-ff0a-4b3e-bf5d-7290ba25d0d6/CompTIA_CSIE.png"
+            },
+            "image_url": "https://images.credly.com/images/4e8cb067-ff0a-4b3e-bf5d-7290ba25d0d6/CompTIA_CSIE.png",
+            "updated_at": "2024-12-17T11:16:44.637Z",
+            "url": "https://www.credly.com/org/comptia/badge/comptia-secure-infrastructure-expert-csie-stackable"
+          },
+          {
+            "id": "b713e0f2-5235-4257-8a6c-f3e77caadfb2",
+            "name": "CompTIA Secure Cloud Professional – CSCP Stackable Certification",
+            "image": {
+              "id": "9f54bf46-dc18-408c-a74e-2637facd1856",
+              "url": "https://images.credly.com/images/9f54bf46-dc18-408c-a74e-2637facd1856/CompTIA_CSCP.png"
+            },
+            "image_url": "https://images.credly.com/images/9f54bf46-dc18-408c-a74e-2637facd1856/CompTIA_CSCP.png",
+            "updated_at": "2023-05-16T21:31:14.741Z",
+            "url": "https://www.credly.com/org/comptia/badge/comptia-secure-cloud-professional-cscp-stackable-certification"
+          },
+          {
+            "id": "a8e33b94-ed03-4949-a62e-5d7061e15cc1",
+            "name": "CompTIA Secure Infrastructure Specialist – CSIS Stackable Certification",
+            "image": {
+              "id": "8090280a-311f-425f-a1cd-a32770b5a444",
+              "url": "https://images.credly.com/images/8090280a-311f-425f-a1cd-a32770b5a444/CompTIA_CSIS.png"
+            },
+            "image_url": "https://images.credly.com/images/8090280a-311f-425f-a1cd-a32770b5a444/CompTIA_CSIS.png",
+            "updated_at": "2025-12-11T14:48:17.292Z",
+            "url": "https://www.credly.com/org/comptia/badge/comptia-secure-infrastructure-specialist-csis-stackable-certification"
+          }
+        ],
+        "alignments": [
+          {
+            "id": "abe17262-a042-4176-9df9-63082df1e3c4",
+            "name": "Accredited by ANSI to show compliance with the ISO 17024 Standard",
+            "url": "https://www.ansi.org/Accreditation/credentialing/personnel-certification/AllDirectoryDetails?&prgID=201&OrgId=93&statusID=4",
+            "description": null
+          }
+        ],
+        "badge_template_activities": [
+          {
+            "id": "e9bbb964-84a7-4106-b927-9b241d71b485",
+            "activity_type": "Education Experience",
+            "required_badge_template_id": null,
+            "title": "Complete continuing education requirements for renewal.",
+            "url": "https://www.comptia.org/certifications/security#renewal"
+          },
+          {
+            "id": "3c040f00-4398-4303-a602-ba772d52e3be",
+            "activity_type": "Assessment",
+            "required_badge_template_id": null,
+            "title": "Achieve a passing score on the CompTIA Security+ performance-based exam.",
+            "url": "https://www.comptia.org/certifications/security#examdetails"
+          },
+          {
+            "id": "02427566-8b3a-4d92-a278-3b0348942b61",
+            "activity_type": "Professional Experience",
+            "required_badge_template_id": null,
+            "title": "Obtain the recommended experience -- CompTIA Network+ and two years of experience in IT administration with a security focus.",
+            "url": "https://www.comptia.org/certifications/security#examdetails"
+          }
+        ],
+        "endorsements": [],
+        "skills": [
+          {
+            "id": "c0983c81-eb98-4877-abc1-c3c84815920f",
+            "name": "Access Control",
+            "vanity_slug": "access-control",
+            "canonical": true,
+            "faethm_id": "FS000036"
+          },
+          {
+            "id": "22bd008b-70f0-4505-9161-d86f0f2b6e5b",
+            "name": "CompTIA",
+            "vanity_slug": "comptia",
+            "canonical": false
+          },
+          {
+            "id": "9b70932d-c964-45a5-9607-bf71756bb379",
+            "name": "Cryptography",
+            "vanity_slug": "cryptography",
+            "canonical": true,
+            "faethm_id": "FS001813"
+          },
+          {
+            "id": "1fd8405e-c78b-4751-b5f8-affdb5b1bf7a",
+            "name": "Cyber Forensics",
+            "vanity_slug": "cyber-forensics",
+            "canonical": false,
+            "faethm_id": "FS001522"
+          },
+          {
+            "id": "d9b5c4dd-617e-4357-bd4d-e84494c4d943",
+            "name": "Data Security",
+            "vanity_slug": "data-security",
+            "canonical": true,
+            "faethm_id": "FS001962"
+          },
+          {
+            "id": "2611f194-399c-480a-b1e5-98a2a8d310bc",
+            "name": "Disaster Recovery Planning",
+            "vanity_slug": "disaster-recovery-planning",
+            "canonical": false,
+            "faethm_id": "FS002222"
+          },
+          {
+            "id": "77ad36bf-8c2c-4f74-b9ff-0934bfe5480e",
+            "name": "Firewall Configuration",
+            "vanity_slug": "firewall-configuration",
+            "canonical": false,
+            "faethm_id": "FS002956"
+          },
+          {
+            "id": "3fe3da41-d4e5-4601-9f37-22f21e4b8a16",
+            "name": "Information Security Management",
+            "vanity_slug": "information-security-management",
+            "canonical": true,
+            "faethm_id": "FS003763"
+          },
+          {
+            "id": "5a08fd8e-675b-432b-b61d-4f3e40049d8f",
+            "name": "Malware Identification",
+            "vanity_slug": "malware-identification",
+            "canonical": false,
+            "faethm_id": "FS004442"
+          },
+          {
+            "id": "d0d8e3b7-c971-4f41-b4b0-b6eb3515beb7",
+            "name": "Mobile Device Security",
+            "vanity_slug": "mobile-device-security",
+            "canonical": false,
+            "faethm_id": "FS004881"
+          },
+          {
+            "id": "5fb824f3-071b-4242-ad9a-c95d1110c63b",
+            "name": "Network Security",
+            "vanity_slug": "network-security",
+            "canonical": true,
+            "faethm_id": "FS005082"
+          },
+          {
+            "id": "52855bbd-b96f-49a9-842d-326ed5406578",
+            "name": "Security Awareness",
+            "vanity_slug": "security-awareness",
+            "canonical": true,
+            "faethm_id": "FS006615"
+          },
+          {
+            "id": "37373ef6-55f6-44d4-b38d-cdc62cb4d1f5",
+            "name": "Security Configuration",
+            "vanity_slug": "security-configuration",
+            "canonical": false,
+            "faethm_id": "FS006623"
+          },
+          {
+            "id": "1f1a5025-bf8a-4621-81e0-f5e6b51cc601",
+            "name": "Security Management",
+            "vanity_slug": "security-management",
+            "canonical": true,
+            "faethm_id": "FS006623"
+          },
+          {
+            "id": "db139eba-a6ef-4e44-a9d3-180563489f57",
+            "name": "Security Policies",
+            "vanity_slug": "security-policies",
+            "canonical": true,
+            "faethm_id": "FS006625"
+          },
+          {
+            "id": "b5f9a9d4-c6af-49b5-9351-921370db7df8",
+            "name": "Threat Detection",
+            "vanity_slug": "threat-detection",
+            "canonical": true,
+            "faethm_id": "FS007476"
+          },
+          {
+            "id": "1677609c-ac95-434c-8ba1-29832dddb8cb",
+            "name": "Threat Management",
+            "vanity_slug": "threat-management.28cfa4f9",
+            "canonical": true,
+            "faethm_id": "FS007477"
+          }
+        ]
+      },
+      "image": {
+        "id": "80d8a06a-c384-42bf-ad36-db81bce5adce",
+        "url": "https://images.credly.com/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob"
+      },
+      "image_url": "https://images.credly.com/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob",
+      "evidence": [
+        {
+          "id": "2bb2c687-3950-40d7-a0e3-37edd02b55ac",
+          "type": "PlainTextEvidence",
+          "title": "Criteria",
+          "description": "SY0-701 - CompTIA Security+ certification exam"
+        }
+      ]
+    },
+    {
+      "id": "fe3a79f0-3976-4ad0-9795-56726b0ac3d0",
+      "expires_at_date": null,
+      "issued_at_date": "2025-11-05",
+      "issued_to": "Talal Ahmed",
+      "locale": "en",
+      "public": true,
+      "state": "accepted",
+      "translate_metadata": false,
+      "accepted_at": "2025-11-05T18:07:41.085+05:00",
+      "expires_at": null,
+      "issued_at": "2025-11-05T18:03:06.000+05:00",
+      "last_updated_at": "2025-11-05T18:07:41.085+05:00",
+      "updated_at": "2025-11-05T18:07:41.086+05:00",
+      "earner_path": "/users/ta1al",
+      "earner_photo_url": null,
+      "is_private_badge": false,
+      "user_is_earner": false,
+      "printable": true,
+      "issuer": {
+        "summary": "issued by APIsec University",
+        "entities": [
+          {
+            "label": "Issued by",
+            "primary": true,
+            "entity": {
+              "type": "Organization",
+              "id": "38e03e6b-ffcb-4f16-9553-373cba0f0ba0",
+              "name": "APIsec University",
+              "url": "https://www.credly.com/api/v1/organizations/38e03e6b-ffcb-4f16-9553-373cba0f0ba0",
+              "vanity_url": "https://www.credly.com/org/apisec-university",
+              "internationalize_badge_templates": false,
+              "share_to_ziprecruiter": true,
+              "twitter_url": "https://twitter.com/apisecu",
+              "verified": false
+            }
+          }
+        ]
+      },
+      "badge_template": {
+        "id": "94f745a1-fc5e-4ed8-af36-185cdebff8ca",
+        "description": "The API Security Fundamentals course covers the core threats to APIs and challenges to prevent breach. The course includes modules on real-world API breaches, the OWASP API Security Top 10, the 3 Pillars of API Security (governance, testing and monitoring), and the application security technology landscape. The course provides strategic advice for developing secure API programs, and includes specific best practices for security and development teams.",
+        "global_activity_url": "https://www.apisecuniversity.com/courses/api-security-fundamentals",
+        "earn_this_badge_url": "https://www.apisecuniversity.com/courses/api-security-fundamentals",
+        "enable_earn_this_badge": true,
+        "enable_detail_attribute_visibility": true,
+        "job_board_url": null,
+        "name": "API Security Fundamentals '25 (2 hours)",
+        "public": true,
+        "recipient_type": "User",
+        "vanity_slug": "api-security-fundamentals-25-2-hours",
+        "show_badge_lmi": false,
+        "show_skill_tag_links": true,
+        "settings_enable_related_badges": true,
+        "translatable": false,
+        "updated_at": "2025-01-30T21:52:59.855+05:00",
+        "level": "Foundational",
+        "time_to_earn": "Hours",
+        "cost": null,
+        "type_category": "Learning",
+        "image": {
+          "id": "d7840f4d-0217-4aa4-8cf4-e8bea30aef52",
+          "url": "https://images.credly.com/images/d7840f4d-0217-4aa4-8cf4-e8bea30aef52/blob"
+        },
+        "image_url": "https://images.credly.com/images/d7840f4d-0217-4aa4-8cf4-e8bea30aef52/blob",
+        "url": "https://www.credly.com/org/apisec-university/badge/api-security-fundamentals-25-2-hours",
+        "owner_vanity_slug": "apisec-university",
+        "badge_template_earnable": true,
+        "recommendable": true,
+        "issuer": {
+          "summary": "issued by APIsec University",
+          "entities": [
+            {
+              "label": "Issued by",
+              "primary": true,
+              "entity": {
+                "type": "Organization",
+                "id": "38e03e6b-ffcb-4f16-9553-373cba0f0ba0",
+                "name": "APIsec University",
+                "url": "https://www.credly.com/api/v1/organizations/38e03e6b-ffcb-4f16-9553-373cba0f0ba0",
+                "vanity_url": "https://www.credly.com/org/apisec-university",
+                "internationalize_badge_templates": false,
+                "share_to_ziprecruiter": true,
+                "twitter_url": "https://twitter.com/apisecu",
+                "verified": false
+              }
+            }
+          ]
+        },
+        "related_badge_templates": [
+          {
+            "id": "068ff034-454a-4f1f-b170-9fb7463ebb0e",
+            "name": "API Documentation Best Practices (2 hours)",
+            "image": {
+              "id": "d45a2a64-2af4-4916-a9da-1bc51fc1219b",
+              "url": "https://images.credly.com/images/d45a2a64-2af4-4916-a9da-1bc51fc1219b/image.png"
+            },
+            "image_url": "https://images.credly.com/images/d45a2a64-2af4-4916-a9da-1bc51fc1219b/image.png",
+            "updated_at": "2024-10-18T18:07:23.478Z",
+            "url": "https://www.credly.com/org/apisec-university/badge/api-documentation-best-practices-2-hours"
+          },
+          {
+            "id": "236d83e8-7224-4b1a-9402-fdf90992b930",
+            "name": "API Security for PCI Compliance",
+            "image": {
+              "id": "a178c95b-2f9d-48b2-a27e-1c1357943dc3",
+              "url": "https://images.credly.com/images/a178c95b-2f9d-48b2-a27e-1c1357943dc3/image.png"
+            },
+            "image_url": "https://images.credly.com/images/a178c95b-2f9d-48b2-a27e-1c1357943dc3/image.png",
+            "updated_at": "2023-08-29T21:05:31.028Z",
+            "url": "https://www.credly.com/org/apisec-university/badge/api-security-for-pci-compliance"
+          },
+          {
+            "id": "82002d81-927b-45ed-8ccf-8eefc0d110df",
+            "name": "Certified API Security Analyst",
+            "image": {
+              "id": "2f73db94-bd85-4391-8885-6c14862457eb",
+              "url": "https://images.credly.com/images/2f73db94-bd85-4391-8885-6c14862457eb/image.png"
+            },
+            "image_url": "https://images.credly.com/images/2f73db94-bd85-4391-8885-6c14862457eb/image.png",
+            "updated_at": "2023-10-06T22:21:50.036Z",
+            "url": "https://www.credly.com/org/apisec-university/badge/certified-api-security-analyst"
+          }
+        ],
+        "alignments": [
+          {
+            "id": "d0e9d87b-fcfc-4fb8-9016-89551c446da4",
+            "name": "OWASP API Security Top 10",
+            "url": "https://owasp.org/www-project-api-security/",
+            "description": "APIs expose application logic and sensitive data such as Personally Identifiable Information (PII) and because of this, APIs have increasingly become a target for attackers. Without secure APIs, rapid innovation would be impossible."
+          }
+        ],
+        "badge_template_activities": [
+          {
+            "id": "c94cd8fd-05ad-4ae1-b3d1-c2a36c7ad964",
+            "activity_type": "Course",
+            "required_badge_template_id": null,
+            "title": "Completing all training modules - 2 hours",
+            "url": null
+          },
+          {
+            "id": "001fea36-e51e-42ac-8da5-c466c4e4fa3a",
+            "activity_type": "Assessment",
+            "required_badge_template_id": null,
+            "title": "Passed final assessment",
+            "url": null
+          },
+          {
+            "id": "0ad5b415-4557-4cad-8e98-fdb594f0bb5d",
+            "activity_type": "Assessment",
+            "required_badge_template_id": null,
+            "title": "Passed all module quizzes",
+            "url": null
+          }
+        ],
+        "endorsements": [],
+        "skills": [
+          {
+            "id": "5a880026-ce7a-4632-8953-bfb896450869",
+            "name": "API Security",
+            "vanity_slug": "api-security",
+            "canonical": false,
+            "faethm_id": "FS000384"
+          },
+          {
+            "id": "1b5bb5ee-0a22-4020-aac5-f3963ab87309",
+            "name": "Application Security",
+            "vanity_slug": "application-security",
+            "canonical": true,
+            "faethm_id": "FS000385"
+          },
+          {
+            "id": "4481c73a-aa90-4ece-b9de-b098bc9a5ab3",
+            "name": "Application Security Testing",
+            "vanity_slug": "application-security-testing",
+            "canonical": false,
+            "faethm_id": "FS000385"
+          },
+          {
+            "id": "09d98c2e-f836-4b7d-b8d9-014cc14973a7",
+            "name": "Cybersecurity Compliance",
+            "vanity_slug": "cybersecurity-compliance",
+            "canonical": true,
+            "faethm_id": "FS001872"
+          }
+        ]
+      },
+      "image": {
+        "id": "d7840f4d-0217-4aa4-8cf4-e8bea30aef52",
+        "url": "https://images.credly.com/images/d7840f4d-0217-4aa4-8cf4-e8bea30aef52/blob"
+      },
+      "image_url": "https://images.credly.com/images/d7840f4d-0217-4aa4-8cf4-e8bea30aef52/blob",
+      "evidence": []
+    },
+    {
+      "id": "e2d6b3f3-f9d6-49e7-b2ac-c621de1cea94",
+      "expires_at_date": null,
+      "issued_at_date": "2026-06-19",
+      "issued_to": "Talal Ahmed",
+      "locale": "en",
+      "public": true,
+      "state": "accepted",
+      "translate_metadata": false,
+      "accepted_at": "2026-06-18T15:59:58.109+05:00",
+      "expires_at": null,
+      "issued_at": "2026-06-19T05:00:00.000+05:00",
+      "last_updated_at": "2026-06-18T15:59:58.109+05:00",
+      "updated_at": "2026-06-18T15:59:58.110+05:00",
+      "earner_path": "/users/ta1al",
+      "earner_photo_url": null,
+      "is_private_badge": false,
+      "user_is_earner": false,
+      "printable": false,
+      "issuer": {
+        "summary": "issued by Microsoft",
+        "entities": [
+          {
+            "label": "Issued by",
+            "primary": true,
+            "entity": {
+              "type": "Organization",
+              "id": "1392f199-abe0-4698-92b5-834610af6baf",
+              "name": "Microsoft",
+              "url": "https://www.credly.com/api/v1/organizations/1392f199-abe0-4698-92b5-834610af6baf",
+              "vanity_url": "https://www.credly.com/org/microsoft-certification",
+              "internationalize_badge_templates": false,
+              "share_to_ziprecruiter": true,
+              "twitter_url": "https://twitter.com/microsoft",
+              "verified": false
+            }
+          }
+        ]
+      },
+      "badge_template": {
+        "id": "bc568cad-5392-4082-9c4e-696dbb192094",
+        "description": "Earners demonstrate foundational and applied AI knowledge, including how to use AI tools to enhance productivity, create content, and solve real-world problems. They can identify practical use cases, apply AI responsibly, and continue building skills through guided learning pathways.",
+        "global_activity_url": "https://aka.ms/aiskillsfest_Credly",
+        "earn_this_badge_url": null,
+        "enable_earn_this_badge": false,
+        "enable_detail_attribute_visibility": true,
+        "job_board_url": null,
+        "name": "AI Skills Fest 2026",
+        "public": true,
+        "recipient_type": "User",
+        "vanity_slug": "ai-skills-fest-2026",
+        "show_badge_lmi": false,
+        "show_skill_tag_links": true,
+        "settings_enable_related_badges": true,
+        "translatable": false,
+        "updated_at": "2026-06-10T01:14:51.424+05:00",
+        "level": "Foundational",
+        "time_to_earn": "Hours",
+        "cost": "Free",
+        "type_category": "Learning",
+        "image": {
+          "id": "082c8d0c-5232-4597-b6c4-6bebcc4f3046",
+          "url": "https://images.credly.com/images/082c8d0c-5232-4597-b6c4-6bebcc4f3046/blob"
+        },
+        "image_url": "https://images.credly.com/images/082c8d0c-5232-4597-b6c4-6bebcc4f3046/blob",
+        "url": "https://www.credly.com/org/microsoft-certification/badge/ai-skills-fest-2026",
+        "owner_vanity_slug": "microsoft-certification",
+        "badge_template_earnable": false,
+        "recommendable": true,
+        "issuer": {
+          "summary": "issued by Microsoft",
+          "entities": [
+            {
+              "label": "Issued by",
+              "primary": true,
+              "entity": {
+                "type": "Organization",
+                "id": "1392f199-abe0-4698-92b5-834610af6baf",
+                "name": "Microsoft",
+                "url": "https://www.credly.com/api/v1/organizations/1392f199-abe0-4698-92b5-834610af6baf",
+                "vanity_url": "https://www.credly.com/org/microsoft-certification",
+                "internationalize_badge_templates": false,
+                "share_to_ziprecruiter": true,
+                "twitter_url": "https://twitter.com/microsoft",
+                "verified": false
+              }
+            }
+          ]
+        },
+        "related_badge_templates": [],
+        "alignments": [],
+        "badge_template_activities": [
+          {
+            "id": "577b6cf5-6cbf-441c-8d98-a9eb3311abaf",
+            "activity_type": "Education Experience",
+            "required_badge_template_id": null,
+            "title": "Once playlist has been completed, the learner can claim their badge",
+            "url": null
+          },
+          {
+            "id": "83b0a723-c1b4-4e44-9721-bf1843bed5c9",
+            "activity_type": "Education Experience",
+            "required_badge_template_id": null,
+            "title": "Complete all content within the selected AI Skills Fest curated playlist",
+            "url": null
+          },
+          {
+            "id": "192f95f9-77aa-4e8e-b154-7df7d9cf6cfd",
+            "activity_type": "Education Experience",
+            "required_badge_template_id": null,
+            "title": "Explore and select curated playlists exclusive to AI Skills Fest",
+            "url": null
+          },
+          {
+            "id": "2954b9e0-0f14-4e61-8ee8-816d6c074b15",
+            "activity_type": "Schedule / Registration",
+            "required_badge_template_id": null,
+            "title": "Attend AI Skills Fest online anytime between June 8 - June 12, 2026",
+            "url": null
+          }
+        ],
+        "endorsements": [],
+        "skills": [
+          {
+            "id": "fda9eb69-5218-4fe0-8a1f-4ab3bf8bacb6",
+            "name": "AI Ethics",
+            "vanity_slug": "ai-ethics",
+            "canonical": true,
+            "faethm_id": "FS009806"
+          },
+          {
+            "id": "25c9c074-f4e3-4ae0-882f-e14f6383d0ef",
+            "name": "AI Literacy",
+            "vanity_slug": "ai-literacy",
+            "canonical": false
+          },
+          {
+            "id": "faf59c02-7556-43be-a18b-6970a101917e",
+            "name": "AI Tools Adoption",
+            "vanity_slug": "ai-tools-adoption",
+            "canonical": false
+          },
+          {
+            "id": "76406375-f0e9-4607-9463-4c9eeb7820ec",
+            "name": "Applied AI",
+            "vanity_slug": "applied-ai",
+            "canonical": false,
+            "faethm_id": "FS000456"
+          },
+          {
+            "id": "0a8a71f3-8f45-4b05-ad21-aa26e5d0d15a",
+            "name": "Artificial Intelligence Applications",
+            "vanity_slug": "artificial-intelligence-applications",
+            "canonical": true,
+            "faethm_id": "FS000391"
+          },
+          {
+            "id": "b8b3cb34-6a9e-4ba7-87db-786491b1725e",
+            "name": "Build Automation",
+            "vanity_slug": "build-automation",
+            "canonical": true,
+            "faethm_id": "FS000857"
+          },
+          {
+            "id": "4905d9a2-f6d6-4e17-9472-18bdd7174f02",
+            "name": "Prompt Engineering",
+            "vanity_slug": "prompt-engineering",
+            "canonical": true,
+            "faethm_id": "FS009544"
+          },
+          {
+            "id": "0742f381-453f-4b9e-9ccd-a82a5b8999fd",
+            "name": "Responsible AI",
+            "vanity_slug": "responsible-ai",
+            "canonical": false,
+            "faethm_id": "FS000456"
+          },
+          {
+            "id": "dedcea56-b997-4767-aa80-fe6e729cc3a7",
+            "name": "Workflow Automation",
+            "vanity_slug": "workflow-automation",
+            "canonical": false,
+            "faethm_id": "FS008077"
+          }
+        ]
+      },
+      "image": {
+        "id": "082c8d0c-5232-4597-b6c4-6bebcc4f3046",
+        "url": "https://images.credly.com/images/082c8d0c-5232-4597-b6c4-6bebcc4f3046/blob"
+      },
+      "image_url": "https://images.credly.com/images/082c8d0c-5232-4597-b6c4-6bebcc4f3046/blob",
+      "evidence": []
+    },
+    {
+      "id": "41de9d8d-edb1-41b9-9798-b7be66b10fbc",
+      "expires_at_date": null,
+      "issued_at_date": "2026-07-22",
+      "issued_to": "Muhammad Talal Ahmed",
+      "locale": "en",
+      "public": true,
+      "state": "accepted",
+      "translate_metadata": false,
+      "accepted_at": "2026-07-22T15:57:25.282+05:00",
+      "expires_at": null,
+      "issued_at": "2026-07-22T15:57:25.000+05:00",
+      "last_updated_at": "2026-07-22T15:57:25.314+05:00",
+      "updated_at": "2026-07-22T15:57:25.314+05:00",
+      "earner_path": "/users/ta1al",
+      "earner_photo_url": null,
+      "is_private_badge": false,
+      "user_is_earner": false,
+      "printable": true,
+      "issuer": {
+        "summary": "issued by Coursera and authorized by IBM",
+        "entities": [
+          {
+            "label": "Issued by",
+            "primary": true,
+            "entity": {
+              "type": "Organization",
+              "id": "ede32dcc-9168-4563-9352-8725936d5231",
+              "name": "Coursera",
+              "url": "https://www.credly.com/api/v1/organizations/ede32dcc-9168-4563-9352-8725936d5231",
+              "vanity_url": "https://www.credly.com/org/coursera",
+              "internationalize_badge_templates": true,
+              "share_to_ziprecruiter": true,
+              "twitter_url": "https://twitter.com/coursera",
+              "verified": false
+            }
+          },
+          {
+            "label": "Authorized by",
+            "primary": false,
+            "entity": {
+              "type": "Organization",
+              "id": "d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+              "name": "IBM",
+              "url": "https://www.credly.com/api/v1/organizations/d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+              "vanity_url": "https://www.credly.com/org/ibm",
+              "internationalize_badge_templates": false,
+              "share_to_ziprecruiter": false,
+              "twitter_url": "https://twitter.com/IBM",
+              "verified": false
+            }
+          }
+        ]
+      },
+      "badge_template": {
+        "id": "ddb5b341-7161-4f39-885c-3e01dce80a23",
+        "description": "This badge earner has demonstrated foundational to advanced cybersecurity knowledge, including the CIA triad, IAM, endpoints, and network, application, and data security. Through hands-on labs, they have applied MFA, identified threats, responded to incidents, and developed strategies to improve organizational security.",
+        "global_activity_url": "https://www.coursera.org/learn/cybersecurity-architecture?utm_source=IBM&utm_medium=institutions&utm_campaign=IBMBadge",
+        "earn_this_badge_url": null,
+        "enable_earn_this_badge": false,
+        "enable_detail_attribute_visibility": true,
+        "job_board_url": null,
+        "name": "Cybersecurity Architecture V2",
+        "public": true,
+        "recipient_type": "User",
+        "vanity_slug": "cybersecurity-architecture-v2",
+        "show_badge_lmi": false,
+        "show_skill_tag_links": true,
+        "settings_enable_related_badges": true,
+        "translatable": false,
+        "updated_at": "2026-02-19T04:00:23.958+05:00",
+        "level": "Intermediate",
+        "time_to_earn": "Hours",
+        "cost": "Paid",
+        "type_category": "Validation",
+        "image": {
+          "id": "84ce958a-30a6-4036-9944-005c0fce9f81",
+          "url": "https://images.credly.com/images/84ce958a-30a6-4036-9944-005c0fce9f81/Cybersecurity_Arch_V2.png"
+        },
+        "image_url": "https://images.credly.com/images/84ce958a-30a6-4036-9944-005c0fce9f81/Cybersecurity_Arch_V2.png",
+        "url": "https://www.credly.com/org/coursera/badge/cybersecurity-architecture-v2",
+        "owner_vanity_slug": "ibm",
+        "badge_template_earnable": false,
+        "recommendable": true,
+        "issuer": {
+          "summary": "issued by Coursera and authorized by IBM",
+          "entities": [
+            {
+              "label": "Issued by",
+              "primary": true,
+              "entity": {
+                "type": "Organization",
+                "id": "ede32dcc-9168-4563-9352-8725936d5231",
+                "name": "Coursera",
+                "url": "https://www.credly.com/api/v1/organizations/ede32dcc-9168-4563-9352-8725936d5231",
+                "vanity_url": "https://www.credly.com/org/coursera",
+                "internationalize_badge_templates": true,
+                "share_to_ziprecruiter": true,
+                "twitter_url": "https://twitter.com/coursera",
+                "verified": false
+              }
+            },
+            {
+              "label": "Authorized by",
+              "primary": false,
+              "entity": {
+                "type": "Organization",
+                "id": "d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+                "name": "IBM",
+                "url": "https://www.credly.com/api/v1/organizations/d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+                "vanity_url": "https://www.credly.com/org/ibm",
+                "internationalize_badge_templates": false,
+                "share_to_ziprecruiter": false,
+                "twitter_url": "https://twitter.com/IBM",
+                "verified": false
+              }
+            }
+          ]
+        },
+        "related_badge_templates": [
+          {
+            "id": "aa443e56-1924-4e60-82ca-ff41f87b49df",
+            "name": "Cybersecurity Architecture",
+            "image": {
+              "id": "4312612f-2480-4052-a5bd-b72b78e86551",
+              "url": "https://images.credly.com/images/4312612f-2480-4052-a5bd-b72b78e86551/blob"
+            },
+            "image_url": "https://images.credly.com/images/4312612f-2480-4052-a5bd-b72b78e86551/blob",
+            "updated_at": "2025-10-22T13:59:12.872Z",
+            "url": "https://www.credly.com/org/ibm/badge/cybersecurity-architecture"
+          },
+          {
+            "id": "60ebed1d-9755-4b31-8f20-128cadee84bf",
+            "name": "Cyber Defense Architecture",
+            "image": {
+              "id": "9fc222e0-4830-4aa3-8b1b-c407898e2680",
+              "url": "https://images.credly.com/images/9fc222e0-4830-4aa3-8b1b-c407898e2680/edX_20Cyber_20Defense_20Architecture.png"
+            },
+            "image_url": "https://images.credly.com/images/9fc222e0-4830-4aa3-8b1b-c407898e2680/edX_20Cyber_20Defense_20Architecture.png",
+            "updated_at": "2025-10-22T13:58:20.926Z",
+            "url": "https://www.credly.com/org/ibm/badge/cyber-defense-architecture"
+          },
+          {
+            "id": "b799068b-96f8-416c-9809-8018d3d067d6",
+            "name": "Enterprise Security in Practice",
+            "image": {
+              "id": "a7fb1975-56fe-4919-a20b-617920ad2a4f",
+              "url": "https://images.credly.com/images/a7fb1975-56fe-4919-a20b-617920ad2a4f/image.png"
+            },
+            "image_url": "https://images.credly.com/images/a7fb1975-56fe-4919-a20b-617920ad2a4f/image.png",
+            "updated_at": "2024-06-06T05:09:00.479Z",
+            "url": "https://www.credly.com/org/ibm/badge/enterprise-security-in-practice.1"
+          }
+        ],
+        "alignments": [],
+        "badge_template_activities": [
+          {
+            "id": "d19d273d-54e9-46fe-a541-4b595ef6b06b",
+            "activity_type": "Course",
+            "required_badge_template_id": null,
+            "title": "Successful completion of Cybersecurity Architecture on Coursera.org",
+            "url": "https://www.coursera.org/learn/cybersecurity-architecture?utm_source=IBM&utm_medium=institutions&utm_campaign=IBMBadge"
+          }
+        ],
+        "endorsements": [],
+        "skills": [
+          {
+            "id": "1b5bb5ee-0a22-4020-aac5-f3963ab87309",
+            "name": "Application Security",
+            "vanity_slug": "application-security",
+            "canonical": true,
+            "faethm_id": "FS000385"
+          },
+          {
+            "id": "b8c495bc-bb40-4b16-8ad0-714ecbb0cbd5",
+            "name": "Cybersecurity Fundamentals",
+            "vanity_slug": "cybersecurity-fundamentals",
+            "canonical": false,
+            "faethm_id": "FS001871"
+          },
+          {
+            "id": "d9b5c4dd-617e-4357-bd4d-e84494c4d943",
+            "name": "Data Security",
+            "vanity_slug": "data-security",
+            "canonical": true,
+            "faethm_id": "FS001962"
+          },
+          {
+            "id": "05c18fc7-839d-4a0a-a3ea-5719e37cb809",
+            "name": "Identity And Access Management (IAM)",
+            "vanity_slug": "identity-and-access-management-iam",
+            "canonical": true,
+            "faethm_id": "FS003641"
+          },
+          {
+            "id": "d52d6bb8-1ef8-4d0f-baf6-893d5d9ed6e7",
+            "name": "Incident Response",
+            "vanity_slug": "incident-response",
+            "canonical": true,
+            "faethm_id": "FS003690"
+          },
+          {
+            "id": "9cbbb77f-c89c-4f53-b712-947a2cd9c27c",
+            "name": "Multi-Factor Authentication (MFA)",
+            "vanity_slug": "multi-factor-authentication-mfa",
+            "canonical": false
+          },
+          {
+            "id": "5fb824f3-071b-4242-ad9a-c95d1110c63b",
+            "name": "Network Security",
+            "vanity_slug": "network-security",
+            "canonical": true,
+            "faethm_id": "FS005082"
+          },
+          {
+            "id": "2f580037-1731-4c8c-9b23-fafcf0349e5a",
+            "name": "PWID-B1055900",
+            "vanity_slug": "pwid-b1055900",
+            "canonical": false
+          },
+          {
+            "id": "b5f9a9d4-c6af-49b5-9351-921370db7df8",
+            "name": "Threat Detection",
+            "vanity_slug": "threat-detection",
+            "canonical": true,
+            "faethm_id": "FS007476"
+          }
+        ]
+      },
+      "image": {
+        "id": "84ce958a-30a6-4036-9944-005c0fce9f81",
+        "url": "https://images.credly.com/images/84ce958a-30a6-4036-9944-005c0fce9f81/Cybersecurity_Arch_V2.png"
+      },
+      "image_url": "https://images.credly.com/images/84ce958a-30a6-4036-9944-005c0fce9f81/Cybersecurity_Arch_V2.png",
+      "evidence": []
+    },
+    {
+      "id": "ba72d619-a08a-46b3-812a-47395a19ad55",
+      "expires_at_date": null,
+      "issued_at_date": "2026-07-22",
+      "issued_to": "Muhammad Talal Ahmed",
+      "locale": "en",
+      "public": true,
+      "state": "accepted",
+      "translate_metadata": false,
+      "accepted_at": "2026-07-22T13:48:09.005+05:00",
+      "expires_at": null,
+      "issued_at": "2026-07-22T13:48:08.000+05:00",
+      "last_updated_at": "2026-07-22T13:48:09.037+05:00",
+      "updated_at": "2026-07-22T13:48:09.037+05:00",
+      "earner_path": "/users/ta1al",
+      "earner_photo_url": null,
+      "is_private_badge": false,
+      "user_is_earner": false,
+      "printable": true,
+      "issuer": {
+        "summary": "issued by Coursera and authorized by IBM",
+        "entities": [
+          {
+            "label": "Issued by",
+            "primary": true,
+            "entity": {
+              "type": "Organization",
+              "id": "ede32dcc-9168-4563-9352-8725936d5231",
+              "name": "Coursera",
+              "url": "https://www.credly.com/api/v1/organizations/ede32dcc-9168-4563-9352-8725936d5231",
+              "vanity_url": "https://www.credly.com/org/coursera",
+              "internationalize_badge_templates": true,
+              "share_to_ziprecruiter": true,
+              "twitter_url": "https://twitter.com/coursera",
+              "verified": false
+            }
+          },
+          {
+            "label": "Authorized by",
+            "primary": false,
+            "entity": {
+              "type": "Organization",
+              "id": "d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+              "name": "IBM",
+              "url": "https://www.credly.com/api/v1/organizations/d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+              "vanity_url": "https://www.credly.com/org/ibm",
+              "internationalize_badge_templates": false,
+              "share_to_ziprecruiter": false,
+              "twitter_url": "https://twitter.com/IBM",
+              "verified": false
+            }
+          }
+        ]
+      },
+      "badge_template": {
+        "id": "c26b9fc7-8805-48db-83fa-a4ef139e8ff1",
+        "description": "This badge earner understands the concepts of relational and non-relational databases and can implement various data protection techniques to secure sensitive information. They know how to configure and manage database user profiles, password policies, privileges, and roles. They can identify, analyze, and mitigate database injection vulnerabilities, including OS command and SQL injection. The badge earner can also design and implement comprehensive database and application auditing models.",
+        "global_activity_url": "https://www.coursera.org/learn/database-essentials-and-vulnerabilities?utm_source=IBM&utm_medium=institutions&utm_campaign=IBMBadge",
+        "earn_this_badge_url": null,
+        "enable_earn_this_badge": false,
+        "enable_detail_attribute_visibility": true,
+        "job_board_url": null,
+        "name": "Database Essentials and Vulnerabilities",
+        "public": true,
+        "recipient_type": "User",
+        "vanity_slug": "database-essentials-and-vulnerabilities",
+        "show_badge_lmi": true,
+        "show_skill_tag_links": true,
+        "settings_enable_related_badges": true,
+        "translatable": false,
+        "updated_at": "2025-10-22T18:59:13.116+05:00",
+        "level": "Intermediate",
+        "time_to_earn": "Days",
+        "cost": "Paid",
+        "type_category": "Validation",
+        "image": {
+          "id": "ef9d282a-8f31-4b0f-9bbb-640a68ea4b7f",
+          "url": "https://images.credly.com/images/ef9d282a-8f31-4b0f-9bbb-640a68ea4b7f/Coursera_20Database_20Essentials_20and_20Vulnerabilities.png"
+        },
+        "image_url": "https://images.credly.com/images/ef9d282a-8f31-4b0f-9bbb-640a68ea4b7f/Coursera_20Database_20Essentials_20and_20Vulnerabilities.png",
+        "url": "https://www.credly.com/org/coursera/badge/database-essentials-and-vulnerabilities",
+        "owner_vanity_slug": "ibm",
+        "badge_template_earnable": false,
+        "recommendable": true,
+        "issuer": {
+          "summary": "issued by Coursera and authorized by IBM",
+          "entities": [
+            {
+              "label": "Issued by",
+              "primary": true,
+              "entity": {
+                "type": "Organization",
+                "id": "ede32dcc-9168-4563-9352-8725936d5231",
+                "name": "Coursera",
+                "url": "https://www.credly.com/api/v1/organizations/ede32dcc-9168-4563-9352-8725936d5231",
+                "vanity_url": "https://www.credly.com/org/coursera",
+                "internationalize_badge_templates": true,
+                "share_to_ziprecruiter": true,
+                "twitter_url": "https://twitter.com/coursera",
+                "verified": false
+              }
+            },
+            {
+              "label": "Authorized by",
+              "primary": false,
+              "entity": {
+                "type": "Organization",
+                "id": "d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+                "name": "IBM",
+                "url": "https://www.credly.com/api/v1/organizations/d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+                "vanity_url": "https://www.credly.com/org/ibm",
+                "internationalize_badge_templates": false,
+                "share_to_ziprecruiter": false,
+                "twitter_url": "https://twitter.com/IBM",
+                "verified": false
+              }
+            }
+          ]
+        },
+        "related_badge_templates": [
+          {
+            "id": "1fa983fa-a163-4b27-833c-d74cee8b08d0",
+            "name": "Interskill - IBM i V7.4 System Administrator - Security - Experienced",
+            "image": {
+              "id": "33f4a85d-a963-4b3e-9a60-679ff92373bc",
+              "url": "https://images.credly.com/images/33f4a85d-a963-4b3e-9a60-679ff92373bc/image.png"
+            },
+            "image_url": "https://images.credly.com/images/33f4a85d-a963-4b3e-9a60-679ff92373bc/image.png",
+            "updated_at": "2025-10-22T14:03:44.285Z",
+            "url": "https://www.credly.com/org/ibm/badge/interskill-ibm-i-v7-4-system-administrator-security-experienced"
+          },
+          {
+            "id": "ba2267e9-5e1c-4524-a1ce-6b87fa30d569",
+            "name": "Relational Database Administration Essentials",
+            "image": {
+              "id": "e7192c75-33ae-4c79-890f-fcc6eb0dc653",
+              "url": "https://images.credly.com/images/e7192c75-33ae-4c79-890f-fcc6eb0dc653/image.png"
+            },
+            "image_url": "https://images.credly.com/images/e7192c75-33ae-4c79-890f-fcc6eb0dc653/image.png",
+            "updated_at": "2025-10-22T13:59:13.056Z",
+            "url": "https://www.credly.com/org/ibm/badge/relational-database-administration-essentials"
+          },
+          {
+            "id": "e2c3bf2d-326a-4768-8f90-ef032934113b",
+            "name": "Relational Database Administration Essentials",
+            "image": {
+              "id": "8977b73d-0884-4c4c-9f27-12bd94940095",
+              "url": "https://images.credly.com/images/8977b73d-0884-4c4c-9f27-12bd94940095/image.png"
+            },
+            "image_url": "https://images.credly.com/images/8977b73d-0884-4c4c-9f27-12bd94940095/image.png",
+            "updated_at": "2025-10-22T13:58:21.349Z",
+            "url": "https://www.credly.com/org/ibm/badge/relational-database-administration-essentials.1"
+          }
+        ],
+        "alignments": [],
+        "badge_template_activities": [
+          {
+            "id": "d45172db-74fc-4c89-852a-202a62ce07fa",
+            "activity_type": "Course",
+            "required_badge_template_id": null,
+            "title": "Successful completion of Database Essentials and Vulnerabilities on Coursera.org.",
+            "url": "https://www.coursera.org/learn/database-essentials-and-vulnerabilities?utm_source=IBM&utm_medium=institutions&utm_campaign=IBMBadge"
+          }
+        ],
+        "endorsements": [],
+        "skills": [
+          {
+            "id": "7d1bc487-d895-4f60-bc39-ce795ea09e8e",
+            "name": "Database Auditing Models",
+            "vanity_slug": "database-auditing-models",
+            "canonical": false
+          },
+          {
+            "id": "313862ef-e646-49ef-8ed9-5bb4773d5833",
+            "name": "Database Injection Vulnerabilities",
+            "vanity_slug": "database-injection-vulnerabilities",
+            "canonical": false
+          },
+          {
+            "id": "a246b91b-bcd0-412d-a08f-1b8388f25023",
+            "name": "Database Security",
+            "vanity_slug": "database-security",
+            "canonical": true,
+            "faethm_id": "FS001988"
+          },
+          {
+            "id": "253e6dc9-670f-4e76-a17c-93d66c6ad9d7",
+            "name": "Password Policies",
+            "vanity_slug": "password-policies",
+            "canonical": false
+          },
+          {
+            "id": "b7c780c6-7f9f-4c19-9404-92ca948107e8",
+            "name": "PWID-B0953200",
+            "vanity_slug": "pwid-b0953200",
+            "canonical": false
+          },
+          {
+            "id": "e94a37f8-df96-4b1c-bcfe-0e771ef84d16",
+            "name": "User Profiles",
+            "vanity_slug": "user-profiles",
+            "canonical": false
+          }
+        ]
+      },
+      "image": {
+        "id": "ef9d282a-8f31-4b0f-9bbb-640a68ea4b7f",
+        "url": "https://images.credly.com/images/ef9d282a-8f31-4b0f-9bbb-640a68ea4b7f/Coursera_20Database_20Essentials_20and_20Vulnerabilities.png"
+      },
+      "image_url": "https://images.credly.com/images/ef9d282a-8f31-4b0f-9bbb-640a68ea4b7f/Coursera_20Database_20Essentials_20and_20Vulnerabilities.png",
+      "evidence": []
+    },
+    {
+      "id": "0aa191b6-553b-4a80-a13e-e61a5b74f9d2",
+      "expires_at_date": "2026-09-30",
+      "issued_at_date": "2025-09-10",
+      "issued_to": "Muhammad Talal Ahmed",
+      "locale": "en",
+      "public": true,
+      "state": "accepted",
+      "translate_metadata": false,
+      "accepted_at": "2026-07-19T01:50:56.882+05:00",
+      "expires_at": "2026-09-30T11:00:00.000+05:00",
+      "issued_at": "2025-09-10T11:00:00.000+05:00",
+      "last_updated_at": "2026-07-19T01:50:56.882+05:00",
+      "updated_at": "2026-07-19T01:50:56.883+05:00",
+      "earner_path": "/users/ta1al",
+      "earner_photo_url": null,
+      "is_private_badge": false,
+      "user_is_earner": false,
+      "printable": false,
+      "issuer": {
+        "summary": "issued by ISC2",
+        "entities": [
+          {
+            "label": "Issued by",
+            "primary": true,
+            "entity": {
+              "type": "Organization",
+              "id": "8b818bfd-a192-4339-ae4c-daec7622cc24",
+              "name": "ISC2",
+              "url": "https://www.credly.com/api/v1/organizations/8b818bfd-a192-4339-ae4c-daec7622cc24",
+              "vanity_url": "https://www.credly.com/org/isc2",
+              "internationalize_badge_templates": false,
+              "share_to_ziprecruiter": true,
+              "twitter_url": "https://twitter.com/isc2",
+              "verified": false
+            }
+          }
+        ]
+      },
+      "badge_template": {
+        "id": "67e81855-20b9-47a8-a15b-0d2f3e0f1957",
+        "description": "ISC2 Candidates are individuals pursuing or considering a cybersecurity certification. To become a Candidate, the individual must apply online and provide minimum identifying information, as well as affirm that they will abide by the ISC2 Code of Ethics and Privacy Policy.",
+        "global_activity_url": "https://www.isc2.org/Candidate",
+        "earn_this_badge_url": null,
+        "enable_earn_this_badge": false,
+        "enable_detail_attribute_visibility": true,
+        "job_board_url": null,
+        "name": "ISC2 Candidate",
+        "public": true,
+        "recipient_type": "User",
+        "vanity_slug": "isc2-candidate",
+        "show_badge_lmi": false,
+        "show_skill_tag_links": true,
+        "settings_enable_related_badges": true,
+        "translatable": false,
+        "updated_at": "2023-10-13T21:44:58.503+06:00",
+        "level": null,
+        "time_to_earn": null,
+        "cost": null,
+        "type_category": null,
+        "image": {
+          "id": "9180921d-4a13-429e-9357-6f9706a554f0",
+          "url": "https://images.credly.com/images/9180921d-4a13-429e-9357-6f9706a554f0/image.png"
+        },
+        "image_url": "https://images.credly.com/images/9180921d-4a13-429e-9357-6f9706a554f0/image.png",
+        "url": "https://www.credly.com/org/isc2/badge/isc2-candidate",
+        "owner_vanity_slug": "isc2",
+        "badge_template_earnable": false,
+        "recommendable": true,
+        "issuer": {
+          "summary": "issued by ISC2",
+          "entities": [
+            {
+              "label": "Issued by",
+              "primary": true,
+              "entity": {
+                "type": "Organization",
+                "id": "8b818bfd-a192-4339-ae4c-daec7622cc24",
+                "name": "ISC2",
+                "url": "https://www.credly.com/api/v1/organizations/8b818bfd-a192-4339-ae4c-daec7622cc24",
+                "vanity_url": "https://www.credly.com/org/isc2",
+                "internationalize_badge_templates": false,
+                "share_to_ziprecruiter": true,
+                "twitter_url": "https://twitter.com/isc2",
+                "verified": false
+              }
+            }
+          ]
+        },
+        "related_badge_templates": [],
+        "alignments": [],
+        "badge_template_activities": [
+          {
+            "id": "b1b46c80-9f34-4765-b82b-59ae512529c7",
+            "activity_type": "Payment",
+            "required_badge_template_id": null,
+            "title": "After their first year, ISC2 Candidates are required to pay annual dues to maintain status",
+            "url": null
+          },
+          {
+            "id": "2c1bd934-1001-4986-9969-c780307d921c",
+            "activity_type": "Application",
+            "required_badge_template_id": null,
+            "title": "ISC2 Candidates agree to the ISC2 Privacy Policy",
+            "url": null
+          },
+          {
+            "id": "3ce1c9e2-ca58-4e5f-8389-20c1b2b6a335",
+            "activity_type": "Member",
+            "required_badge_template_id": null,
+            "title": "ISC2 Candidates will create an account with ISC2 and agree to abide by the Code of Ethics",
+            "url": null
+          }
+        ],
+        "endorsements": [],
+        "skills": [
+          {
+            "id": "39345009-cd25-4d53-9713-1c230ea261dc",
+            "name": "ISC2 Candidates are part of the diverse, global community of individuals with a desire to create a safe and secure cyber world.",
+            "vanity_slug": "isc2-candidates-are-part-of-the-diverse-global-comm",
+            "canonical": false
+          },
+          {
+            "id": "bf62a6a8-dd08-47c9-8bdd-8c27d659d974",
+            "name": "ISC2 Candidates are part of the ISC2 pledge to certify one million individuals and as such, have access to foundational education materials to pursue the entry-level Certified in Cybersecurity certification.",
+            "vanity_slug": "isc2-candidates-are-part-of-the-isc2-pledge-to-cert",
+            "canonical": false
+          },
+          {
+            "id": "c4e064a2-c8ea-43e4-8e7c-40e95153ea6e",
+            "name": "ISC2 Candidates are pursuing their first ISC2 certification, or gaining the foundational knowledge necessary to join the cybersecurity workforce.",
+            "vanity_slug": "isc2-candidates-are-pursuing-their-first-isc2-certi",
+            "canonical": false
+          }
+        ]
+      },
+      "image": {
+        "id": "9180921d-4a13-429e-9357-6f9706a554f0",
+        "url": "https://images.credly.com/images/9180921d-4a13-429e-9357-6f9706a554f0/image.png"
+      },
+      "image_url": "https://images.credly.com/images/9180921d-4a13-429e-9357-6f9706a554f0/image.png",
+      "evidence": [
+        {
+          "id": "38648bbe-2d1f-4dc1-b566-7eff0450e217",
+          "type": "UrlEvidence",
+          "name": "candidate",
+          "description": "candidate",
+          "value": "https://www.isc2.org/MemberVerification"
+        }
+      ]
+    },
+    {
+      "id": "9f41fb3d-dc6d-4670-9e5c-084fac1c64ac",
+      "expires_at_date": null,
+      "issued_at_date": "2025-09-09",
+      "issued_to": "Talal Ahmad",
+      "locale": "en",
+      "public": true,
+      "state": "accepted",
+      "translate_metadata": false,
+      "accepted_at": "2025-09-09T17:55:54.791+05:00",
+      "expires_at": null,
+      "issued_at": "2025-09-09T17:55:53.000+05:00",
+      "last_updated_at": "2025-09-09T17:55:54.845+05:00",
+      "updated_at": "2025-09-09T17:55:54.845+05:00",
+      "earner_path": "/users/ta1al",
+      "earner_photo_url": null,
+      "is_private_badge": false,
+      "user_is_earner": false,
+      "printable": true,
+      "issuer": {
+        "summary": "issued by Cisco",
+        "entities": [
+          {
+            "label": "Issued by",
+            "primary": true,
+            "entity": {
+              "type": "Organization",
+              "id": "74381078-44ac-4581-8471-36bd1ce495b7",
+              "name": "Cisco",
+              "url": "https://www.credly.com/api/v1/organizations/74381078-44ac-4581-8471-36bd1ce495b7",
+              "vanity_url": "https://www.credly.com/org/cisco",
+              "internationalize_badge_templates": false,
+              "share_to_ziprecruiter": true,
+              "twitter_url": "https://twitter.com/learningatcisco",
+              "verified": false
+            }
+          }
+        ]
+      },
+      "badge_template": {
+        "id": "10b1a2de-f36b-4730-b1ca-8505e19f4390",
+        "description": "Cisco verifies the earner of this badge successfully completed the Introduction to Cybersecurity course. The holder of this student-level credential has introductory knowledge of cybersecurity, including the global implications of cyber threats on industries, and why cybersecurity is a growing profession. They understand vulnerabilities and threat detection and defense. They also have insight into opportunities available with pursuing cybersecurity certifications.",
+        "global_activity_url": "https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity",
+        "earn_this_badge_url": null,
+        "enable_earn_this_badge": false,
+        "enable_detail_attribute_visibility": true,
+        "job_board_url": null,
+        "name": "Introduction to Cybersecurity",
+        "public": true,
+        "recipient_type": "User",
+        "vanity_slug": "introduction-to-cybersecurity",
+        "show_badge_lmi": false,
+        "show_skill_tag_links": true,
+        "settings_enable_related_badges": true,
+        "translatable": false,
+        "updated_at": "2024-04-06T00:23:53.238+05:00",
+        "level": null,
+        "time_to_earn": null,
+        "cost": null,
+        "type_category": null,
+        "image": {
+          "id": "af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b",
+          "url": "https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png"
+        },
+        "image_url": "https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png",
+        "url": "https://www.credly.com/org/cisco/badge/introduction-to-cybersecurity",
+        "owner_vanity_slug": "cisco",
+        "badge_template_earnable": false,
+        "recommendable": true,
+        "issuer": {
+          "summary": "issued by Cisco",
+          "entities": [
+            {
+              "label": "Issued by",
+              "primary": true,
+              "entity": {
+                "type": "Organization",
+                "id": "74381078-44ac-4581-8471-36bd1ce495b7",
+                "name": "Cisco",
+                "url": "https://www.credly.com/api/v1/organizations/74381078-44ac-4581-8471-36bd1ce495b7",
+                "vanity_url": "https://www.credly.com/org/cisco",
+                "internationalize_badge_templates": false,
+                "share_to_ziprecruiter": true,
+                "twitter_url": "https://twitter.com/learningatcisco",
+                "verified": false
+              }
+            }
+          ]
+        },
+        "related_badge_templates": [
+          {
+            "id": "c2c30e29-abf3-4e1a-89c8-a5deeb0a1ccd",
+            "name": "CyberOps Associate",
+            "image": {
+              "id": "53f37f83-04a1-4935-9b1e-21a99cc6e1b2",
+              "url": "https://images.credly.com/images/53f37f83-04a1-4935-9b1e-21a99cc6e1b2/CyberOpsAssoc.png"
+            },
+            "image_url": "https://images.credly.com/images/53f37f83-04a1-4935-9b1e-21a99cc6e1b2/CyberOpsAssoc.png",
+            "updated_at": "2025-07-08T23:14:16.193Z",
+            "url": "https://www.credly.com/org/cisco/badge/cyberops-associate"
+          },
+          {
+            "id": "7a5764c2-bcd4-482b-a323-f469f3ecb6e3",
+            "name": "Cisco Certified Cybersecurity Specialist – Threat Hunting and Defending",
+            "image": {
+              "id": "20af933b-4b94-4168-ab12-ccbac7920d21",
+              "url": "https://images.credly.com/images/20af933b-4b94-4168-ab12-ccbac7920d21/blob"
+            },
+            "image_url": "https://images.credly.com/images/20af933b-4b94-4168-ab12-ccbac7920d21/blob",
+            "updated_at": "2026-03-12T14:21:32.599Z",
+            "url": "https://www.credly.com/org/cisco/badge/cisco-certified-cybersecurity-specialist-threat-hun"
+          },
+          {
+            "id": "737d08f0-187c-45e8-8e69-b6baa9a9313a",
+            "name": "Understanding Cisco Cybersecurity Operations Fundamentals",
+            "image": {
+              "id": "a594cedd-22d6-4de6-93b9-a5107612fb64",
+              "url": "https://images.credly.com/images/a594cedd-22d6-4de6-93b9-a5107612fb64/CV_PNG_L200.png"
+            },
+            "image_url": "https://images.credly.com/images/a594cedd-22d6-4de6-93b9-a5107612fb64/CV_PNG_L200.png",
+            "updated_at": "2026-02-03T00:53:18.905Z",
+            "url": "https://www.credly.com/org/cisco/badge/understanding-cisco-cybersecurity-operations-fundamentals"
+          }
+        ],
+        "alignments": [],
+        "badge_template_activities": [
+          {
+            "id": "0c372427-da8b-454c-941a-49f13889e685",
+            "activity_type": "Assessment",
+            "required_badge_template_id": null,
+            "title": "Passing score on Cisco Networking Academy comprehensive final exam.",
+            "url": null
+          }
+        ],
+        "endorsements": [],
+        "skills": [
+          {
+            "id": "b00595ad-a668-48c7-940d-594692a548bc",
+            "name": "Cyber Best Practices",
+            "vanity_slug": "cyber-best-practices",
+            "canonical": false
+          },
+          {
+            "id": "ff9ffc58-12ad-465f-8ea8-09393f5b3dcb",
+            "name": "Cybersecurity",
+            "vanity_slug": "cybersecurity",
+            "canonical": true,
+            "faethm_id": "FS001871"
+          },
+          {
+            "id": "cbd704a1-1e22-4337-a078-2b1f33276f97",
+            "name": "Network Vulnerabilities",
+            "vanity_slug": "network-vulnerabilities",
+            "canonical": false,
+            "faethm_id": "FS005082"
+          },
+          {
+            "id": "72a88880-c34d-489f-b43f-0f332c78ed64",
+            "name": "Privacy And Data Confidentiality",
+            "vanity_slug": "privacy-and-data-confidentiality",
+            "canonical": false,
+            "faethm_id": "FS003758"
+          },
+          {
+            "id": "b5f9a9d4-c6af-49b5-9351-921370db7df8",
+            "name": "Threat Detection",
+            "vanity_slug": "threat-detection",
+            "canonical": true,
+            "faethm_id": "FS007476"
+          }
+        ]
+      },
+      "image": {
+        "id": "af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b",
+        "url": "https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png"
+      },
+      "image_url": "https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png",
+      "evidence": []
+    },
+    {
+      "id": "1677ef7a-c953-4da1-b045-067a873b5333",
+      "expires_at_date": null,
+      "issued_at_date": "2025-06-10",
+      "issued_to": "Muhammad Talal Ahmed",
+      "locale": "en",
+      "public": true,
+      "state": "accepted",
+      "translate_metadata": false,
+      "accepted_at": "2025-06-10T11:25:39.383+05:00",
+      "expires_at": null,
+      "issued_at": "2025-06-10T11:25:39.000+05:00",
+      "last_updated_at": "2025-06-10T11:25:39.414+05:00",
+      "updated_at": "2025-06-10T11:25:39.414+05:00",
+      "earner_path": "/users/ta1al",
+      "earner_photo_url": null,
+      "is_private_badge": false,
+      "user_is_earner": false,
+      "printable": true,
+      "issuer": {
+        "summary": "issued by Coursera and authorized by IBM",
+        "entities": [
+          {
+            "label": "Issued by",
+            "primary": true,
+            "entity": {
+              "type": "Organization",
+              "id": "ede32dcc-9168-4563-9352-8725936d5231",
+              "name": "Coursera",
+              "url": "https://www.credly.com/api/v1/organizations/ede32dcc-9168-4563-9352-8725936d5231",
+              "vanity_url": "https://www.credly.com/org/coursera",
+              "internationalize_badge_templates": true,
+              "share_to_ziprecruiter": true,
+              "twitter_url": "https://twitter.com/coursera",
+              "verified": false
+            }
+          },
+          {
+            "label": "Authorized by",
+            "primary": false,
+            "entity": {
+              "type": "Organization",
+              "id": "d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+              "name": "IBM",
+              "url": "https://www.credly.com/api/v1/organizations/d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+              "vanity_url": "https://www.credly.com/org/ibm",
+              "internationalize_badge_templates": false,
+              "share_to_ziprecruiter": false,
+              "twitter_url": "https://twitter.com/IBM",
+              "verified": false
+            }
+          }
+        ]
+      },
+      "badge_template": {
+        "id": "c539b3bf-4cb2-46fc-88a5-2c1b1b4206fd",
+        "description": "This badge earner understands the key cybersecurity concepts related to operating systems. They have a basic understanding of architecture, file systems, security features, and user accounts in Windows, macOS, and Linux. They can use command-line tools to perform basic administrative tasks. The badge earner is also familiar with virtualization as it relates to operating systems and cloud computing.",
+        "global_activity_url": "https://www.coursera.org/learn/operating-systems-overview-administration-security?specialization=ibm-cybersecurity-analyst&utm_source=IBM&utm_medium=institutions&utm_campaign=IBMBadge",
+        "earn_this_badge_url": null,
+        "enable_earn_this_badge": false,
+        "enable_detail_attribute_visibility": true,
+        "job_board_url": null,
+        "name": "Operating Systems: Overview, Administration, and Security",
+        "public": true,
+        "recipient_type": "User",
+        "vanity_slug": "operating-systems-overview-administration-and-secur",
+        "show_badge_lmi": false,
+        "show_skill_tag_links": true,
+        "settings_enable_related_badges": true,
+        "translatable": false,
+        "updated_at": "2025-10-22T18:59:13.144+05:00",
+        "level": "Foundational",
+        "time_to_earn": "Hours",
+        "cost": "Paid",
+        "type_category": "Validation",
+        "image": {
+          "id": "f821064c-8e80-4900-bec2-a799a62157e5",
+          "url": "https://images.credly.com/images/f821064c-8e80-4900-bec2-a799a62157e5/Coursera_20Operating_20Systems_20Overview_20Administration_20and_20Security.png"
+        },
+        "image_url": "https://images.credly.com/images/f821064c-8e80-4900-bec2-a799a62157e5/Coursera_20Operating_20Systems_20Overview_20Administration_20and_20Security.png",
+        "url": "https://www.credly.com/org/coursera/badge/operating-systems-overview-administration-and-secur",
+        "owner_vanity_slug": "ibm",
+        "badge_template_earnable": false,
+        "recommendable": true,
+        "issuer": {
+          "summary": "issued by Coursera and authorized by IBM",
+          "entities": [
+            {
+              "label": "Issued by",
+              "primary": true,
+              "entity": {
+                "type": "Organization",
+                "id": "ede32dcc-9168-4563-9352-8725936d5231",
+                "name": "Coursera",
+                "url": "https://www.credly.com/api/v1/organizations/ede32dcc-9168-4563-9352-8725936d5231",
+                "vanity_url": "https://www.credly.com/org/coursera",
+                "internationalize_badge_templates": true,
+                "share_to_ziprecruiter": true,
+                "twitter_url": "https://twitter.com/coursera",
+                "verified": false
+              }
+            },
+            {
+              "label": "Authorized by",
+              "primary": false,
+              "entity": {
+                "type": "Organization",
+                "id": "d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+                "name": "IBM",
+                "url": "https://www.credly.com/api/v1/organizations/d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+                "vanity_url": "https://www.credly.com/org/ibm",
+                "internationalize_badge_templates": false,
+                "share_to_ziprecruiter": false,
+                "twitter_url": "https://twitter.com/IBM",
+                "verified": false
+              }
+            }
+          ]
+        },
+        "related_badge_templates": [
+          {
+            "id": "200f4a08-e7e2-495a-8897-aa42a09c9948",
+            "name": "Operating Systems and Security V2",
+            "image": {
+              "id": "a9edb2aa-1fdd-45f2-888e-4af11d0f859a",
+              "url": "https://images.credly.com/images/a9edb2aa-1fdd-45f2-888e-4af11d0f859a/edX_20Operating_20Systems_20and_20Security_20V2.png"
+            },
+            "image_url": "https://images.credly.com/images/a9edb2aa-1fdd-45f2-888e-4af11d0f859a/edX_20Operating_20Systems_20and_20Security_20V2.png",
+            "updated_at": "2025-10-22T13:58:20.669Z",
+            "url": "https://www.credly.com/org/ibm/badge/operating-systems-and-security-v2"
+          },
+          {
+            "id": "35f9cfc5-37cd-4064-b536-702b96df9cd8",
+            "name": "Cybersecurity Roles, Processes & Operating System Security",
+            "image": {
+              "id": "c617d37c-9c45-4617-aabf-e11954e188ec",
+              "url": "https://images.credly.com/images/c617d37c-9c45-4617-aabf-e11954e188ec/blob"
+            },
+            "image_url": "https://images.credly.com/images/c617d37c-9c45-4617-aabf-e11954e188ec/blob",
+            "updated_at": "2025-10-22T13:59:12.260Z",
+            "url": "https://www.credly.com/org/ibm/badge/cybersecurity-roles-processes-operating-system-security"
+          },
+          {
+            "id": "df707e54-e89a-4625-9ade-b53e7c8198ac",
+            "name": "IBM System Support Technician Apprenticeship",
+            "image": {
+              "id": "82a13e5c-a25c-4898-9bdc-ca911e428368",
+              "url": "https://images.credly.com/images/82a13e5c-a25c-4898-9bdc-ca911e428368/ApprenticeAcad-System_Support_Technician.png"
+            },
+            "image_url": "https://images.credly.com/images/82a13e5c-a25c-4898-9bdc-ca911e428368/ApprenticeAcad-System_Support_Technician.png",
+            "updated_at": "2025-10-31T14:57:05.769Z",
+            "url": "https://www.credly.com/org/ibm/badge/ibm-system-support-technician-apprenticeship"
+          }
+        ],
+        "alignments": [],
+        "badge_template_activities": [
+          {
+            "id": "0bc38782-e152-4e31-89be-b8a3d5fe760d",
+            "activity_type": "Course",
+            "required_badge_template_id": null,
+            "title": "Successful completion of Operating Systems: Overview, Administration, and Security on Coursera.org",
+            "url": "https://www.coursera.org/learn/operating-systems-overview-administration-security?specialization=ibm-cybersecurity-analyst&utm_source=IBM&utm_medium=institutions&utm_campaign=IBMBadge"
+          }
+        ],
+        "endorsements": [],
+        "skills": [
+          {
+            "id": "dde825a8-6612-41e3-961c-f00bb82e1952",
+            "name": "Administration",
+            "vanity_slug": "administration",
+            "canonical": false,
+            "faethm_id": "FS003178"
+          },
+          {
+            "id": "50e69c1c-1952-451d-abe5-29395e7663ca",
+            "name": "Containers",
+            "vanity_slug": "containers",
+            "canonical": false,
+            "faethm_id": "FS001622"
+          },
+          {
+            "id": "ff9ffc58-12ad-465f-8ea8-09393f5b3dcb",
+            "name": "Cybersecurity",
+            "vanity_slug": "cybersecurity",
+            "canonical": true,
+            "faethm_id": "FS001871"
+          },
+          {
+            "id": "64547b72-2d61-427a-99fd-e1a2c137b5b9",
+            "name": "File Systems",
+            "vanity_slug": "file-systems",
+            "canonical": true,
+            "faethm_id": "FS002878"
+          },
+          {
+            "id": "f6681515-8e58-4d21-8e3f-c8da2c6edfd4",
+            "name": "Linux",
+            "vanity_slug": "linux",
+            "canonical": true,
+            "faethm_id": "FS004327"
+          },
+          {
+            "id": "2c23162b-9b01-4602-b769-9371ebe8e073",
+            "name": "macOS",
+            "vanity_slug": "macos",
+            "canonical": false,
+            "faethm_id": "FS000366"
+          },
+          {
+            "id": "a4c1cb35-8601-4e02-9445-16187d064682",
+            "name": "Operating Systems",
+            "vanity_slug": "operating-systems",
+            "canonical": false,
+            "faethm_id": "FS005252"
+          },
+          {
+            "id": "c4f00bb8-1b4e-4df4-bd3a-6bbf724ae05a",
+            "name": "PWID-B0968800",
+            "vanity_slug": "pwid-b0968800",
+            "canonical": false
+          },
+          {
+            "id": "35abc0ba-fd68-400c-a55f-e3fce62267b6",
+            "name": "Virtualization",
+            "vanity_slug": "virtualization",
+            "canonical": true,
+            "faethm_id": "FS007832"
+          },
+          {
+            "id": "214cb2b8-31b9-40c0-972e-d4da477dfaf9",
+            "name": "Windows",
+            "vanity_slug": "windows",
+            "canonical": false,
+            "faethm_id": "FS004820"
+          }
+        ]
+      },
+      "image": {
+        "id": "f821064c-8e80-4900-bec2-a799a62157e5",
+        "url": "https://images.credly.com/images/f821064c-8e80-4900-bec2-a799a62157e5/Coursera_20Operating_20Systems_20Overview_20Administration_20and_20Security.png"
+      },
+      "image_url": "https://images.credly.com/images/f821064c-8e80-4900-bec2-a799a62157e5/Coursera_20Operating_20Systems_20Overview_20Administration_20and_20Security.png",
+      "evidence": []
+    },
+    {
+      "id": "957c9dab-a8ef-410d-b5fc-2e7aa3018a1c",
+      "expires_at_date": null,
+      "issued_at_date": "2025-02-24",
+      "issued_to": "Muhammad Talal Ahmed",
+      "locale": "en",
+      "public": true,
+      "state": "accepted",
+      "translate_metadata": false,
+      "accepted_at": "2025-02-24T22:38:31.602+05:00",
+      "expires_at": null,
+      "issued_at": "2025-02-24T22:37:11.000+05:00",
+      "last_updated_at": "2025-02-24T22:38:31.602+05:00",
+      "updated_at": "2025-02-24T22:38:31.603+05:00",
+      "earner_path": "/users/ta1al",
+      "earner_photo_url": null,
+      "is_private_badge": false,
+      "user_is_earner": false,
+      "printable": true,
+      "issuer": {
+        "summary": "issued by Coursera and authorized by IBM",
+        "entities": [
+          {
+            "label": "Issued by",
+            "primary": true,
+            "entity": {
+              "type": "Organization",
+              "id": "ede32dcc-9168-4563-9352-8725936d5231",
+              "name": "Coursera",
+              "url": "https://www.credly.com/api/v1/organizations/ede32dcc-9168-4563-9352-8725936d5231",
+              "vanity_url": "https://www.credly.com/org/coursera",
+              "internationalize_badge_templates": true,
+              "share_to_ziprecruiter": true,
+              "twitter_url": "https://twitter.com/coursera",
+              "verified": false
+            }
+          },
+          {
+            "label": "Authorized by",
+            "primary": false,
+            "entity": {
+              "type": "Organization",
+              "id": "d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+              "name": "IBM",
+              "url": "https://www.credly.com/api/v1/organizations/d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+              "vanity_url": "https://www.credly.com/org/ibm",
+              "internationalize_badge_templates": false,
+              "share_to_ziprecruiter": false,
+              "twitter_url": "https://twitter.com/IBM",
+              "verified": false
+            }
+          }
+        ]
+      },
+      "badge_template": {
+        "id": "6647ce07-7fa3-40b9-91dc-d753803b3c22",
+        "description": "This badge earner has a good understanding of why data science, artificial intelligence (AI) and machine learning are revolutionizing the way people do business and research around the world. They have general knowledge on what data science is today.",
+        "global_activity_url": "https://www.coursera.org/learn/what-is-datascience?utm_source=IBM&utm_medium=institutions&utm_campaign=IBMBadge",
+        "earn_this_badge_url": null,
+        "enable_earn_this_badge": false,
+        "enable_detail_attribute_visibility": true,
+        "job_board_url": null,
+        "name": "Data Science Orientation",
+        "public": true,
+        "recipient_type": "User",
+        "vanity_slug": "data-science-orientation",
+        "show_badge_lmi": true,
+        "show_skill_tag_links": true,
+        "settings_enable_related_badges": true,
+        "translatable": false,
+        "updated_at": "2025-10-30T18:52:53.118+05:00",
+        "level": "Foundational",
+        "time_to_earn": "Days",
+        "cost": "Paid",
+        "type_category": "Validation",
+        "image": {
+          "id": "5fc2d535-e716-46c4-881a-f4822b8da0e5",
+          "url": "https://images.credly.com/images/5fc2d535-e716-46c4-881a-f4822b8da0e5/Cognitive_Class_-_What_is_Data_Science.png"
+        },
+        "image_url": "https://images.credly.com/images/5fc2d535-e716-46c4-881a-f4822b8da0e5/Cognitive_Class_-_What_is_Data_Science.png",
+        "url": "https://www.credly.com/org/coursera/badge/data-science-orientation",
+        "owner_vanity_slug": "ibm",
+        "badge_template_earnable": false,
+        "recommendable": true,
+        "issuer": {
+          "summary": "issued by Coursera and authorized by IBM",
+          "entities": [
+            {
+              "label": "Issued by",
+              "primary": true,
+              "entity": {
+                "type": "Organization",
+                "id": "ede32dcc-9168-4563-9352-8725936d5231",
+                "name": "Coursera",
+                "url": "https://www.credly.com/api/v1/organizations/ede32dcc-9168-4563-9352-8725936d5231",
+                "vanity_url": "https://www.credly.com/org/coursera",
+                "internationalize_badge_templates": true,
+                "share_to_ziprecruiter": true,
+                "twitter_url": "https://twitter.com/coursera",
+                "verified": false
+              }
+            },
+            {
+              "label": "Authorized by",
+              "primary": false,
+              "entity": {
+                "type": "Organization",
+                "id": "d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+                "name": "IBM",
+                "url": "https://www.credly.com/api/v1/organizations/d5a90a02-5fe7-4915-a42d-8273c91cab0f",
+                "vanity_url": "https://www.credly.com/org/ibm",
+                "internationalize_badge_templates": false,
+                "share_to_ziprecruiter": false,
+                "twitter_url": "https://twitter.com/IBM",
+                "verified": false
+              }
+            }
+          ]
+        },
+        "related_badge_templates": [
+          {
+            "id": "f2166942-64f6-4d68-9e63-9e7280681e7e",
+            "name": "IBM AI Foundations for Business Specialization",
+            "image": {
+              "id": "c3a4c477-8fb6-4737-af88-cabbea1ad55b",
+              "url": "https://images.credly.com/images/c3a4c477-8fb6-4737-af88-cabbea1ad55b/IBM_AI_Foundations_for_Business.png"
+            },
+            "image_url": "https://images.credly.com/images/c3a4c477-8fb6-4737-af88-cabbea1ad55b/IBM_AI_Foundations_for_Business.png",
+            "updated_at": "2025-10-22T13:59:13.505Z",
+            "url": "https://www.credly.com/org/ibm/badge/ibm-ai-foundations-for-business-specialization"
+          },
+          {
+            "id": "26c9b807-1e41-4b8a-987a-b956e0807fe9",
+            "name": "Data Science Profession Certification - Converged certification Expert+TL",
+            "image": {
+              "id": "33fffc51-5646-494a-befd-d6719f4b18e2",
+              "url": "https://images.credly.com/images/33fffc51-5646-494a-befd-d6719f4b18e2/Data-Scientist-Thought-Leader_1_.png"
+            },
+            "image_url": "https://images.credly.com/images/33fffc51-5646-494a-befd-d6719f4b18e2/Data-Scientist-Thought-Leader_1_.png",
+            "updated_at": "2026-03-12T15:49:26.635Z",
+            "url": "https://www.credly.com/org/ibm/badge/data-science-profession-certification-converged-cer"
+          },
+          {
+            "id": "16bc6ba2-5a64-4a00-9cc3-9f8b9f7e2e53",
+            "name": "Data Science Profession Certification - Expert",
+            "image": {
+              "id": "ec745e67-abee-42e4-a985-4e7da69d7241",
+              "url": "https://images.credly.com/images/ec745e67-abee-42e4-a985-4e7da69d7241/69eb64b0462e30fd7ff73aae.png"
+            },
+            "image_url": "https://images.credly.com/images/ec745e67-abee-42e4-a985-4e7da69d7241/69eb64b0462e30fd7ff73aae.png",
+            "updated_at": "2026-07-06T16:10:02.208Z",
+            "url": "https://www.credly.com/org/ibm/badge/data-science-profession-certification-expert.1"
+          }
+        ],
+        "alignments": [],
+        "badge_template_activities": [
+          {
+            "id": "84326575-789a-4b26-9ade-bea714d35252",
+            "activity_type": "Course",
+            "required_badge_template_id": null,
+            "title": "Complete the following course on Coursera.org, including all assignments: \"What is Data Science?\".",
+            "url": "https://www.coursera.org/learn/what-is-datascience?utm_source=IBM&utm_medium=institutions&utm_campaign=IBMBadge"
+          },
+          {
+            "id": "a60ec347-1272-4044-bc18-0a660ab0b4fb",
+            "activity_type": "Assessment",
+            "required_badge_template_id": null,
+            "title": "Pass the Coursera course assessment criteria.",
+            "url": null
+          }
+        ],
+        "endorsements": [],
+        "skills": [
+          {
+            "id": "89e51f17-a396-4819-8e0d-e0eb64e8cc5f",
+            "name": "AI",
+            "vanity_slug": "ai",
+            "canonical": false,
+            "faethm_id": "FS000456"
+          },
+          {
+            "id": "c04d3d08-8f9f-4564-a295-9fc7becdaec6",
+            "name": "Artificial Intelligence",
+            "vanity_slug": "artifical-intelligence",
+            "canonical": false,
+            "faethm_id": "FS000456"
+          },
+          {
+            "id": "19977a6a-1e25-435f-92b4-25682d97cb34",
+            "name": "Critical Listening",
+            "vanity_slug": "critical-listening",
+            "canonical": false,
+            "faethm_id": "FS004338"
+          },
+          {
+            "id": "33cf92f4-db6e-49dd-a5b7-b59093ae994f",
+            "name": "Critical Reading",
+            "vanity_slug": "critical-reading",
+            "canonical": true,
+            "faethm_id": "FS001795"
+          },
+          {
+            "id": "21a7a83d-a7e0-4f9a-b782-5870dfde1830",
+            "name": "Data Science",
+            "vanity_slug": "data-science",
+            "canonical": true,
+            "faethm_id": "FS001961"
+          },
+          {
+            "id": "5641b2ad-00af-4955-b684-f2d272d08af9",
+            "name": "Machine Learning",
+            "vanity_slug": "machine-learning",
+            "canonical": false,
+            "faethm_id": "FS004409"
+          },
+          {
+            "id": "c4d4ed0d-455d-4032-a377-304829d65c96",
+            "name": "PWID-B0267600",
+            "vanity_slug": "pwid-b0267600",
+            "canonical": false
+          }
+        ]
+      },
+      "image": {
+        "id": "5fc2d535-e716-46c4-881a-f4822b8da0e5",
+        "url": "https://images.credly.com/images/5fc2d535-e716-46c4-881a-f4822b8da0e5/Cognitive_Class_-_What_is_Data_Science.png"
+      },
+      "image_url": "https://images.credly.com/images/5fc2d535-e716-46c4-881a-f4822b8da0e5/Cognitive_Class_-_What_is_Data_Science.png",
+      "evidence": []
+    },
+    {
+      "id": "6b75fec8-0a1c-482e-9dbf-0f28b77a19c6",
+      "expires_at_date": null,
+      "issued_at_date": "2024-06-16",
+      "issued_to": "Talal Ahmad",
+      "locale": "en",
+      "public": true,
+      "state": "accepted",
+      "translate_metadata": false,
+      "accepted_at": "2024-06-16T19:10:46.542+05:00",
+      "expires_at": null,
+      "issued_at": "2024-06-16T19:07:30.000+05:00",
+      "last_updated_at": "2024-06-16T19:10:46.542+05:00",
+      "updated_at": "2024-06-16T19:10:46.543+05:00",
+      "earner_path": "/users/ta1al",
+      "earner_photo_url": null,
+      "is_private_badge": false,
+      "user_is_earner": false,
+      "printable": true,
+      "issuer": {
+        "summary": "issued by Cisco",
+        "entities": [
+          {
+            "label": "Issued by",
+            "primary": true,
+            "entity": {
+              "type": "Organization",
+              "id": "74381078-44ac-4581-8471-36bd1ce495b7",
+              "name": "Cisco",
+              "url": "https://www.credly.com/api/v1/organizations/74381078-44ac-4581-8471-36bd1ce495b7",
+              "vanity_url": "https://www.credly.com/org/cisco",
+              "internationalize_badge_templates": false,
+              "share_to_ziprecruiter": true,
+              "twitter_url": "https://twitter.com/learningatcisco",
+              "verified": false
+            }
+          }
+        ]
+      },
+      "badge_template": {
+        "id": "8d13f011-f410-4dca-91df-5b5742fa1680",
+        "description": "Cisco verifies the earner of this badge has knowledge and skills to create digital models of IP Networks and IoT Systems using Cisco Packet Tracer.",
+        "global_activity_url": "https://www.netacad.com/learning-collections/cisco-packet-tracer",
+        "earn_this_badge_url": "https://www.netacad.com/learning-collections/cisco-packet-tracer",
+        "enable_earn_this_badge": true,
+        "enable_detail_attribute_visibility": true,
+        "job_board_url": null,
+        "name": "Introduction to Packet Tracer",
+        "public": true,
+        "recipient_type": "User",
+        "vanity_slug": "introduction-to-packet-tracer",
+        "show_badge_lmi": false,
+        "show_skill_tag_links": true,
+        "settings_enable_related_badges": true,
+        "translatable": false,
+        "updated_at": "2024-08-26T22:22:54.244+05:00",
+        "level": null,
+        "time_to_earn": null,
+        "cost": null,
+        "type_category": null,
+        "image": {
+          "id": "09b6d58c-763a-4b40-aea1-787d8f46bbcd",
+          "url": "https://images.credly.com/images/09b6d58c-763a-4b40-aea1-787d8f46bbcd/Intro2PT.png"
+        },
+        "image_url": "https://images.credly.com/images/09b6d58c-763a-4b40-aea1-787d8f46bbcd/Intro2PT.png",
+        "url": "https://www.credly.com/org/cisco/badge/introduction-to-packet-tracer",
+        "owner_vanity_slug": "cisco",
+        "badge_template_earnable": true,
+        "recommendable": true,
+        "issuer": {
+          "summary": "issued by Cisco",
+          "entities": [
+            {
+              "label": "Issued by",
+              "primary": true,
+              "entity": {
+                "type": "Organization",
+                "id": "74381078-44ac-4581-8471-36bd1ce495b7",
+                "name": "Cisco",
+                "url": "https://www.credly.com/api/v1/organizations/74381078-44ac-4581-8471-36bd1ce495b7",
+                "vanity_url": "https://www.credly.com/org/cisco",
+                "internationalize_badge_templates": false,
+                "share_to_ziprecruiter": true,
+                "twitter_url": "https://twitter.com/learningatcisco",
+                "verified": false
+              }
+            }
+          ]
+        },
+        "related_badge_templates": [],
+        "alignments": [],
+        "badge_template_activities": [
+          {
+            "id": "6ca7d268-bbbe-459c-accf-2bb4f3b8a70f",
+            "activity_type": "Assessment",
+            "required_badge_template_id": null,
+            "title": "Passing score on Cisco Networking Academy comprehensive final exam.",
+            "url": null
+          }
+        ],
+        "endorsements": [],
+        "skills": [
+          {
+            "id": "7fb6e29a-e5ad-4ab1-bb4c-421053f24d34",
+            "name": "Cisco Packet Tracer",
+            "vanity_slug": "cisco-packet-tracer",
+            "canonical": false,
+            "faethm_id": "FS001243"
+          },
+          {
+            "id": "271c3289-05c5-4dc8-b269-e5c4a22c0950",
+            "name": "IoT Simulation",
+            "vanity_slug": "iot-simulation",
+            "canonical": false,
+            "faethm_id": "FS008455"
+          },
+          {
+            "id": "79a03458-c746-4eb4-a82b-d9237d3f5c38",
+            "name": "Network Simulation",
+            "vanity_slug": "network-simulation",
+            "canonical": false,
+            "faethm_id": "FS006754"
+          }
+        ]
+      },
+      "image": {
+        "id": "09b6d58c-763a-4b40-aea1-787d8f46bbcd",
+        "url": "https://images.credly.com/images/09b6d58c-763a-4b40-aea1-787d8f46bbcd/Intro2PT.png"
+      },
+      "image_url": "https://images.credly.com/images/09b6d58c-763a-4b40-aea1-787d8f46bbcd/Intro2PT.png",
+      "evidence": []
+    }
+  ],
+  "metadata": {
+    "count": 10,
+    "current_page": 1,
+    "total_count": 10,
+    "total_pages": 1,
+    "per": 48,
+    "previous_page_url": null,
+    "next_page_url": null
+  }
+}

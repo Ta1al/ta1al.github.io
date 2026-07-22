@@ -1,0 +1,494 @@
+[
+  {
+    "data": {
+      "Certificate": {
+        "getMyCertificatesPaginated": {
+          "elements": [
+            {
+              "grade": 0.86,
+              "product": {
+                "name": "Cybersecurity Architecture",
+                "id": "RyjAzVvCEe6tEhL_Q-N4Qw",
+                "slug": "cybersecurity-architecture",
+                "partners": [
+                  {
+                    "name": "IBM",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "2A64TIXIR2K8",
+              "grantedAt": "2026-07-22T10:54:48.030Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.8642,
+              "product": {
+                "name": "Database Essentials and Vulnerabilities",
+                "id": "oB-IS0YlEe-xRA6omnSgfQ",
+                "slug": "database-essentials-and-vulnerabilities",
+                "partners": [
+                  {
+                    "name": "IBM",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "ACVF9O3S5C9F",
+              "grantedAt": "2026-07-22T08:44:18.385Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.9474,
+              "product": {
+                "name": "Computer Networks and Network Security",
+                "id": "3pCB7HgGEem9bArpYNDHGA",
+                "slug": "network-security-database-vulnerabilities",
+                "partners": [
+                  {
+                    "name": "IBM",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "Q9JGF301MXXW",
+              "grantedAt": "2025-06-11T10:18:03.243Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.925,
+              "product": {
+                "name": "Operating Systems: Overview, Administration, and Security",
+                "id": "BrizCVfcEemQ5QpVooi_CA",
+                "slug": "operating-systems-overview-administration-security",
+                "partners": [
+                  {
+                    "name": "IBM",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "Z6KM1PC6ZCXG",
+              "grantedAt": "2025-06-09T16:25:35.161Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.85,
+              "product": {
+                "name": "Introduction to Cybersecurity Tools & Cyberattacks",
+                "id": "0FMl8S8GEemvsQrYkluC5g",
+                "slug": "introduction-cybersecurity-cyber-attacks",
+                "partners": [
+                  {
+                    "name": "IBM",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "CKSY8T4AVRIR",
+              "grantedAt": "2025-06-06T15:15:35.033Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.9333,
+              "product": {
+                "name": "Introduction to Cybersecurity Essentials",
+                "id": "YlfzdXJKEeyKjA79ESMRTQ",
+                "slug": "introduction-to-cybersecurity-essentials",
+                "partners": [
+                  {
+                    "name": "IBM",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "R8PR3DCO4L1A",
+              "grantedAt": "2025-06-05T09:22:46.178Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.7833,
+              "product": {
+                "name": "Introduction to Cybersecurity Careers",
+                "id": "76WGD1CXEe6T2Q7n3ko4Dw",
+                "slug": "introduction-to-cybersecurity-careers",
+                "partners": [
+                  {
+                    "name": "IBM",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "IAGWW256F2YC",
+              "grantedAt": "2025-06-04T09:00:03.517Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.85,
+              "product": {
+                "name": "Tools for Data Science",
+                "id": "oCBU5_VYEeeBQA7SG0nILA",
+                "slug": "open-source-tools-for-data-science",
+                "partners": [
+                  {
+                    "name": "IBM",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "BEVE0IE7549N",
+              "grantedAt": "2025-03-30T08:22:07.483Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.8257,
+              "product": {
+                "name": "Introduction to Psychology",
+                "id": "WIhvslYxEeSFRiIACycBKQ",
+                "slug": "introduction-psych",
+                "partners": [
+                  {
+                    "name": "University of Toronto",
+                    "squareLogo": "https://coursera-university-assets.s3.amazonaws.com/04/1df8943d27a485a986a3ebf10c83d9/UofT-Crest-Square.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "FQUA4K4QXOGK",
+              "grantedAt": "2025-03-15T08:28:10.866Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.93,
+              "product": {
+                "name": "What is Data Science? ",
+                "id": "r0GnHOZaEees-Q6jQMxlrg",
+                "slug": "what-is-datascience",
+                "partners": [
+                  {
+                    "name": "IBM",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "J3UAV6UIV588",
+              "grantedAt": "2025-02-24T17:36:35.900Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.9335,
+              "product": {
+                "name": "Put It to Work: Prepare for Cybersecurity Jobs",
+                "id": "-TDPq2UJEe2piwrmyBNtEQ",
+                "slug": "prepare-for-cybersecurity-jobs",
+                "partners": [
+                  {
+                    "name": "Google",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "3F4TLGEFXDI8",
+              "grantedAt": "2025-02-04T08:46:31.139Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.8,
+              "product": {
+                "name": "Systems Engineering",
+                "id": "12VVm-h6Ee2YiQ6ptcfUTQ",
+                "slug": "systems-engineering-mathworks",
+                "partners": [
+                  {
+                    "name": "MathWorks",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/fa/50a7a8ef034044a4ae3efae492a918/mw-logo-300x300.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "XP8KQ2LX4EW5",
+              "grantedAt": "2025-01-18T15:04:36.312Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 1,
+              "product": {
+                "name": "Automate Cybersecurity Tasks with Python",
+                "id": "7LHOTGUJEe21jBLFGcIQ1w",
+                "slug": "automate-cybersecurity-tasks-with-python",
+                "partners": [
+                  {
+                    "name": "Google",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "GNIQU7N5TV1L",
+              "grantedAt": "2024-12-22T14:01:09.781Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.9009,
+              "product": {
+                "name": "Sound the Alarm: Detection and Response",
+                "id": "3obxa2UJEe2NnA4jep2fLw",
+                "slug": "detection-and-response",
+                "partners": [
+                  {
+                    "name": "Google",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "H2WYTLFJIK9G",
+              "grantedAt": "2024-12-21T13:10:42.657Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.8875,
+              "product": {
+                "name": "Assets, Threats, and Vulnerabilities",
+                "id": "z5Fx9mUJEe2piwrmyBNtEQ",
+                "slug": "assets-threats-and-vulnerabilities",
+                "partners": [
+                  {
+                    "name": "Google",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "DSWI8F9KHLYF",
+              "grantedAt": "2024-11-27T11:40:37.835Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.9696,
+              "product": {
+                "name": "Tools of the Trade: Linux and SQL",
+                "id": "h_qSTmUJEe21jBLFGcIQ1w",
+                "slug": "linux-and-sql",
+                "partners": [
+                  {
+                    "name": "Google",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "9MEKHH4DKQAR",
+              "grantedAt": "2024-02-14T10:54:36.581Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.9536,
+              "product": {
+                "name": "Using Databases with Python",
+                "id": "eQJvsjn9EeWJaxK5AT4frw",
+                "slug": "python-databases",
+                "partners": [
+                  {
+                    "name": "University of Michigan",
+                    "squareLogo": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "8CLCS82FSPKY",
+              "grantedAt": "2024-02-13T23:01:25.519Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.96,
+              "product": {
+                "name": "Capstone: Retrieving, Processing, and Visualizing Data with Python",
+                "id": "rwRs6Tn9EeWJaxK5AT4frw",
+                "slug": "python-data-visualization",
+                "partners": [
+                  {
+                    "name": "University of Michigan",
+                    "squareLogo": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "FB7RXTQPC77G",
+              "grantedAt": "2024-02-12T13:42:03.227Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.9287,
+              "product": {
+                "name": "Connect and Protect: Networks and Network Security",
+                "id": "PeAVvmUJEe2NnA4jep2fLw",
+                "slug": "networks-and-network-security",
+                "partners": [
+                  {
+                    "name": "Google",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "U3CV8MBETEY2",
+              "grantedAt": "2024-02-08T15:54:29.895Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.8723,
+              "product": {
+                "name": "Play It Safe: Manage Security Risks",
+                "id": "y6mmi2UIEe21jBLFGcIQ1w",
+                "slug": "manage-security-risks",
+                "partners": [
+                  {
+                    "name": "Google",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "ARSGNNUSSZED",
+              "grantedAt": "2024-02-08T08:52:58.834Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.8528,
+              "product": {
+                "name": "Social Psychology",
+                "id": "qLwmkiOZEeadsBKew8xmjQ",
+                "slug": "social-psychology",
+                "partners": [
+                  {
+                    "name": "Wesleyan University",
+                    "squareLogo": "https://coursera-university-assets.s3.amazonaws.com/13/7948a0d50011e58bd959a86470a32c/ACM15324_Coursera_SquareLogo_0112_SF.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "8JGPL94EGCBT",
+              "grantedAt": "2024-02-02T16:21:18.485Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.9386,
+              "product": {
+                "name": "Foundations of Cybersecurity",
+                "id": "f6gZrWUIEe2piwrmyBNtEQ",
+                "slug": "foundations-of-cybersecurity",
+                "partners": [
+                  {
+                    "name": "Google",
+                    "squareLogo": "http://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "AF8QF87QXC37",
+              "grantedAt": "2024-01-09T20:04:53.782Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.993,
+              "product": {
+                "name": "Using Python to Access Web Data",
+                "id": "Y4DUPDpQEeWO-Qq6rEZAow",
+                "slug": "python-network-data",
+                "partners": [
+                  {
+                    "name": "University of Michigan",
+                    "squareLogo": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "3Q8W79UY8AEW",
+              "grantedAt": "2023-11-06T17:58:38.347Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.976,
+              "product": {
+                "name": "Python Data Structures",
+                "id": "P--h6zpNEeWYbg7p2_3OHQ",
+                "slug": "python-data",
+                "partners": [
+                  {
+                    "name": "University of Michigan",
+                    "squareLogo": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "MANSAPLCM4R2",
+              "grantedAt": "2023-09-05T07:04:46.097Z",
+              "__typename": "Certificates_Certificate"
+            },
+            {
+              "grade": 0.9917,
+              "product": {
+                "name": "Programming for Everybody (Getting Started with Python)",
+                "id": "7A1yFTaREeWWBQrVFXqd1w",
+                "slug": "python",
+                "partners": [
+                  {
+                    "name": "University of Michigan",
+                    "squareLogo": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+                    "__typename": "Partner_Partner"
+                  }
+                ],
+                "__typename": "Course_Course"
+              },
+              "verifyCode": "4QVJ6M26ZP57",
+              "grantedAt": "2023-08-29T08:26:07.582Z",
+              "__typename": "Certificates_Certificate"
+            }
+          ],
+          "pagination": {
+            "cursor": "",
+            "totalElements": 25,
+            "__typename": "Pagination"
+          },
+          "__typename": "Certificates_PaginatedResult"
+        },
+        "__typename": "CertificateQueries"
+      }
+    }
+  }
+]

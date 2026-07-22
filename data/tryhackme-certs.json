@@ -1,0 +1,93 @@
+{
+    "status": "success",
+    "data": {
+        "docs": [
+            {
+                "_id": "699f262207f0f7c9574b7da2",
+                "name": "loveatfirstbreach",
+                "userId": "668cddb1b923a3bee4d60485",
+                "fullName": "Talal Ahmed",
+                "certId": "THM-VBAVURNHM8",
+                "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-VBAVURNHM8.pdf",
+                "imageUrl": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-VBAVURNHM8.png",
+                "achieved": "2026-02-25T16:41:06.914Z",
+                "__v": 0,
+                "isUserOwner": true
+            },
+            {
+                "_id": "688b5843f96da047979b5b37",
+                "name": "pathway-web",
+                "userId": "668cddb1b923a3bee4d60485",
+                "fullName": "Talal Ahmed",
+                "certId": "THM-PAJVW9UWAL",
+                "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PAJVW9UWAL.pdf",
+                "imageUrl": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PAJVW9UWAL.png",
+                "achieved": "2025-07-31T11:49:23.140Z",
+                "__v": 0,
+                "title": "Web Fundamentals (Legacy)",
+                "description": "<p>A pathway to web application security.</p><ul><li style=\"text-align: left;\">Understand web fundamentals</li><li style=\"text-align: left;\">Major vulnerabilities explained</li><li style=\"text-align: left;\">Learn industry-used tools</li><li style=\"text-align: left;\">Web application assessments</li></ul>",
+                "isUserOwner": true
+            },
+            {
+                "_id": "68830aacac47204397404c64",
+                "name": "pathway-presecurity",
+                "userId": "668cddb1b923a3bee4d60485",
+                "fullName": "Talal Ahmed",
+                "certId": "THM-ESRGIAWEES",
+                "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ESRGIAWEES.pdf",
+                "imageUrl": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ESRGIAWEES.png",
+                "achieved": "2025-07-25T04:40:12.903Z",
+                "__v": 0,
+                "title": "Pre Security",
+                "description": "<p>Your first step into cyber. Learn how tech works, then think like an attacker and defender.</p><ul><li style=\"text-align: left;\">Explore how computers really work</li><li style=\"text-align: left;\">Write your first lines of code</li><li style=\"text-align: left;\">Step into networking and web basics</li><li style=\"text-align: left;\">Think like a hacker or defender</li></ul>",
+                "isUserOwner": true
+            },
+            {
+                "_id": "68823223c76b74512e419235",
+                "name": "pathway-soclevel1legacy",
+                "userId": "668cddb1b923a3bee4d60485",
+                "fullName": "Talal Ahmed",
+                "certId": "THM-M4ZQHRNWOY",
+                "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-M4ZQHRNWOY.pdf",
+                "imageUrl": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-M4ZQHRNWOY.png",
+                "achieved": "2025-07-24T13:16:19.621Z",
+                "__v": 0,
+                "isUserOwner": true
+            },
+            {
+                "_id": "67f4e83e803d525ba13ebbed",
+                "name": "HackfinityBattle",
+                "userId": "668cddb1b923a3bee4d60485",
+                "fullName": "Talal Ahmed",
+                "certId": "THM-HT3NGY4ZO4",
+                "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-HT3NGY4ZO4.pdf",
+                "imageUrl": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-HT3NGY4ZO4.png",
+                "achieved": "2025-04-08T09:11:26.135Z",
+                "__v": 0,
+                "isUserOwner": true
+            },
+            {
+                "_id": "676d0c3c1c18881646f8e9de",
+                "name": "adventofcyber2024",
+                "userId": "668cddb1b923a3bee4d60485",
+                "fullName": "Talal Ahmed",
+                "certId": "THM-PCPSD0R8PL",
+                "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PCPSD0R8PL.pdf",
+                "imageUrl": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PCPSD0R8PL.png",
+                "achieved": "2024-12-26T07:56:44.557Z",
+                "__v": 0,
+                "title": "Advent of Cyber 2024",
+                "isUserOwner": true
+            }
+        ],
+        "totalDocs": 6,
+        "limit": 10,
+        "page": 1,
+        "totalPages": 1,
+        "pagingCounter": 1,
+        "hasPrevPage": false,
+        "hasNextPage": false,
+        "prevPage": null,
+        "nextPage": null
+    }
+}

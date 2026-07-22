@@ -1,0 +1,413 @@
+{
+  "status": "success",
+  "data": {
+    "docs": [
+      {
+        "_id": "5eb1f7bf5689ac81e1141bc2",
+        "name": "7-day-streak",
+        "image": "https://assets.tryhackme.com/img/badges/streak7.png",
+        "title": "7 Day Streak",
+        "description": "Achieving a 7 day hacking streak",
+        "rarityTier": "common",
+        "rarityPercent": 21.7
+      },
+      {
+        "_id": "674b4bc33453316093c23938",
+        "name": "adventofcyber2024",
+        "image": "https://assets.tryhackme.com/img/badges/aoc5.png",
+        "title": "Advent of Cyber 2024",
+        "description": "Completing Advent of Cyber 2024!",
+        "rarityTier": "rare",
+        "rarityPercent": 1.4
+      },
+      {
+        "_id": "5eb1f96f5689ac81e114b568",
+        "name": "30-day-streak",
+        "image": "https://assets.tryhackme.com/img/badges/streak30.png",
+        "title": "30 Day Streak",
+        "description": "Hacking for 30 days solid",
+        "rarityTier": "common",
+        "rarityPercent": 10.2
+      },
+      {
+        "_id": "674b4bc33453316093c239b9",
+        "name": "defrostedfive",
+        "image": "https://assets.tryhackme.com/img/badges/aocsidequest5.png",
+        "title": "Defrosted Five",
+        "description": "Completing AoC Side Quest 2024!",
+        "earnedAt": "2025-03-28T07:19:52.866Z",
+        "rarityTier": "epic",
+        "rarityPercent": 0.3
+      },
+      {
+        "_id": "66a0e4526149ee4eb8ea172c",
+        "name": "skilled-navigator",
+        "image": "https://assets.tryhackme.com/img/badges/cyberdefenceframework.png",
+        "title": "Skilled Navigator",
+        "description": "Finishing the Eviction challenge!",
+        "earnedAt": "2025-06-10T14:30:45.629Z",
+        "rarityTier": "rare",
+        "rarityPercent": 5
+      },
+      {
+        "_id": "66a0e4e06149ee4eb8ea172d",
+        "name": "friday-fixer",
+        "image": "https://assets.tryhackme.com/img/badges/cyberthreatintellegenceblue.png",
+        "title": "Friday Fixer",
+        "description": "Finishing the Friday Overtime challenge! ",
+        "earnedAt": "2025-07-05T09:37:06.791Z",
+        "rarityTier": "rare",
+        "rarityPercent": 1.8
+      },
+      {
+        "_id": "60cf505d437056aee2cf0de3",
+        "name": "network-fundamentals",
+        "image": "https://assets.tryhackme.com/img/badges/networkfundamentals.png",
+        "title": "Networking Nerd",
+        "description": "Completing the 'Network Fundamentals' module",
+        "earnedAt": "2025-07-05T10:38:57.775Z",
+        "rarityTier": "common",
+        "rarityPercent": 17.4
+      },
+      {
+        "_id": "61fd5c87437056aee201bb15",
+        "name": "phishing",
+        "image": "https://assets.tryhackme.com/img/badges/phishing.png",
+        "title": "Phish Hunter",
+        "description": "Completed the Phishing Analysis room series",
+        "earnedAt": "2025-07-08T15:02:15.178Z",
+        "rarityTier": "rare",
+        "rarityPercent": 4.3
+      },
+      {
+        "_id": "66a0e55a6149ee4eb8ea172e",
+        "name": "packet-master",
+        "image": "https://assets.tryhackme.com/img/badges/networksecurityandtrafficanalysisv2.png",
+        "title": "Packet Master",
+        "description": "Finishing the TShark Exercises!",
+        "earnedAt": "2025-07-12T14:08:13.940Z",
+        "rarityTier": "rare",
+        "rarityPercent": 1.2
+      },
+      {
+        "_id": "5e6830ca7095e6fb1e9f0520",
+        "name": "web-fund",
+        "image": "https://assets.tryhackme.com/img/badges/webbed.png",
+        "title": "Webbed",
+        "description": "Understands how the world wide web works",
+        "earnedAt": "2025-07-12T17:14:55.386Z",
+        "rarityTier": "common",
+        "rarityPercent": 23.5
+      },
+      {
+        "_id": "609bbc16a2323e2d0e95e057",
+        "name": "world-wide-web",
+        "image": "https://assets.tryhackme.com/img/badges/howthewebworks.png",
+        "title": "World Wide Web",
+        "description": "Completing the 'How The Web Works' module",
+        "earnedAt": "2025-07-12T17:24:19.504Z",
+        "rarityTier": "common",
+        "rarityPercent": 20.5
+      },
+      {
+        "_id": "5cb0b82cea5ebc64acd45953",
+        "name": "ohsint",
+        "image": "https://assets.tryhackme.com/img/badges/ohsint.png",
+        "title": "OhSINT",
+        "description": "Completing the OhSINT room",
+        "earnedAt": "2025-07-12T17:47:18.205Z",
+        "rarityTier": "rare",
+        "rarityPercent": 5
+      },
+      {
+        "_id": "5dcee81690735abace1e4208",
+        "name": "terminaled",
+        "image": "https://assets.tryhackme.com/img/badges/linux.png",
+        "title": "cat linux.txt",
+        "description": "Being competent in Linux",
+        "earnedAt": "2025-07-12T18:10:51.244Z",
+        "rarityTier": "common",
+        "rarityPercent": 28.2
+      },
+      {
+        "_id": "67bc195243c6f1abcf74bb61",
+        "name": "diamond-league",
+        "image": "https://assets.tryhackme.com/img/badges/league-diamond.png",
+        "title": "Diamond League",
+        "description": "Diamond League 1st place",
+        "earnedAt": "2025-07-13T23:50:47.477Z",
+        "rarityTier": "epic",
+        "rarityPercent": 0.4
+      },
+      {
+        "_id": "66a0e60b6149ee4eb8ea172f",
+        "name": "manic-monday",
+        "image": "https://assets.tryhackme.com/img/badges/endpointsecuritymonitoring.png",
+        "title": "Manic Monday",
+        "description": "Finishing the Monday Monitor challenge!",
+        "earnedAt": "2025-07-14T05:43:50.690Z",
+        "rarityTier": "rare",
+        "rarityPercent": 1.2
+      },
+      {
+        "_id": "66a0e6646149ee4eb8ea1730",
+        "name": "to-benign-or-not-benign",
+        "image": "https://assets.tryhackme.com/img/badges/securityinformationandeventmanagement.png",
+        "title": "To benign or not benign?",
+        "description": "Finishing the Benign challenge!",
+        "earnedAt": "2025-07-16T16:31:56.015Z",
+        "rarityTier": "rare",
+        "rarityPercent": 2.1
+      },
+      {
+        "_id": "66a0e6bb6149ee4eb8ea1731",
+        "name": "handle-the-disgruntled",
+        "image": "https://assets.tryhackme.com/img/badges/digitalforensicsandincidentresponse.png",
+        "title": "Handle the Disgruntled",
+        "description": "Finishing the Disgruntled challenge!",
+        "earnedAt": "2025-07-22T13:04:44.694Z",
+        "rarityTier": "rare",
+        "rarityPercent": 1
+      },
+      {
+        "_id": "66a0d6836149ee4eb8ea172a",
+        "name": "boogeyman-slayer",
+        "image": "https://assets.tryhackme.com/img/badges/boogeyman3.png",
+        "title": "Boogeyman Slayer",
+        "description": "Finishing the SOC L1 Capstone Module",
+        "earnedAt": "2025-07-24T13:15:05.656Z",
+        "rarityTier": "rare",
+        "rarityPercent": 1.7
+      },
+      {
+        "_id": "615adcd2437056aee264b254",
+        "name": "intro-to-web-hacking",
+        "image": "https://assets.tryhackme.com/img/badges/introtowebsecurity.png",
+        "title": "Intro to Web Hacking",
+        "description": "Completing the 'Introduction to Web Hacking' module",
+        "earnedAt": "2025-07-30T05:24:47.190Z",
+        "rarityTier": "rare",
+        "rarityPercent": 5.5
+      },
+      {
+        "_id": "5cab1e25ea5ebc64acc98c57",
+        "name": "burped",
+        "image": "https://assets.tryhackme.com/img/badges/burpsuite.png",
+        "title": "Burp'ed",
+        "description": "Completing the Burp Suite module",
+        "earnedAt": "2025-07-30T07:19:34.617Z",
+        "rarityTier": "rare",
+        "rarityPercent": 5.1
+      },
+      {
+        "_id": "5f1b30268b57fa13a65e3508",
+        "name": "owasp-10",
+        "image": "https://assets.tryhackme.com/img/badges/owasptop10.png",
+        "title": "OWASP Top 10",
+        "description": "Understanding every OWASP vulnerability",
+        "earnedAt": "2025-07-31T04:56:44.598Z",
+        "rarityTier": "rare",
+        "rarityPercent": 8.9
+      },
+      {
+        "_id": "688c94222f6d4c3f0120a44f",
+        "name": "3-day-streak",
+        "image": "https://assets.tryhackme.com/img/badges/streak3.png",
+        "title": "3 Day Streak",
+        "description": "Achieving a 3 day hacking streak",
+        "earnedAt": "2025-08-01T12:58:41.246Z",
+        "rarityTier": "common",
+        "rarityPercent": 34.6
+      },
+      {
+        "_id": "6710f453b3eec466f102ee2d",
+        "name": "careerreadybadge",
+        "image": "https://assets.tryhackme.com/img/badges/careerready.png",
+        "title": "Cyber Ready",
+        "description": "Understanding impact of training on teams",
+        "earnedAt": "2025-08-16T10:02:03.917Z",
+        "rarityTier": "rare",
+        "rarityPercent": 7.5
+      },
+      {
+        "_id": "68c295cbfb2c88eaa60812bd",
+        "name": "raffle-royalty",
+        "image": "https://assets.tryhackme.com/img/badges/hack2win.png",
+        "title": "Raffle Royalty",
+        "description": "Participating in Hack2Win 2025!",
+        "earnedAt": "2025-09-11T14:31:28.125Z",
+        "rarityTier": "rare",
+        "rarityPercent": 4.3
+      },
+      {
+        "_id": "64ff079704e4d04278086827",
+        "name": "intro-to-security-engineering",
+        "image": "https://assets.tryhackme.com/img/badges/introtosecurityengineering.png",
+        "title": "Introduction to Security Engineering",
+        "description": "Completed the Security Engineer Intro room!",
+        "earnedAt": "2025-09-29T12:51:52.783Z",
+        "rarityTier": "rare",
+        "rarityPercent": 5.3
+      },
+      {
+        "_id": "604269324e64fa3891421731",
+        "name": "90-day-streak",
+        "image": "https://assets.tryhackme.com/img/badges/streak90.png",
+        "title": "90 Day Streak",
+        "description": "Hacking for 90 days in a row",
+        "earnedAt": "2025-10-05T14:26:33.847Z",
+        "rarityTier": "rare",
+        "rarityPercent": 5
+      },
+      {
+        "_id": "6909e5b4c0995784e118dbb9",
+        "name": "first-step-into-soc",
+        "image": "https://assets.tryhackme.com/img/badges/first-step-into-soc.png",
+        "title": "First Step into SOC",
+        "description": "Explored emerging threats and SOC response",
+        "earnedAt": "2026-01-02T13:33:13.502Z",
+        "rarityTier": "rare",
+        "rarityPercent": 7.3
+      },
+      {
+        "_id": "6909e5ddc0995784e118dbba",
+        "name": "soc-apprentice",
+        "image": "https://assets.tryhackme.com/img/badges/soc-apprentice.png",
+        "title": "SOC Apprentice",
+        "description": "Explored how a SOC team operates from inside",
+        "earnedAt": "2026-01-03T07:06:12.463Z",
+        "rarityTier": "rare",
+        "rarityPercent": 5.9
+      },
+      {
+        "_id": "689b0a0f12639e1031d12418",
+        "name": "soc-sim-first-alert-closed",
+        "image": "https://assets.tryhackme.com/img/badges/soc-sim-first-alert-closed.png",
+        "title": "First alert closed",
+        "description": "Closing your first alert",
+        "earnedAt": "2026-01-03T07:17:36.582Z",
+        "rarityTier": "rare",
+        "rarityPercent": 7.3
+      },
+      {
+        "_id": "689b2ebb12639e1031d12422",
+        "name": "soc-sim-first-scenario-completed",
+        "image": "https://assets.tryhackme.com/img/badges/soc-sim-first-scenario-completed.png",
+        "title": "First scenario completed",
+        "description": "Completing your first scenario",
+        "earnedAt": "2026-01-03T07:26:29.980Z",
+        "rarityTier": "rare",
+        "rarityPercent": 5.7
+      },
+      {
+        "_id": "689b0a0f12639e1031d1241a",
+        "name": "soc-sim-100-percent-true-positive-rate",
+        "image": "https://assets.tryhackme.com/img/badges/soc-sim-100-percent-true-positive-rate.png",
+        "title": "100% true positive rate",
+        "description": "Achieving 100% true positive rate in a scenario",
+        "earnedAt": "2026-01-03T07:26:30.001Z",
+        "rarityTier": "rare",
+        "rarityPercent": 4.6
+      },
+      {
+        "_id": "6909e5ddc0995784e118dbbb",
+        "name": "defensive-toolsmith",
+        "image": "https://assets.tryhackme.com/img/badges/defensive-toolsmith.png",
+        "title": "Defensive Toolsmith",
+        "description": "Mastered essential SOC tools for detection",
+        "earnedAt": "2026-01-05T08:22:02.979Z",
+        "rarityTier": "rare",
+        "rarityPercent": 4.9
+      },
+      {
+        "_id": "604269574e64fa3891424db0",
+        "name": "180-day-streak",
+        "image": "https://assets.tryhackme.com/img/badges/streak180.png",
+        "title": "180 Day Streak",
+        "description": "Hacking for 180 days in a row",
+        "earnedAt": "2026-01-11T15:32:42.593Z",
+        "rarityTier": "rare",
+        "rarityPercent": 2.8
+      },
+      {
+        "_id": "5caa74b7ea5ebc64acc86527",
+        "name": "hash-cracker",
+        "image": "https://assets.tryhackme.com/img/badges/hashcracker.png",
+        "title": "Hash Cracker",
+        "description": "Cracking all those hashes",
+        "earnedAt": "2026-02-05T15:54:02.582Z",
+        "rarityTier": "rare",
+        "rarityPercent": 4.5
+      },
+      {
+        "_id": "6909e5ddc0995784e118dbc1",
+        "name": "malware-explorer",
+        "image": "https://assets.tryhackme.com/img/badges/malware-explorer.png",
+        "title": "Malware Explorer",
+        "description": "Identified and classified different types of malware",
+        "earnedAt": "2026-02-06T04:50:12.387Z",
+        "rarityTier": "rare",
+        "rarityPercent": 1.9
+      },
+      {
+        "_id": "67bc193443c6f1abcf74bb60",
+        "name": "gold-league",
+        "image": "https://assets.tryhackme.com/img/badges/league-gold.png",
+        "title": "Gold League",
+        "description": "Gold League 1st place",
+        "earnedAt": "2026-02-08T23:51:01.242Z",
+        "rarityTier": "rare",
+        "rarityPercent": 1.8
+      },
+      {
+        "_id": "6925f732fc85926c5b537074",
+        "name": "model-compromise",
+        "image": "https://assets.tryhackme.com/img/badges/web-application-2.png",
+        "title": "Model Compromise",
+        "description": "Completed the LLM Attacks Module",
+        "earnedAt": "2026-02-16T13:44:31.551Z",
+        "rarityTier": "epic",
+        "rarityPercent": 0.7
+      },
+      {
+        "_id": "6909e5ddc0995784e118dbbd",
+        "name": "web-defender",
+        "image": "https://assets.tryhackme.com/img/badges/web-defender.png",
+        "title": "Web Defender",
+        "description": "Learned to detect common attacks on web apps",
+        "earnedAt": "2026-02-17T14:03:02.319Z",
+        "rarityTier": "rare",
+        "rarityPercent": 2.2
+      },
+      {
+        "_id": "6a3a946a9d3cabee2bb46a08",
+        "name": "first-mobile-quiz",
+        "image": "https://assets.tryhackme.com/img/badges/first-mobile-quiz.png",
+        "title": "First Mobile Quiz",
+        "description": "Completing your first quiz or recap on the mobile app!",
+        "earnedAt": "2026-06-26T03:13:40.629Z",
+        "rarityTier": "rare",
+        "rarityPercent": 2.4
+      },
+      {
+        "_id": "6043effd4e64fa3891b5ebfe",
+        "name": "365-day-streak",
+        "image": "https://assets.tryhackme.com/img/badges/streak365.png",
+        "title": "365 Day Streak",
+        "description": "Hacking for 365 days in a row",
+        "earnedAt": "2026-07-15T07:11:26.840Z",
+        "rarityTier": "rare",
+        "rarityPercent": 1
+      }
+    ],
+    "totalDocs": 40,
+    "limit": 99,
+    "page": 1,
+    "totalPages": 1,
+    "pagingCounter": 1,
+    "hasPrevPage": false,
+    "hasNextPage": false,
+    "prevPage": null,
+    "nextPage": null
+  }
+}
