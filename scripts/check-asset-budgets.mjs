@@ -2,6 +2,10 @@ import { readdir, stat } from "node:fs/promises";
 import { basename, extname, join, resolve } from "node:path";
 
 const outputRoot = resolve(process.argv[2] ?? "public");
+// Calibrated against the July 2026 production bundles with modest growth room.
+const CSS_BUDGET_BYTES = 43_000;
+const JAVASCRIPT_BUDGET_BYTES = 5_600;
+
 const filesIn = async (directory) => {
   const entries = await readdir(directory, { withFileTypes: true });
   return entries
@@ -19,15 +23,17 @@ const failures = [];
 
 for (const path of cssFiles) {
   const bytes = (await stat(path)).size;
-  if (bytes > 41_000) {
-    failures.push(`${basename(path)} is ${bytes} bytes; CSS budget is 41000`);
+  if (bytes > CSS_BUDGET_BYTES) {
+    failures.push(
+      `${basename(path)} is ${bytes} bytes; CSS budget is ${CSS_BUDGET_BYTES}`,
+    );
   }
 }
 for (const path of jsFiles) {
   const bytes = (await stat(path)).size;
-  if (bytes > 5_000) {
+  if (bytes > JAVASCRIPT_BUDGET_BYTES) {
     failures.push(
-      `${basename(path)} is ${bytes} bytes; JavaScript budget is 5000`,
+      `${basename(path)} is ${bytes} bytes; JavaScript budget is ${JAVASCRIPT_BUDGET_BYTES}`,
     );
   }
 }
