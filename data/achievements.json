@@ -6,7 +6,7 @@
     "title": "Cybersecurity Architecture",
     "issuer": "IBM",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "src": "/images/achievements/6b17604e1fcb9df6.png",
       "alt": "IBM logo"
     },
     "date": "2026-07-22T10:54:48.030Z",
@@ -31,7 +31,7 @@
     "title": "Put It to Work: Prepare for Cybersecurity Jobs",
     "issuer": "Google",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "src": "/images/achievements/28e6d4921bed8cc0.png",
       "alt": "Google logo"
     },
     "date": "2025-02-04T08:46:31.139Z",
@@ -56,7 +56,7 @@
     "title": "Using Python to Access Web Data",
     "issuer": "University of Michigan",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "src": "/images/achievements/6d56c58b79a03464.png",
       "alt": "University of Michigan logo"
     },
     "date": "2023-11-06T17:58:38.347Z",
@@ -81,7 +81,7 @@
     "title": "Programming for Everybody (Getting Started with Python)",
     "issuer": "University of Michigan",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "src": "/images/achievements/6d56c58b79a03464.png",
       "alt": "University of Michigan logo"
     },
     "date": "2023-08-29T08:26:07.582Z",
@@ -106,7 +106,7 @@
     "title": "Using Databases with Python",
     "issuer": "University of Michigan",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "src": "/images/achievements/6d56c58b79a03464.png",
       "alt": "University of Michigan logo"
     },
     "date": "2024-02-13T23:01:25.519Z",
@@ -131,7 +131,7 @@
     "title": "Social Psychology",
     "issuer": "Wesleyan University",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/13/7948a0d50011e58bd959a86470a32c/ACM15324_Coursera_SquareLogo_0112_SF.png",
+      "src": "/images/achievements/32d5d6496b027ebd.png",
       "alt": "Wesleyan University logo"
     },
     "date": "2024-02-02T16:21:18.485Z",
@@ -156,7 +156,7 @@
     "title": "Python for Everybody",
     "issuer": "University of Michigan",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "src": "/images/achievements/6d56c58b79a03464.png",
       "alt": "University of Michigan logo"
     },
     "date": "2024-02-13T23:01:25.623Z",
@@ -181,7 +181,7 @@
     "title": "Tools of the Trade: Linux and SQL",
     "issuer": "Google",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "src": "/images/achievements/28e6d4921bed8cc0.png",
       "alt": "Google logo"
     },
     "date": "2024-02-14T10:54:36.581Z",
@@ -206,7 +206,7 @@
     "title": "Database Essentials and Vulnerabilities",
     "issuer": "IBM",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "src": "/images/achievements/6b17604e1fcb9df6.png",
       "alt": "IBM logo"
     },
     "date": "2026-07-22T08:44:18.385Z",
@@ -231,7 +231,7 @@
     "title": "Google Cybersecurity",
     "issuer": "Google",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "src": "/images/achievements/28e6d4921bed8cc0.png",
       "alt": "Google logo"
     },
     "date": "2025-02-04T08:46:31.209Z",
@@ -257,7 +257,7 @@
     "title": "Foundations of Cybersecurity",
     "issuer": "Google",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "src": "/images/achievements/28e6d4921bed8cc0.png",
       "alt": "Google logo"
     },
     "date": "2024-01-09T20:04:53.782Z",
@@ -282,7 +282,7 @@
     "title": "Play It Safe: Manage Security Risks",
     "issuer": "Google",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "src": "/images/achievements/28e6d4921bed8cc0.png",
       "alt": "Google logo"
     },
     "date": "2024-02-08T08:52:58.834Z",
@@ -307,7 +307,7 @@
     "title": "Tools for Data Science",
     "issuer": "IBM",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "src": "/images/achievements/6b17604e1fcb9df6.png",
       "alt": "IBM logo"
     },
     "date": "2025-03-30T08:22:07.483Z",
@@ -332,7 +332,7 @@
     "title": "Introduction to Cybersecurity Tools & Cyberattacks",
     "issuer": "IBM",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "src": "/images/achievements/6b17604e1fcb9df6.png",
       "alt": "IBM logo"
     },
     "date": "2025-06-06T15:15:35.033Z",
@@ -357,7 +357,7 @@
     "title": "Assets, Threats, and Vulnerabilities",
     "issuer": "Google",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "src": "/images/achievements/28e6d4921bed8cc0.png",
       "alt": "Google logo"
     },
     "date": "2024-11-27T11:40:37.835Z",
@@ -382,7 +382,7 @@
     "title": "Capstone: Retrieving, Processing, and Visualizing Data with Python",
     "issuer": "University of Michigan",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "src": "/images/achievements/6d56c58b79a03464.png",
       "alt": "University of Michigan logo"
     },
     "date": "2024-02-12T13:42:03.227Z",
@@ -407,7 +407,7 @@
     "title": "Introduction to Psychology",
     "issuer": "University of Toronto",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/04/1df8943d27a485a986a3ebf10c83d9/UofT-Crest-Square.png",
+      "src": "/images/achievements/dc5e7b7debec08e7.png",
       "alt": "University of Toronto logo"
     },
     "date": "2025-03-15T08:28:10.866Z",
@@ -432,7 +432,7 @@
     "title": "Automate Cybersecurity Tasks with Python",
     "issuer": "Google",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "src": "/images/achievements/28e6d4921bed8cc0.png",
       "alt": "Google logo"
     },
     "date": "2024-12-22T14:01:09.781Z",
@@ -457,7 +457,7 @@
     "title": "Sound the Alarm: Detection and Response",
     "issuer": "Google",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "src": "/images/achievements/28e6d4921bed8cc0.png",
       "alt": "Google logo"
     },
     "date": "2024-12-21T13:10:42.657Z",
@@ -482,7 +482,7 @@
     "title": "Introduction to Cybersecurity Careers",
     "issuer": "IBM",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "src": "/images/achievements/6b17604e1fcb9df6.png",
       "alt": "IBM logo"
     },
     "date": "2025-06-04T09:00:03.517Z",
@@ -507,7 +507,7 @@
     "title": "What is Data Science? ",
     "issuer": "IBM",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "src": "/images/achievements/6b17604e1fcb9df6.png",
       "alt": "IBM logo"
     },
     "date": "2025-02-24T17:36:35.900Z",
@@ -532,7 +532,7 @@
     "title": "Python Data Structures",
     "issuer": "University of Michigan",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "src": "/images/achievements/6d56c58b79a03464.png",
       "alt": "University of Michigan logo"
     },
     "date": "2023-09-05T07:04:46.097Z",
@@ -557,7 +557,7 @@
     "title": "Computer Networks and Network Security",
     "issuer": "IBM",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "src": "/images/achievements/6b17604e1fcb9df6.png",
       "alt": "IBM logo"
     },
     "date": "2025-06-11T10:18:03.243Z",
@@ -582,7 +582,7 @@
     "title": "Introduction to Cybersecurity Essentials",
     "issuer": "IBM",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "src": "/images/achievements/6b17604e1fcb9df6.png",
       "alt": "IBM logo"
     },
     "date": "2025-06-05T09:22:46.178Z",
@@ -607,7 +607,7 @@
     "title": "Connect and Protect: Networks and Network Security",
     "issuer": "Google",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "src": "/images/achievements/28e6d4921bed8cc0.png",
       "alt": "Google logo"
     },
     "date": "2024-02-08T15:54:29.895Z",
@@ -632,7 +632,7 @@
     "title": "Systems Engineering",
     "issuer": "MathWorks",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/fa/50a7a8ef034044a4ae3efae492a918/mw-logo-300x300.png",
+      "src": "/images/achievements/fbf7615d1cc5cb7c.png",
       "alt": "MathWorks logo"
     },
     "date": "2025-01-18T15:04:36.312Z",
@@ -657,7 +657,7 @@
     "title": "Operating Systems: Overview, Administration, and Security",
     "issuer": "IBM",
     "image": {
-      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "src": "/images/achievements/6b17604e1fcb9df6.png",
       "alt": "IBM logo"
     },
     "date": "2025-06-09T16:25:35.161Z",
@@ -682,7 +682,7 @@
     "title": "ISC2 Candidate",
     "issuer": "ISC2",
     "image": {
-      "src": "https://images.credly.com/images/9180921d-4a13-429e-9357-6f9706a554f0/image.png",
+      "src": "/images/achievements/163bd7696ac30a44.png",
       "alt": "ISC2 Candidate badge"
     },
     "description": "ISC2 Candidates are individuals pursuing or considering a cybersecurity certification. To become a Candidate, the individual must apply online and provide minimum identifying information, as well as affirm that they will abide by the ISC2 Code of Ethics and Privacy Policy.",
@@ -718,7 +718,7 @@
     "title": "Operating Systems: Overview, Administration, and Security",
     "issuer": "Coursera",
     "image": {
-      "src": "https://images.credly.com/images/f821064c-8e80-4900-bec2-a799a62157e5/Coursera_20Operating_20Systems_20Overview_20Administration_20and_20Security.png",
+      "src": "/images/achievements/289d0f76466e9c0f.png",
       "alt": "Operating Systems: Overview, Administration, and Security badge"
     },
     "description": "This badge earner understands the key cybersecurity concepts related to operating systems. They have a basic understanding of architecture, file systems, security features, and user accounts in Windows, macOS, and Linux. They can use command-line tools to perform basic administrative tasks. The badge earner is also familiar with virtualization as it relates to operating systems and cloud computing.",
@@ -752,7 +752,7 @@
     "title": "Cybersecurity Architecture V2",
     "issuer": "Coursera",
     "image": {
-      "src": "https://images.credly.com/images/84ce958a-30a6-4036-9944-005c0fce9f81/Cybersecurity_Arch_V2.png",
+      "src": "/images/achievements/18da6e05a8ba11a1.png",
       "alt": "Cybersecurity Architecture V2 badge"
     },
     "description": "This badge earner has demonstrated foundational to advanced cybersecurity knowledge, including the CIA triad, IAM, endpoints, and network, application, and data security. Through hands-on labs, they have applied MFA, identified threats, responded to incidents, and developed strategies to improve organizational security.",
@@ -786,7 +786,7 @@
     "title": "Introduction to Packet Tracer",
     "issuer": "Cisco",
     "image": {
-      "src": "https://images.credly.com/images/09b6d58c-763a-4b40-aea1-787d8f46bbcd/Intro2PT.png",
+      "src": "/images/achievements/c5e3a6f0bdae3676.png",
       "alt": "Introduction to Packet Tracer badge"
     },
     "description": "Cisco verifies the earner of this badge has knowledge and skills to create digital models of IP Networks and IoT Systems using Cisco Packet Tracer.",
@@ -817,7 +817,7 @@
     "title": "CompTIA Security+ ce Certification",
     "issuer": "CompTIA",
     "image": {
-      "src": "https://images.credly.com/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob",
+      "src": "/images/achievements/8255855bfec898ee.png",
       "alt": "CompTIA Security+ ce Certification badge"
     },
     "description": "Earners of the CompTIA Security+ certification have the knowledge and skills necessary to perform core security functions required of any cybersecurity role. CompTIA Security+ professionals know how to identify and address potential threats, attacks and vulnerabilities and they have established techniques in risk management, risk mitigation, threat management and intrusion detection.",
@@ -856,7 +856,7 @@
     "title": "Data Science Orientation",
     "issuer": "Coursera",
     "image": {
-      "src": "https://images.credly.com/images/5fc2d535-e716-46c4-881a-f4822b8da0e5/Cognitive_Class_-_What_is_Data_Science.png",
+      "src": "/images/achievements/8ceb0c61702ffa55.png",
       "alt": "Data Science Orientation badge"
     },
     "description": "This badge earner has a good understanding of why data science, artificial intelligence (AI) and machine learning are revolutionizing the way people do business and research around the world. They have general knowledge on what data science is today.",
@@ -890,7 +890,7 @@
     "title": "Introduction to Cybersecurity",
     "issuer": "Cisco",
     "image": {
-      "src": "https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png",
+      "src": "/images/achievements/80038929d9add939.png",
       "alt": "Introduction to Cybersecurity badge"
     },
     "description": "Cisco verifies the earner of this badge successfully completed the Introduction to Cybersecurity course. The holder of this student-level credential has introductory knowledge of cybersecurity, including the global implications of cyber threats on industries, and why cybersecurity is a growing profession. They understand vulnerabilities and threat detection and defense. They also have insight into opportunities available with pursuing cybersecurity certifications.",
@@ -923,7 +923,7 @@
     "title": "Database Essentials and Vulnerabilities",
     "issuer": "Coursera",
     "image": {
-      "src": "https://images.credly.com/images/ef9d282a-8f31-4b0f-9bbb-640a68ea4b7f/Coursera_20Database_20Essentials_20and_20Vulnerabilities.png",
+      "src": "/images/achievements/09551e4663cc3ee0.png",
       "alt": "Database Essentials and Vulnerabilities badge"
     },
     "description": "This badge earner understands the concepts of relational and non-relational databases and can implement various data protection techniques to secure sensitive information. They know how to configure and manage database user profiles, password policies, privileges, and roles. They can identify, analyze, and mitigate database injection vulnerabilities, including OS command and SQL injection. The badge earner can also design and implement comprehensive database and application auditing models.",
@@ -957,7 +957,7 @@
     "title": "AI Skills Fest 2026",
     "issuer": "Microsoft",
     "image": {
-      "src": "https://images.credly.com/images/082c8d0c-5232-4597-b6c4-6bebcc4f3046/blob",
+      "src": "/images/achievements/75f27b95b0d7d0c4.png",
       "alt": "AI Skills Fest 2026 badge"
     },
     "description": "Earners demonstrate foundational and applied AI knowledge, including how to use AI tools to enhance productivity, create content, and solve real-world problems. They can identify practical use cases, apply AI responsibly, and continue building skills through guided learning pathways.",
@@ -991,7 +991,7 @@
     "title": "API Security Fundamentals '25 (2 hours)",
     "issuer": "APIsec University",
     "image": {
-      "src": "https://images.credly.com/images/d7840f4d-0217-4aa4-8cf4-e8bea30aef52/blob",
+      "src": "/images/achievements/3ae258ea1d5abf9d.png",
       "alt": "API Security Fundamentals '25 (2 hours) badge"
     },
     "description": "The API Security Fundamentals course covers the core threats to APIs and challenges to prevent breach. The course includes modules on real-world API breaches, the OWASP API Security Top 10, the 3 Pillars of API Security (governance, testing and monitoring), and the application security technology landscape. The course provides strategic advice for developing secure API programs, and includes specific best practices for security and development teams.",
@@ -1026,7 +1026,7 @@
     "subtitle": "Sargodha University // BS Computer Science",
     "period": "2022–2026",
     "image": {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Bronze_medal_icon.svg",
+      "src": "/images/achievements/749f3514951fe797.svg",
       "alt": "Bronze medal with the number three"
     },
     "description": "Awarded the university Bronze Medal in recognition of sustained academic excellence throughout the degree.",
@@ -1051,7 +1051,7 @@
     "subtitle": "CompTIA // Vendor-neutral cybersecurity certification",
     "period": "Passed 18 Jul 2026",
     "image": {
-      "src": "https://images.credly.com/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob",
+      "src": "/images/achievements/8255855bfec898ee.png",
       "alt": "CompTIA Security+ ce Certification badge"
     },
     "description": "Earned by passing a paid, independently proctored certification exam that tests applied cybersecurity knowledge rather than course completion alone.",
@@ -1120,7 +1120,7 @@
     "title": "180 Day Streak",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/streak180.png",
+      "src": "/images/achievements/ce09b83d7fa1f1f2.png",
       "alt": "180 Day Streak badge"
     },
     "description": "Hacking for 180 days in a row",
@@ -1150,7 +1150,7 @@
     "title": "3 Day Streak",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/streak3.png",
+      "src": "/images/achievements/e3bf18f75bc854ef.png",
       "alt": "3 Day Streak badge"
     },
     "description": "Achieving a 3 day hacking streak",
@@ -1180,7 +1180,7 @@
     "title": "30 Day Streak",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/streak30.png",
+      "src": "/images/achievements/ef5ca9390e9e6382.png",
       "alt": "30 Day Streak badge"
     },
     "description": "Hacking for 30 days solid",
@@ -1204,7 +1204,7 @@
     "title": "365 Day Streak",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/streak365.png",
+      "src": "/images/achievements/22c12f5554bd2f28.png",
       "alt": "365 Day Streak badge"
     },
     "description": "Hacking for 365 days in a row",
@@ -1235,7 +1235,7 @@
     "title": "7 Day Streak",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/streak7.png",
+      "src": "/images/achievements/9b783eb6ff61f281.png",
       "alt": "7 Day Streak badge"
     },
     "description": "Achieving a 7 day hacking streak",
@@ -1259,7 +1259,7 @@
     "title": "90 Day Streak",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/streak90.png",
+      "src": "/images/achievements/9d5559b8af2dfa08.png",
       "alt": "90 Day Streak badge"
     },
     "description": "Hacking for 90 days in a row",
@@ -1289,7 +1289,7 @@
     "title": "Advent of Cyber 2024",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/aoc5.png",
+      "src": "/images/achievements/570644ee466387ef.png",
       "alt": "Advent of Cyber 2024 badge"
     },
     "description": "Completing Advent of Cyber 2024!",
@@ -1313,7 +1313,7 @@
     "title": "Boogeyman Slayer",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/boogeyman3.png",
+      "src": "/images/achievements/4bf1d39bdab52318.png",
       "alt": "Boogeyman Slayer badge"
     },
     "description": "Finishing the SOC L1 Capstone Module",
@@ -1343,7 +1343,7 @@
     "title": "Burp'ed",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/burpsuite.png",
+      "src": "/images/achievements/410c9a4b936a2013.png",
       "alt": "Burp'ed badge"
     },
     "description": "Completing the Burp Suite module",
@@ -1373,7 +1373,7 @@
     "title": "Cyber Ready",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/careerready.png",
+      "src": "/images/achievements/8bf62c56d6695ea7.png",
       "alt": "Cyber Ready badge"
     },
     "description": "Understanding impact of training on teams",
@@ -1403,7 +1403,7 @@
     "title": "Defensive Toolsmith",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/defensive-toolsmith.png",
+      "src": "/images/achievements/0f595d3e82a3ae5b.png",
       "alt": "Defensive Toolsmith badge"
     },
     "description": "Mastered essential SOC tools for detection",
@@ -1433,7 +1433,7 @@
     "title": "Defrosted Five",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/aocsidequest5.png",
+      "src": "/images/achievements/c20cca9141be4606.png",
       "alt": "Defrosted Five badge"
     },
     "description": "Completing AoC Side Quest 2024!",
@@ -1463,7 +1463,7 @@
     "title": "Diamond League",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/league-diamond.png",
+      "src": "/images/achievements/1c809264f21be33a.png",
       "alt": "Diamond League badge"
     },
     "description": "Diamond League 1st place",
@@ -1493,7 +1493,7 @@
     "title": "First Mobile Quiz",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/first-mobile-quiz.png",
+      "src": "/images/achievements/54cf764a137275bb.png",
       "alt": "First Mobile Quiz badge"
     },
     "description": "Completing your first quiz or recap on the mobile app!",
@@ -1523,7 +1523,7 @@
     "title": "First Step into SOC",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/first-step-into-soc.png",
+      "src": "/images/achievements/9b288ae3e5af590f.png",
       "alt": "First Step into SOC badge"
     },
     "description": "Explored emerging threats and SOC response",
@@ -1553,7 +1553,7 @@
     "title": "Friday Fixer",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/cyberthreatintellegenceblue.png",
+      "src": "/images/achievements/08a01969d5d93fe5.png",
       "alt": "Friday Fixer badge"
     },
     "description": "Finishing the Friday Overtime challenge! ",
@@ -1583,7 +1583,7 @@
     "title": "Gold League",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/league-gold.png",
+      "src": "/images/achievements/7b4425d9a4a446a1.png",
       "alt": "Gold League badge"
     },
     "description": "Gold League 1st place",
@@ -1613,7 +1613,7 @@
     "title": "Handle the Disgruntled",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/digitalforensicsandincidentresponse.png",
+      "src": "/images/achievements/9f53c4a21a4db36d.png",
       "alt": "Handle the Disgruntled badge"
     },
     "description": "Finishing the Disgruntled challenge!",
@@ -1643,7 +1643,7 @@
     "title": "Hash Cracker",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/hashcracker.png",
+      "src": "/images/achievements/3946fbd3e92297fc.png",
       "alt": "Hash Cracker badge"
     },
     "description": "Cracking all those hashes",
@@ -1673,7 +1673,7 @@
     "title": "Introduction to Security Engineering",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/introtosecurityengineering.png",
+      "src": "/images/achievements/4629919566429d31.png",
       "alt": "Introduction to Security Engineering badge"
     },
     "description": "Completed the Security Engineer Intro room!",
@@ -1703,7 +1703,7 @@
     "title": "Intro to Web Hacking",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/introtowebsecurity.png",
+      "src": "/images/achievements/60ba64910cf81b0e.png",
       "alt": "Intro to Web Hacking badge"
     },
     "description": "Completing the 'Introduction to Web Hacking' module",
@@ -1733,7 +1733,7 @@
     "title": "Malware Explorer",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/malware-explorer.png",
+      "src": "/images/achievements/654829ce4fbcae6b.png",
       "alt": "Malware Explorer badge"
     },
     "description": "Identified and classified different types of malware",
@@ -1763,7 +1763,7 @@
     "title": "Manic Monday",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/endpointsecuritymonitoring.png",
+      "src": "/images/achievements/940c9fe4c3c92e42.png",
       "alt": "Manic Monday badge"
     },
     "description": "Finishing the Monday Monitor challenge!",
@@ -1793,7 +1793,7 @@
     "title": "Model Compromise",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/web-application-2.png",
+      "src": "/images/achievements/9c4157f2c9f53846.png",
       "alt": "Model Compromise badge"
     },
     "description": "Completed the LLM Attacks Module",
@@ -1823,7 +1823,7 @@
     "title": "Networking Nerd",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/networkfundamentals.png",
+      "src": "/images/achievements/e0cb35e9738640c8.png",
       "alt": "Networking Nerd badge"
     },
     "description": "Completing the 'Network Fundamentals' module",
@@ -1853,7 +1853,7 @@
     "title": "OhSINT",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/ohsint.png",
+      "src": "/images/achievements/0ea37535cf823daf.png",
       "alt": "OhSINT badge"
     },
     "description": "Completing the OhSINT room",
@@ -1883,7 +1883,7 @@
     "title": "OWASP Top 10",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/owasptop10.png",
+      "src": "/images/achievements/7db54e1ca15ae959.png",
       "alt": "OWASP Top 10 badge"
     },
     "description": "Understanding every OWASP vulnerability",
@@ -1913,7 +1913,7 @@
     "title": "Packet Master",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/networksecurityandtrafficanalysisv2.png",
+      "src": "/images/achievements/ad1c1f88f5467620.png",
       "alt": "Packet Master badge"
     },
     "description": "Finishing the TShark Exercises!",
@@ -1943,7 +1943,7 @@
     "title": "Phish Hunter",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/phishing.png",
+      "src": "/images/achievements/fbc976071dac180e.png",
       "alt": "Phish Hunter badge"
     },
     "description": "Completed the Phishing Analysis room series",
@@ -1973,7 +1973,7 @@
     "title": "Raffle Royalty",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/hack2win.png",
+      "src": "/images/achievements/b4fc997c9de6ad98.png",
       "alt": "Raffle Royalty badge"
     },
     "description": "Participating in Hack2Win 2025!",
@@ -2003,7 +2003,7 @@
     "title": "Skilled Navigator",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/cyberdefenceframework.png",
+      "src": "/images/achievements/29ffb44e8ed51264.png",
       "alt": "Skilled Navigator badge"
     },
     "description": "Finishing the Eviction challenge!",
@@ -2033,7 +2033,7 @@
     "title": "SOC Apprentice",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/soc-apprentice.png",
+      "src": "/images/achievements/1ff0cd524ad18b60.png",
       "alt": "SOC Apprentice badge"
     },
     "description": "Explored how a SOC team operates from inside",
@@ -2063,7 +2063,7 @@
     "title": "100% true positive rate",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/soc-sim-100-percent-true-positive-rate.png",
+      "src": "/images/achievements/d808d7854fcfff6d.png",
       "alt": "100% true positive rate badge"
     },
     "description": "Achieving 100% true positive rate in a scenario",
@@ -2093,7 +2093,7 @@
     "title": "First alert closed",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/soc-sim-first-alert-closed.png",
+      "src": "/images/achievements/7723d9a6017ef0fb.png",
       "alt": "First alert closed badge"
     },
     "description": "Closing your first alert",
@@ -2123,7 +2123,7 @@
     "title": "First scenario completed",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/soc-sim-first-scenario-completed.png",
+      "src": "/images/achievements/6a999529364aad85.png",
       "alt": "First scenario completed badge"
     },
     "description": "Completing your first scenario",
@@ -2153,7 +2153,7 @@
     "title": "cat linux.txt",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/linux.png",
+      "src": "/images/achievements/e4b868d1fed5ec5b.png",
       "alt": "cat linux.txt badge"
     },
     "description": "Being competent in Linux",
@@ -2183,7 +2183,7 @@
     "title": "To benign or not benign?",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/securityinformationandeventmanagement.png",
+      "src": "/images/achievements/0396d486fc3d1333.png",
       "alt": "To benign or not benign? badge"
     },
     "description": "Finishing the Benign challenge!",
@@ -2213,7 +2213,7 @@
     "title": "Web Defender",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/web-defender.png",
+      "src": "/images/achievements/839fa13f532b1ee6.png",
       "alt": "Web Defender badge"
     },
     "description": "Learned to detect common attacks on web apps",
@@ -2243,7 +2243,7 @@
     "title": "Webbed",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/webbed.png",
+      "src": "/images/achievements/884dc088672ff372.png",
       "alt": "Webbed badge"
     },
     "description": "Understands how the world wide web works",
@@ -2273,7 +2273,7 @@
     "title": "World Wide Web",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://assets.tryhackme.com/img/badges/howthewebworks.png",
+      "src": "/images/achievements/393728958ab8bc25.png",
       "alt": "World Wide Web badge"
     },
     "description": "Completing the 'How The Web Works' module",
@@ -2303,7 +2303,7 @@
     "title": "Advent of Cyber 2024",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PCPSD0R8PL.png",
+      "src": "/images/achievements/3e69903fd4605352.png",
       "alt": "Advent of Cyber 2024 certificate preview"
     },
     "date": "2024-12-26T07:56:44.557Z",
@@ -2328,7 +2328,7 @@
     "title": "Hackfinity Battle",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-HT3NGY4ZO4.png",
+      "src": "/images/achievements/b4a13df9638038a8.png",
       "alt": "Hackfinity Battle certificate preview"
     },
     "date": "2025-04-08T09:11:26.135Z",
@@ -2353,7 +2353,7 @@
     "title": "Love at First Breach",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-VBAVURNHM8.png",
+      "src": "/images/achievements/4b85a5c4bf141b77.png",
       "alt": "Love at First Breach certificate preview"
     },
     "date": "2026-02-25T16:41:06.914Z",
@@ -2378,7 +2378,7 @@
     "title": "Pre Security",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ESRGIAWEES.png",
+      "src": "/images/achievements/554e81f3b79be434.png",
       "alt": "Pre Security certificate preview"
     },
     "description": "Your first step into cyber. Learn how tech works, then think like an attacker and defender. Explore how computers really work Write your first lines of code Step into networking and web basics Think like a hacker or defender",
@@ -2404,7 +2404,7 @@
     "title": "SOC Level 1",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-M4ZQHRNWOY.png",
+      "src": "/images/achievements/457b88cc8b1eea67.png",
       "alt": "SOC Level 1 certificate preview"
     },
     "date": "2025-07-24T13:16:19.621Z",
@@ -2430,7 +2430,7 @@
     "title": "Web Fundamentals",
     "issuer": "TryHackMe",
     "image": {
-      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PAJVW9UWAL.png",
+      "src": "/images/achievements/f8a5a10587512bb6.png",
       "alt": "Web Fundamentals certificate preview"
     },
     "description": "A pathway to web application security. Understand web fundamentals Major vulnerabilities explained Learn industry-used tools Web application assessments",

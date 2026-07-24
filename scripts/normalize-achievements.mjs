@@ -14,7 +14,7 @@ const stripMarkup = (value = "") =>
     .replace(/\s+/g, " ")
     .trim();
 
-export async function buildAchievements() {
+export async function buildAchievements({ preferLocalImages = true } = {}) {
   const [
     personal,
     credlySnapshot,
@@ -236,6 +236,17 @@ export async function buildAchievements() {
       curatedOrder: badge.name === "365-day-streak" ? 5 : undefined,
       showInAll: true,
     });
+  }
+
+  if (preferLocalImages) {
+    const localImages = await readJson("data/achievement-images.json").catch(
+      () => ({}),
+    );
+    for (const item of achievements) {
+      if (item.image && localImages[item.id]) {
+        item.image.src = localImages[item.id];
+      }
+    }
   }
 
   return achievements.sort((a, b) => a.id.localeCompare(b.id));

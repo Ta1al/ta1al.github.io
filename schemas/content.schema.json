@@ -124,7 +124,13 @@
           "required": ["src", "alt"],
           "properties": {
             "src": {
-              "$ref": "#/$defs/url"
+              "anyOf": [
+                { "$ref": "#/$defs/url" },
+                {
+                  "type": "string",
+                  "pattern": "^/images/achievements/[a-f0-9]{16}\\.(avif|jpg|png|svg|webp)$"
+                }
+              ]
             },
             "alt": {
               "$ref": "#/$defs/nonEmptyString"

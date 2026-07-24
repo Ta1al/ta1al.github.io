@@ -1,4 +1,7 @@
 {{- $options := dict "minify" true "target" "es2020" -}}
-{{- with resources.Get . | js.Build $options | fingerprint -}}
-  <script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+{{- $source := resources.Get . -}}
+{{- if not $source -}}
+  {{- errorf "JavaScript entry point %q was not found" . -}}
 {{- end -}}
+{{- $bundle := $source | js.Build $options | fingerprint -}}
+<script type="module" src="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}"></script>

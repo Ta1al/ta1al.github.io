@@ -1,0 +1,23 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{- $projectPages := where site.RegularPages "Section" "projects" -}}
+{{- $projectCaseStudies := where $projectPages "Params.externalURL" nil -}}
+{{- $entries := union .Pages $projectCaseStudies -}}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ .Title }} — {{ site.Title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ .Description | default site.Params.description }}</description>
+    <language>{{ site.Language.Locale }}</language>
+    <copyright>Copyright {{ now.Year }} {{ site.Params.author }}</copyright>
+    {{ with .OutputFormats.Get "RSS" }}<atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml"/>{{ end }}
+    {{ range first 20 ($entries.ByDate.Reverse) }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid isPermaLink="true">{{ .Permalink }}</guid>
+      <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+      <description>{{ .Description | default (.Summary | plainify) }}</description>
+    </item>
+    {{ end }}
+  </channel>
+</rss>

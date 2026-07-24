@@ -68,6 +68,9 @@ Committed vendor snapshots power achievements. Their expected top-level shapes
 are normalized into `data/achievements.json`. After refreshing a snapshot, run
 `npm run normalize:achievements`; `npm run validate:data` fails if the normalized
 file is stale or violates its schema.
+Credential artwork is cached only from the allowlisted provider hosts with
+`npm run cache:achievement-images`; the normalized data then points at the
+locally served copies and validation confirms that every referenced file exists.
 The Valorant refresh script validates the upstream text response before updating
 `data/valorant.json`. Discord presence is progressively loaded in visitors'
 browsers from the public server widget and falls back to static copy on failure.

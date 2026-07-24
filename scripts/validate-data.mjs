@@ -1,4 +1,4 @@
-import { readFile, readdir } from "node:fs/promises";
+import { access, readFile, readdir } from "node:fs/promises";
 import { join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import Ajv2020 from "ajv/dist/2020.js";
@@ -40,6 +40,19 @@ const dataFiles = [
 
 for (const [path, definition] of dataFiles) {
   validate(path, definition, await readJson(path));
+}
+
+const achievements = await readJson("data/achievements.json");
+for (const achievement of achievements) {
+  const source = achievement.image?.src;
+  if (!source?.startsWith("/images/achievements/")) continue;
+  try {
+    await access(join(root, "static", source));
+  } catch {
+    throw new Error(
+      `data/achievements.json references missing local image ${source}`,
+    );
+  }
 }
 
 const assertArrayAt = (value, path, source) => {

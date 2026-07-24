@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $soc := index hugo.Data "resume-soc" }}
 {{ $software := index hugo.Data "resume-software" }}
-<article class="cv shell">
+<article class="cv shell" data-cv-tabs>
   <header class="page-heading cv__heading">
     <p class="eyebrow">Curriculum Vitae // Resume</p>
     <h1>{{ $soc.basics.name }}</h1>
@@ -20,7 +20,7 @@
     </div>
   </header>
 
-  <div class="cv-panels" data-cv-tabs>
+  <div class="cv-panels">
     {{ partial "cv-panel.html" (dict "resume" $soc "id" "soc" "active" true) }}
     {{ partial "cv-panel.html" (dict "resume" $software "id" "software" "active" false) }}
   </div>

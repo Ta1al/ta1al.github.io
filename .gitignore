@@ -5,6 +5,7 @@
 .hugo_build.lock
 /.hugo_cache/
 /.report-work/
+/debug.log
 
 # Local tooling and operating-system files
 /node_modules/
