@@ -155,14 +155,20 @@ test("post swipes route to the TOC and navigation drawers", async ({
 
   await swipeHorizontally(page, 300, 40);
   await expect(page.locator("body")).toHaveClass(/menu-open/);
+
+  await swipeHorizontally(page, 40, 300);
+  await expect(page.locator("body")).not.toHaveClass(/menu-open/);
+  await expect(
+    page.getByRole("button", { name: /toggle navigation/i }),
+  ).toHaveAttribute("aria-expanded", "false");
 });
 
-test("Discord network failure keeps usable fallback content", async ({
+test("Discord service failure keeps usable fallback content", async ({
   page,
 }) => {
   await page.route("https://discord.com/api/**", (route) =>
     route.fulfill({
-      status: 503,
+      status: 200,
       contentType: "application/json",
       body: JSON.stringify({ message: "Service unavailable" }),
     }),

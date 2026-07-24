@@ -104,6 +104,7 @@ if (toc) {
     capture: true,
     stopPropagation: true,
     onSwipe: (direction) => {
+      if (document.body.classList.contains("menu-open")) return false;
       const open = document.body.classList.contains("toc-open");
       if (!open && direction === "left") return false;
       if (open) closeToc();
