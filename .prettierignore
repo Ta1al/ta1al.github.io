@@ -1,0 +1,8 @@
+.hugo_cache/
+.report-work/
+node_modules/
+public/
+resources/
+data/coursera-*.json
+data/credly-badges.json
+data/tryhackme-*.json

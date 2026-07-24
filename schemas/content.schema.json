@@ -1,0 +1,317 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ta1al.com/schemas/content.schema.json",
+  "$defs": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "stringList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nonEmptyString"
+      },
+      "uniqueItems": true
+    },
+    "projectFrontmatter": {
+      "type": "object",
+      "required": [
+        "title",
+        "date",
+        "description",
+        "discipline",
+        "status",
+        "technologies",
+        "featured"
+      ],
+      "properties": {
+        "title": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "description": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "discipline": {
+          "enum": ["cybersecurity", "software"]
+        },
+        "status": {
+          "enum": ["completed", "in-progress", "maintained", "archived"]
+        },
+        "technologies": {
+          "$ref": "#/$defs/stringList"
+        },
+        "topics": {
+          "$ref": "#/$defs/stringList"
+        },
+        "featured": {
+          "type": "boolean"
+        },
+        "repository": {
+          "anyOf": [{ "const": "" }, { "$ref": "#/$defs/url" }]
+        },
+        "demo": {
+          "anyOf": [{ "const": "" }, { "$ref": "#/$defs/url" }]
+        },
+        "externalURL": {
+          "$ref": "#/$defs/url"
+        },
+        "aliases": {
+          "$ref": "#/$defs/stringList"
+        },
+        "_build": {
+          "type": "object",
+          "properties": {
+            "render": {
+              "enum": ["always", "never", "link"]
+            },
+            "list": {
+              "enum": ["always", "local", "never"]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "softwareProject": {
+      "type": "object",
+      "required": ["title", "description", "tags", "url", "featured"],
+      "properties": {
+        "title": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "description": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "tags": {
+          "$ref": "#/$defs/stringList"
+        },
+        "url": {
+          "$ref": "#/$defs/url"
+        },
+        "featured": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "personalAchievement": {
+      "type": "object",
+      "required": [
+        "title",
+        "category",
+        "institution",
+        "degree",
+        "period",
+        "image",
+        "imageAlt",
+        "metric",
+        "metricLabel",
+        "description"
+      ],
+      "properties": {
+        "title": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "category": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "institution": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "degree": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "period": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "image": {
+          "$ref": "#/$defs/url"
+        },
+        "imageAlt": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "metric": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "metricLabel": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "description": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "importance": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "facts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["label", "value"],
+            "properties": {
+              "label": {
+                "$ref": "#/$defs/nonEmptyString"
+              },
+              "value": {
+                "$ref": "#/$defs/nonEmptyString"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "url": {
+          "$ref": "#/$defs/url"
+        },
+        "linkLabel": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      },
+      "additionalProperties": false
+    },
+    "resume": {
+      "type": "object",
+      "required": [
+        "$schema",
+        "basics",
+        "work",
+        "education",
+        "skills",
+        "projects",
+        "certificates"
+      ],
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "format": "uri"
+        },
+        "basics": {
+          "type": "object",
+          "required": [
+            "name",
+            "label",
+            "email",
+            "summary",
+            "download",
+            "profiles"
+          ],
+          "properties": {
+            "name": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "label": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "summary": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "download": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "profiles": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["network", "username", "url"],
+                "properties": {
+                  "network": {
+                    "$ref": "#/$defs/nonEmptyString"
+                  },
+                  "username": {
+                    "$ref": "#/$defs/nonEmptyString"
+                  },
+                  "url": {
+                    "$ref": "#/$defs/url"
+                  }
+                },
+                "additionalProperties": true
+              }
+            }
+          },
+          "additionalProperties": true
+        },
+        "work": {
+          "type": "array"
+        },
+        "education": {
+          "type": "array"
+        },
+        "skills": {
+          "type": "array"
+        },
+        "projects": {
+          "type": "array"
+        },
+        "certificates": {
+          "type": "array"
+        },
+        "volunteer": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": true
+    },
+    "valorant": {
+      "type": "object",
+      "required": [
+        "accountName",
+        "tag",
+        "region",
+        "rank",
+        "rr",
+        "lastMatchRr",
+        "shields",
+        "iconTier",
+        "updatedAt"
+      ],
+      "properties": {
+        "accountName": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "tag": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "region": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "rank": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "rr": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "lastMatchRr": {
+          "type": "integer"
+        },
+        "shields": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "iconTier": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 27
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

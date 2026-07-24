@@ -1,30 +1,81 @@
 # Talal Ahmed — Portfolio
 
-A lightweight Hugo portfolio for a SOC analyst and software engineer.
+A lightweight Hugo portfolio for a SOC analyst and software engineer. The site
+uses Hugo templates, plain CSS, and small framework-free JavaScript modules.
 
-## Local development
+## Requirements and commands
 
-Requires Hugo Extended 0.164.0 or newer.
+- Hugo Extended 0.164.0 or newer
+- Node.js 22 or newer for tests and quality checks
 
 ```sh
-hugo server --buildDrafts
+npm install
+npm run dev
 ```
+
+The maintained commands are:
+
+```sh
+npm run build          # production Hugo build
+npm test               # unit and contract tests
+npm run validate:data  # JSON and content-front-matter contracts
+npm run lint           # JavaScript, CSS, and formatting
+npm run check          # complete local CI sequence
+```
+
+Generated Hugo output and caches belong in `public/`, `resources/_gen/`,
+`.hugo_cache/`, and `.report-work/`; all are ignored by Git.
+
+## Architecture
+
+- `content/` contains blog posts, project case studies, and section copy.
+- `data/` contains the two role-specific JSON Resume documents, achievement
+  snapshots, software project cards, and cached Valorant status.
+- `layouts/` contains page templates and reusable partials.
+- `assets/` contains source CSS and JavaScript processed by Hugo Pipes.
+- `static/` contains files that must be copied without transformation, including
+  downloadable CVs and case-study PDFs.
+- `schemas/`, `scripts/`, and `tests/` define and verify maintained content
+  contracts.
+
+The SOC and software CVs intentionally remain separate JSON Resume documents in
+`data/resume-soc.json` and `data/resume-software.json`. Shared identity and
+social links used outside the CV are configured in `hugo.toml`.
+
+## Authoring content
 
 Create content with the provided archetypes:
 
 ```sh
-hugo new content blog/my-post.md
-hugo new content projects/my-project.md
+hugo new content blog/my-post/index.md
+hugo new content projects/my-project/index.md
 ```
 
-CV content is maintained in `data/resume.json` using the JSON Resume structure. Identity and social links are configured in `hugo.toml`.
+Keep article images inside the page bundle beside `index.md`. Hugo's Markdown
+image render hook generates responsive WebP variants while preserving the
+original for the lightbox.
 
-## Production build
+Before committing content or implementation changes, run:
 
 ```sh
-hugo --gc --minify
+npm run check
+git diff --check
 ```
 
-Pushes to `hugo-main` deploy through GitHub Actions. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**.
+## Live data
 
-The deployment workflow validates the live-status integrations and refreshes the Valorant rank before each build. A scheduled run at 03:17 UTC refreshes and redeploys the rank daily; a failed or malformed rank response stops deployment so the last successful site remains online. Discord presence is progressively loaded in visitors' browsers from the public server widget.
+Committed vendor snapshots power achievements. Their expected top-level shapes
+are checked by `npm run validate:data`; refreshes must preserve those contracts.
+The Valorant refresh script validates the upstream text response before updating
+`data/valorant.json`. Discord presence is progressively loaded in visitors'
+browsers from the public server widget and falls back to static copy on failure.
+
+## Deployment
+
+Pushes to `main` deploy through GitHub Actions. In repository settings, set
+**Pages → Build and deployment → Source** to **GitHub Actions**.
+
+The workflow runs live-status tests, restores the last successful cached Valorant
+rank, attempts a refresh, and builds with Hugo Extended. If the refresh fails, it
+deploys the cached rank when available or the committed fallback otherwise. A
+scheduled run at 03:17 UTC refreshes and redeploys the rank daily.
