@@ -3,6 +3,7 @@
 /resources/_gen/
 .hugo_build.lock
 /.hugo_cache/
+/.report-work/
 
 # Local tooling and operating-system files
 .DS_Store
