@@ -2,10 +2,10 @@
 {{ $showToc := and (.Params.toc | default true) (gt (len .TableOfContents) 32) }}
 <article class="shell article">
   <header class="page-heading article__heading">
-    <p class="eyebrow">{{ with index .Params.categories 0 }}{{ . }} // {{ end }}{{ .Date.Format "02 Jan 2006" }}</p>
+    <p class="eyebrow">{{ with index .Params.categories 0 }}{{ . }} // {{ end }}Article</p>
     <h1>{{ .Title }}</h1>
     <p class="lede">{{ .Description }}</p>
-    <div class="article-meta"><span>{{ .ReadingTime }} min read</span>{{ if ne .Lastmod .Date }}<span>Updated {{ .Lastmod.Format "02 Jan 2006" }}</span>{{ end }}</div>
+    <div class="article-meta"><span>Published <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time></span><span>{{ .ReadingTime }} min read</span>{{ if ne .Lastmod .Date }}<span>Updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "02 Jan 2006" }}</time></span>{{ end }}</div>
   </header>
   {{ if $showToc }}<button class="toc-trigger" type="button" aria-expanded="false" aria-controls="article-toc" data-toc-open><span>TOC</span><span aria-hidden="true">›</span></button><div class="toc-backdrop" data-toc-close hidden></div>{{ end }}
   <div class="article__layout">
