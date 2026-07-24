@@ -167,8 +167,12 @@
     projects.forEach((project) => {
       const show = selected === 'all' || project.dataset.projectDiscipline === selected;
       project.hidden = !show;
+      project.classList.remove('is-last-visible');
       if (show) visible += 1;
     });
+    if (visible % 2 === 1) {
+      projects.filter((project) => !project.hidden).at(-1)?.classList.add('is-last-visible');
+    }
     if (status) status.textContent = `${visible} project${visible === 1 ? '' : 's'} shown.`;
     if (focus) button.focus();
   };
@@ -186,4 +190,5 @@
       activateFilter(filters[next], { focus: true });
     });
   });
+  activateFilter(filters.find((button) => button.getAttribute('aria-selected') === 'true') || filters[0]);
 })();
