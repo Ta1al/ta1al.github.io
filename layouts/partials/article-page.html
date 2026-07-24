@@ -1,7 +1,7 @@
 {{- $page := .page -}}
 {{- $isProject := eq .kind "project" -}}
 {{- $showToc := and ($page.Params.toc | default true) (gt (len $page.TableOfContents) 32) -}}
-<article class="shell article">
+<article class="shell article" id="article-top">
   <header class="page-heading article__heading">
     <a class="text-link article-back" href="{{ relURL "blog/" }}">← Back to all posts</a>
     {{ if $isProject }}
@@ -50,4 +50,6 @@
       <p data-lightbox-caption></p>
     </div>
   </dialog>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top" hidden><span aria-hidden="true">↑</span></button>
 </article>

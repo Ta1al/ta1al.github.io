@@ -1,6 +1,33 @@
 import { listenForHorizontalSwipe, trapTabKey } from "./lib/interactions.mjs";
 import { createImageLightbox } from "./lib/lightbox.mjs";
 
+const backToTop = document.querySelector("[data-back-to-top]");
+if (backToTop) {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let updateQueued = false;
+
+  const updateBackToTop = () => {
+    backToTop.hidden = window.scrollY < window.innerHeight * 2;
+    updateQueued = false;
+  };
+
+  const queueUpdate = () => {
+    if (updateQueued) return;
+    updateQueued = true;
+    requestAnimationFrame(updateBackToTop);
+  };
+
+  window.addEventListener("scroll", queueUpdate, { passive: true });
+  window.addEventListener("resize", queueUpdate);
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: reducedMotion.matches ? "auto" : "smooth",
+    });
+  });
+  updateBackToTop();
+}
+
 const toc = document.querySelector("[data-article-toc]");
 
 if (toc) {

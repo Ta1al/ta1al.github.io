@@ -244,6 +244,20 @@ test("project case studies return readers to the blog archive", async ({
   ).toHaveAttribute("href", "/projects/");
 });
 
+test("long articles reveal a back-to-top control after two viewports", async ({
+  page,
+}) => {
+  await gotoWithoutPageErrors(page, "/projects/home-soc-lab/");
+  const backToTop = page.getByRole("button", { name: "Back to top" });
+
+  await expect(backToTop).toBeHidden();
+  await page.evaluate(() => window.scrollTo(0, window.innerHeight * 2.5));
+  await expect(backToTop).toBeVisible();
+  await backToTop.click();
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+  await expect(backToTop).toBeHidden();
+});
+
 test("Discord service failure keeps usable fallback content", async ({
   page,
 }) => {
