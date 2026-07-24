@@ -240,7 +240,7 @@ test("project case studies return readers to the blog archive", async ({
     page.getByRole("link", { name: "Back to all posts" }),
   ).toHaveAttribute("href", "/blog/");
   await expect(
-    page.getByRole("link", { name: "All projects" }),
+    page.getByRole("link", { name: "Explore more projects" }),
   ).toHaveAttribute("href", "/projects/");
 });
 
