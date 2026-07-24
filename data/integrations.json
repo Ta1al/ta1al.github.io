@@ -1,0 +1,30 @@
+{
+  "discord": {
+    "guildId": "823790824646639617",
+    "widgetUrl": "https://discord.com/api/guilds/823790824646639617/widget.json",
+    "inviteUrl": "https://discord.com/invite/EqbAQHrB",
+    "name": "✨House of Talal✨"
+  },
+  "tryhackme": {
+    "username": "ta1al",
+    "profileUrl": "https://tryhackme.com/p/ta1al",
+    "level": 13,
+    "badges": 40,
+    "rooms": 254,
+    "streakDays": 371,
+    "rank": 9731,
+    "topPercent": 1,
+    "capability": 64.69,
+    "pointOfView": "blue",
+    "totalPoints": 34470
+  },
+  "valorant": {
+    "accountName": "PerryThePlatypus",
+    "tag": "257",
+    "region": "EU",
+    "endpoint": "https://vaccie.pythonanywhere.com/mmr/PerryThePlatypus/257/eu"
+  },
+  "analytics": {
+    "googleMeasurementId": ""
+  }
+}

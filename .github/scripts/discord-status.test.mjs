@@ -1,32 +1,74 @@
-import assert from 'node:assert/strict';
-import test from 'node:test';
-import { fetchDiscordWidget, validateDiscordWidget } from '../../assets/js/discord-status.mjs';
+import assert from "node:assert/strict";
+import test from "node:test";
+import {
+  fetchDiscordWidget,
+  validateDiscordWidget,
+} from "../../assets/js/discord-status.mjs";
 
 const valid = {
-  id: '823790824646639617', name: '✨House of Talal✨', presence_count: 3,
-  instant_invite: 'https://discord.com/invite/EqbAQHrB', members: [{ username: 'must not leak' }]
+  id: "823790824646639617",
+  name: "✨House of Talal✨",
+  presence_count: 3,
+  instant_invite: "https://discord.com/invite/EqbAQHrB",
+  members: [{ username: "must not leak" }],
 };
+const guildId = valid.id;
 
-test('returns only safe public server fields', () => {
-  assert.deepEqual(validateDiscordWidget(valid), {
-    name: '✨House of Talal✨', presenceCount: 3, invite: 'https://discord.com/invite/EqbAQHrB'
+test("returns only safe public server fields", () => {
+  assert.deepEqual(validateDiscordWidget(valid, guildId), {
+    name: "✨House of Talal✨",
+    presenceCount: 3,
+    invite: "https://discord.com/invite/EqbAQHrB",
   });
 });
 
-test('rejects disabled and malformed widgets', () => {
-  assert.throws(() => validateDiscordWidget({ message: 'Widget Disabled', code: 50004 }), /unavailable/);
-  assert.throws(() => validateDiscordWidget({ ...valid, presence_count: -1 }), /presence count/);
-  assert.throws(() => validateDiscordWidget({ ...valid, instant_invite: 'https://example.com/invite/nope' }), /invite/);
+test("rejects disabled and malformed widgets", () => {
+  assert.throws(
+    () =>
+      validateDiscordWidget(
+        { message: "Widget Disabled", code: 50004 },
+        guildId,
+      ),
+    /unavailable/,
+  );
+  assert.throws(
+    () => validateDiscordWidget({ ...valid, presence_count: -1 }, guildId),
+    /presence count/,
+  );
+  assert.throws(
+    () =>
+      validateDiscordWidget(
+        { ...valid, instant_invite: "https://example.com/invite/nope" },
+        guildId,
+      ),
+    /invite/,
+  );
 });
 
-test('rejects failed responses and network failures', async () => {
-  await assert.rejects(fetchDiscordWidget('test', async () => ({ ok: false, status: 503 })), /HTTP 503/);
-  await assert.rejects(fetchDiscordWidget('test', async () => { throw new Error('network down'); }), /network down/);
+test("rejects failed responses and network failures", async () => {
+  await assert.rejects(
+    fetchDiscordWidget("test", guildId, async () => ({
+      ok: false,
+      status: 503,
+    })),
+    /HTTP 503/,
+  );
+  await assert.rejects(
+    fetchDiscordWidget("test", guildId, async () => {
+      throw new Error("network down");
+    }),
+    /network down/,
+  );
 });
 
-test('times out stalled requests', async () => {
-  const stalled = (_url, { signal }) => new Promise((_, reject) => {
-    signal.addEventListener('abort', () => reject(new DOMException('Aborted', 'AbortError')));
+test("times out stalled requests", async () => {
+  const stalled = (_url, { signal }) =>
+    new Promise((_, reject) => {
+      signal.addEventListener("abort", () =>
+        reject(new DOMException("Aborted", "AbortError")),
+      );
+    });
+  await assert.rejects(fetchDiscordWidget("test", guildId, stalled, 1), {
+    name: "AbortError",
   });
-  await assert.rejects(fetchDiscordWidget('test', stalled, 1), { name: 'AbortError' });
 });

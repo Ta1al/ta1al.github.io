@@ -1,0 +1,37 @@
+{{- $item := .item -}}
+{{- $detailed := .detailed | default false -}}
+{{- $class := "achievement-card" -}}
+{{- if $detailed }}{{ $class = printf "%s achievement-card--personal" $class }}{{ end -}}
+{{- if eq $item.kind "Certificate" }}{{ $class = printf "%s achievement-card--certificate" $class }}{{ end -}}
+{{- if eq $item.kind "Badge" }}{{ $class = printf "%s achievement-card--badge" $class }}{{ end -}}
+{{- if eq $item.provider "coursera" }}{{ $class = printf "%s achievement-card--course" $class }}{{ end -}}
+{{- if not $item.image }}{{ $class = printf "%s is-image-unavailable" $class }}{{ end -}}
+<article class="{{ $class }}">
+  {{ with $item.image }}
+    <div class="achievement-card__visual">
+      <img src="{{ .src }}" width="{{ if eq $item.kind "Certificate" }}240{{ else }}144{{ end }}" height="{{ if eq $item.kind "Certificate" }}170{{ else }}144{{ end }}" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="{{ .alt }}" data-achievement-image>
+    </div>
+  {{ end }}
+  <div class="achievement-card__body">
+    <div class="achievement-card__kicker">
+      <span>{{ $item.issuer }}</span>
+      {{ with $item.rarity }}<span class="rarity rarity--{{ .tier | urlize }}">{{ .tier }}</span>{{ else }}<span>{{ $item.kind }}</span>{{ end }}
+    </div>
+    <h3>{{ $item.detailTitle | default $item.title }}</h3>
+    {{ with $item.subtitle }}<p class="achievement-card__issuer">{{ . }}</p>{{ end }}
+    {{ with $item.description }}<p>{{ . }}</p>{{ end }}
+    {{ range $item.details }}<p>{{ . }}</p>{{ end }}
+    {{ with $item.metrics }}
+      <dl class="achievement-metrics">
+        {{ range . }}
+          <div>
+            <dt>{{ .label }}</dt>
+            <dd>{{ if eq .format "date" }}<time datetime="{{ .value }}">{{ time.Format "02 Jan 2006" (time.AsTime .value) }}</time>{{ else }}{{ .value }}{{ end }}</dd>
+          </div>
+        {{ end }}
+      </dl>
+    {{ end }}
+    {{ with $item.skills }}<ul class="achievement-skills" aria-label="Selected skills">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+    {{ with $item.credential }}<a class="text-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }} <span aria-hidden="true">↗</span></a>{{ end }}
+  </div>
+</article>

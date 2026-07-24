@@ -30,10 +30,8 @@ const dataFiles = [
   ["data/resume-soc.json", definitions.resume],
   ["data/resume-software.json", definitions.resume],
   ["data/valorant.json", definitions.valorant],
-  [
-    "data/projects-software.json",
-    { type: "array", items: definitions.softwareProject },
-  ],
+  ["data/integrations.json", definitions.integrations],
+  ["data/achievements.json", { type: "array", items: definitions.achievement }],
   [
     "data/personal-achievements.json",
     { type: "array", items: definitions.personalAchievement },

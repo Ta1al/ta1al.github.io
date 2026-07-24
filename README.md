@@ -30,7 +30,7 @@ Generated Hugo output and caches belong in `public/`, `resources/_gen/`,
 
 - `content/` contains blog posts, project case studies, and section copy.
 - `data/` contains the two role-specific JSON Resume documents, achievement
-  snapshots, software project cards, and cached Valorant status.
+  snapshots, and cached Valorant status.
 - `layouts/` contains page templates and reusable partials.
 - `assets/` contains source CSS and JavaScript processed by Hugo Pipes.
 - `static/` contains files that must be copied without transformation, including
@@ -65,7 +65,9 @@ git diff --check
 ## Live data
 
 Committed vendor snapshots power achievements. Their expected top-level shapes
-are checked by `npm run validate:data`; refreshes must preserve those contracts.
+are normalized into `data/achievements.json`. After refreshing a snapshot, run
+`npm run normalize:achievements`; `npm run validate:data` fails if the normalized
+file is stale or violates its schema.
 The Valorant refresh script validates the upstream text response before updating
 `data/valorant.json`. Discord presence is progressively loaded in visitors'
 browsers from the public server widget and falls back to static copy on failure.

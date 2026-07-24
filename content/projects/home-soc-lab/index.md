@@ -7,6 +7,7 @@ status = 'completed'
 technologies = ['Wazuh', 'Sysmon', 'pfSense', 'n8n', 'Docker', 'Ubuntu', 'Windows 10']
 topics = ['SIEM', 'Detection Engineering', 'Incident Response', 'Security Automation']
 featured = true
+weight = 10
 aliases = ['/projects/installing-and-setting-up-wazuh/']
 +++
 

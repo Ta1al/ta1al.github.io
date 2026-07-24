@@ -1,9 +1,8 @@
 {{ define "main" }}
-{{ $softwareProjects := index hugo.Data "projects-software" }}
 {{ $cybersecurityPages := where .Pages "Params.discipline" "cybersecurity" }}
 {{ $softwarePages := where .Pages "Params.discipline" "software" }}
 {{ $cybersecurityCount := len $cybersecurityPages }}
-{{ $softwareCount := add (len $softwarePages) (len $softwareProjects) }}
+{{ $softwareCount := len $softwarePages }}
 {{ $projectCount := add $cybersecurityCount $softwareCount }}
 <section class="shell listing" aria-labelledby="projects-title">
   <header class="page-heading">
@@ -19,28 +18,10 @@
   </div>
   <p class="filter-status sr-only" aria-live="polite"></p>
 
-  {{ if or .Pages $softwareProjects }}
+  {{ if .Pages }}
   <div class="project-grid" id="project-grid">
-    {{ $pages := .Pages.ByTitle }}
-    {{ $featuredPages := where $pages "Params.featured" true }}
-    {{ $regularPages := where $pages "Params.featured" false }}
-    {{ range where $featuredPages "Params.discipline" "cybersecurity" }}
+    {{ range .Pages.ByWeight }}
       {{ partial "project-card.html" . }}
-    {{ end }}
-    {{ range where $featuredPages "Params.discipline" "ne" "cybersecurity" }}
-      {{ partial "project-card.html" . }}
-    {{ end }}
-    {{ range where $softwareProjects "featured" true }}
-      {{ partial "project-card-data.html" . }}
-    {{ end }}
-    {{ range where $regularPages "Params.discipline" "cybersecurity" }}
-      {{ partial "project-card.html" . }}
-    {{ end }}
-    {{ range where $regularPages "Params.discipline" "ne" "cybersecurity" }}
-      {{ partial "project-card.html" . }}
-    {{ end }}
-    {{ range where $softwareProjects "featured" false }}
-      {{ partial "project-card-data.html" . }}
     {{ end }}
   </div>
   {{ else }}

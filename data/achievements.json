@@ -1,0 +1,2452 @@
+[
+  {
+    "id": "coursera-2a64tixir2k8",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Cybersecurity Architecture",
+    "issuer": "IBM",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "alt": "IBM logo"
+    },
+    "date": "2026-07-22T10:54:48.030Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2026-07-22T10:54:48.030Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/2A64TIXIR2K8",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-3f4tlgefxdi8",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Put It to Work: Prepare for Cybersecurity Jobs",
+    "issuer": "Google",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "alt": "Google logo"
+    },
+    "date": "2025-02-04T08:46:31.139Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2025-02-04T08:46:31.139Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/3F4TLGEFXDI8",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-3q8w79uy8aew",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Using Python to Access Web Data",
+    "issuer": "University of Michigan",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "alt": "University of Michigan logo"
+    },
+    "date": "2023-11-06T17:58:38.347Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2023-11-06T17:58:38.347Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/3Q8W79UY8AEW",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-4qvj6m26zp57",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Programming for Everybody (Getting Started with Python)",
+    "issuer": "University of Michigan",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "alt": "University of Michigan logo"
+    },
+    "date": "2023-08-29T08:26:07.582Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2023-08-29T08:26:07.582Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/4QVJ6M26ZP57",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-8clcs82fspky",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Using Databases with Python",
+    "issuer": "University of Michigan",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "alt": "University of Michigan logo"
+    },
+    "date": "2024-02-13T23:01:25.519Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2024-02-13T23:01:25.519Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/8CLCS82FSPKY",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-8jgpl94egcbt",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Social Psychology",
+    "issuer": "Wesleyan University",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/13/7948a0d50011e58bd959a86470a32c/ACM15324_Coursera_SquareLogo_0112_SF.png",
+      "alt": "Wesleyan University logo"
+    },
+    "date": "2024-02-02T16:21:18.485Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2024-02-02T16:21:18.485Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/8JGPL94EGCBT",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-8xdcbffkqhl6",
+    "provider": "coursera",
+    "kind": "Specialization",
+    "title": "Python for Everybody",
+    "issuer": "University of Michigan",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "alt": "University of Michigan logo"
+    },
+    "date": "2024-02-13T23:01:25.623Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2024-02-13T23:01:25.623Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/specialization/8XDCBFFKQHL6",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-9mekhh4dkqar",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Tools of the Trade: Linux and SQL",
+    "issuer": "Google",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "alt": "Google logo"
+    },
+    "date": "2024-02-14T10:54:36.581Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2024-02-14T10:54:36.581Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/9MEKHH4DKQAR",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-acvf9o3s5c9f",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Database Essentials and Vulnerabilities",
+    "issuer": "IBM",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "alt": "IBM logo"
+    },
+    "date": "2026-07-22T08:44:18.385Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2026-07-22T08:44:18.385Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/ACVF9O3S5C9F",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-aedd0qsm9v4d",
+    "provider": "coursera",
+    "kind": "Professional certificate",
+    "title": "Google Cybersecurity",
+    "issuer": "Google",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "alt": "Google logo"
+    },
+    "date": "2025-02-04T08:46:31.209Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2025-02-04T08:46:31.209Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/specialization/AEDD0QSM9V4D",
+      "label": "View credential"
+    },
+    "curated": true,
+    "curatedOrder": 6,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-af8qf87qxc37",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Foundations of Cybersecurity",
+    "issuer": "Google",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "alt": "Google logo"
+    },
+    "date": "2024-01-09T20:04:53.782Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2024-01-09T20:04:53.782Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/AF8QF87QXC37",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-arsgnnusszed",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Play It Safe: Manage Security Risks",
+    "issuer": "Google",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "alt": "Google logo"
+    },
+    "date": "2024-02-08T08:52:58.834Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2024-02-08T08:52:58.834Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/ARSGNNUSSZED",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-beve0ie7549n",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Tools for Data Science",
+    "issuer": "IBM",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "alt": "IBM logo"
+    },
+    "date": "2025-03-30T08:22:07.483Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2025-03-30T08:22:07.483Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/BEVE0IE7549N",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-cksy8t4avrir",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Introduction to Cybersecurity Tools & Cyberattacks",
+    "issuer": "IBM",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "alt": "IBM logo"
+    },
+    "date": "2025-06-06T15:15:35.033Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2025-06-06T15:15:35.033Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/CKSY8T4AVRIR",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-dswi8f9khlyf",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Assets, Threats, and Vulnerabilities",
+    "issuer": "Google",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "alt": "Google logo"
+    },
+    "date": "2024-11-27T11:40:37.835Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2024-11-27T11:40:37.835Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/DSWI8F9KHLYF",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-fb7rxtqpc77g",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Capstone: Retrieving, Processing, and Visualizing Data with Python",
+    "issuer": "University of Michigan",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "alt": "University of Michigan logo"
+    },
+    "date": "2024-02-12T13:42:03.227Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2024-02-12T13:42:03.227Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/FB7RXTQPC77G",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-fqua4k4qxogk",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Introduction to Psychology",
+    "issuer": "University of Toronto",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/04/1df8943d27a485a986a3ebf10c83d9/UofT-Crest-Square.png",
+      "alt": "University of Toronto logo"
+    },
+    "date": "2025-03-15T08:28:10.866Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2025-03-15T08:28:10.866Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/FQUA4K4QXOGK",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-gniqu7n5tv1l",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Automate Cybersecurity Tasks with Python",
+    "issuer": "Google",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "alt": "Google logo"
+    },
+    "date": "2024-12-22T14:01:09.781Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2024-12-22T14:01:09.781Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/GNIQU7N5TV1L",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-h2wytlfjik9g",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Sound the Alarm: Detection and Response",
+    "issuer": "Google",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "alt": "Google logo"
+    },
+    "date": "2024-12-21T13:10:42.657Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2024-12-21T13:10:42.657Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/H2WYTLFJIK9G",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-iagww256f2yc",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Introduction to Cybersecurity Careers",
+    "issuer": "IBM",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "alt": "IBM logo"
+    },
+    "date": "2025-06-04T09:00:03.517Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2025-06-04T09:00:03.517Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/IAGWW256F2YC",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-j3uav6uiv588",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "What is Data Science? ",
+    "issuer": "IBM",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "alt": "IBM logo"
+    },
+    "date": "2025-02-24T17:36:35.900Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2025-02-24T17:36:35.900Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/J3UAV6UIV588",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-mansaplcm4r2",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Python Data Structures",
+    "issuer": "University of Michigan",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png",
+      "alt": "University of Michigan logo"
+    },
+    "date": "2023-09-05T07:04:46.097Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2023-09-05T07:04:46.097Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/MANSAPLCM4R2",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-q9jgf301mxxw",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Computer Networks and Network Security",
+    "issuer": "IBM",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "alt": "IBM logo"
+    },
+    "date": "2025-06-11T10:18:03.243Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2025-06-11T10:18:03.243Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/Q9JGF301MXXW",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-r8pr3dco4l1a",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Introduction to Cybersecurity Essentials",
+    "issuer": "IBM",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "alt": "IBM logo"
+    },
+    "date": "2025-06-05T09:22:46.178Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2025-06-05T09:22:46.178Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/R8PR3DCO4L1A",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-u3cv8mbetey2",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Connect and Protect: Networks and Network Security",
+    "issuer": "Google",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/92/d0d1ee4a844037be9a2d349ee5f59d/GoogleG_FullColor_RGB.png",
+      "alt": "Google logo"
+    },
+    "date": "2024-02-08T15:54:29.895Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2024-02-08T15:54:29.895Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/U3CV8MBETEY2",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-xp8kq2lx4ew5",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Systems Engineering",
+    "issuer": "MathWorks",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/fa/50a7a8ef034044a4ae3efae492a918/mw-logo-300x300.png",
+      "alt": "MathWorks logo"
+    },
+    "date": "2025-01-18T15:04:36.312Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2025-01-18T15:04:36.312Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/XP8KQ2LX4EW5",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "coursera-z6km1pc6zcxg",
+    "provider": "coursera",
+    "kind": "Course",
+    "title": "Operating Systems: Overview, Administration, and Security",
+    "issuer": "IBM",
+    "image": {
+      "src": "https://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png",
+      "alt": "IBM logo"
+    },
+    "date": "2025-06-09T16:25:35.161Z",
+    "metrics": [
+      {
+        "label": "Completed",
+        "value": "2025-06-09T16:25:35.161Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://www.coursera.org/account/accomplishments/verify/Z6KM1PC6ZCXG",
+      "label": "View credential"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "credly-0aa191b6-553b-4a80-a13e-e61a5b74f9d2",
+    "provider": "credly",
+    "kind": "Credly",
+    "title": "ISC2 Candidate",
+    "issuer": "ISC2",
+    "image": {
+      "src": "https://images.credly.com/images/9180921d-4a13-429e-9357-6f9706a554f0/image.png",
+      "alt": "ISC2 Candidate badge"
+    },
+    "description": "ISC2 Candidates are individuals pursuing or considering a cybersecurity certification. To become a Candidate, the individual must apply online and provide minimum identifying information, as well as affirm that they will abide by the ISC2 Code of Ethics and Privacy Policy.",
+    "date": "2025-09-10T11:00:00.000+05:00",
+    "expiresAt": "2026-09-30T11:00:00.000+05:00",
+    "metrics": [
+      {
+        "label": "Issued",
+        "value": "2025-09-10T11:00:00.000+05:00",
+        "format": "date"
+      },
+      {
+        "label": "Expires",
+        "value": "2026-09-30T11:00:00.000+05:00",
+        "format": "date"
+      }
+    ],
+    "skills": [
+      "ISC2 Candidates are part of the diverse, global community of individuals with a desire to create a safe and secure cyber world.",
+      "ISC2 Candidates are part of the ISC2 pledge to certify one million individuals and as such, have access to foundational education materials to pursue the entry-level Certified in Cybersecurity certification.",
+      "ISC2 Candidates are pursuing their first ISC2 certification, or gaining the foundational knowledge necessary to join the cybersecurity workforce."
+    ],
+    "credential": {
+      "url": "https://www.credly.com/badges/0aa191b6-553b-4a80-a13e-e61a5b74f9d2/public_url",
+      "label": "Verify badge"
+    },
+    "showInAll": true
+  },
+  {
+    "id": "credly-1677ef7a-c953-4da1-b045-067a873b5333",
+    "provider": "credly",
+    "kind": "Credly",
+    "title": "Operating Systems: Overview, Administration, and Security",
+    "issuer": "Coursera",
+    "image": {
+      "src": "https://images.credly.com/images/f821064c-8e80-4900-bec2-a799a62157e5/Coursera_20Operating_20Systems_20Overview_20Administration_20and_20Security.png",
+      "alt": "Operating Systems: Overview, Administration, and Security badge"
+    },
+    "description": "This badge earner understands the key cybersecurity concepts related to operating systems. They have a basic understanding of architecture, file systems, security features, and user accounts in Windows, macOS, and Linux. They can use command-line tools to perform basic administrative tasks. The badge earner is also familiar with virtualization as it relates to operating systems and cloud computing.",
+    "date": "2025-06-10T11:25:39.000+05:00",
+    "expiresAt": null,
+    "metrics": [
+      {
+        "label": "Issued",
+        "value": "2025-06-10T11:25:39.000+05:00",
+        "format": "date"
+      }
+    ],
+    "skills": [
+      "Administration",
+      "Containers",
+      "Cybersecurity",
+      "File Systems",
+      "Linux",
+      "macOS"
+    ],
+    "credential": {
+      "url": "https://www.credly.com/badges/1677ef7a-c953-4da1-b045-067a873b5333/public_url",
+      "label": "Verify badge"
+    },
+    "showInAll": true
+  },
+  {
+    "id": "credly-41de9d8d-edb1-41b9-9798-b7be66b10fbc",
+    "provider": "credly",
+    "kind": "Credly",
+    "title": "Cybersecurity Architecture V2",
+    "issuer": "Coursera",
+    "image": {
+      "src": "https://images.credly.com/images/84ce958a-30a6-4036-9944-005c0fce9f81/Cybersecurity_Arch_V2.png",
+      "alt": "Cybersecurity Architecture V2 badge"
+    },
+    "description": "This badge earner has demonstrated foundational to advanced cybersecurity knowledge, including the CIA triad, IAM, endpoints, and network, application, and data security. Through hands-on labs, they have applied MFA, identified threats, responded to incidents, and developed strategies to improve organizational security.",
+    "date": "2026-07-22T15:57:25.000+05:00",
+    "expiresAt": null,
+    "metrics": [
+      {
+        "label": "Issued",
+        "value": "2026-07-22T15:57:25.000+05:00",
+        "format": "date"
+      }
+    ],
+    "skills": [
+      "Application Security",
+      "Cybersecurity Fundamentals",
+      "Data Security",
+      "Identity And Access Management (IAM)",
+      "Incident Response",
+      "Multi-Factor Authentication (MFA)"
+    ],
+    "credential": {
+      "url": "https://www.credly.com/badges/41de9d8d-edb1-41b9-9798-b7be66b10fbc/public_url",
+      "label": "Verify badge"
+    },
+    "showInAll": true
+  },
+  {
+    "id": "credly-6b75fec8-0a1c-482e-9dbf-0f28b77a19c6",
+    "provider": "credly",
+    "kind": "Credly",
+    "title": "Introduction to Packet Tracer",
+    "issuer": "Cisco",
+    "image": {
+      "src": "https://images.credly.com/images/09b6d58c-763a-4b40-aea1-787d8f46bbcd/Intro2PT.png",
+      "alt": "Introduction to Packet Tracer badge"
+    },
+    "description": "Cisco verifies the earner of this badge has knowledge and skills to create digital models of IP Networks and IoT Systems using Cisco Packet Tracer.",
+    "date": "2024-06-16T19:07:30.000+05:00",
+    "expiresAt": null,
+    "metrics": [
+      {
+        "label": "Issued",
+        "value": "2024-06-16T19:07:30.000+05:00",
+        "format": "date"
+      }
+    ],
+    "skills": [
+      "Cisco Packet Tracer",
+      "IoT Simulation",
+      "Network Simulation"
+    ],
+    "credential": {
+      "url": "https://www.credly.com/badges/6b75fec8-0a1c-482e-9dbf-0f28b77a19c6/public_url",
+      "label": "Verify badge"
+    },
+    "showInAll": true
+  },
+  {
+    "id": "credly-82684309-dcf3-4c20-8369-5e20e1ccab49",
+    "provider": "credly",
+    "kind": "Credly",
+    "title": "CompTIA Security+ ce Certification",
+    "issuer": "CompTIA",
+    "image": {
+      "src": "https://images.credly.com/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob",
+      "alt": "CompTIA Security+ ce Certification badge"
+    },
+    "description": "Earners of the CompTIA Security+ certification have the knowledge and skills necessary to perform core security functions required of any cybersecurity role. CompTIA Security+ professionals know how to identify and address potential threats, attacks and vulnerabilities and they have established techniques in risk management, risk mitigation, threat management and intrusion detection.",
+    "date": "2026-07-18T05:00:00.000+05:00",
+    "expiresAt": "2029-07-18T05:00:00.000+05:00",
+    "metrics": [
+      {
+        "label": "Issued",
+        "value": "2026-07-18T05:00:00.000+05:00",
+        "format": "date"
+      },
+      {
+        "label": "Expires",
+        "value": "2029-07-18T05:00:00.000+05:00",
+        "format": "date"
+      }
+    ],
+    "skills": [
+      "Access Control",
+      "CompTIA",
+      "Cryptography",
+      "Cyber Forensics",
+      "Data Security",
+      "Disaster Recovery Planning"
+    ],
+    "credential": {
+      "url": "https://www.credly.com/badges/82684309-dcf3-4c20-8369-5e20e1ccab49/public_url",
+      "label": "Verify badge"
+    },
+    "showInAll": true
+  },
+  {
+    "id": "credly-957c9dab-a8ef-410d-b5fc-2e7aa3018a1c",
+    "provider": "credly",
+    "kind": "Credly",
+    "title": "Data Science Orientation",
+    "issuer": "Coursera",
+    "image": {
+      "src": "https://images.credly.com/images/5fc2d535-e716-46c4-881a-f4822b8da0e5/Cognitive_Class_-_What_is_Data_Science.png",
+      "alt": "Data Science Orientation badge"
+    },
+    "description": "This badge earner has a good understanding of why data science, artificial intelligence (AI) and machine learning are revolutionizing the way people do business and research around the world. They have general knowledge on what data science is today.",
+    "date": "2025-02-24T22:37:11.000+05:00",
+    "expiresAt": null,
+    "metrics": [
+      {
+        "label": "Issued",
+        "value": "2025-02-24T22:37:11.000+05:00",
+        "format": "date"
+      }
+    ],
+    "skills": [
+      "AI",
+      "Artificial Intelligence",
+      "Critical Listening",
+      "Critical Reading",
+      "Data Science",
+      "Machine Learning"
+    ],
+    "credential": {
+      "url": "https://www.credly.com/badges/957c9dab-a8ef-410d-b5fc-2e7aa3018a1c/public_url",
+      "label": "Verify badge"
+    },
+    "showInAll": true
+  },
+  {
+    "id": "credly-9f41fb3d-dc6d-4670-9e5c-084fac1c64ac",
+    "provider": "credly",
+    "kind": "Credly",
+    "title": "Introduction to Cybersecurity",
+    "issuer": "Cisco",
+    "image": {
+      "src": "https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png",
+      "alt": "Introduction to Cybersecurity badge"
+    },
+    "description": "Cisco verifies the earner of this badge successfully completed the Introduction to Cybersecurity course. The holder of this student-level credential has introductory knowledge of cybersecurity, including the global implications of cyber threats on industries, and why cybersecurity is a growing profession. They understand vulnerabilities and threat detection and defense. They also have insight into opportunities available with pursuing cybersecurity certifications.",
+    "date": "2025-09-09T17:55:53.000+05:00",
+    "expiresAt": null,
+    "metrics": [
+      {
+        "label": "Issued",
+        "value": "2025-09-09T17:55:53.000+05:00",
+        "format": "date"
+      }
+    ],
+    "skills": [
+      "Cyber Best Practices",
+      "Cybersecurity",
+      "Network Vulnerabilities",
+      "Privacy And Data Confidentiality",
+      "Threat Detection"
+    ],
+    "credential": {
+      "url": "https://www.credly.com/badges/9f41fb3d-dc6d-4670-9e5c-084fac1c64ac/public_url",
+      "label": "Verify badge"
+    },
+    "showInAll": true
+  },
+  {
+    "id": "credly-ba72d619-a08a-46b3-812a-47395a19ad55",
+    "provider": "credly",
+    "kind": "Credly",
+    "title": "Database Essentials and Vulnerabilities",
+    "issuer": "Coursera",
+    "image": {
+      "src": "https://images.credly.com/images/ef9d282a-8f31-4b0f-9bbb-640a68ea4b7f/Coursera_20Database_20Essentials_20and_20Vulnerabilities.png",
+      "alt": "Database Essentials and Vulnerabilities badge"
+    },
+    "description": "This badge earner understands the concepts of relational and non-relational databases and can implement various data protection techniques to secure sensitive information. They know how to configure and manage database user profiles, password policies, privileges, and roles. They can identify, analyze, and mitigate database injection vulnerabilities, including OS command and SQL injection. The badge earner can also design and implement comprehensive database and application auditing models.",
+    "date": "2026-07-22T13:48:08.000+05:00",
+    "expiresAt": null,
+    "metrics": [
+      {
+        "label": "Issued",
+        "value": "2026-07-22T13:48:08.000+05:00",
+        "format": "date"
+      }
+    ],
+    "skills": [
+      "Database Auditing Models",
+      "Database Injection Vulnerabilities",
+      "Database Security",
+      "Password Policies",
+      "PWID-B0953200",
+      "User Profiles"
+    ],
+    "credential": {
+      "url": "https://www.credly.com/badges/ba72d619-a08a-46b3-812a-47395a19ad55/public_url",
+      "label": "Verify badge"
+    },
+    "showInAll": true
+  },
+  {
+    "id": "credly-e2d6b3f3-f9d6-49e7-b2ac-c621de1cea94",
+    "provider": "credly",
+    "kind": "Credly",
+    "title": "AI Skills Fest 2026",
+    "issuer": "Microsoft",
+    "image": {
+      "src": "https://images.credly.com/images/082c8d0c-5232-4597-b6c4-6bebcc4f3046/blob",
+      "alt": "AI Skills Fest 2026 badge"
+    },
+    "description": "Earners demonstrate foundational and applied AI knowledge, including how to use AI tools to enhance productivity, create content, and solve real-world problems. They can identify practical use cases, apply AI responsibly, and continue building skills through guided learning pathways.",
+    "date": "2026-06-19T05:00:00.000+05:00",
+    "expiresAt": null,
+    "metrics": [
+      {
+        "label": "Issued",
+        "value": "2026-06-19T05:00:00.000+05:00",
+        "format": "date"
+      }
+    ],
+    "skills": [
+      "AI Ethics",
+      "AI Literacy",
+      "AI Tools Adoption",
+      "Applied AI",
+      "Artificial Intelligence Applications",
+      "Build Automation"
+    ],
+    "credential": {
+      "url": "https://www.credly.com/badges/e2d6b3f3-f9d6-49e7-b2ac-c621de1cea94/public_url",
+      "label": "Verify badge"
+    },
+    "showInAll": true
+  },
+  {
+    "id": "credly-fe3a79f0-3976-4ad0-9795-56726b0ac3d0",
+    "provider": "credly",
+    "kind": "Credly",
+    "title": "API Security Fundamentals '25 (2 hours)",
+    "issuer": "APIsec University",
+    "image": {
+      "src": "https://images.credly.com/images/d7840f4d-0217-4aa4-8cf4-e8bea30aef52/blob",
+      "alt": "API Security Fundamentals '25 (2 hours) badge"
+    },
+    "description": "The API Security Fundamentals course covers the core threats to APIs and challenges to prevent breach. The course includes modules on real-world API breaches, the OWASP API Security Top 10, the 3 Pillars of API Security (governance, testing and monitoring), and the application security technology landscape. The course provides strategic advice for developing secure API programs, and includes specific best practices for security and development teams.",
+    "date": "2025-11-05T18:03:06.000+05:00",
+    "expiresAt": null,
+    "metrics": [
+      {
+        "label": "Issued",
+        "value": "2025-11-05T18:03:06.000+05:00",
+        "format": "date"
+      }
+    ],
+    "skills": [
+      "API Security",
+      "Application Security",
+      "Application Security Testing",
+      "Cybersecurity Compliance"
+    ],
+    "credential": {
+      "url": "https://www.credly.com/badges/fe3a79f0-3976-4ad0-9795-56726b0ac3d0/public_url",
+      "label": "Verify badge"
+    },
+    "showInAll": true
+  },
+  {
+    "id": "personal-bronze-medal",
+    "provider": "distinctions",
+    "kind": "Academic distinction",
+    "title": "Bronze Medal and 3.8 CGPA",
+    "detailTitle": "Bronze Medal",
+    "issuer": "Sargodha University",
+    "subtitle": "Sargodha University // BS Computer Science",
+    "period": "2022–2026",
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Bronze_medal_icon.svg",
+      "alt": "Bronze medal with the number three"
+    },
+    "description": "Awarded the university Bronze Medal in recognition of sustained academic excellence throughout the degree.",
+    "details": [],
+    "metrics": [
+      {
+        "label": "Academic record",
+        "value": "3.8 CGPA"
+      }
+    ],
+    "curated": true,
+    "curatedOrder": 2,
+    "showInAll": true
+  },
+  {
+    "id": "personal-comptia-security",
+    "provider": "distinctions",
+    "kind": "Certification",
+    "title": "CompTIA Security+",
+    "detailTitle": "CompTIA Security+",
+    "issuer": "CompTIA",
+    "subtitle": "CompTIA // Vendor-neutral cybersecurity certification",
+    "period": "Passed 18 Jul 2026",
+    "image": {
+      "src": "https://images.credly.com/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob",
+      "alt": "CompTIA Security+ ce Certification badge"
+    },
+    "description": "Earned by passing a paid, independently proctored certification exam that tests applied cybersecurity knowledge rather than course completion alone.",
+    "details": [
+      "Security+ is important because it validates vendor-neutral baseline skills across threats and mitigations, security architecture, security operations, incident response, governance, risk, and compliance—core knowledge for SOC and defensive-security work."
+    ],
+    "metrics": [
+      {
+        "label": "Exam",
+        "value": "SY0-701"
+      },
+      {
+        "label": "Duration",
+        "value": "90 minutes"
+      },
+      {
+        "label": "Questions",
+        "value": "Up to 90"
+      },
+      {
+        "label": "Format",
+        "value": "Multiple-choice + performance-based"
+      },
+      {
+        "label": "Score",
+        "value": "795 / 900"
+      }
+    ],
+    "credential": {
+      "url": "https://www.credly.com/badges/82684309-dcf3-4c20-8369-5e20e1ccab49/public_url",
+      "label": "Verify certification"
+    },
+    "curated": true,
+    "curatedOrder": 1,
+    "showInAll": true
+  },
+  {
+    "id": "personal-nsct-top-0-2",
+    "provider": "distinctions",
+    "kind": "National ranking",
+    "title": "NSCT top 0.2%",
+    "issuer": "National Skills Competency Test",
+    "description": "Placed among the highest-scoring participants in Pakistan’s National Skills Competency Test.",
+    "metrics": [
+      {
+        "label": "Nationwide rank",
+        "value": "65"
+      },
+      {
+        "label": "Percentile",
+        "value": "Top 0.2%"
+      }
+    ],
+    "credential": {
+      "url": "https://www.hec.gov.pk/english/scholarshipsgrants/Pages/Sites/NSCT-Students.aspx#:~:text=Muhammad%20Talal%20Ahmed,University%20of%20Sargodha",
+      "label": "View result"
+    },
+    "curated": true,
+    "curatedOrder": 3,
+    "showInAll": false
+  },
+  {
+    "id": "tryhackme-badge-180-day-streak",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "180 Day Streak",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/streak180.png",
+      "alt": "180 Day Streak badge"
+    },
+    "description": "Hacking for 180 days in a row",
+    "date": "2026-01-11T15:32:42.593Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 2.8
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-01-11T15:32:42.593Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "2.8%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-3-day-streak",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "3 Day Streak",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/streak3.png",
+      "alt": "3 Day Streak badge"
+    },
+    "description": "Achieving a 3 day hacking streak",
+    "date": "2025-08-01T12:58:41.246Z",
+    "rarity": {
+      "tier": "common",
+      "percent": 34.6
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-08-01T12:58:41.246Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "34.6%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-30-day-streak",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "30 Day Streak",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/streak30.png",
+      "alt": "30 Day Streak badge"
+    },
+    "description": "Hacking for 30 days solid",
+    "rarity": {
+      "tier": "common",
+      "percent": 10.2
+    },
+    "metrics": [
+      {
+        "label": "Rarity",
+        "value": "10.2%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-365-day-streak",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "365 Day Streak",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/streak365.png",
+      "alt": "365 Day Streak badge"
+    },
+    "description": "Hacking for 365 days in a row",
+    "date": "2026-07-15T07:11:26.840Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 1
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-07-15T07:11:26.840Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "1%"
+      }
+    ],
+    "curated": true,
+    "curatedOrder": 5,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-7-day-streak",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "7 Day Streak",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/streak7.png",
+      "alt": "7 Day Streak badge"
+    },
+    "description": "Achieving a 7 day hacking streak",
+    "rarity": {
+      "tier": "common",
+      "percent": 21.7
+    },
+    "metrics": [
+      {
+        "label": "Rarity",
+        "value": "21.7%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-90-day-streak",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "90 Day Streak",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/streak90.png",
+      "alt": "90 Day Streak badge"
+    },
+    "description": "Hacking for 90 days in a row",
+    "date": "2025-10-05T14:26:33.847Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 5
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-10-05T14:26:33.847Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "5%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-adventofcyber2024",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Advent of Cyber 2024",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/aoc5.png",
+      "alt": "Advent of Cyber 2024 badge"
+    },
+    "description": "Completing Advent of Cyber 2024!",
+    "rarity": {
+      "tier": "rare",
+      "percent": 1.4
+    },
+    "metrics": [
+      {
+        "label": "Rarity",
+        "value": "1.4%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-boogeyman-slayer",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Boogeyman Slayer",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/boogeyman3.png",
+      "alt": "Boogeyman Slayer badge"
+    },
+    "description": "Finishing the SOC L1 Capstone Module",
+    "date": "2025-07-24T13:15:05.656Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 1.7
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-24T13:15:05.656Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "1.7%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-burped",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Burp'ed",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/burpsuite.png",
+      "alt": "Burp'ed badge"
+    },
+    "description": "Completing the Burp Suite module",
+    "date": "2025-07-30T07:19:34.617Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 5.1
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-30T07:19:34.617Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "5.1%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-careerreadybadge",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Cyber Ready",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/careerready.png",
+      "alt": "Cyber Ready badge"
+    },
+    "description": "Understanding impact of training on teams",
+    "date": "2025-08-16T10:02:03.917Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 7.5
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-08-16T10:02:03.917Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "7.5%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-defensive-toolsmith",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Defensive Toolsmith",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/defensive-toolsmith.png",
+      "alt": "Defensive Toolsmith badge"
+    },
+    "description": "Mastered essential SOC tools for detection",
+    "date": "2026-01-05T08:22:02.979Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 4.9
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-01-05T08:22:02.979Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "4.9%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-defrostedfive",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Defrosted Five",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/aocsidequest5.png",
+      "alt": "Defrosted Five badge"
+    },
+    "description": "Completing AoC Side Quest 2024!",
+    "date": "2025-03-28T07:19:52.866Z",
+    "rarity": {
+      "tier": "epic",
+      "percent": 0.3
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-03-28T07:19:52.866Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "0.3%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-diamond-league",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Diamond League",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/league-diamond.png",
+      "alt": "Diamond League badge"
+    },
+    "description": "Diamond League 1st place",
+    "date": "2025-07-13T23:50:47.477Z",
+    "rarity": {
+      "tier": "epic",
+      "percent": 0.4
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-13T23:50:47.477Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "0.4%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-first-mobile-quiz",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "First Mobile Quiz",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/first-mobile-quiz.png",
+      "alt": "First Mobile Quiz badge"
+    },
+    "description": "Completing your first quiz or recap on the mobile app!",
+    "date": "2026-06-26T03:13:40.629Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 2.4
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-06-26T03:13:40.629Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "2.4%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-first-step-into-soc",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "First Step into SOC",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/first-step-into-soc.png",
+      "alt": "First Step into SOC badge"
+    },
+    "description": "Explored emerging threats and SOC response",
+    "date": "2026-01-02T13:33:13.502Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 7.3
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-01-02T13:33:13.502Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "7.3%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-friday-fixer",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Friday Fixer",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/cyberthreatintellegenceblue.png",
+      "alt": "Friday Fixer badge"
+    },
+    "description": "Finishing the Friday Overtime challenge! ",
+    "date": "2025-07-05T09:37:06.791Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 1.8
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-05T09:37:06.791Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "1.8%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-gold-league",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Gold League",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/league-gold.png",
+      "alt": "Gold League badge"
+    },
+    "description": "Gold League 1st place",
+    "date": "2026-02-08T23:51:01.242Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 1.8
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-02-08T23:51:01.242Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "1.8%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-handle-the-disgruntled",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Handle the Disgruntled",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/digitalforensicsandincidentresponse.png",
+      "alt": "Handle the Disgruntled badge"
+    },
+    "description": "Finishing the Disgruntled challenge!",
+    "date": "2025-07-22T13:04:44.694Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 1
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-22T13:04:44.694Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "1%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-hash-cracker",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Hash Cracker",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/hashcracker.png",
+      "alt": "Hash Cracker badge"
+    },
+    "description": "Cracking all those hashes",
+    "date": "2026-02-05T15:54:02.582Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 4.5
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-02-05T15:54:02.582Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "4.5%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-intro-to-security-engineering",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Introduction to Security Engineering",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/introtosecurityengineering.png",
+      "alt": "Introduction to Security Engineering badge"
+    },
+    "description": "Completed the Security Engineer Intro room!",
+    "date": "2025-09-29T12:51:52.783Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 5.3
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-09-29T12:51:52.783Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "5.3%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-intro-to-web-hacking",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Intro to Web Hacking",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/introtowebsecurity.png",
+      "alt": "Intro to Web Hacking badge"
+    },
+    "description": "Completing the 'Introduction to Web Hacking' module",
+    "date": "2025-07-30T05:24:47.190Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 5.5
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-30T05:24:47.190Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "5.5%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-malware-explorer",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Malware Explorer",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/malware-explorer.png",
+      "alt": "Malware Explorer badge"
+    },
+    "description": "Identified and classified different types of malware",
+    "date": "2026-02-06T04:50:12.387Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 1.9
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-02-06T04:50:12.387Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "1.9%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-manic-monday",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Manic Monday",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/endpointsecuritymonitoring.png",
+      "alt": "Manic Monday badge"
+    },
+    "description": "Finishing the Monday Monitor challenge!",
+    "date": "2025-07-14T05:43:50.690Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 1.2
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-14T05:43:50.690Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "1.2%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-model-compromise",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Model Compromise",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/web-application-2.png",
+      "alt": "Model Compromise badge"
+    },
+    "description": "Completed the LLM Attacks Module",
+    "date": "2026-02-16T13:44:31.551Z",
+    "rarity": {
+      "tier": "epic",
+      "percent": 0.7
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-02-16T13:44:31.551Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "0.7%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-network-fundamentals",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Networking Nerd",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/networkfundamentals.png",
+      "alt": "Networking Nerd badge"
+    },
+    "description": "Completing the 'Network Fundamentals' module",
+    "date": "2025-07-05T10:38:57.775Z",
+    "rarity": {
+      "tier": "common",
+      "percent": 17.4
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-05T10:38:57.775Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "17.4%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-ohsint",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "OhSINT",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/ohsint.png",
+      "alt": "OhSINT badge"
+    },
+    "description": "Completing the OhSINT room",
+    "date": "2025-07-12T17:47:18.205Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 5
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-12T17:47:18.205Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "5%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-owasp-10",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "OWASP Top 10",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/owasptop10.png",
+      "alt": "OWASP Top 10 badge"
+    },
+    "description": "Understanding every OWASP vulnerability",
+    "date": "2025-07-31T04:56:44.598Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 8.9
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-31T04:56:44.598Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "8.9%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-packet-master",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Packet Master",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/networksecurityandtrafficanalysisv2.png",
+      "alt": "Packet Master badge"
+    },
+    "description": "Finishing the TShark Exercises!",
+    "date": "2025-07-12T14:08:13.940Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 1.2
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-12T14:08:13.940Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "1.2%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-phishing",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Phish Hunter",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/phishing.png",
+      "alt": "Phish Hunter badge"
+    },
+    "description": "Completed the Phishing Analysis room series",
+    "date": "2025-07-08T15:02:15.178Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 4.3
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-08T15:02:15.178Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "4.3%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-raffle-royalty",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Raffle Royalty",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/hack2win.png",
+      "alt": "Raffle Royalty badge"
+    },
+    "description": "Participating in Hack2Win 2025!",
+    "date": "2025-09-11T14:31:28.125Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 4.3
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-09-11T14:31:28.125Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "4.3%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-skilled-navigator",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Skilled Navigator",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/cyberdefenceframework.png",
+      "alt": "Skilled Navigator badge"
+    },
+    "description": "Finishing the Eviction challenge!",
+    "date": "2025-06-10T14:30:45.629Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 5
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-06-10T14:30:45.629Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "5%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-soc-apprentice",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "SOC Apprentice",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/soc-apprentice.png",
+      "alt": "SOC Apprentice badge"
+    },
+    "description": "Explored how a SOC team operates from inside",
+    "date": "2026-01-03T07:06:12.463Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 5.9
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-01-03T07:06:12.463Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "5.9%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-soc-sim-100-percent-true-positive-rate",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "100% true positive rate",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/soc-sim-100-percent-true-positive-rate.png",
+      "alt": "100% true positive rate badge"
+    },
+    "description": "Achieving 100% true positive rate in a scenario",
+    "date": "2026-01-03T07:26:30.001Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 4.6
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-01-03T07:26:30.001Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "4.6%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-soc-sim-first-alert-closed",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "First alert closed",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/soc-sim-first-alert-closed.png",
+      "alt": "First alert closed badge"
+    },
+    "description": "Closing your first alert",
+    "date": "2026-01-03T07:17:36.582Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 7.3
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-01-03T07:17:36.582Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "7.3%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-soc-sim-first-scenario-completed",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "First scenario completed",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/soc-sim-first-scenario-completed.png",
+      "alt": "First scenario completed badge"
+    },
+    "description": "Completing your first scenario",
+    "date": "2026-01-03T07:26:29.980Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 5.7
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-01-03T07:26:29.980Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "5.7%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-terminaled",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "cat linux.txt",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/linux.png",
+      "alt": "cat linux.txt badge"
+    },
+    "description": "Being competent in Linux",
+    "date": "2025-07-12T18:10:51.244Z",
+    "rarity": {
+      "tier": "common",
+      "percent": 28.2
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-12T18:10:51.244Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "28.2%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-to-benign-or-not-benign",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "To benign or not benign?",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/securityinformationandeventmanagement.png",
+      "alt": "To benign or not benign? badge"
+    },
+    "description": "Finishing the Benign challenge!",
+    "date": "2025-07-16T16:31:56.015Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 2.1
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-16T16:31:56.015Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "2.1%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-web-defender",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Web Defender",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/web-defender.png",
+      "alt": "Web Defender badge"
+    },
+    "description": "Learned to detect common attacks on web apps",
+    "date": "2026-02-17T14:03:02.319Z",
+    "rarity": {
+      "tier": "rare",
+      "percent": 2.2
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2026-02-17T14:03:02.319Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "2.2%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-web-fund",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "Webbed",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/webbed.png",
+      "alt": "Webbed badge"
+    },
+    "description": "Understands how the world wide web works",
+    "date": "2025-07-12T17:14:55.386Z",
+    "rarity": {
+      "tier": "common",
+      "percent": 23.5
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-12T17:14:55.386Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "23.5%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-badge-world-wide-web",
+    "provider": "tryhackme",
+    "kind": "Badge",
+    "title": "World Wide Web",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://assets.tryhackme.com/img/badges/howthewebworks.png",
+      "alt": "World Wide Web badge"
+    },
+    "description": "Completing the 'How The Web Works' module",
+    "date": "2025-07-12T17:24:19.504Z",
+    "rarity": {
+      "tier": "common",
+      "percent": 20.5
+    },
+    "metrics": [
+      {
+        "label": "Earned",
+        "value": "2025-07-12T17:24:19.504Z",
+        "format": "date"
+      },
+      {
+        "label": "Rarity",
+        "value": "20.5%"
+      }
+    ],
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-certificate-adventofcyber2024",
+    "provider": "tryhackme",
+    "kind": "Certificate",
+    "title": "Advent of Cyber 2024",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PCPSD0R8PL.png",
+      "alt": "Advent of Cyber 2024 certificate preview"
+    },
+    "date": "2024-12-26T07:56:44.557Z",
+    "metrics": [
+      {
+        "label": "Achieved",
+        "value": "2024-12-26T07:56:44.557Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PCPSD0R8PL.pdf",
+      "label": "Open certificate"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-certificate-hackfinitybattle",
+    "provider": "tryhackme",
+    "kind": "Certificate",
+    "title": "Hackfinity Battle",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-HT3NGY4ZO4.png",
+      "alt": "Hackfinity Battle certificate preview"
+    },
+    "date": "2025-04-08T09:11:26.135Z",
+    "metrics": [
+      {
+        "label": "Achieved",
+        "value": "2025-04-08T09:11:26.135Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-HT3NGY4ZO4.pdf",
+      "label": "Open certificate"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-certificate-loveatfirstbreach",
+    "provider": "tryhackme",
+    "kind": "Certificate",
+    "title": "Love at First Breach",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-VBAVURNHM8.png",
+      "alt": "Love at First Breach certificate preview"
+    },
+    "date": "2026-02-25T16:41:06.914Z",
+    "metrics": [
+      {
+        "label": "Achieved",
+        "value": "2026-02-25T16:41:06.914Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-VBAVURNHM8.pdf",
+      "label": "Open certificate"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-certificate-pathway-presecurity",
+    "provider": "tryhackme",
+    "kind": "Certificate",
+    "title": "Pre Security",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ESRGIAWEES.png",
+      "alt": "Pre Security certificate preview"
+    },
+    "description": "Your first step into cyber. Learn how tech works, then think like an attacker and defender. Explore how computers really work Write your first lines of code Step into networking and web basics Think like a hacker or defender",
+    "date": "2025-07-25T04:40:12.903Z",
+    "metrics": [
+      {
+        "label": "Achieved",
+        "value": "2025-07-25T04:40:12.903Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-ESRGIAWEES.pdf",
+      "label": "Open certificate"
+    },
+    "curated": false,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-certificate-pathway-soclevel1legacy",
+    "provider": "tryhackme",
+    "kind": "Certificate",
+    "title": "SOC Level 1",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-M4ZQHRNWOY.png",
+      "alt": "SOC Level 1 certificate preview"
+    },
+    "date": "2025-07-24T13:16:19.621Z",
+    "metrics": [
+      {
+        "label": "Achieved",
+        "value": "2025-07-24T13:16:19.621Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-M4ZQHRNWOY.pdf",
+      "label": "Open certificate"
+    },
+    "curated": true,
+    "curatedOrder": 4,
+    "showInAll": true
+  },
+  {
+    "id": "tryhackme-certificate-pathway-web",
+    "provider": "tryhackme",
+    "kind": "Certificate",
+    "title": "Web Fundamentals",
+    "issuer": "TryHackMe",
+    "image": {
+      "src": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PAJVW9UWAL.png",
+      "alt": "Web Fundamentals certificate preview"
+    },
+    "description": "A pathway to web application security. Understand web fundamentals Major vulnerabilities explained Learn industry-used tools Web application assessments",
+    "date": "2025-07-31T11:49:23.140Z",
+    "metrics": [
+      {
+        "label": "Achieved",
+        "value": "2025-07-31T11:49:23.140Z",
+        "format": "date"
+      }
+    ],
+    "credential": {
+      "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PAJVW9UWAL.pdf",
+      "label": "Open certificate"
+    },
+    "curated": false,
+    "showInAll": true
+  }
+]

@@ -67,7 +67,7 @@
         "aliases": {
           "$ref": "#/$defs/stringList"
         },
-        "_build": {
+        "build": {
           "type": "object",
           "properties": {
             "render": {
@@ -82,23 +82,131 @@
       },
       "additionalProperties": true
     },
-    "softwareProject": {
+    "achievement": {
       "type": "object",
-      "required": ["title", "description", "tags", "url", "featured"],
+      "required": [
+        "id",
+        "provider",
+        "kind",
+        "title",
+        "issuer",
+        "metrics",
+        "showInAll"
+      ],
       "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "provider": {
+          "enum": ["distinctions", "credly", "coursera", "tryhackme"]
+        },
+        "kind": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
         "title": {
           "$ref": "#/$defs/nonEmptyString"
+        },
+        "detailTitle": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "issuer": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "subtitle": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "period": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "image": {
+          "type": "object",
+          "required": ["src", "alt"],
+          "properties": {
+            "src": {
+              "$ref": "#/$defs/url"
+            },
+            "alt": {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          },
+          "additionalProperties": false
         },
         "description": {
           "$ref": "#/$defs/nonEmptyString"
         },
-        "tags": {
+        "details": {
           "$ref": "#/$defs/stringList"
         },
-        "url": {
-          "$ref": "#/$defs/url"
+        "date": {
+          "type": "string",
+          "format": "date-time"
         },
-        "featured": {
+        "expiresAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "metrics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["label", "value"],
+            "properties": {
+              "label": {
+                "$ref": "#/$defs/nonEmptyString"
+              },
+              "value": {
+                "anyOf": [
+                  { "$ref": "#/$defs/nonEmptyString" },
+                  { "type": "number" }
+                ]
+              },
+              "format": {
+                "enum": ["date"]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "skills": {
+          "$ref": "#/$defs/stringList"
+        },
+        "credential": {
+          "type": "object",
+          "required": ["url", "label"],
+          "properties": {
+            "url": {
+              "$ref": "#/$defs/url"
+            },
+            "label": {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          },
+          "additionalProperties": false
+        },
+        "rarity": {
+          "type": "object",
+          "required": ["tier", "percent"],
+          "properties": {
+            "tier": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "percent": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          "additionalProperties": false
+        },
+        "curated": {
+          "type": "boolean"
+        },
+        "curatedOrder": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "showInAll": {
           "type": "boolean"
         }
       },
@@ -262,6 +370,124 @@
         }
       },
       "additionalProperties": true
+    },
+    "integrations": {
+      "type": "object",
+      "required": ["discord", "tryhackme", "valorant", "analytics"],
+      "properties": {
+        "discord": {
+          "type": "object",
+          "required": ["guildId", "widgetUrl", "inviteUrl", "name"],
+          "properties": {
+            "guildId": {
+              "type": "string",
+              "pattern": "^[0-9]+$"
+            },
+            "widgetUrl": {
+              "$ref": "#/$defs/url"
+            },
+            "inviteUrl": {
+              "$ref": "#/$defs/url"
+            },
+            "name": {
+              "$ref": "#/$defs/nonEmptyString"
+            }
+          },
+          "additionalProperties": false
+        },
+        "tryhackme": {
+          "type": "object",
+          "required": [
+            "username",
+            "profileUrl",
+            "level",
+            "badges",
+            "rooms",
+            "streakDays",
+            "rank",
+            "topPercent",
+            "capability",
+            "pointOfView",
+            "totalPoints"
+          ],
+          "properties": {
+            "username": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "profileUrl": {
+              "$ref": "#/$defs/url"
+            },
+            "level": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "badges": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "rooms": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "streakDays": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "rank": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "topPercent": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "capability": {
+              "type": "number",
+              "minimum": 0
+            },
+            "pointOfView": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "totalPoints": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        "valorant": {
+          "type": "object",
+          "required": ["accountName", "tag", "region", "endpoint"],
+          "properties": {
+            "accountName": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "tag": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "region": {
+              "$ref": "#/$defs/nonEmptyString"
+            },
+            "endpoint": {
+              "$ref": "#/$defs/url"
+            }
+          },
+          "additionalProperties": false
+        },
+        "analytics": {
+          "type": "object",
+          "required": ["googleMeasurementId"],
+          "properties": {
+            "googleMeasurementId": {
+              "type": "string",
+              "pattern": "^(|G-[A-Z0-9]+)$"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
     },
     "valorant": {
       "type": "object",
