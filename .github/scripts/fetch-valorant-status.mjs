@@ -40,7 +40,7 @@ export function iconTierForRank(rank) {
 
 export function parseRankText(text, updatedAt = new Date().toISOString()) {
   const match = text.match(
-    /^\s*([A-Za-z]+(?:\s+[123])?),\s*RR:\s*(-?\d+)\s*\(\s*([+-]?\d+)\s*\)\s*\(\s*🛡️\s*(\d+)\s*\)\s*$/u,
+    /^\s*([A-Za-z]+(?:\s+[123])?),\s*RR:\s*(-?\d+)\s*\(\s*([+-]?\d+)\s*\)(?:\s*\(\s*🛡️\s*(\d+)\s*\))?\s*$/u,
   );
   if (!match)
     throw new Error(
@@ -54,7 +54,7 @@ export function parseRankText(text, updatedAt = new Date().toISOString()) {
     rank,
     rr: Number(rr),
     lastMatchRr: Number(lastMatchRr),
-    shields: Number(shields),
+    shields: Number(shields ?? 0),
     iconTier: iconTierForRank(rank),
     updatedAt,
   };

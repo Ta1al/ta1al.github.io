@@ -30,6 +30,14 @@ test("parses a positive match result", () => {
   );
 });
 
+test("parses ranks without shields", () => {
+  const result = parseRankText("Diamond 2, RR: 25 (15)", timestamp);
+  assert.equal(result.rank, "Diamond 2");
+  assert.equal(result.rr, 25);
+  assert.equal(result.lastMatchRr, 15);
+  assert.equal(result.shields, 0);
+});
+
 test("maps current ranks and falls back for unknown ranks", () => {
   assert.equal(iconTierForRank("Radiant"), 27);
   assert.equal(iconTierForRank("Mystery 9"), 0);
