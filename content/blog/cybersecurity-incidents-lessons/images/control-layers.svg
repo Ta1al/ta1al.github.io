@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Layered controls across identities, platforms, telemetry, and response</title>
+  <desc id="desc">Four nested defensive layers surround sensitive data and services: identities and integrations, platform hardening, telemetry and detection, and incident response.</desc>
+  <rect width="1200" height="700" rx="20" fill="#080c0d"/>
+  <text x="70" y="78" fill="#5ce1cf" font-family="ui-monospace, monospace" font-size="24" letter-spacing="3">DEFENSE NEEDS MULTIPLE LAYERS</text>
+  <g stroke-width="2">
+    <rect x="70" y="125" width="1060" height="500" rx="24" fill="#0b1112" stroke="#294245"/>
+    <rect x="155" y="195" width="890" height="360" rx="20" fill="#0d1819" stroke="#315154"/>
+    <rect x="260" y="260" width="680" height="230" rx="18" fill="#102223" stroke="#47706f"/>
+    <rect x="420" y="320" width="360" height="110" rx="16" fill="#15302f" stroke="#5ce1cf"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="370" fill="#f0f5f5" font-size="30" font-weight="700">Sensitive data and services</text>
+    <text x="600" y="405" fill="#a8b8ba" font-size="18">Customer records · source code · enterprise applications</text>
+    <text x="600" y="290" fill="#5ce1cf" font-size="20" font-weight="700">IDENTITIES AND INTEGRATIONS</text>
+    <text x="600" y="470" fill="#a8b8ba" font-size="17">MFA · short-lived tokens · least privilege · access review</text>
+    <text x="600" y="225" fill="#5ce1cf" font-size="20" font-weight="700">PLATFORM HARDENING</text>
+    <text x="600" y="535" fill="#a8b8ba" font-size="17">Patching · private-by-default publishing · segmentation · artifact checks</text>
+    <text x="600" y="160" fill="#5ce1cf" font-size="20" font-weight="700">TELEMETRY, DETECTION, AND RESPONSE</text>
+    <text x="600" y="600" fill="#a8b8ba" font-size="17">Endpoint, network, cloud, and release logs · containment · recovery · communication</text>
+  </g>
+</svg>

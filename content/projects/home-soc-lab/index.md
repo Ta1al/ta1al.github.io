@@ -62,6 +62,14 @@ The Wazuh manager and dashboard were installed on Ubuntu, followed by agent enro
 
 Sysmon was installed on the Windows VM with a customized configuration to expose process creation and network activity beyond the default Windows event set.
 
+![Wazuh agent summary showing the enrolled Ubuntu endpoint as active](images/wazuh-agent-summary.png "Enrolled Wazuh agent")
+
+*The Wazuh dashboard confirmed that the Ubuntu endpoint was enrolled and active.*
+
+![Wazuh file integrity monitoring events for the test file](images/wazuh-fim-events.png "Real-time FIM validation")
+
+*Creating and modifying `test.txt` produced the expected file-added and file-modified events.*
+
 ### Firewall telemetry
 
 pfSense was configured with WAN and LAN interfaces and restrictive administrative access. The report also documents DNS-based Facebook blocking and country-based filtering with pfBlockerNG.
@@ -77,6 +85,14 @@ For SIEM integration, syslog-ng listened on the pfSense LAN and loopback interfa
 n8n ran in a Docker container and exposed a local workflow endpoint on port `5678`. A webhook accepted Wazuh alert data, a transformation step retained the alert level, ID, description, timestamp, and agent, and a filter passed only alerts above level 3. A POST request node formatted the remaining events for a Discord webhook.
 
 A Python forwarding script read `/var/ossec/logs/alerts/alerts.json` and submitted new alerts to the n8n listener. The report records successful Discord delivery after the workflow and forwarder started.
+
+![n8n field-mapping step extracting rule level, agent, ID, description, and timestamp from a Wazuh webhook](images/n8n-alert-fields.png "Wazuh alert field mapping in n8n")
+
+*The workflow reduced the incoming Wazuh payload to the fields needed for notification and triage.*
+
+![Discord channel receiving Wazuh executable-drop alerts from n8n](images/discord-alerts.png "Automated Wazuh alerts in Discord")
+
+*The completed path delivered level-6 executable-drop alerts for agent `w10` to Discord.*
 
 ### Controlled detection exercise
 
@@ -98,6 +114,14 @@ Wazuh recorded three notable behaviors:
 - Rule `92052`: Windows Command Prompt was started by an abnormal process.
 
 pfSense logged denied TCP/443 connections to `2.16.158.58` and `2.16.158.81`. The reports interpret these as attempted command-and-control traffic; the firewall denial demonstrated that endpoint compromise did not automatically grant outbound connectivity.
+
+![pfSense firewall log showing denied connections from the Windows analysis host](images/pfsense-denied-connections.png "Blocked outbound connections in pfSense")
+
+*pfSense recorded repeated deny actions from the analysis VM, including TCP/443 attempts to the destinations documented in the report.*
+
+![Wazuh alert table showing file creation, abnormal command prompt, and executable-drop rules](images/wazuh-malware-alerts.png "Correlated Wazuh malware alerts")
+
+*The Wazuh timeline places file creation, executable-drop, abnormal Command Prompt, and deletion events in a single view.*
 
 ## Challenges
 

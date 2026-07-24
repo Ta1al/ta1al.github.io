@@ -13,6 +13,10 @@ Security incidents rarely share one exploit, but they often share the same enabl
 
 This article condenses the supplied incident report. It does not independently verify or extend the report’s claims; disputed or unconfirmed details are identified as such.
 
+![Common incident path from exposed trust through containment and recovery](images/incident-path.svg "A recurring incident path")
+
+*Across the reviewed cases, different entry points repeatedly led through a control gap to unauthorized access, impact, and a containment-and-recovery cycle.*
+
 ## Five recurring failure patterns
 
 ### Basic controls still decide the impact
@@ -83,6 +87,10 @@ Feed lessons back into engineering
 ```
 
 This loop applies across telecom infrastructure, SaaS integrations, enterprise applications, internal content systems, and open-source publishing.
+
+![Layered defensive controls surrounding sensitive data and services](images/control-layers.svg "Layered defensive controls")
+
+*No single control covers the reviewed failure modes; identities, platform hardening, telemetry, and response reinforce one another.*
 
 ## Lessons for security teams
 
