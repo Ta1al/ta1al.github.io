@@ -92,17 +92,17 @@
       "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-M4ZQHRNWOY.pdf"
     },
     {
-      "name": "National Skills Competency Test",
-      "summary": "Rank 65 Nationwide | Top 0.2%",
-      "url": "https://www.hec.gov.pk/english/scholarshipsgrants/Pages/Sites/NSCT-Students.aspx#:~:text=Muhammad%20Talal%20Ahmed,University%20of%20Sargodha"
-    },
-    {
       "name": "Google Cybersecurity Professional",
       "url": "https://coursera.org/share/3349be5371aeba4a6d5fc8b498740d9e"
     },
     {
       "name": "IBM Cybersecurity Essentials",
       "url": "https://coursera.org/share/38b7bb5f6eed4977b835ddd51c521902"
+    },
+    {
+      "name": "National Skills Competency Test",
+      "summary": "Rank 65 Nationwide | Top 0.2%",
+      "url": "https://www.hec.gov.pk/english/scholarshipsgrants/Pages/Sites/NSCT-Students.aspx#:~:text=Muhammad%20Talal%20Ahmed,University%20of%20Sargodha"
     }
   ],
   "skills": [
