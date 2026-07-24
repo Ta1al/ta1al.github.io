@@ -1,6 +1,0 @@
-{{ define "main" }}
-<section class="shell listing">
-  <header class="page-heading"><p class="eyebrow">Index // {{ .Data.Plural | humanize }}</p><h1>{{ .Title }}</h1></header>
-  <div class="taxonomy-grid">{{ range .Data.Terms.Alphabetical }}<a href="{{ .Page.RelPermalink }}"><span>{{ .Page.LinkTitle }}</span><span>{{ .Count }}</span></a>{{ end }}</div>
-</section>
-{{ end }}

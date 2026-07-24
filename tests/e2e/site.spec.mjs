@@ -163,6 +163,37 @@ test("post swipes route to the TOC and navigation drawers", async ({
   ).toHaveAttribute("aria-expanded", "false");
 });
 
+test("posts provide clear archive and adjacent-reading navigation", async ({
+  page,
+}) => {
+  await gotoWithoutPageErrors(page, "/blog/cybersecurity-incidents-lessons/");
+
+  await expect(
+    page.getByRole("link", { name: "Back to all posts" }),
+  ).toHaveAttribute("href", "/blog/");
+
+  const readingNavigation = page.getByRole("navigation", {
+    name: "Continue reading",
+  });
+  await expect(
+    readingNavigation.getByRole("link", {
+      name: /Newer post.*How I Passed the CompTIA Security\+ Exam/,
+    }),
+  ).toHaveAttribute("href", "/blog/how-i-passed-comptia-security-plus/");
+  await expect(
+    readingNavigation.getByRole("link", {
+      name: /Older post.*Digital Footprint/,
+    }),
+  ).toHaveAttribute("href", "/blog/digital-footprint-tryhackme-writeup/");
+  await expect(
+    readingNavigation.getByRole("link", { name: "View all posts" }),
+  ).toHaveAttribute("href", "/blog/");
+
+  await expect(
+    page.locator('a[href^="/tags/"], a[href^="/categories/"]'),
+  ).toHaveCount(0);
+});
+
 test("Discord service failure keeps usable fallback content", async ({
   page,
 }) => {

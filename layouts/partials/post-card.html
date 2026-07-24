@@ -3,8 +3,8 @@
   <div>
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     <p>{{ .Description | default .Summary }}</p>
-    {{ with .GetTerms "tags" }}
-      <ul class="tag-list">{{ range first 4 . }}<li>{{ .LinkTitle }}</li>{{ end }}</ul>
+    {{ with .Params.tags }}
+      <ul class="tag-list" aria-label="Topics">{{ range first 4 . }}<li>{{ . }}</li>{{ end }}</ul>
     {{ else }}
       {{ with .Params.technologies }}<ul class="tag-list">{{ range first 4 . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
     {{ end }}

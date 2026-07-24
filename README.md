@@ -55,6 +55,10 @@ Keep article images inside the page bundle beside `index.md`. Hugo's Markdown
 image render hook generates responsive WebP variants while preserving the
 original for the lightbox.
 
+Blog `categories` and `tags` are lightweight descriptors shown on cards and
+posts. Dedicated taxonomy archives are intentionally disabled until the archive
+is large enough for those pages to provide useful discovery.
+
 Before committing content or implementation changes, run:
 
 ```sh

@@ -2,6 +2,7 @@ baseURL = 'https://ta1al.com'
 locale = 'en-US'
 title = 'Talal Ahmed'
 enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
 
 [params]
   description = 'Portfolio of Talal Ahmed, a SOC Analyst and Software Engineer.'
@@ -21,11 +22,6 @@ enableRobotsTXT = true
   name = 'Email'
   url = 'mailto:mail@ta1al.com'
   icon = 'email'
-
-[taxonomies]
-  category = 'categories'
-  tag = 'tags'
-  series = 'series'
 
 [[menus.main]]
   name = 'Home'
