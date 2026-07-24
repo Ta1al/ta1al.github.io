@@ -163,6 +163,25 @@ test("post swipes route to the TOC and navigation drawers", async ({
   ).toHaveAttribute("aria-expanded", "false");
 });
 
+test("scrolling a post code block does not open a drawer", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await gotoWithoutPageErrors(page, "/projects/home-soc-lab/");
+
+  const codeBlock = page.locator(".prose pre").first();
+  await codeBlock.scrollIntoViewIfNeeded();
+  const overflows = await codeBlock.evaluate(
+    (element) => element.scrollWidth > element.clientWidth,
+  );
+  expect(overflows).toBe(true);
+
+  const box = await codeBlock.boundingBox();
+  expect(box).not.toBeNull();
+  const y = box.y + box.height / 2;
+  await swipeHorizontally(page, box.x + box.width - 20, box.x + 20, y);
+
+  await expect(page.locator("body")).not.toHaveClass(/menu-open|toc-open/);
+});
+
 test("posts provide clear archive and adjacent-reading navigation", async ({
   page,
 }) => {

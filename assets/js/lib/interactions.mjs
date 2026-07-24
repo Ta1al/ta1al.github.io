@@ -1,6 +1,15 @@
 const focusableSelector =
   'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
+function isInsideHorizontalScroller(event) {
+  return event.composedPath().some((item) => {
+    if (!(item instanceof Element) || item.scrollWidth <= item.clientWidth)
+      return false;
+    const { overflowX } = getComputedStyle(item);
+    return overflowX === "auto" || overflowX === "scroll";
+  });
+}
+
 export function trapTabKey(event, container) {
   if (event.key !== "Tab") return;
   const items = [...container.querySelectorAll(focusableSelector)].filter(
@@ -31,7 +40,10 @@ export function listenForHorizontalSwipe({
   let tracking = false;
 
   const onStart = (event) => {
-    tracking = mediaQuery.matches && event.touches.length === 1;
+    tracking =
+      mediaQuery.matches &&
+      event.touches.length === 1 &&
+      !isInsideHorizontalScroller(event);
     if (!tracking) return;
     startX = event.touches[0].clientX;
     startY = event.touches[0].clientY;
