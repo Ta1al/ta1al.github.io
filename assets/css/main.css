@@ -71,7 +71,9 @@ html{scrollbar-gutter:stable}
 @media(max-width:28rem){.achievement-card,.achievement-card--personal{grid-template-columns:1fr}.achievement-card__visual{min-height:6.5rem;border-right:0;border-bottom:1px solid var(--line)}.achievement-card__visual img{max-width:5.5rem}.achievement-medal span{margin:.75rem}.achievement-section-heading{display:block}.achievement-section-heading>span{display:block;margin-top:.5rem}}
 .cv-cert-grid>:last-child:nth-child(odd),.project-grid>.is-last-visible,.taxonomy-grid>:last-child:nth-child(odd),.achievement-grid:not(.achievement-grid--personal)>:last-child:nth-child(odd){grid-column:1/-1}
 .taxonomy-grid>:last-child:nth-child(odd){border-right:0}
-@media(max-width:46rem){.achievement-metrics>div:last-child:nth-child(odd),.thm-stats>div:last-child:nth-child(odd){grid-column:1/-1}}
+@media(min-width:35.01rem){.cv-cert-grid>:last-child:nth-child(odd){text-align:center}}
+@media(min-width:46.01rem){.project-grid>.is-last-visible,.achievement-grid:not(.achievement-grid--personal)>:last-child:nth-child(odd).is-image-unavailable{text-align:center}.project-grid>.is-last-visible{align-items:center}.project-grid>.is-last-visible .project-card__meta{width:100%}.project-grid>.is-last-visible .tag-list{justify-content:center}.taxonomy-grid>:last-child:nth-child(odd){justify-content:center;gap:1rem}.achievement-grid:not(.achievement-grid--personal)>:last-child:nth-child(odd):not(.is-image-unavailable){grid-template-columns:minmax(9rem,1fr) minmax(0,1fr)}.achievement-grid:not(.achievement-grid--personal)>:last-child:nth-child(odd) .achievement-card__body{justify-content:center}}
+@media(max-width:46rem){.achievement-metrics>div:last-child:nth-child(odd),.thm-stats>div:last-child:nth-child(odd){grid-column:1/-1;text-align:center}}
 @media(prefers-reduced-motion:reduce){.achievement-tabs button,.achievement-card,.achievement-card__visual img{transition:none}}
 .achievement-tabs--views{grid-template-columns:repeat(2,1fr);margin-bottom:2rem}.achievement-view[hidden]{display:none}
 @media(max-width:46rem){.achievement-tabs--views{grid-template-columns:repeat(2,1fr)}.achievement-tabs--views button:nth-child(-n+2){border-bottom:0}}
