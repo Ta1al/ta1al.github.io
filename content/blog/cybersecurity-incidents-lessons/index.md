@@ -1,6 +1,6 @@
 +++
 title = 'What Recent Cybersecurity Incidents Have in Common'
-date = '2026-07-24T00:00:00+05:00'
+date = '2026-04-05T00:00:00+05:00'
 lastmod = '2026-07-24T00:00:00+05:00'
 draft = false
 description = 'A report-based review of recurring failure patterns across telecom, SaaS, enterprise software, source-code, and package-supply-chain incidents.'

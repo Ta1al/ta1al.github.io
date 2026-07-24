@@ -1,6 +1,6 @@
 +++
 title = 'Home SOC Lab: Detection, Firewall Telemetry, and Alert Automation'
-date = '2026-07-24T00:00:00+05:00'
+date = '2026-04-15T00:00:00+05:00'
 description = 'A layered home SOC environment combining Wazuh, Sysmon, pfSense, and n8n for endpoint monitoring, network visibility, and actionable alert delivery.'
 discipline = 'cybersecurity'
 status = 'completed'
