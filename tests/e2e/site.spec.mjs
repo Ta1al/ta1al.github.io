@@ -224,6 +224,26 @@ test("posts provide clear archive and adjacent-reading navigation", async ({
   ).toHaveCount(0);
 });
 
+test("project case studies return readers to the blog archive", async ({
+  page,
+}) => {
+  await gotoWithoutPageErrors(page, "/blog/");
+  await page
+    .getByRole("link", {
+      name: "Home SOC Lab: Detection, Firewall Telemetry, and Alert Automation",
+      exact: true,
+    })
+    .click();
+
+  await expect(page).toHaveURL(/\/projects\/home-soc-lab\/$/);
+  await expect(
+    page.getByRole("link", { name: "Back to all posts" }),
+  ).toHaveAttribute("href", "/blog/");
+  await expect(
+    page.getByRole("link", { name: "All projects" }),
+  ).toHaveAttribute("href", "/projects/");
+});
+
 test("Discord service failure keeps usable fallback content", async ({
   page,
 }) => {

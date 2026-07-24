@@ -3,11 +3,7 @@
 {{- $showToc := and ($page.Params.toc | default true) (gt (len $page.TableOfContents) 32) -}}
 <article class="shell article">
   <header class="page-heading article__heading">
-    {{ if $isProject }}
-      <a class="text-link article-back" href="{{ relURL "projects/" }}">← Back to all projects</a>
-    {{ else }}
-      <a class="text-link article-back" href="{{ relURL "blog/" }}">← Back to all posts</a>
-    {{ end }}
+    <a class="text-link article-back" href="{{ relURL "blog/" }}">← Back to all posts</a>
     {{ if $isProject }}
       <p class="eyebrow">{{ $page.Params.discipline | default "Project" | humanize }} // {{ $page.Params.status | default "Completed" | humanize }}</p>
     {{ else }}
