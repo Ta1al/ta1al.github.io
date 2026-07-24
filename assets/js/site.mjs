@@ -29,6 +29,7 @@ if (button && menu) {
   const closeMenu = () => {
     window.clearTimeout(hideTimer);
     menu.classList.remove("menu--open");
+    menu.classList.remove("menu--suppress-focus-ring");
     button.setAttribute("aria-expanded", "false");
     document.body.classList.remove("menu-open");
     hideTimer = window.setTimeout(() => {
@@ -37,19 +38,20 @@ if (button && menu) {
     previousFocus?.focus();
   };
 
-  const openMenu = () => {
+  const openMenu = ({ showFocusRing = false } = {}) => {
     window.clearTimeout(hideTimer);
     previousFocus = document.activeElement;
     menu.hidden = false;
+    menu.classList.toggle("menu--suppress-focus-ring", !showFocusRing);
     requestAnimationFrame(() => menu.classList.add("menu--open"));
     button.setAttribute("aria-expanded", "true");
     document.body.classList.add("menu-open");
     menu.querySelector("a[href]")?.focus();
   };
 
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (event) => {
     if (button.getAttribute("aria-expanded") === "true") closeMenu();
-    else openMenu();
+    else openMenu({ showFocusRing: event.detail === 0 });
   });
   menu.addEventListener("click", (event) => {
     if (event.target === menu) closeMenu();
@@ -68,6 +70,7 @@ if (button && menu) {
 
   document.addEventListener("keydown", (event) => {
     if (button.getAttribute("aria-expanded") !== "true") return;
+    menu.classList.remove("menu--suppress-focus-ring");
     if (event.key === "Escape") closeMenu();
     else trapTabKey(event, menu);
   });

@@ -159,6 +159,9 @@ a {
   text-decoration: none;
   letter-spacing: -0.04em;
 }
+.menu--suppress-focus-ring nav a:focus {
+  outline: none;
+}
 .menu nav a::before {
   content: "/";
   color: var(--accent);

@@ -62,6 +62,9 @@ test("menu traps focus, identifies the current section, and restores focus", asy
   const toggle = page.getByRole("button", { name: /toggle navigation/i });
   await toggle.click();
   await expect(toggle).toHaveAttribute("aria-expanded", "true");
+  const home = page.locator("#site-menu a").first();
+  await expect(home).toBeFocused();
+  await expect(home).toHaveCSS("outline-style", "none");
   await expect(page.getByRole("link", { name: "About" })).toHaveAttribute(
     "aria-current",
     "page",
@@ -69,6 +72,9 @@ test("menu traps focus, identifies the current section, and restores focus", asy
   await page.keyboard.press("Escape");
   await expect(toggle).toBeFocused();
   await expect(toggle).toHaveAttribute("aria-expanded", "false");
+  await page.keyboard.press("Enter");
+  await expect(home).toBeFocused();
+  await expect(home).toHaveCSS("outline-style", "solid");
 });
 
 test("project filter buttons expose pressed state and filter one collection", async ({
@@ -155,6 +161,9 @@ test("post swipes route to the TOC and navigation drawers", async ({
 
   await swipeHorizontally(page, 300, 40);
   await expect(page.locator("body")).toHaveClass(/menu-open/);
+  const home = page.locator("#site-menu a").first();
+  await expect(home).toBeFocused();
+  await expect(home).toHaveCSS("outline-style", "none");
 
   await swipeHorizontally(page, 40, 300);
   await expect(page.locator("body")).not.toHaveClass(/menu-open/);
