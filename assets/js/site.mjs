@@ -29,11 +29,13 @@ if (button && menu) {
   const closeMenu = () => {
     window.clearTimeout(hideTimer);
     menu.classList.remove("menu--open");
-    menu.classList.remove("menu--suppress-focus-ring");
     button.setAttribute("aria-expanded", "false");
     document.body.classList.remove("menu-open");
     hideTimer = window.setTimeout(() => {
-      if (button.getAttribute("aria-expanded") === "false") menu.hidden = true;
+      if (button.getAttribute("aria-expanded") === "false") {
+        menu.hidden = true;
+        menu.classList.remove("menu--suppress-focus-ring");
+      }
     }, 180);
     previousFocus?.focus();
   };

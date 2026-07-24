@@ -167,6 +167,8 @@ test("post swipes route to the TOC and navigation drawers", async ({
 
   await swipeHorizontally(page, 40, 300);
   await expect(page.locator("body")).not.toHaveClass(/menu-open/);
+  await expect(home).toHaveCSS("outline-style", "none");
+  await expect(page.locator("#site-menu")).toBeHidden();
   await expect(
     page.getByRole("button", { name: /toggle navigation/i }),
   ).toHaveAttribute("aria-expanded", "false");
