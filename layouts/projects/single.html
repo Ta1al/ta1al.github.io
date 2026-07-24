@@ -5,6 +5,7 @@
     <p class="eyebrow">{{ .Params.discipline | default "Project" | humanize }} // {{ .Params.status | default "Completed" | humanize }}</p>
     <h1>{{ .Title }}</h1>
     <p class="lede">{{ .Description }}</p>
+    {{ partial "article-meta.html" . }}
     {{ with .Params.technologies }}<ul class="tag-list" aria-label="Technologies">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
   </header>
   {{ if $showToc }}<button class="toc-trigger" type="button" aria-expanded="false" aria-controls="article-toc" data-toc-open><span>TOC</span><span aria-hidden="true">›</span></button><div class="toc-backdrop" data-toc-close hidden></div>{{ end }}
