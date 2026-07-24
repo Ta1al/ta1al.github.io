@@ -41,14 +41,37 @@ jobs:
       - name: Test live status integrations
         run: node --test .github/scripts/*.test.mjs
 
+      - name: Restore last successful Valorant rank
+        id: valorant-rank-cache
+        uses: actions/cache/restore@v5
+        with:
+          path: data/valorant.json
+          key: valorant-rank-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            valorant-rank-
+
       - name: Refresh Valorant rank
         id: valorant-rank
         continue-on-error: true
         run: node .github/scripts/fetch-valorant-status.mjs
 
+      - name: Cache successful Valorant rank
+        if: steps.valorant-rank.outcome == 'success'
+        uses: actions/cache/save@v5
+        with:
+          path: data/valorant.json
+          key: valorant-rank-${{ github.run_id }}-${{ github.run_attempt }}
+
       - name: Report cached Valorant rank fallback
         if: steps.valorant-rank.outcome == 'failure'
-        run: echo "::warning::Valorant rank refresh failed; deploying with the committed cached rank data."
+        env:
+          CACHE_HIT: ${{ steps.valorant-rank-cache.outputs.cache-matched-key }}
+        run: |
+          if [ -n "$CACHE_HIT" ]; then
+            echo "::warning::Valorant rank refresh failed; deploying the last successfully fetched rank."
+          else
+            echo "::warning::Valorant rank refresh failed and no previous workflow cache exists; deploying the committed rank data."
+          fi
 
       - name: Install Hugo Extended
         run: |
