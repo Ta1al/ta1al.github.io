@@ -36,7 +36,7 @@ This background helped with topics such as networking, SIEM monitoring, incident
 
 ## Resources I Used
 
-I initially started with a Security+ course available through Coursera. It gave me a useful introduction, but I eventually realized that it did not cover every exam objective in enough detail.
+I initially started with a Security+ course by InfoSec available through Coursera. It gave me a useful introduction, but I eventually realized that it did not cover every exam objective in enough detail.
 
 The most helpful resource for me was **Professor Messer’s free Security+ video course**. His videos closely follow the official SY0-701 exam objectives and explain the topics without adding too much unnecessary information.
 
