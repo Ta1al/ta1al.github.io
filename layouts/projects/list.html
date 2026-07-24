@@ -1,5 +1,10 @@
 {{ define "main" }}
 {{ $softwareProjects := index hugo.Data "projects-software" }}
+{{ $cybersecurityPages := where .Pages "Params.discipline" "cybersecurity" }}
+{{ $softwarePages := where .Pages "Params.discipline" "software" }}
+{{ $cybersecurityCount := len $cybersecurityPages }}
+{{ $softwareCount := add (len $softwarePages) (len $softwareProjects) }}
+{{ $projectCount := add $cybersecurityCount $softwareCount }}
 <section class="shell listing" aria-labelledby="projects-title">
   <header class="page-heading">
     <p class="eyebrow">Selected work // Case studies</p>
@@ -7,15 +12,15 @@
     <div class="lede">{{ .Content }}</div>
   </header>
 
-  <div class="filters" aria-label="Filter projects">
-    <button type="button" class="filter is-active" data-project-filter="all" aria-pressed="true">All</button>
-    <button type="button" class="filter" data-project-filter="cybersecurity" aria-pressed="false">Cybersecurity</button>
-    <button type="button" class="filter" data-project-filter="software" aria-pressed="false">Software engineering</button>
+  <div class="achievement-tabs project-tabs" role="tablist" aria-label="Project categories">
+    <button type="button" role="tab" aria-selected="true" aria-controls="project-grid" data-project-filter="all">All <span>{{ $projectCount }}</span></button>
+    <button type="button" role="tab" aria-selected="false" aria-controls="project-grid" tabindex="-1" data-project-filter="cybersecurity">Cybersecurity <span>{{ $cybersecurityCount }}</span></button>
+    <button type="button" role="tab" aria-selected="false" aria-controls="project-grid" tabindex="-1" data-project-filter="software">Software engineering <span>{{ $softwareCount }}</span></button>
   </div>
   <p class="filter-status sr-only" aria-live="polite"></p>
 
   {{ if or .Pages $softwareProjects }}
-  <div class="project-grid">
+  <div class="project-grid" id="project-grid">
     {{ $pages := .Pages.ByTitle }}
     {{ $featuredPages := where $pages "Params.featured" true }}
     {{ $regularPages := where $pages "Params.featured" false }}

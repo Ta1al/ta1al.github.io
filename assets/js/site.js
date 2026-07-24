@@ -156,13 +156,13 @@
   const status = document.querySelector('.filter-status');
   if (!filters.length || !projects.length) return;
 
-  filters.forEach((button) => button.addEventListener('click', () => {
+  const activateFilter = (button, { focus = false } = {}) => {
     const selected = button.dataset.projectFilter;
     let visible = 0;
     filters.forEach((item) => {
       const active = item === button;
-      item.classList.toggle('is-active', active);
-      item.setAttribute('aria-pressed', String(active));
+      item.setAttribute('aria-selected', String(active));
+      item.tabIndex = active ? 0 : -1;
     });
     projects.forEach((project) => {
       const show = selected === 'all' || project.dataset.projectDiscipline === selected;
@@ -170,5 +170,20 @@
       if (show) visible += 1;
     });
     if (status) status.textContent = `${visible} project${visible === 1 ? '' : 's'} shown.`;
-  }));
+    if (focus) button.focus();
+  };
+
+  filters.forEach((button, index) => {
+    button.addEventListener('click', () => activateFilter(button));
+    button.addEventListener('keydown', (event) => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      let next = index;
+      if (event.key === 'ArrowLeft') next = (index - 1 + filters.length) % filters.length;
+      if (event.key === 'ArrowRight') next = (index + 1) % filters.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = filters.length - 1;
+      activateFilter(filters[next], { focus: true });
+    });
+  });
 })();
