@@ -8,7 +8,7 @@ on:
     - cron: "17 3 * * *"
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -61,6 +61,21 @@ jobs:
         id: valorant-rank
         continue-on-error: true
         run: node .github/scripts/fetch-valorant-status.mjs
+
+      - name: Commit refreshed Valorant rank
+        if: steps.valorant-rank.outcome == 'success'
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/valorant.json
+          if git diff --cached --quiet; then
+            echo "Valorant rank data is unchanged."
+            exit 0
+          fi
+          git commit -m "chore(valorant): update rank data"
+          git push origin "HEAD:${DEFAULT_BRANCH}"
 
       - name: Cache successful Valorant rank
         if: steps.valorant-rank.outcome == 'success'
