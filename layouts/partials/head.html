@@ -18,6 +18,15 @@
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-{{ with resources.Get "css/main.css" | minify | fingerprint }}
+{{ $styles := slice
+  (resources.Get "css/01-foundation.css")
+  (resources.Get "css/02-interior-cv-base.css")
+  (resources.Get "css/03-projects.css")
+  (resources.Get "css/04-articles.css")
+  (resources.Get "css/05-about.css")
+  (resources.Get "css/06-cv.css")
+  (resources.Get "css/07-achievements.css")
+}}
+{{ with $styles | resources.Concat "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
 {{ end }}
