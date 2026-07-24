@@ -4,9 +4,7 @@
 {{- if $processable -}}
   {{- $quality := "q85" -}}
   {{- $inlineWidth := int (math.Min 800 $image.Width) -}}
-  {{- $lightboxWidth := int (math.Min 1920 $image.Width) -}}
   {{- $inline := $image.Resize (printf "%dx webp %s" $inlineWidth $quality) -}}
-  {{- $lightbox := $image.Resize (printf "%dx webp %s" $lightboxWidth $quality) -}}
   {{- $variants := slice -}}
   {{- range slice 480 800 1200 -}}
     {{- if le . $image.Width -}}
@@ -27,7 +25,7 @@
     loading="lazy"
     decoding="async"
     alt="{{ .Text }}"
-    data-lightbox-source="{{ $lightbox.RelPermalink }}"{{ with .Title }} title="{{ . }}"{{ end }}>
+    data-lightbox-source="{{ $image.RelPermalink }}"{{ with .Title }} title="{{ . }}"{{ end }}>
 {{- else -}}
   <img src="{{ $destination | safeURL }}" loading="lazy" decoding="async" alt="{{ .Text }}" data-lightbox-source="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>
 {{- end -}}

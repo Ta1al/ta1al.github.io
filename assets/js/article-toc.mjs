@@ -133,7 +133,6 @@ if (lightbox) {
   };
 
   images.forEach((image) => {
-    image.dataset.lightboxSource = '';
     image.tabIndex = 0;
     image.setAttribute('role', 'button');
     image.setAttribute('aria-label', `Enlarge image: ${image.alt || 'article image'}`);
