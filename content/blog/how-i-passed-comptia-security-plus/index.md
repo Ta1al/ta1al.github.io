@@ -7,9 +7,12 @@ description = 'How I prepared for and passed the CompTIA Security+ SY0-701 exam,
 categories = ['Security']
 tags = ['CompTIA', 'Security+', 'Certification', 'Exam Preparation']
 toc = true
+image = 'images/msedge_WYNUk94JEi.png'
 +++
 
 I recently passed the **CompTIA Security+ SY0-701 exam** with a score of **795**.
+
+![CompTIA Security+ certification awarded to Muhammad Talal Ahmed](images/msedge_WYNUk94JEi.png "CompTIA Security+ certification")
 
 I prepared for around a month, and although I was nervous before the exam, it ended up being easier than I expected. The questions were not necessarily simple, but most of them felt manageable once I slowed down and carefully read what was being asked.
 
