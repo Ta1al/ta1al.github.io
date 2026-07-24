@@ -47,9 +47,10 @@ export function listenForHorizontalSwipe({
     ) {
       return;
     }
+    const handled = onSwipe(deltaX < 0 ? "left" : "right");
+    if (!handled) return;
     event.preventDefault();
     if (stopPropagation) event.stopImmediatePropagation();
-    onSwipe(deltaX < 0 ? "left" : "right");
   };
   const onCancel = () => {
     tracking = false;

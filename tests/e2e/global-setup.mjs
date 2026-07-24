@@ -3,7 +3,7 @@ import { readFile, stat } from "node:fs/promises";
 import { extname, resolve, sep } from "node:path";
 
 const host = "127.0.0.1";
-const port = 1313;
+const port = 4173;
 const publicRoot = resolve("public");
 const contentTypes = new Map([
   [".css", "text/css; charset=utf-8"],

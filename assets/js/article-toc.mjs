@@ -105,9 +105,10 @@ if (toc) {
     stopPropagation: true,
     onSwipe: (direction) => {
       const open = document.body.classList.contains("toc-open");
-      if (!open && direction === "left") return;
+      if (!open && direction === "left") return false;
       if (open) closeToc();
       else openToc();
+      return true;
     },
   });
 

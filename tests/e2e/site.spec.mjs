@@ -22,6 +22,27 @@ async function mockDiscordWidget(page) {
   );
 }
 
+async function swipeHorizontally(page, startX, endX, y = 420) {
+  const session = await page.context().newCDPSession(page);
+  await session.send("Emulation.setTouchEmulationEnabled", {
+    enabled: true,
+    maxTouchPoints: 1,
+  });
+  await session.send("Input.dispatchTouchEvent", {
+    type: "touchStart",
+    touchPoints: [{ x: startX, y }],
+  });
+  await session.send("Input.dispatchTouchEvent", {
+    type: "touchMove",
+    touchPoints: [{ x: endX, y }],
+  });
+  await session.send("Input.dispatchTouchEvent", {
+    type: "touchEnd",
+    touchPoints: [],
+  });
+  await session.detach();
+}
+
 async function gotoWithoutPageErrors(page, path) {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
@@ -118,6 +139,22 @@ test("mobile article TOC keeps keyboard focus inside its drawer", async ({
       .contains(document.activeElement),
   );
   expect(focusIsInside).toBe(true);
+});
+
+test("post swipes route to the TOC and navigation drawers", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await gotoWithoutPageErrors(page, "/projects/home-soc-lab/");
+
+  await swipeHorizontally(page, 40, 300);
+  await expect(page.locator("body")).toHaveClass(/toc-open/);
+
+  await swipeHorizontally(page, 300, 40);
+  await expect(page.locator("body")).not.toHaveClass(/toc-open/);
+
+  await swipeHorizontally(page, 300, 40);
+  await expect(page.locator("body")).toHaveClass(/menu-open/);
 });
 
 test("Discord network failure keeps usable fallback content", async ({

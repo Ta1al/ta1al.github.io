@@ -59,9 +59,10 @@ if (button && menu) {
     mediaQuery: mobileViewport,
     onSwipe: (direction) => {
       const open = button.getAttribute("aria-expanded") === "true";
-      if (!open && direction === "right") return;
+      if (!open && direction === "right") return false;
       if (open) closeMenu();
       else openMenu();
+      return true;
     },
   });
 
