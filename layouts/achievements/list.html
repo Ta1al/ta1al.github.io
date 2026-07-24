@@ -8,6 +8,9 @@
 {{ $thmBadges := (index hugo.Data "tryhackme-badges").data.docs }}
 {{ $thmCerts := (index hugo.Data "tryhackme-certs").data.docs }}
 {{ $certTitles := dict "loveatfirstbreach" "Love at First Breach" "pathway-soclevel1legacy" "SOC Level 1" "HackfinityBattle" "Hackfinity Battle" }}
+{{ $socLevelOne := index (where $thmCerts "name" "pathway-soclevel1legacy") 0 }}
+{{ $yearStreak := index (where $thmBadges "name" "365-day-streak") 0 }}
+{{ $googleCybersecurity := index (where $specializations "product.name" "Google Cybersecurity") 0 }}
 
 <section class="shell achievements" aria-labelledby="achievements-title" data-achievement-tabs>
   <header class="page-heading achievements__heading">
@@ -16,14 +19,73 @@
     <p class="lede">Academic distinctions, professional credentials, structured learning, and hands-on cybersecurity milestones.</p>
   </header>
 
-  <div class="achievement-tabs" role="tablist" aria-label="Achievement categories">
-    <button id="achievement-tab-distinctions" type="button" role="tab" aria-selected="true" aria-controls="achievement-panel-distinctions" data-achievement-tab="distinctions">Distinctions <span>{{ len $personal }}</span></button>
-    <button id="achievement-tab-credly" type="button" role="tab" aria-selected="false" aria-controls="achievement-panel-credly" tabindex="-1" data-achievement-tab="credly">Credly <span>{{ len $credly }}</span></button>
-    <button id="achievement-tab-coursera" type="button" role="tab" aria-selected="false" aria-controls="achievement-panel-coursera" tabindex="-1" data-achievement-tab="coursera">Coursera <span>{{ add (len $specializations) (len $courses) }}</span></button>
-    <button id="achievement-tab-tryhackme" type="button" role="tab" aria-selected="false" aria-controls="achievement-panel-tryhackme" tabindex="-1" data-achievement-tab="tryhackme">TryHackMe <span>{{ add (len $thmCerts) (len $thmBadges) }}</span></button>
+  <div class="achievement-tabs achievement-tabs--views" role="tablist" aria-label="Achievement view">
+    <button id="achievement-view-tab-curated" type="button" role="tab" aria-selected="true" aria-controls="achievement-view-curated" data-achievement-view-tab="curated">Curated <span>6</span></button>
+    <button id="achievement-view-tab-all" type="button" role="tab" aria-selected="false" aria-controls="achievement-view-all" tabindex="-1" data-achievement-view-tab="all">All</button>
   </div>
 
-  <div class="achievement-panels">
+  <section id="achievement-view-curated" class="achievement-view" role="tabpanel" aria-labelledby="achievement-view-tab-curated" data-achievement-view="curated">
+    <header class="achievement-section-heading"><div><p class="eyebrow">Selected highlights</p><h2>Curated achievements</h2></div><span>6 highlights</span></header>
+    <div class="achievement-grid">
+      {{ range $personal }}
+      <article class="achievement-card">
+        <div class="achievement-card__visual"><img src="{{ .image }}" width="144" height="144" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="{{ .imageAlt }}" data-achievement-image></div>
+        <div class="achievement-card__body">
+          <div class="achievement-card__kicker"><span>{{ .institution }}</span><span>{{ .category }}</span></div>
+          <h3>{{ if eq .title "Bronze Medal" }}Bronze Medal and 3.8 CGPA{{ else }}{{ .title }}{{ end }}</h3>
+          <p>{{ .description }}</p>
+          <dl class="achievement-metrics"><div><dt>{{ .metricLabel }}</dt><dd>{{ .metric }}</dd></div></dl>
+          {{ if .url }}<a class="text-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .linkLabel | default "View credential" }} <span aria-hidden="true">↗</span></a>{{ end }}
+        </div>
+      </article>
+      {{ end }}
+      <article class="achievement-card is-image-unavailable">
+        <div class="achievement-card__body">
+          <div class="achievement-card__kicker"><span>National Skills Competency Test</span><span>National ranking</span></div>
+          <h3>NSCT top 0.2%</h3>
+          <p>Placed among the highest-scoring participants in Pakistan’s National Skills Competency Test.</p>
+          <dl class="achievement-metrics"><div><dt>Nationwide rank</dt><dd>65</dd></div><div><dt>Percentile</dt><dd>Top 0.2%</dd></div></dl>
+          <a class="text-link" href="https://www.hec.gov.pk/english/scholarshipsgrants/Pages/Sites/NSCT-Students.aspx#:~:text=Muhammad%20Talal%20Ahmed,University%20of%20Sargodha" target="_blank" rel="noopener noreferrer">View result <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="achievement-card achievement-card--certificate">
+        <div class="achievement-card__visual"><img src="{{ $socLevelOne.imageUrl }}" width="240" height="170" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="TryHackMe SOC Level 1 certificate preview" data-achievement-image></div>
+        <div class="achievement-card__body">
+          <div class="achievement-card__kicker"><span>TryHackMe</span><span>Certificate</span></div>
+          <h3>TryHackMe SOC Level 1</h3>
+          <dl class="achievement-metrics"><div><dt>Achieved</dt><dd><time datetime="{{ $socLevelOne.achieved }}">{{ time.Format "02 Jan 2006" (time.AsTime $socLevelOne.achieved) }}</time></dd></div></dl>
+          <a class="text-link" href="{{ $socLevelOne.url }}" target="_blank" rel="noopener noreferrer">Open certificate <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+      <article class="achievement-card achievement-card--badge">
+        <div class="achievement-card__visual"><img src="{{ $yearStreak.image }}" width="120" height="120" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="365-day TryHackMe streak badge" data-achievement-image></div>
+        <div class="achievement-card__body">
+          <div class="achievement-card__kicker"><span>TryHackMe</span><span class="rarity rarity--{{ $yearStreak.rarityTier | urlize }}">{{ $yearStreak.rarityTier }}</span></div>
+          <h3>365-day TryHackMe streak</h3>
+          <p>{{ $yearStreak.description }}</p>
+          <dl class="achievement-metrics">{{ with $yearStreak.earnedAt }}<div><dt>Earned</dt><dd><time datetime="{{ . }}">{{ time.Format "02 Jan 2006" (time.AsTime .) }}</time></dd></div>{{ end }}<div><dt>Rarity</dt><dd>{{ $yearStreak.rarityPercent }}%</dd></div></dl>
+        </div>
+      </article>
+      <article class="achievement-card achievement-card--course">
+        {{ range first 1 $googleCybersecurity.product.partners }}<div class="achievement-card__visual"><img src="{{ replace .squareLogo "http://" "https://" }}" width="120" height="120" loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="Google logo" data-achievement-image></div>{{ end }}
+        <div class="achievement-card__body">
+          <div class="achievement-card__kicker"><span>Google</span><span>Professional certificate</span></div>
+          <h3>Google Cybersecurity Professional Certificate</h3>
+          <dl class="achievement-metrics"><div><dt>Completed</dt><dd><time datetime="{{ $googleCybersecurity.grantedAt }}">{{ time.Format "02 Jan 2006" (time.AsTime $googleCybersecurity.grantedAt) }}</time></dd></div></dl>
+          <a class="text-link" href="https://www.coursera.org/account/accomplishments/specialization/{{ $googleCybersecurity.verifyCode }}" target="_blank" rel="noopener noreferrer">View credential <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="achievement-view-all" class="achievement-view" role="tabpanel" aria-labelledby="achievement-view-tab-all" data-achievement-view="all" hidden>
+    <div class="achievement-tabs achievement-tabs--categories" role="tablist" aria-label="Achievement categories">
+      <button id="achievement-tab-distinctions" type="button" role="tab" aria-selected="true" aria-controls="achievement-panel-distinctions" data-achievement-tab="distinctions">Distinctions <span>{{ len $personal }}</span></button>
+      <button id="achievement-tab-credly" type="button" role="tab" aria-selected="false" aria-controls="achievement-panel-credly" tabindex="-1" data-achievement-tab="credly">Credly <span>{{ len $credly }}</span></button>
+      <button id="achievement-tab-coursera" type="button" role="tab" aria-selected="false" aria-controls="achievement-panel-coursera" tabindex="-1" data-achievement-tab="coursera">Coursera <span>{{ add (len $specializations) (len $courses) }}</span></button>
+      <button id="achievement-tab-tryhackme" type="button" role="tab" aria-selected="false" aria-controls="achievement-panel-tryhackme" tabindex="-1" data-achievement-tab="tryhackme">TryHackMe <span>{{ add (len $thmCerts) (len $thmBadges) }}</span></button>
+    </div>
+    <div class="achievement-panels">
     <section id="achievement-panel-distinctions" class="achievement-panel" role="tabpanel" aria-labelledby="achievement-tab-distinctions" data-achievement-panel="distinctions">
       <div class="achievement-grid achievement-grid--personal">
         {{ range $personal }}
@@ -137,7 +199,8 @@
         {{ end }}
       </div>
     </section>
-  </div>
+    </div>
+  </section>
   <dialog class="article-lightbox achievement-lightbox" data-achievement-lightbox aria-label="Enlarged achievement image"><div class="article-lightbox__frame"><button type="button" data-achievement-lightbox-close aria-label="Close enlarged image">×</button><img data-achievement-lightbox-image alt=""><p data-achievement-lightbox-caption></p></div></dialog>
 </section>
 {{ end }}

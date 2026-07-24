@@ -1,12 +1,27 @@
 const root = document.querySelector('[data-achievement-tabs]');
 
 if (root) {
+  const viewTabs = [...root.querySelectorAll('[data-achievement-view-tab]')];
+  const views = [...root.querySelectorAll('[data-achievement-view]')];
   const tabs = [...root.querySelectorAll('[data-achievement-tab]')];
   const panels = [...root.querySelectorAll('[data-achievement-panel]')];
   const validIds = new Set(tabs.map((tab) => tab.dataset.achievementTab));
 
+  const activateView = (id, { focus = false, updateHash = true } = {}) => {
+    if (id !== 'all') id = 'curated';
+    viewTabs.forEach((tab) => {
+      const active = tab.dataset.achievementViewTab === id;
+      tab.setAttribute('aria-selected', String(active));
+      tab.tabIndex = active ? 0 : -1;
+      if (active && focus) tab.focus();
+    });
+    views.forEach((view) => { view.hidden = view.dataset.achievementView !== id; });
+    if (updateHash) history.replaceState(null, '', `#${id}`);
+  };
+
   const activate = (id, { focus = false, updateHash = true } = {}) => {
     if (!validIds.has(id)) id = 'distinctions';
+    activateView('all', { updateHash: false });
     tabs.forEach((tab) => {
       const active = tab.dataset.achievementTab === id;
       tab.setAttribute('aria-selected', String(active));
@@ -18,7 +33,23 @@ if (root) {
   };
 
   root.classList.add('achievement-tabs--ready');
-  activate(validIds.has(location.hash.slice(1)) ? location.hash.slice(1) : 'distinctions', { updateHash: false });
+  const initialId = location.hash.slice(1);
+  if (validIds.has(initialId)) activate(initialId, { updateHash: false });
+  else activateView(initialId === 'all' ? 'all' : 'curated', { updateHash: false });
+
+  viewTabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => activateView(tab.dataset.achievementViewTab));
+    tab.addEventListener('keydown', (event) => {
+      let next = index;
+      if (event.key === 'ArrowRight') next = (index + 1) % viewTabs.length;
+      else if (event.key === 'ArrowLeft') next = (index - 1 + viewTabs.length) % viewTabs.length;
+      else if (event.key === 'Home') next = 0;
+      else if (event.key === 'End') next = viewTabs.length - 1;
+      else return;
+      event.preventDefault();
+      activateView(viewTabs[next].dataset.achievementViewTab, { focus: true });
+    });
+  });
 
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => activate(tab.dataset.achievementTab));
@@ -103,5 +134,6 @@ if (root) {
   window.addEventListener('hashchange', () => {
     const id = location.hash.slice(1);
     if (validIds.has(id)) activate(id, { updateHash: false });
+    else if (id === 'all' || id === 'curated') activateView(id, { updateHash: false });
   });
 }
