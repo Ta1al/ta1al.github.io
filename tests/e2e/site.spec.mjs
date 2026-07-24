@@ -65,10 +65,10 @@ test("menu traps focus, identifies the current section, and restores focus", asy
   const home = page.locator("#site-menu a").first();
   await expect(home).toBeFocused();
   await expect(home).toHaveCSS("outline-style", "none");
-  await expect(page.getByRole("link", { name: "About" })).toHaveAttribute(
-    "aria-current",
-    "page",
-  );
+  const current = page.locator('#site-menu a[aria-current="page"]');
+  await expect(current).toHaveText("About");
+  await expect(current).toHaveCSS("color", "rgb(92, 225, 207)");
+  await expect(current).toHaveAttribute("href", "/about/");
   await page.keyboard.press("Escape");
   await expect(toggle).toBeFocused();
   await expect(toggle).toHaveAttribute("aria-expanded", "false");
