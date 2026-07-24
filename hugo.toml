@@ -27,6 +27,36 @@ enableRobotsTXT = true
   tag = 'tags'
   series = 'series'
 
+[[menus.main]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 10
+
+[[menus.main]]
+  name = 'About'
+  pageRef = '/about'
+  weight = 20
+
+[[menus.main]]
+  name = 'Achievements'
+  pageRef = '/achievements'
+  weight = 30
+
+[[menus.main]]
+  name = 'Projects'
+  pageRef = '/projects'
+  weight = 40
+
+[[menus.main]]
+  name = 'Blog'
+  pageRef = '/blog'
+  weight = 50
+
+[[menus.main]]
+  name = 'CV'
+  pageRef = '/cv'
+  weight = 60
+
 [markup]
   [markup.highlight]
     noClasses = false

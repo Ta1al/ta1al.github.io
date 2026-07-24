@@ -44,11 +44,13 @@
   font-size: 0.58rem;
 }
 .achievement-tabs button:hover,
-.achievement-tabs button[aria-selected="true"] {
+.achievement-tabs button[aria-selected="true"],
+.achievement-tabs button[aria-pressed="true"] {
   background: rgba(92, 225, 207, 0.06);
   color: var(--accent);
 }
-.achievement-tabs button[aria-selected="true"] span {
+.achievement-tabs button[aria-selected="true"] span,
+.achievement-tabs button[aria-pressed="true"] span {
   border-color: var(--accent);
 }
 .achievement-tabs button:focus-visible {
@@ -239,7 +241,8 @@
   justify-content: center;
   padding: clamp(1.5rem, 5vw, 4rem);
 }
-.achievement-card--personal h2 {
+.achievement-card--personal h2,
+.achievement-card--personal h3 {
   font-size: clamp(2.5rem, 6vw, 5rem);
   line-height: 0.95;
 }
@@ -307,7 +310,8 @@
   .achievement-card--personal .achievement-card__body {
     padding: 1.4rem;
   }
-  .achievement-card--personal h2 {
+  .achievement-card--personal h2,
+  .achievement-card--personal h3 {
     font-size: 2rem;
   }
   .achievement-medal span {

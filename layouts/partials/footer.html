@@ -1,6 +1,6 @@
 {{ if not .IsHome }}
 <footer class="site-footer">
-  <p>&copy; {{ now.Year }} Talal Ahmed</p>
+  <p>&copy; {{ now.Year }} {{ site.Params.author }}</p>
   <a href="{{ site.Home.RelPermalink }}">Back home</a>
 </footer>
 {{ end }}

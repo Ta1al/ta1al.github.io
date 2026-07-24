@@ -79,5 +79,5 @@
 {{ end }}
 
 {{ define "scripts" }}
-{{ with resources.Get "js/discord-status.mjs" | minify | fingerprint }}<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>{{ end }}
+{{ partial "script-bundle.html" "js/discord-status.mjs" }}
 {{ end }}

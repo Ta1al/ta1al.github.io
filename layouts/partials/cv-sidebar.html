@@ -1,0 +1,68 @@
+{{- $resume := .resume -}}
+{{- $id := .id -}}
+<aside class="cv__sidebar">
+  <section class="cv__sidebar-contact" aria-labelledby="{{ $id }}-contact">
+    <h2 id="{{ $id }}-contact">Contact</h2>
+    <ul class="plain-list cv-contact-list">
+      <li class="cv-contact-list__email">
+        <a class="cv-contact-list__email-link" href="mailto:{{ $resume.basics.email }}" aria-label="Email {{ $resume.basics.name }}" title="Email">
+          {{ partial "social-icon.html" "email" }}<span>{{ $resume.basics.email }}</span>
+        </a>
+      </li>
+      {{ range $resume.basics.profiles }}
+        <li class="cv-contact-list__social">
+          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .network }} (opens in a new tab)" title="{{ .network }}">
+            {{ partial "social-icon.html" (lower .network) }}<span class="cv-contact-list__social-label">{{ .network }} // {{ strings.FirstUpper .username }}</span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+
+  {{ with $resume.skills }}
+    <section class="cv__sidebar-skills" aria-labelledby="{{ $id }}-skills">
+      <h2 id="{{ $id }}-skills">Skills</h2>
+      {{ range $index, $skill := . }}
+        {{ $skillID := printf "%s-skill-%d" $id $index }}
+        <div class="skill-group" data-skill-group>
+          <button class="skill-group__toggle" type="button" aria-expanded="true" aria-controls="{{ $skillID }}" disabled>
+            <span>{{ $skill.name }}</span><span class="skill-group__chevron" aria-hidden="true">+</span>
+          </button>
+          <div class="skill-group__content" id="{{ $skillID }}">
+            <ul class="tag-list">{{ range $skill.keywords }}<li>{{ . }}</li>{{ end }}</ul>
+          </div>
+        </div>
+      {{ end }}
+    </section>
+  {{ end }}
+
+  {{ with $resume.education }}
+    <section class="cv__sidebar-education" aria-labelledby="{{ $id }}-education">
+      <h2 id="{{ $id }}-education">Education</h2>
+      {{ range . }}
+        <article class="timeline-item">
+          <h3>{{ .studyType }}{{ with .area }} {{ . }}{{ end }}</h3>
+          <p>{{ .institution }}</p>
+          <p>{{ with .startDate }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "2006" }}</time>{{ end }}{{ with .endDate }} – <time datetime="{{ . }}">{{ (time.AsTime .).Format "2006" }}</time>{{ end }}</p>
+          {{ with .score }}<p>{{ . }}</p>{{ end }}
+          {{ with .courses }}<p><strong>Relevant coursework:</strong> {{ delimit . ", " }}</p>{{ end }}
+          {{ with .highlights }}<p><strong>Activities</strong></p><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+        </article>
+      {{ end }}
+    </section>
+  {{ end }}
+
+  {{ with $resume.volunteer }}
+    <section class="cv__sidebar-leadership" aria-labelledby="{{ $id }}-leadership">
+      <h2 id="{{ $id }}-leadership">Leadership</h2>
+      {{ range . }}
+        <article class="timeline-item">
+          <h3>{{ .organization }}</h3>
+          <p><strong>{{ .position }}</strong>{{ with .location }} · {{ . }}{{ end }}</p>
+          <p>{{ with .startDate }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "01/2006" }}</time>{{ end }}{{ with .endDate }} – <time datetime="{{ . }}">{{ (time.AsTime .).Format "01/2006" }}</time>{{ end }}</p>
+          {{ with .highlights }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+        </article>
+      {{ end }}
+    </section>
+  {{ end }}
+</aside>

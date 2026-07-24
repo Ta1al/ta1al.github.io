@@ -6,9 +6,7 @@
     {{ partial "header.html" . }}
     <main id="main">{{ block "main" . }}{{ end }}</main>
     {{ partial "footer.html" . }}
-    {{ with resources.Get "js/site.js" | minify | fingerprint }}
-      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
-    {{ end }}
+    {{ partial "script-bundle.html" "js/site.mjs" }}
     {{ block "scripts" . }}{{ end }}
   </body>
 </html>

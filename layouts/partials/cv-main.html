@@ -1,0 +1,57 @@
+{{- $resume := .resume -}}
+{{- $id := .id -}}
+<div class="cv__main">
+  <section class="cv__main-profile" aria-labelledby="{{ $id }}-profile">
+    <h2 id="{{ $id }}-profile">Profile</h2>
+    <p>{{ $resume.basics.summary }}</p>
+  </section>
+
+  {{ with $resume.work }}
+    <section class="cv__main-experience" aria-labelledby="{{ $id }}-experience">
+      <h2 id="{{ $id }}-experience">Professional experience</h2>
+      {{ range . }}
+        <article class="timeline-item">
+          <header>
+            <h3>{{ .position }} — {{ .name }}</h3>
+            <p>{{ with .startDate }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "01/2006" }}</time>{{ end }}{{ with .endDate }} – <time datetime="{{ . }}">{{ (time.AsTime .).Format "01/2006" }}</time>{{ end }}</p>
+          </header>
+          {{ with .summary }}<p>{{ . }}</p>{{ end }}
+          {{ with .highlights }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+        </article>
+      {{ end }}
+    </section>
+  {{ end }}
+
+  {{ with $resume.projects }}
+    <section class="cv__main-projects" aria-labelledby="{{ $id }}-projects">
+      <h2 id="{{ $id }}-projects">Selected projects</h2>
+      {{ range . }}
+        {{ $name := .name }}
+        <article class="timeline-item">
+          <header>
+            <h3>{{ $name }}{{ with .url }} <a class="cv-project-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ $name }} repository in a new tab">↗</a>{{ end }}</h3>
+            {{ with .startDate }}<p><time datetime="{{ . }}">{{ (time.AsTime .).Format "01/2006" }}</time></p>{{ end }}
+          </header>
+          {{ with .keywords }}<p class="cv-project-tech">{{ delimit . ", " }}</p>{{ end }}
+          {{ with .description }}<p>{{ . }}</p>{{ end }}
+          {{ with .highlights }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+        </article>
+      {{ end }}
+    </section>
+  {{ end }}
+
+  {{ with $resume.certificates }}
+    <section class="cv__main-certificates" aria-labelledby="{{ $id }}-certificates">
+      <h2 id="{{ $id }}-certificates">Certifications &amp; trainings</h2>
+      <div class="cv-cert-grid">
+        {{ range . }}
+          {{ $name := .name }}
+          <article class="cv-cert">
+            <h3>{{ $name }}{{ with .url }} <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ $name }} credential in a new tab">↗</a>{{ end }}</h3>
+            {{ with .summary }}<p>{{ . }}</p>{{ else }}{{ with .date }}<p><time datetime="{{ . }}">{{ (time.AsTime .).Format "January 2006" }}</time></p>{{ end }}{{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+</div>

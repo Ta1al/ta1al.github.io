@@ -1,0 +1,28 @@
+{{- $resume := .resume -}}
+{{- $featuredProjects := where $resume.projects "featured" true -}}
+{{- $featuredCertificates := where $resume.certificates "featured" true -}}
+{{ with first 1 $featuredProjects }}
+  {{ range . }}
+    {{ $name := .name }}
+    <article class="cv-featured-cert cv-featured-project">
+      <small>Featured project</small>
+      <span class="cv-featured-cert__title">
+        <strong>{{ $name }}</strong>
+        {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ $name }} repository in a new tab">↗</a>{{ end }}
+      </span>
+      {{ with .keywords }}<span>{{ delimit . ", " }}</span>{{ end }}
+    </article>
+  {{ end }}
+{{ else }}
+  {{ range first 1 $featuredCertificates }}
+    {{ $name := .name }}
+    <article class="cv-featured-cert">
+      <small>Featured credential</small>
+      <span class="cv-featured-cert__title">
+        <strong>{{ $name }}</strong>
+        {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ $name }} credential in a new tab">↗</a>{{ end }}
+      </span>
+      {{ with .summary }}<span>{{ . }}</span>{{ end }}
+    </article>
+  {{ end }}
+{{ end }}

@@ -1,139 +1,62 @@
-const root = document.querySelector('[data-achievement-tabs]');
+import { createImageLightbox } from "./lib/lightbox.mjs";
+import { createTabSet } from "./lib/tabs.mjs";
+
+const root = document.querySelector("[data-achievement-tabs]");
 
 if (root) {
-  const viewTabs = [...root.querySelectorAll('[data-achievement-view-tab]')];
-  const views = [...root.querySelectorAll('[data-achievement-view]')];
-  const tabs = [...root.querySelectorAll('[data-achievement-tab]')];
-  const panels = [...root.querySelectorAll('[data-achievement-panel]')];
-  const validIds = new Set(tabs.map((tab) => tab.dataset.achievementTab));
+  const viewTabs = [...root.querySelectorAll("[data-achievement-view-tab]")];
+  const views = [...root.querySelectorAll("[data-achievement-view]")];
+  const categoryTabs = [...root.querySelectorAll("[data-achievement-tab]")];
+  const panels = [...root.querySelectorAll("[data-achievement-panel]")];
 
-  const activateView = (id, { focus = false, updateHash = true } = {}) => {
-    if (id !== 'all') id = 'curated';
-    viewTabs.forEach((tab) => {
-      const active = tab.dataset.achievementViewTab === id;
-      tab.setAttribute('aria-selected', String(active));
-      tab.tabIndex = active ? 0 : -1;
-      if (active && focus) tab.focus();
-    });
-    views.forEach((view) => { view.hidden = view.dataset.achievementView !== id; });
-    if (updateHash) history.replaceState(null, '', `#${id}`);
-  };
-
-  const activate = (id, { focus = false, updateHash = true } = {}) => {
-    if (!validIds.has(id)) id = 'distinctions';
-    activateView('all', { updateHash: false });
-    tabs.forEach((tab) => {
-      const active = tab.dataset.achievementTab === id;
-      tab.setAttribute('aria-selected', String(active));
-      tab.tabIndex = active ? 0 : -1;
-      if (active && focus) tab.focus();
-    });
-    panels.forEach((panel) => { panel.hidden = panel.dataset.achievementPanel !== id; });
-    if (updateHash) history.replaceState(null, '', `#${id}`);
-  };
-
-  root.classList.add('achievement-tabs--ready');
-  const initialId = location.hash.slice(1);
-  if (validIds.has(initialId)) activate(initialId, { updateHash: false });
-  else activateView(initialId === 'all' ? 'all' : 'curated', { updateHash: false });
-
-  viewTabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => activateView(tab.dataset.achievementViewTab));
-    tab.addEventListener('keydown', (event) => {
-      let next = index;
-      if (event.key === 'ArrowRight') next = (index + 1) % viewTabs.length;
-      else if (event.key === 'ArrowLeft') next = (index - 1 + viewTabs.length) % viewTabs.length;
-      else if (event.key === 'Home') next = 0;
-      else if (event.key === 'End') next = viewTabs.length - 1;
-      else return;
-      event.preventDefault();
-      activateView(viewTabs[next].dataset.achievementViewTab, { focus: true });
-    });
+  const viewSet = createTabSet({
+    tabs: viewTabs,
+    panels: views,
+    getTabId: (tab) => tab.dataset.achievementViewTab,
+    getPanelId: (view) => view.dataset.achievementView,
+    defaultId: "curated",
+    hashForId: (id) => `#${id}`,
+  });
+  const categorySet = createTabSet({
+    tabs: categoryTabs,
+    panels,
+    getTabId: (tab) => tab.dataset.achievementTab,
+    getPanelId: (panel) => panel.dataset.achievementPanel,
+    defaultId: "distinctions",
+    hashForId: (id) => `#${id}`,
+    onActivate: () => viewSet.activate("all", { updateHash: false }),
   });
 
-  tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => activate(tab.dataset.achievementTab));
-    tab.addEventListener('keydown', (event) => {
-      let next = index;
-      if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
-      else if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
-      else if (event.key === 'Home') next = 0;
-      else if (event.key === 'End') next = tabs.length - 1;
-      else return;
-      event.preventDefault();
-      activate(tabs[next].dataset.achievementTab, { focus: true });
-    });
-  });
-
-  root.querySelectorAll('[data-achievement-image]').forEach((image) => {
-    image.addEventListener('error', () => {
-      image.hidden = true;
-      image.closest('.achievement-card')?.classList.add('is-image-unavailable');
-    });
-  });
-
-  const lightbox = root.querySelector('[data-achievement-lightbox]');
-  const lightboxImage = lightbox?.querySelector('[data-achievement-lightbox-image]');
-  const lightboxCaption = lightbox?.querySelector('[data-achievement-lightbox-caption]');
-  const lightboxClose = lightbox?.querySelector('[data-achievement-lightbox-close]');
-  const achievementImages = [...root.querySelectorAll('[data-achievement-image]')];
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let activeImage;
-  let closeTimer;
-
-  const closeLightbox = () => {
-    if (!lightbox?.open) return;
-    window.clearTimeout(closeTimer);
-    lightbox.classList.remove('is-open');
-    const finish = () => {
-      lightbox.close();
-      document.body.classList.remove('lightbox-open');
-      activeImage?.focus();
-    };
-    if (reducedMotion.matches) finish();
-    else closeTimer = window.setTimeout(finish, 200);
-  };
-
-  const openLightbox = (image) => {
-    if (!lightbox || !lightboxImage || image.hidden) return;
-    window.clearTimeout(closeTimer);
-    activeImage = image;
-    lightboxImage.src = image.currentSrc || image.src;
-    lightboxImage.alt = image.alt;
-    lightboxCaption.textContent = image.alt;
-    lightboxCaption.hidden = !image.alt;
-    document.body.classList.add('lightbox-open');
-    lightbox.showModal();
-    requestAnimationFrame(() => lightbox.classList.add('is-open'));
-    lightboxClose?.focus();
-  };
-
-  achievementImages.forEach((image) => {
-    image.tabIndex = 0;
-    image.setAttribute('role', 'button');
-    image.setAttribute('aria-label', `Enlarge image: ${image.alt || 'achievement image'}`);
-    image.addEventListener('click', () => openLightbox(image));
-    image.addEventListener('keydown', (event) => {
-      if (event.key !== 'Enter' && event.key !== ' ') return;
-      event.preventDefault();
-      openLightbox(image);
-    });
-  });
-
-  lightboxClose?.addEventListener('click', closeLightbox);
-  lightbox?.addEventListener('click', (event) => {
-    const clickedImage = event.target === lightboxImage;
-    const clickedClose = event.target.closest('[data-achievement-lightbox-close]');
-    if (!clickedImage && !clickedClose) closeLightbox();
-  });
-  lightbox?.addEventListener('cancel', (event) => {
-    event.preventDefault();
-    closeLightbox();
-  });
-
-  window.addEventListener('hashchange', () => {
+  root.classList.add("achievement-tabs--ready");
+  const activateHash = () => {
     const id = location.hash.slice(1);
-    if (validIds.has(id)) activate(id, { updateHash: false });
-    else if (id === 'all' || id === 'curated') activateView(id, { updateHash: false });
+    if (categorySet.validIds.has(id)) {
+      categorySet.activate(id, { updateHash: false });
+    } else {
+      viewSet.activate(viewSet.validIds.has(id) ? id : "curated", {
+        updateHash: false,
+      });
+    }
+  };
+  activateHash();
+  window.addEventListener("hashchange", activateHash);
+
+  const achievementImages = [
+    ...root.querySelectorAll("[data-achievement-image]"),
+  ];
+  achievementImages.forEach((image) => {
+    image.addEventListener("error", () => {
+      image.hidden = true;
+      image.closest(".achievement-card")?.classList.add("is-image-unavailable");
+    });
+  });
+
+  createImageLightbox({
+    dialog: root.querySelector("[data-achievement-lightbox]"),
+    images: achievementImages,
+    imageSelector: "[data-achievement-lightbox-image]",
+    captionSelector: "[data-achievement-lightbox-caption]",
+    closeSelector: "[data-achievement-lightbox-close]",
+    label: "achievement image",
   });
 }

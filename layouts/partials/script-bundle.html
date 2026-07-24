@@ -1,0 +1,4 @@
+{{- $options := dict "minify" true "target" "es2020" -}}
+{{- with resources.Get . | js.Build $options | fingerprint -}}
+  <script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+{{- end -}}

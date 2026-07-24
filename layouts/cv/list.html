@@ -28,5 +28,5 @@
 {{ end }}
 
 {{ define "scripts" }}
-{{ with resources.Get "js/cv-tabs.mjs" | minify | fingerprint }}<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>{{ end }}
+{{ partial "script-bundle.html" "js/cv-tabs.mjs" }}
 {{ end }}

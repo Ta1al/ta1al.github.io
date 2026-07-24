@@ -1,6 +1,7 @@
 # Hugo build output and generated resources
 /public/
 /resources/_gen/
+/assets/jsconfig.json
 .hugo_build.lock
 /.hugo_cache/
 /.report-work/

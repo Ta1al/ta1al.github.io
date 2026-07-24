@@ -11,10 +11,10 @@
     <div class="lede">{{ .Content }}</div>
   </header>
 
-  <div class="achievement-tabs project-tabs" role="tablist" aria-label="Project categories">
-    <button type="button" role="tab" aria-selected="true" aria-controls="project-grid" data-project-filter="all">All <span>{{ $projectCount }}</span></button>
-    <button type="button" role="tab" aria-selected="false" aria-controls="project-grid" tabindex="-1" data-project-filter="cybersecurity">Cybersecurity <span>{{ $cybersecurityCount }}</span></button>
-    <button type="button" role="tab" aria-selected="false" aria-controls="project-grid" tabindex="-1" data-project-filter="software">Software engineering <span>{{ $softwareCount }}</span></button>
+  <div class="achievement-tabs project-tabs" role="group" aria-label="Filter projects by discipline">
+    <button type="button" aria-pressed="true" data-project-filter="all">All <span>{{ $projectCount }}</span></button>
+    <button type="button" aria-pressed="false" data-project-filter="cybersecurity">Cybersecurity <span>{{ $cybersecurityCount }}</span></button>
+    <button type="button" aria-pressed="false" data-project-filter="software">Software engineering <span>{{ $softwareCount }}</span></button>
   </div>
   <p class="filter-status sr-only" aria-live="polite"></p>
 
@@ -32,4 +32,8 @@
   </div>
   {{ end }}
 </section>
+{{ end }}
+
+{{ define "scripts" }}
+{{ partial "script-bundle.html" "js/projects.mjs" }}
 {{ end }}

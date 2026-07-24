@@ -1,6 +1,6 @@
 <header class="site-header{{ if .IsHome }} site-header--home{{ end }}">
   {{ if not .IsHome }}
-  <a class="site-mark" href="{{ site.Home.RelPermalink }}" aria-label="Talal Ahmed, home">Ta<span>1</span>al</a>
+  <a class="site-mark" href="{{ site.Home.RelPermalink }}" aria-label="{{ site.Params.author }}, home">Ta<span>1</span>al</a>
   {{ end }}
   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation menu. On touch screens, swipe left to open and swipe either direction to close.">
     <span class="menu-toggle__desktop-label">Menu</span>
@@ -9,12 +9,9 @@
   </button>
   <div class="menu" id="site-menu" hidden>
     <nav aria-label="Primary navigation">
-      <a href="{{ site.Home.RelPermalink }}">Home</a>
-      <a href="{{ relURL "about/" }}">About</a>
-      <a href="{{ relURL "achievements/" }}">Achievements</a>
-      <a href="{{ relURL "projects/" }}">Projects</a>
-      <a href="{{ relURL "blog/" }}">Blog</a>
-      <a href="{{ relURL "cv/" }}">CV</a>
+      {{ range site.Menus.main }}
+      <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} aria-current="page"{{ end }}>{{ .Name }}</a>
+      {{ end }}
     </nav>
   </div>
 </header>

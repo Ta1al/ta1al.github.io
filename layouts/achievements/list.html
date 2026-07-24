@@ -76,5 +76,5 @@
 {{ end }}
 
 {{ define "scripts" }}
-{{ with resources.Get "js/achievement-tabs.mjs" | minify | fingerprint }}<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>{{ end }}
+{{ partial "script-bundle.html" "js/achievement-tabs.mjs" }}
 {{ end }}
