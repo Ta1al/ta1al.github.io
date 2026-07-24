@@ -1,5 +1,13 @@
 <article class="post-card">
-  <div class="post-card__date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time><span>{{ .ReadingTime }} min</span></div>
-  <div><h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2><p>{{ .Description | default .Summary }}</p>{{ with .GetTerms "tags" }}<ul class="tag-list">{{ range first 4 . }}<li>{{ .LinkTitle }}</li>{{ end }}</ul>{{ end }}</div>
+  <div class="post-card__date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time><span>{{ if eq .Section "projects" }}Case study · {{ end }}{{ .ReadingTime }} min</span></div>
+  <div>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Description | default .Summary }}</p>
+    {{ with .GetTerms "tags" }}
+      <ul class="tag-list">{{ range first 4 . }}<li>{{ .LinkTitle }}</li>{{ end }}</ul>
+    {{ else }}
+      {{ with .Params.technologies }}<ul class="tag-list">{{ range first 4 . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+    {{ end }}
+  </div>
   <a class="post-card__arrow" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}"><span aria-hidden="true">↗</span></a>
 </article>

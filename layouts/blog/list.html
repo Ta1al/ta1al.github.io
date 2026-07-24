@@ -6,7 +6,9 @@
     <div class="lede">{{ .Content }}</div>
     {{ with .OutputFormats.Get "RSS" }}<a class="rss-button" href="{{ .RelPermalink }}" type="application/rss+xml"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="19" r="2"/><path d="M3 11a10 10 0 0 1 10 10h3A13 13 0 0 0 3 8v3Zm0-6a16 16 0 0 1 16 16h3A19 19 0 0 0 3 2v3Z"/></svg><span>Subscribe via RSS</span></a>{{ end }}
   </header>
-  {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+  {{ $projectCaseStudies := where site.RegularPages "Section" "projects" }}
+  {{ $entries := union .Pages $projectCaseStudies }}
+  {{ $paginator := .Paginate ($entries.ByDate.Reverse) }}
   {{ if $paginator.Pages }}
   <div class="post-list">
     {{ range $paginator.Pages }}{{ partial "post-card.html" . }}{{ end }}
