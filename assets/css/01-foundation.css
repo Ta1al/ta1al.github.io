@@ -137,6 +137,8 @@ a {
   inset: 0;
   display: grid;
   place-items: center;
+  padding: 4rem 1rem;
+  overflow-y: auto;
   background: rgba(8, 12, 13, 0.97);
   opacity: 0;
   transition: opacity 0.18s;
@@ -154,10 +156,11 @@ a {
   gap: 1.1rem;
 }
 .menu nav a {
-  font-size: clamp(2rem, 7vw, 5rem);
+  font-size: clamp(2rem, min(7vw, 10vh), 5rem);
   font-weight: 650;
   text-decoration: none;
   letter-spacing: -0.04em;
+  line-height: 1.05;
 }
 .menu nav a[aria-current="page"] {
   color: var(--accent);

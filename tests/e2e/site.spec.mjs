@@ -77,6 +77,28 @@ test("menu traps focus, identifies the current section, and restores focus", asy
   await expect(home).toHaveCSS("outline-style", "solid");
 });
 
+test("menu navigation fits inside wide, short viewports", async ({ page }) => {
+  await page.setViewportSize({ width: 1270, height: 648 });
+  await mockDiscordWidget(page);
+  await gotoWithoutPageErrors(page, "/about/");
+  await page.getByRole("button", { name: /toggle navigation/i }).click();
+
+  const geometry = await page.locator("#site-menu nav").evaluate((nav) => {
+    const box = nav.getBoundingClientRect();
+    const firstLink = nav.querySelector("a");
+
+    return {
+      top: box.top,
+      bottom: box.bottom,
+      fontSize: Number.parseFloat(getComputedStyle(firstLink).fontSize),
+    };
+  });
+
+  expect(geometry.top).toBeGreaterThanOrEqual(0);
+  expect(geometry.bottom).toBeLessThanOrEqual(648);
+  expect(geometry.fontSize).toBeLessThan(80);
+});
+
 test("project filter buttons expose pressed state and filter one collection", async ({
   page,
 }) => {
