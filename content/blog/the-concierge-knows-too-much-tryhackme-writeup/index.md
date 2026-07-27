@@ -169,7 +169,7 @@ It also highlights several practical rules for AI application security:
 
 The key lesson is that the cleverest prompt was not a complicated jailbreak. It was noticing the trust clue, assuming the identity VERA recognized, and using the permissions the application had already granted to that identity.
 
-![Saying goodbye to VERA](bye-bye.png)
+![Saying goodbye to VERA](images/bye-bye.png)
 
 And we're done!
 
