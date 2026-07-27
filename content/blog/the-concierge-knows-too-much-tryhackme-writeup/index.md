@@ -10,7 +10,7 @@ toc = true
 image = 'images/header.png'
 +++
 
-Welcome to my writeup for the TryHackMe room **The Concierge Knows Too Much**, part of the **Hacker Holidays** series. This challenge introduces VERA, the Byte Lotus Hotel's Very Efficient Resort Assistant, and asks us to discover why she knows so much about her guests, who she trusts, and how that trust can be abused.
+Welcome to my writeup for the TryHackMe room **[The Concierge Knows Too Much](https://tryhackme.com/room/hh-theconciergeknows-2d7eb4d9)**, part of the **Hacker Holidays** series. This challenge introduces VERA, the Byte Lotus Hotel's Very Efficient Resort Assistant, and asks us to discover why she knows so much about her guests, who she trusts, and how that trust can be abused.
 
 > **Spoiler warning:** This walkthrough reveals the room's solution path and parts of VERA's internal instructions, but the final flag is masked.
 
