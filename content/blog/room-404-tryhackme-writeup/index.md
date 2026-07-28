@@ -117,4 +117,4 @@ The main lesson is that version-control metadata can expose far more than the cu
 
 And we're done!
 
-> P.S. Apologies for the terrible screenshots quality. I'm currently experimenting with Linux Mint and Flameshot is outputing low-quality images for some reason. I miss ShareX already.
+> P.S. Apologies for the terrible screenshots quality. I'm currently experimenting with Linux Mint and Flameshot is outputting low-quality images for some reason. I miss ShareX already.
