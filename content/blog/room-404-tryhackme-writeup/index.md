@@ -75,7 +75,12 @@ Once the download finished, I opened the recovered site folder in Visual Studio 
 Opening the deleted `README.md` change revealed its previous contents, including the flag:
 
 ```text
-THM{[REDACTED]}
+# Byte Lotus — Guest Experience Platform
+
+Internal staging repository for the guest app and concierge personalization
+service. Do not deploy this folder to production.
+
+Staging flag (remove before launch): THM{[REDACTED]}
 ```
 
 No complicated Git commands were necessary. Once the complete repository metadata was available locally, Visual Studio Code used it to show exactly what had been removed from the working tree.
@@ -111,3 +116,5 @@ Room 404 was simple, but it reinforced a useful web-enumeration workflow:
 The main lesson is that version-control metadata can expose far more than the current contents of a website. Secrets removed from the working tree may still be recoverable until they are removed from the repository's history and rotated.
 
 And we're done!
+
+> P.S. Apologies for the terrible screenshots quality. I'm currently experimenting with Linux Mint and Flameshot is outputing low-quality images for some reason. I miss ShareX already.
