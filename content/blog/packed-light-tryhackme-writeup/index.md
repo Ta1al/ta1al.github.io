@@ -180,13 +180,9 @@ plaintext = b"".join(
 print(plaintext.decode("utf-8"))
 ```
 
-It is important to decode and XOR each value separately, just as the keylogger encrypted each character separately. Joining the encrypted bytes before applying XOR would incorrectly continue through the key instead of restarting it for every keystroke.
+It is important to decode and XOR each value separately, just as the keylogger encrypted each character separately.
 
 Running the script reconstructed the flag:
-
-```text
-THM{[REDACTED]}
-```
 
 ![Terminal showing the reconstructed flag with its value redacted](images/decoded-flag-redacted.png)
 
