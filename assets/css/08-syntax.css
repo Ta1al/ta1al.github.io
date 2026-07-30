@@ -1,0 +1,205 @@
+/* Syntax colors for the Chroma classes emitted by Hugo. */
+.chroma {
+  color: #e6edf3;
+  -webkit-text-size-adjust: none;
+}
+
+.chroma .err,
+.chroma .k,
+.chroma .kd,
+.chroma .kn,
+.chroma .kr,
+.chroma .kt,
+.chroma .nn,
+.chroma .gt {
+  color: #ff7b72;
+}
+
+.chroma .kc,
+.chroma .kp,
+.chroma .no,
+.chroma .nl,
+.chroma .py,
+.chroma .nv,
+.chroma .vc,
+.chroma .vg,
+.chroma .vi,
+.chroma .vm,
+.chroma .ld,
+.chroma .sa,
+.chroma .dl,
+.chroma .se,
+.chroma .sh,
+.chroma .sr {
+  color: #79c0ff;
+}
+
+.chroma .nc,
+.chroma .ne {
+  color: #f0883e;
+  font-weight: 700;
+}
+
+.chroma .n,
+.chroma .nx {
+  color: #c9b1ff;
+}
+
+.chroma .na,
+.chroma .nt {
+  color: #7ee787;
+}
+
+.chroma .nb,
+.chroma .bp,
+.chroma .ni,
+.chroma .nn {
+  color: #ffa657;
+}
+
+.chroma .nd {
+  color: #d2a8ff;
+  font-weight: 700;
+}
+
+.chroma .nf,
+.chroma .fm {
+  color: #5ce1cf;
+  font-weight: 700;
+}
+
+.chroma .no,
+.chroma .nl {
+  font-weight: 700;
+}
+
+.chroma .l,
+.chroma .s,
+.chroma .sb,
+.chroma .sc,
+.chroma .sd,
+.chroma .s2,
+.chroma .si,
+.chroma .sx,
+.chroma .s1,
+.chroma .ss {
+  color: #a5d6ff;
+}
+
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .il,
+.chroma .mo {
+  color: #f2cc60;
+}
+
+.chroma .o,
+.chroma .ow,
+.chroma .or {
+  color: #ff7b72;
+  font-weight: 700;
+}
+
+.chroma .p {
+  color: #e6edf3;
+}
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1 {
+  color: #8b949e;
+  font-style: italic;
+}
+
+.chroma .cs,
+.chroma .cp,
+.chroma .cpf {
+  color: #8b949e;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.chroma .gd {
+  color: #ffa198;
+  background-color: #490202;
+}
+
+.chroma .gi {
+  color: #56d364;
+  background-color: #0f5323;
+}
+
+.chroma .ge {
+  font-style: italic;
+}
+
+.chroma .gr {
+  color: #ffa198;
+}
+
+.chroma .gh,
+.chroma .gu {
+  color: #79c0ff;
+}
+
+.chroma .gh,
+.chroma .gs {
+  font-weight: 700;
+}
+
+.chroma .go,
+.chroma .gp {
+  color: #8b949e;
+}
+
+.chroma .gl {
+  text-decoration: underline;
+}
+
+.chroma .w,
+.chroma .ln {
+  color: #6e7681;
+}
+
+.chroma .ln,
+.chroma .lnt {
+  margin-right: 0.4em;
+  padding: 0 0.4em;
+  user-select: none;
+  white-space: pre;
+}
+
+.chroma .lnt {
+  color: #737679;
+}
+
+.chroma .lnlinks {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+.chroma .lntable {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-spacing: 0;
+}
+
+.chroma .lntd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: top;
+}
+
+.chroma .line {
+  display: flex;
+}
+
+.chroma .hl {
+  background-color: #293040;
+}

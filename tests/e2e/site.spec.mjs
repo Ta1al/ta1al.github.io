@@ -215,6 +215,21 @@ test("scrolling a post code block does not open a drawer", async ({ page }) => {
   await expect(page.locator("body")).not.toHaveClass(/menu-open|toc-open/);
 });
 
+test("blog code blocks distinguish syntax token colors", async ({ page }) => {
+  await gotoWithoutPageErrors(page, "/blog/packed-light-tryhackme-writeup/");
+
+  const tokenColors = await Promise.all(
+    [".n", ".k", ".nf", ".s2"].map((tokenClass) =>
+      page
+        .locator(`.chroma ${tokenClass}`)
+        .first()
+        .evaluate((element) => getComputedStyle(element).color),
+    ),
+  );
+
+  expect(new Set(tokenColors).size).toBe(tokenColors.length);
+});
+
 test("posts provide clear archive and adjacent-reading navigation", async ({
   page,
 }) => {
