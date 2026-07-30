@@ -1,7 +1,7 @@
 +++
 title = 'Complimentary | TryHackMe Room Writeup'
 date = '2026-07-30T11:30:00+05:00'
-lastmod = '2026-07-30T11:30:00+05:00'
+lastmod = '2026-07-30T11:44:55+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of Complimentary, an AWS cloud security challenge involving Cognito guest credentials and an over-permissive DynamoDB role.'
 categories = ['Writeups']
@@ -10,7 +10,7 @@ toc = true
 image = 'images/room-header.png'
 +++
 
-Welcome to my writeup for the TryHackMe room **Complimentary**, part of the **Hacker Holidays** series. This was a short AWS cloud security challenge about tracing guest credentials in a web application and using an over-permissive role to read data belonging to other guests.
+Welcome to my writeup for the TryHackMe room **[Complimentary](https://tryhackme.com/room/hh-complimentary-05e0b604)**, part of the **Hacker Holidays** series. This was a short AWS cloud security challenge about tracing guest credentials in a web application and using an over-permissive role to read data belonging to other guests.
 
 > **Spoiler warning:** This walkthrough reveals the room's solution path, but the final flag is masked.
 
