@@ -261,6 +261,56 @@ test("posts provide clear archive and adjacent-reading navigation", async ({
   ).toHaveCount(0);
 });
 
+test("blog topics provide curated navigation and complete collections", async ({
+  page,
+}) => {
+  await gotoWithoutPageErrors(page, "/blog/");
+  await expect(
+    page.getByRole("link", { name: "Browse topics" }),
+  ).toHaveAttribute("href", "/blog/topics/");
+
+  await gotoWithoutPageErrors(page, "/blog/topics/");
+  await expect(
+    page.getByRole("link", { name: "TryHackMe Writeups", exact: true }).first(),
+  ).toHaveAttribute("href", "/blog/topics/tryhackme/");
+
+  await gotoWithoutPageErrors(page, "/blog/topics/tryhackme/");
+  await expect(
+    page.getByRole("heading", { name: "TryHackMe Writeups", level: 1 }),
+  ).toBeVisible();
+  await expect(page.locator("article.post-card")).toHaveCount(6);
+});
+
+test("articles expose authorship, topic membership, and related reading", async ({
+  page,
+}) => {
+  await gotoWithoutPageErrors(page, "/blog/packed-light-tryhackme-writeup/");
+
+  await expect(
+    page.getByRole("link", { name: "Talal Ahmed", exact: true }),
+  ).toHaveAttribute("rel", "author");
+  await expect(
+    page.getByRole("link", { name: "Digital Forensics" }),
+  ).toHaveAttribute("href", "/blog/topics/digital-forensics/");
+  await expect(
+    page.locator(".related-reading .related-reading__item"),
+  ).toHaveCount(3);
+});
+
+test("the custom 404 page is excluded from indexing and structured data", async ({
+  page,
+}) => {
+  await gotoWithoutPageErrors(page, "/404.html");
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+    "content",
+    "noindex, follow",
+  );
+  await expect(page.locator('link[rel="canonical"]')).toHaveCount(0);
+  await expect(page.locator('script[type="application/ld+json"]')).toHaveCount(
+    0,
+  );
+});
+
 test("project case studies return readers to the blog archive", async ({
   page,
 }) => {

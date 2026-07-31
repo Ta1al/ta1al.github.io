@@ -67,7 +67,9 @@ test("requires normalized curated topic slugs", () => {
     }),
     false,
   );
-  assert.ok(validate.errors.some((error) => error.instancePath === "/topics/0"));
+  assert.ok(
+    validate.errors.some((error) => error.instancePath === "/topics/0"),
+  );
 });
 
 test("requires maintained resume identity and download fields", () => {
