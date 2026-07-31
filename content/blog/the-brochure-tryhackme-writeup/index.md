@@ -1,7 +1,7 @@
 +++
 title = 'The Brochure | TryHackMe Room Writeup'
 date = '2026-07-25T00:00:00+05:00'
-lastmod = '2026-07-25T00:00:00+05:00'
+lastmod = '2026-07-31T12:34:00+05:00'
 draft = false
 description = 'A beginner-friendly OSINT walkthrough of The Brochure, the warmup room for TryHackMe’s Hacker Holiday series.'
 categories = ['Writeups']
@@ -74,7 +74,9 @@ THM{[REDACTED]}
 
 ## Takeaways
 
-This was a short room, but it demonstrated a useful OSINT workflow: inspect the original file, follow clues in its visible content, and look beyond posts to an account's public connections. It also reinforced the value of recognising common encodings such as Base64 when a clue is split across multiple sources.
+This was a short room, but it demonstrated a useful OSINT workflow: inspect the original file, follow clues in its visible content, and look beyond posts to an account's public connections. It also reinforced the value of recognising common encodings such as Base64 when a clue is split across multiple sources. The [Digital Footprint TryHackMe writeup](/blog/digital-footprint-tryhackme-writeup/) applies a similar evidence-driven process to EXIF data, web archives, landmarks, and document metadata.
+
+VERA returns in [The Concierge Knows Too Much](/blog/the-concierge-knows-too-much-tryhackme-writeup/), where the investigation shifts from public OSINT to identity spoofing and AI application security.
 
 ![TryHackMe completion card for The Brochure](images/room-completed.png)
 

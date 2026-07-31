@@ -1,9 +1,9 @@
 +++
 title = 'Digital Footprint | TryHackMe Room Writeup'
 date = '2026-02-06T00:00:00+05:00'
-lastmod = '2026-02-06T00:00:00+05:00'
+lastmod = '2026-07-31T12:34:00+05:00'
 draft = false
-description = 'A beginner-friendly OSINT walkthrough of the TryHackMe Digital Footprint room.'
+description = 'A beginner-friendly TryHackMe Digital Footprint OSINT walkthrough covering EXIF metadata, WARC archives, reverse-image search, and document metadata.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'OSINT']
 topics = ['tryhackme', 'osint']
@@ -79,5 +79,7 @@ I checked that username with a username-search tool and found a matching YouTube
 The channel had only one post, and that post contained the final flag.
 
 ![YouTube channel containing the final clue](images/youtube.png)
+
+For another investigation that follows public clues across image metadata and social accounts, continue with [The Brochure TryHackMe writeup](/blog/the-brochure-tryhackme-writeup/).
 
 And we’re done!

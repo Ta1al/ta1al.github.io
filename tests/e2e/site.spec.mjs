@@ -244,7 +244,7 @@ test("posts provide clear archive and adjacent-reading navigation", async ({
   });
   await expect(
     readingNavigation.getByRole("link", {
-      name: /Newer post.*How I Passed the CompTIA Security\+ Exam/,
+      name: /Newer post.*How I Passed CompTIA Security\+ SY0-701/,
     }),
   ).toHaveAttribute("href", "/blog/how-i-passed-comptia-security-plus/");
   await expect(

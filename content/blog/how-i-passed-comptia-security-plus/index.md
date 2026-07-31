@@ -1,7 +1,7 @@
 +++
-title = 'How I Passed the CompTIA Security+ Exam'
+title = 'How I Passed CompTIA Security+ SY0-701'
 date = '2026-07-24T00:00:00+05:00'
-lastmod = '2026-07-24T00:00:00+05:00'
+lastmod = '2026-07-31T12:34:00+05:00'
 draft = false
 description = 'How I prepared for and passed the CompTIA Security+ SY0-701 exam, including the resources I used, difficult topics, and advice for future candidates.'
 categories = ['Security']
@@ -21,7 +21,7 @@ I prepared for around a month, and although I was nervous before the exam, it en
 
 Before starting my Security+ preparation, I already had some practical cybersecurity experience through personal projects and labs.
 
-I had worked with tools such as:
+My practical foundation came from projects such as my [home SOC lab](/projects/home-soc-lab/), where I used endpoint and firewall telemetry to test monitoring and alert workflows. I had also worked with tools such as:
 
 * Wazuh
 * Splunk
@@ -87,5 +87,7 @@ Finally, do not panic if you feel uncertain during the exam. I was not completel
 ## What Comes Next
 
 Passing Security+ gave me a stronger foundation in cybersecurity and confirmed that I understood the core concepts expected from an entry-level security professional.
+
+The certification and my other completed learning paths are documented on the [achievements page](/achievements/).
 
 My next goal is to continue developing practical SOC and incident-response skills while preparing for the **Microsoft SC-200: Security Operations Analyst** certification.

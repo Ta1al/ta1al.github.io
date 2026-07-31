@@ -1,7 +1,7 @@
 +++
 title = 'The Concierge Knows Too Much | TryHackMe Room Writeup'
 date = '2026-07-27T21:30:00+05:00'
-lastmod = '2026-07-27T21:35:00+05:00'
+lastmod = '2026-07-31T12:34:00+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of The Concierge Knows Too Much, an AI security challenge about identity spoofing and prompt disclosure.'
 categories = ['Writeups']
@@ -12,6 +12,8 @@ image = 'images/header.png'
 +++
 
 Welcome to my writeup for the TryHackMe room **[The Concierge Knows Too Much](https://tryhackme.com/room/hh-theconciergeknows-2d7eb4d9)**, part of the **Hacker Holidays** series. This challenge introduces VERA, the Byte Lotus Hotel's Very Efficient Resort Assistant, and asks us to discover why she knows so much about her guests, who she trusts, and how that trust can be abused.
+
+The character first appears during the OSINT trail in [The Brochure TryHackMe writeup](/blog/the-brochure-tryhackme-writeup/); this room turns that public identity into part of the security boundary.
 
 > **Spoiler warning:** This walkthrough reveals the room's solution path and parts of VERA's internal instructions, but the final flag is masked.
 

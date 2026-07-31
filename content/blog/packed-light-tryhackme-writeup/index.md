@@ -1,7 +1,7 @@
 +++
 title = 'Packed Light | TryHackMe Room Writeup'
 date = '2026-07-30T22:48:57+05:00'
-lastmod = '2026-07-30T22:48:57+05:00'
+lastmod = '2026-07-31T12:34:00+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of Packed Light, a TryHackMe network forensics challenge about recovering XOR-encrypted keystrokes from HTTP cookies.'
 categories = ['Writeups']
@@ -200,5 +200,7 @@ Packed Light demonstrated a useful packet-analysis workflow:
 - reproduce implementation details such as the XOR key resetting for every request.
 
 The main lesson is that familiar HTTP fields can carry covert data. Here, the traffic blended into a series of simple `GET` requests, but the regular timing, unusual user agent, and one-byte cookie values revealed a keylogger quietly exfiltrating keystrokes.
+
+For a complementary host-focused investigation, the [WannaCry malware analysis](/projects/wannacry-malware-analysis/) correlates process, file, registry, and network evidence from an isolated Windows environment.
 
 And we're done!

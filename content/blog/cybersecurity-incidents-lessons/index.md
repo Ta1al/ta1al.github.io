@@ -1,7 +1,7 @@
 +++
-title = 'What Recent Cybersecurity Incidents Have in Common'
+title = 'What 2025–2026 Cybersecurity Incidents Have in Common'
 date = '2026-04-05T00:00:00+05:00'
-lastmod = '2026-07-24T00:00:00+05:00'
+lastmod = '2026-07-31T12:34:00+05:00'
 draft = false
 description = 'A report-based review of recurring failure patterns across telecom, SaaS, enterprise software, source-code, and package-supply-chain incidents.'
 categories = ['Security']
@@ -104,6 +104,8 @@ This loop applies across telecom infrastructure, SaaS integrations, enterprise a
 - **State confidence precisely.** Separate attacker claims from verified findings and document what remains unknown.
 
 The consistent message is that resilience comes from layered, repeatable controls. Strong identities, timely remediation, constrained trust, useful telemetry, and rehearsed response reduce the chance that one overlooked weakness becomes an organization-wide crisis.
+
+The [home SOC lab case study](/projects/home-soc-lab/) demonstrates how endpoint and firewall telemetry can support this defensive loop, while the [WannaCry malware analysis](/projects/wannacry-malware-analysis/) shows how correlated host and network evidence informs containment and recovery.
 
 ## Original report
 

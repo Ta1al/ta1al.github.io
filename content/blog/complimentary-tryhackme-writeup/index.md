@@ -1,7 +1,7 @@
 +++
 title = 'Complimentary | TryHackMe Room Writeup'
 date = '2026-07-30T11:30:00+05:00'
-lastmod = '2026-07-30T11:44:55+05:00'
+lastmod = '2026-07-31T12:34:00+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of Complimentary, an AWS cloud security challenge involving Cognito guest credentials and an over-permissive DynamoDB role.'
 categories = ['Writeups']
@@ -189,5 +189,7 @@ Complimentary was an easy room, but it demonstrated several important AWS securi
 - broad operations such as `Scan` should not be available to a public guest role unless absolutely necessary.
 
 The main lesson is that the application *requesting* only one guest's record did not mean the AWS role was limited to that record. Once the browser received credentials with excessive permissions, the apparent per-user boundary disappeared.
+
+The broader consequences of excessive cloud and third-party trust also appear in [the recurring cybersecurity incident patterns](/blog/cybersecurity-incidents-lessons/), where constrained identities and integrations are central defensive controls.
 
 And we're done!
