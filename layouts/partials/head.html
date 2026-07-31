@@ -1,5 +1,9 @@
 {{- $description := .Description | default site.Params.description -}}
 {{- $socialImage := absURL "images/social-card.svg" -}}
+{{- $is404 := eq .Kind "404" -}}
+{{- $isBlogPost := and .IsPage (eq .Section "blog") -}}
+{{- $isProject := and .IsPage (eq .Section "projects") -}}
+{{- $authorURL := absURL "about/" -}}
 {{- with .Params.image -}}
   {{- with $.Resources.GetMatch . -}}
     {{- $socialImage = .Permalink -}}
@@ -12,18 +16,22 @@
 <link rel="icon" href="{{ relURL "favicon.ico" }}" sizes="any">
 <title>{{ if .IsHome }}{{ site.Title }} — SOC Analyst &amp; Software Engineer{{ else }}{{ .Title }} — {{ site.Title }}{{ end }}</title>
 <meta name="description" content="{{ $description }}">
+{{ if $is404 }}<meta name="robots" content="noindex, follow">{{ end }}
+{{ with hugo.Data.integrations.search.googleSiteVerification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+{{ if not $is404 }}
 <link rel="canonical" href="{{ .Permalink }}">
+{{ end }}
 {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .Permalink }}">{{ end }}
 
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ $description }}">
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:type" content="{{ if or $isBlogPost $isProject }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:locale" content="{{ replace site.Language.Locale "-" "_" }}">
 <meta property="og:image" content="{{ $socialImage }}">
 <meta property="og:image:alt" content="{{ if .Params.image }}Featured image for {{ .Title }}{{ else }}{{ site.Title }} portfolio social card{{ end }}">
-{{ if .IsPage }}
+{{ if or $isBlogPost $isProject }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
 <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
 {{ end }}
@@ -39,25 +47,65 @@
     {{- $sameAs = $sameAs | append .url -}}
   {{- end -}}
 {{- end -}}
-{{- $structuredData := dict
-  "@context" "https://schema.org"
-  "@type" (cond .IsHome "Person" (cond .IsPage "Article" "WebSite"))
-  "name" (cond .IsHome site.Params.author .Title)
-  "url" .Permalink
-  "description" $description
+{{- $person := dict
+  "@type" "Person"
+  "@id" (printf "%s#person" site.Home.Permalink)
+  "name" site.Params.author
+  "url" $authorURL
   "image" $socialImage
+  "jobTitle" "SOC Analyst and Software Engineer"
+  "sameAs" $sameAs
 -}}
+{{- $structuredData := dict -}}
 {{- if .IsHome -}}
-  {{- $structuredData = merge $structuredData (dict "sameAs" $sameAs "jobTitle" "SOC Analyst and Software Engineer") -}}
-{{- else if .IsPage -}}
-  {{- $structuredData = merge $structuredData (dict
+  {{- $website := dict
+    "@type" "WebSite"
+    "@id" (printf "%s#website" site.Home.Permalink)
+    "name" site.Title
+    "url" site.Home.Permalink
+    "description" $description
+    "inLanguage" site.Language.Locale
+    "author" (dict "@id" (printf "%s#person" site.Home.Permalink))
+  -}}
+  {{- $structuredData = dict "@context" "https://schema.org" "@graph" (slice $website $person) -}}
+{{- else if $isBlogPost -}}
+  {{- $structuredData = dict
+    "@context" "https://schema.org"
+    "@type" "BlogPosting"
+    "name" .Title
+    "url" .Permalink
+    "description" $description
+    "image" $socialImage
     "headline" .Title
     "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
     "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
-    "author" (dict "@type" "Person" "name" site.Params.author "url" site.Home.Permalink)
-  ) -}}
+    "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+    "author" (dict "@type" "Person" "name" site.Params.author "url" $authorURL)
+    "articleSection" (index (.Params.categories | default (slice "Blog")) 0)
+    "inLanguage" site.Language.Locale
+  -}}
+{{- else if not $is404 -}}
+  {{- $structuredType := "WebPage" -}}
+  {{- if and .IsSection (eq .RelPermalink "/blog/") -}}
+    {{- $structuredType = "Blog" -}}
+  {{- else if .IsSection -}}
+    {{- $structuredType = "CollectionPage" -}}
+  {{- else if $isProject -}}
+    {{- $structuredType = "CreativeWork" -}}
+  {{- end -}}
+  {{- $structuredData = dict
+    "@context" "https://schema.org"
+    "@type" $structuredType
+    "name" .Title
+    "url" .Permalink
+    "description" $description
+    "image" $socialImage
+    "inLanguage" site.Language.Locale
+  -}}
 {{- end -}}
+{{- if $structuredData }}
 <script type="application/ld+json">{{ $structuredData | jsonify | safeJS }}</script>
+{{- end }}
 
 {{ $measurementID := hugo.Data.integrations.analytics.googleMeasurementId }}
 {{ if and hugo.IsProduction $measurementID }}

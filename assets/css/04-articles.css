@@ -362,6 +362,14 @@
   font: 400 0.7rem var(--mono);
   text-transform: uppercase;
 }
+.article-meta a {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  text-underline-offset: 0.18em;
+}
+.article-meta a:hover {
+  color: var(--accent);
+}
 .article-aside {
   font-size: 0.78rem;
 }

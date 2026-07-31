@@ -112,7 +112,6 @@ jobs:
       - name: Build
         run: >-
           hugo --gc --minify
-          --baseURL "${{ steps.pages.outputs.base_url }}/"
           --cacheDir "${{ runner.temp }}/hugo_cache"
 
       - name: Validate generated site and asset budgets
