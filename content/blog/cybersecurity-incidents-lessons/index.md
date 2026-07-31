@@ -6,6 +6,7 @@ draft = false
 description = 'A report-based review of recurring failure patterns across telecom, SaaS, enterprise software, source-code, and package-supply-chain incidents.'
 categories = ['Security']
 tags = ['Incident Response', 'Supply Chain', 'Cloud Security', 'Security Operations']
+topics = ['cloud-security', 'cybersecurity-learning']
 toc = true
 +++
 

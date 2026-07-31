@@ -6,6 +6,7 @@ draft = false
 description = 'A beginner-friendly OSINT walkthrough of The Brochure, the warmup room for TryHackMe’s Hacker Holiday series.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'OSINT']
+topics = ['tryhackme', 'osint']
 toc = true
 image = 'images/room-banner.png'
 +++

@@ -6,6 +6,7 @@ draft = false
 description = 'A beginner-friendly walkthrough of Room 404, a TryHackMe web challenge about directory enumeration and an exposed Git repository.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'Web Security', 'Git', 'Enumeration', 'Hacker Holidays']
+topics = ['tryhackme']
 toc = true
 image = 'images/room-header.jpg'
 +++

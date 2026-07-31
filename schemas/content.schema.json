@@ -18,6 +18,75 @@
       },
       "uniqueItems": true
     },
+    "topicSlug": {
+      "enum": [
+        "tryhackme",
+        "osint",
+        "cloud-security",
+        "digital-forensics",
+        "cybersecurity-learning"
+      ]
+    },
+    "topicList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/topicSlug"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "blogFrontmatter": {
+      "type": "object",
+      "required": [
+        "title",
+        "date",
+        "lastmod",
+        "draft",
+        "description",
+        "categories",
+        "tags",
+        "topics",
+        "toc"
+      ],
+      "properties": {
+        "title": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "lastmod": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "draft": {
+          "type": "boolean"
+        },
+        "description": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "categories": {
+          "$ref": "#/$defs/stringList"
+        },
+        "tags": {
+          "$ref": "#/$defs/stringList"
+        },
+        "topics": {
+          "$ref": "#/$defs/topicList"
+        },
+        "series": {
+          "$ref": "#/$defs/stringList"
+        },
+        "toc": {
+          "type": "boolean"
+        },
+        "image": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      },
+      "additionalProperties": true
+    },
     "projectFrontmatter": {
       "type": "object",
       "required": [
@@ -50,7 +119,7 @@
           "$ref": "#/$defs/stringList"
         },
         "topics": {
-          "$ref": "#/$defs/stringList"
+          "$ref": "#/$defs/topicList"
         },
         "featured": {
           "type": "boolean"
@@ -379,7 +448,7 @@
     },
     "integrations": {
       "type": "object",
-      "required": ["discord", "tryhackme", "valorant", "analytics"],
+      "required": ["discord", "tryhackme", "valorant", "analytics", "search"],
       "properties": {
         "discord": {
           "type": "object",
@@ -488,6 +557,16 @@
             "googleMeasurementId": {
               "type": "string",
               "pattern": "^(|G-[A-Z0-9]+)$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "search": {
+          "type": "object",
+          "required": ["googleSiteVerification"],
+          "properties": {
+            "googleSiteVerification": {
+              "$ref": "#/$defs/nonEmptyString"
             }
           },
           "additionalProperties": false

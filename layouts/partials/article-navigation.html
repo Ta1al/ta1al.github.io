@@ -13,31 +13,22 @@
   {{- end -}}
 {{- end -}}
 
-<footer class="article-footer">
-  {{ with $page.Params.tags }}
-    <div class="article-topics">
-      <p class="eyebrow">Topics in this post</p>
-      <ul class="tag-list" aria-label="Topics">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+<nav class="article-navigation" aria-label="Continue reading">
+  <a class="button article-navigation__all" href="{{ relURL "blog/" }}">View all posts</a>
+  {{ if or $newer $older }}
+    <div class="article-navigation__sequence">
+      {{ with $newer }}
+        <a class="article-navigation__item article-navigation__item--newer" href="{{ .RelPermalink }}">
+          <span>← Newer post</span>
+          <strong>{{ .LinkTitle }}</strong>
+        </a>
+      {{ end }}
+      {{ with $older }}
+        <a class="article-navigation__item article-navigation__item--older" href="{{ .RelPermalink }}">
+          <span>Older post →</span>
+          <strong>{{ .LinkTitle }}</strong>
+        </a>
+      {{ end }}
     </div>
   {{ end }}
-
-  <nav class="article-navigation" aria-label="Continue reading">
-    <a class="button article-navigation__all" href="{{ relURL "blog/" }}">View all posts</a>
-    {{ if or $newer $older }}
-      <div class="article-navigation__sequence">
-        {{ with $newer }}
-          <a class="article-navigation__item article-navigation__item--newer" href="{{ .RelPermalink }}">
-            <span>← Newer post</span>
-            <strong>{{ .LinkTitle }}</strong>
-          </a>
-        {{ end }}
-        {{ with $older }}
-          <a class="article-navigation__item article-navigation__item--older" href="{{ .RelPermalink }}">
-            <span>Older post →</span>
-            <strong>{{ .LinkTitle }}</strong>
-          </a>
-        {{ end }}
-      </div>
-    {{ end }}
-  </nav>
-</footer>
+</nav>

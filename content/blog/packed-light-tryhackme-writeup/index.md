@@ -6,6 +6,7 @@ draft = false
 description = 'A beginner-friendly walkthrough of Packed Light, a TryHackMe network forensics challenge about recovering XOR-encrypted keystrokes from HTTP cookies.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'Network Forensics', 'Wireshark', 'PCAP', 'Python', 'Hacker Holidays']
+topics = ['tryhackme', 'digital-forensics']
 toc = true
 image = 'images/room-header.png'
 +++

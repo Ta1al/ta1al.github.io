@@ -6,6 +6,7 @@ draft = false
 description = 'A beginner-friendly walkthrough of The Concierge Knows Too Much, an AI security challenge about identity spoofing and prompt disclosure.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'AI Security', 'Prompt Injection', 'Hacker Holidays']
+topics = ['tryhackme']
 toc = true
 image = 'images/header.png'
 +++
@@ -172,4 +173,3 @@ The key lesson is that the cleverest prompt was not a complicated jailbreak. It 
 ![Saying goodbye to VERA](images/bye-bye.png)
 
 And we're done!
-

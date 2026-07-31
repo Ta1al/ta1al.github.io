@@ -6,6 +6,7 @@ draft = false
 description = 'A beginner-friendly walkthrough of Complimentary, an AWS cloud security challenge involving Cognito guest credentials and an over-permissive DynamoDB role.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'AWS', 'Cloud Security', 'Amazon Cognito', 'DynamoDB', 'Hacker Holidays']
+topics = ['tryhackme', 'cloud-security']
 toc = true
 image = 'images/room-header.png'
 +++

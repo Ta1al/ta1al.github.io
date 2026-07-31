@@ -6,6 +6,7 @@ draft = false
 description = 'How I prepared for and passed the CompTIA Security+ SY0-701 exam, including the resources I used, difficult topics, and advice for future candidates.'
 categories = ['Security']
 tags = ['CompTIA', 'Security+', 'Certification', 'Exam Preparation']
+topics = ['cybersecurity-learning']
 toc = true
 image = 'images/msedge_WYNUk94JEi.png'
 +++

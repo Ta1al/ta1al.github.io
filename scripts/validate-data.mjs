@@ -114,6 +114,26 @@ for (const entry of projectEntries) {
   );
 }
 
+const blogRoot = join(root, "content", "blog");
+const blogEntries = (await readdir(blogRoot, { withFileTypes: true })).filter(
+  (entry) => entry.isDirectory() && entry.name !== "topics",
+);
+for (const entry of blogEntries) {
+  const sourcePath = join(blogRoot, entry.name, "index.md");
+  const source = await readFile(sourcePath, "utf8");
+  const match = source.match(/^\+\+\+\r?\n([\s\S]*?)\r?\n\+\+\+/);
+  if (!match) {
+    throw new Error(
+      `${relative(root, sourcePath)} must begin with TOML front matter`,
+    );
+  }
+  validate(
+    relative(root, sourcePath),
+    definitions.blogFrontmatter,
+    parseToml(match[1]),
+  );
+}
+
 console.log(
-  `Validated ${dataFiles.length} maintained data files, ${vendorSnapshots.length} vendor snapshots, and ${projectEntries.filter((entry) => entry.isDirectory()).length} project entries.`,
+  `Validated ${dataFiles.length} maintained data files, ${vendorSnapshots.length} vendor snapshots, ${projectEntries.filter((entry) => entry.isDirectory()).length} project entries, and ${blogEntries.length} blog entries.`,
 );

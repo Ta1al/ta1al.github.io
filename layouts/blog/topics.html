@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{- $blogPosts := where site.RegularPages "Section" "blog" -}}
+{{- $projectPages := where site.RegularPages "Section" "projects" -}}
+{{- $projectCaseStudies := where $projectPages "Params.externalURL" nil -}}
+{{- $entries := union $blogPosts $projectCaseStudies -}}
+<section class="shell listing" aria-labelledby="topics-title">
+  <header class="page-heading">
+    <p class="eyebrow">Writing // Reading paths</p>
+    <h1 id="topics-title">{{ .Title }}</h1>
+    <div class="lede">{{ .Content }}</div>
+    <a class="text-link" href="{{ relURL "blog/" }}">← Back to all posts</a>
+  </header>
+  <div class="project-grid">
+    {{ range .Sections.ByTitle }}
+      {{- $topic := .Params.topic -}}
+      {{- $count := 0 -}}
+      {{- range $entries -}}
+        {{- if in (.Params.topics | default (slice)) $topic -}}
+          {{- $count = add $count 1 -}}
+        {{- end -}}
+      {{- end -}}
+      <article class="project-card topic-card">
+        <p class="eyebrow">{{ $count }} {{ cond (eq $count 1) "entry" "entries" }}</p>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Description }}</p>
+        <a class="text-link" href="{{ .RelPermalink }}">Explore topic →</a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

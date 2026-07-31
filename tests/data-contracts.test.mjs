@@ -51,6 +51,25 @@ test("rejects unknown project disciplines and insecure external URLs", () => {
   );
 });
 
+test("requires normalized curated topic slugs", () => {
+  const validate = compile(schema.$defs.blogFrontmatter);
+  assert.equal(
+    validate({
+      title: "Example",
+      date: "2026-01-01T00:00:00Z",
+      lastmod: "2026-01-01T00:00:00Z",
+      draft: false,
+      description: "Example article",
+      categories: ["Security"],
+      tags: ["Example"],
+      topics: ["Cloud Security"],
+      toc: true,
+    }),
+    false,
+  );
+  assert.ok(validate.errors.some((error) => error.instancePath === "/topics/0"));
+});
+
 test("requires maintained resume identity and download fields", () => {
   const validate = compile(schema.$defs.resume);
   assert.equal(

@@ -39,9 +39,7 @@
     </aside>
   </div>
 
-  {{ if not $isProject }}
-    {{ partial "article-navigation.html" $page }}
-  {{ end }}
+  {{ partial "article-footer.html" (dict "page" $page "kind" .kind) }}
 
   <dialog class="article-lightbox" data-article-lightbox aria-label="{{ if $isProject }}Enlarged case study image{{ else }}Enlarged article image{{ end }}">
     <div class="article-lightbox__frame">

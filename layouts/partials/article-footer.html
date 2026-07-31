@@ -1,0 +1,64 @@
+{{- $page := .page -}}
+{{- $isProject := eq .kind "project" -}}
+{{- $blogPosts := where site.RegularPages "Section" "blog" -}}
+{{- $projectPages := where site.RegularPages "Section" "projects" -}}
+{{- $projectCaseStudies := where $projectPages "Params.externalURL" nil -}}
+{{- $allEntries := union $blogPosts $projectCaseStudies -}}
+{{- $related := slice -}}
+{{- range $candidate := $allEntries -}}
+  {{- if ne $candidate.RelPermalink $page.RelPermalink -}}
+    {{- $shared := 0 -}}
+    {{- range ($candidate.Params.topics | default (slice)) -}}
+      {{- if in ($page.Params.topics | default (slice)) . -}}
+        {{- $shared = add $shared 1 -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if gt $shared 0 -}}
+      {{- $related = $related | append (dict
+        "page" $candidate
+        "sortKey" (printf "%02d-%012d" $shared $candidate.Date.Unix)
+      ) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<footer class="article-footer">
+  {{ with $page.Params.tags }}
+    <div class="article-topics">
+      <p class="eyebrow">Topics in this post</p>
+      <ul class="tag-list" aria-label="Topics">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+    </div>
+  {{ end }}
+
+  {{ with $page.Params.topics }}
+    <div class="article-topics article-topic-links">
+      <p class="eyebrow">Explore curated topics</p>
+      <ul class="tag-list" aria-label="Curated topics">
+        {{ range . }}
+          {{ with site.GetPage (printf "/blog/topics/%s" .) }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+
+  {{ if $related }}
+    <section class="article-topics related-reading" aria-labelledby="related-reading-title">
+      <p class="eyebrow" id="related-reading-title">Related reading</p>
+      <div class="related-reading__list">
+        {{ range first 3 (sort $related "sortKey" "desc") }}
+          {{- $relatedPage := .page -}}
+          <a class="article-navigation__item related-reading__item" href="{{ $relatedPage.RelPermalink }}">
+            <span>{{ if eq $relatedPage.Section "projects" }}Case study{{ else }}Article{{ end }} · {{ $relatedPage.ReadingTime }} min</span>
+            <strong>{{ $relatedPage.LinkTitle }}</strong>
+          </a>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{ if not $isProject }}
+    {{ partial "article-navigation.html" $page }}
+  {{ end }}
+</footer>

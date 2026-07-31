@@ -1,7 +1,7 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 {{- $projectPages := where site.RegularPages "Section" "projects" -}}
 {{- $projectCaseStudies := where $projectPages "Params.externalURL" nil -}}
-{{- $entries := union .Pages $projectCaseStudies -}}
+{{- $entries := union .RegularPages $projectCaseStudies -}}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ .Title }} — {{ site.Title }}</title>

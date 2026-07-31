@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{- $topic := .Params.topic -}}
+{{- $blogPosts := where site.RegularPages "Section" "blog" -}}
+{{- $projectPages := where site.RegularPages "Section" "projects" -}}
+{{- $projectCaseStudies := where $projectPages "Params.externalURL" nil -}}
+{{- $allEntries := union $blogPosts $projectCaseStudies -}}
+{{- $entries := slice -}}
+{{- range $allEntries -}}
+  {{- if in (.Params.topics | default (slice)) $topic -}}
+    {{- $entries = $entries | append . -}}
+  {{- end -}}
+{{- end -}}
+<section class="shell listing" aria-labelledby="topic-title">
+  <header class="page-heading">
+    <p class="eyebrow">Blog topic // Curated</p>
+    <h1 id="topic-title">{{ .Title }}</h1>
+    <div class="lede">{{ .Content }}</div>
+    <div class="listing-actions">
+      <a class="text-link" href="{{ relURL "blog/topics/" }}">← Browse all topics</a>
+      <a class="text-link" href="{{ relURL "blog/" }}">View all posts →</a>
+    </div>
+  </header>
+  <div class="post-list">
+    {{ range sort $entries "Date" "desc" }}{{ partial "post-card.html" . }}{{ end }}
+  </div>
+</section>
+{{ end }}

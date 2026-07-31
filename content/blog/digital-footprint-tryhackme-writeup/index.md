@@ -6,6 +6,7 @@ draft = false
 description = 'A beginner-friendly OSINT walkthrough of the TryHackMe Digital Footprint room.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'OSINT']
+topics = ['tryhackme', 'osint']
 toc = true
 image = 'images/thumbnail.png'
 +++

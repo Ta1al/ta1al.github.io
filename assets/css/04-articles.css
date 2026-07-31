@@ -316,6 +316,12 @@
   height: 1rem;
   fill: currentColor;
 }
+.listing-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-top: 1.5rem;
+}
 
 .post-list {
   border-top: 1px solid var(--line);
@@ -398,6 +404,15 @@
 .article-topics > .eyebrow {
   margin-bottom: 0.85rem;
 }
+.article-topic-links,
+.related-reading {
+  margin-top: 2rem;
+}
+.related-reading__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
 .article-navigation {
   margin-top: 2rem;
 }
@@ -459,6 +474,9 @@
   font-size: clamp(3.5rem, 10vw, 7rem);
 }
 @media (max-width: 46rem) {
+  .related-reading__list {
+    grid-template-columns: 1fr;
+  }
   .post-card {
     grid-template-columns: 1fr 1.5rem;
   }
