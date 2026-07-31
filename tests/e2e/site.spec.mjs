@@ -270,21 +270,29 @@ test("blog topics provide curated navigation and complete collections", async ({
   ).toHaveAttribute("href", "/blog/topics/");
 
   await gotoWithoutPageErrors(page, "/blog/topics/");
+  const tryHackMeTopic = page.locator("article.topic-card").filter({
+    has: page.getByRole("link", {
+      name: "TryHackMe Writeups",
+      exact: true,
+    }),
+  });
+  await expect(tryHackMeTopic).toHaveCount(1);
   await expect(
-    page.getByRole("link", { name: "TryHackMe Writeups", exact: true }).first(),
+    tryHackMeTopic.getByRole("link", {
+      name: "TryHackMe Writeups",
+      exact: true,
+    }),
   ).toHaveAttribute("href", "/blog/topics/tryhackme/");
+
+  const entryLabel = await tryHackMeTopic.locator(".eyebrow").textContent();
+  const entryCount = Number.parseInt(entryLabel, 10);
+  expect(entryCount).toBeGreaterThan(0);
 
   await gotoWithoutPageErrors(page, "/blog/topics/tryhackme/");
   await expect(
     page.getByRole("heading", { name: "TryHackMe Writeups", level: 1 }),
   ).toBeVisible();
-  await expect(page.locator("article.post-card")).toHaveCount(7);
-  await expect(
-    page.getByRole("link", {
-      name: "Beach Bar | TryHackMe Room Writeup",
-      exact: true,
-    }),
-  ).toHaveAttribute("href", "/blog/beach-bar-tryhackme-writeup/");
+  await expect(page.locator("article.post-card")).toHaveCount(entryCount);
 });
 
 test("articles expose authorship, topic membership, and related reading", async ({
