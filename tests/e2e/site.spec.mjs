@@ -278,7 +278,13 @@ test("blog topics provide curated navigation and complete collections", async ({
   await expect(
     page.getByRole("heading", { name: "TryHackMe Writeups", level: 1 }),
   ).toBeVisible();
-  await expect(page.locator("article.post-card")).toHaveCount(6);
+  await expect(page.locator("article.post-card")).toHaveCount(7);
+  await expect(
+    page.getByRole("link", {
+      name: "Beach Bar | TryHackMe Room Writeup",
+      exact: true,
+    }),
+  ).toHaveAttribute("href", "/blog/beach-bar-tryhackme-writeup/");
 });
 
 test("articles expose authorship, topic membership, and related reading", async ({
