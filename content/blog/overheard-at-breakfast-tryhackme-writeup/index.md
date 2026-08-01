@@ -38,7 +38,7 @@ I first investigated the Gmail address directly to see whether it exposed any ex
 
 The second clue therefore became much more important. I tried to think of a profile platform beginning with **G** that could connect a person's identity across websites and social media accounts.
 
-Then I had an idea: search for exactly what Lambo had described.
+Then I had an idea: search for exactly what Lambo had described (brilliant, I know 😎).
 
 ![Google search for a profile platform beginning with G](images/google-platform-search.png)
 
