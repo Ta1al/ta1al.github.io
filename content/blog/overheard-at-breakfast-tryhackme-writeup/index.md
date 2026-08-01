@@ -62,10 +62,6 @@ Opening the profile revealed the hidden account. Its biography contained a long 
 
 I copied the encoded string into [CyberChef](https://gchq.github.io/CyberChef/) and used the **From Base64** operation. The output was the room flag:
 
-```text
-THM{[REDACTED]}
-```
-
 ![CyberChef decoding the Base64 string into the redacted flag](images/cyberchef-base64-decode.png)
 
 ## Takeaways
