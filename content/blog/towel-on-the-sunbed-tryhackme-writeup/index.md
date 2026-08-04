@@ -65,7 +65,55 @@ The script confirmed several useful details. It set the Whale Vault threshold to
 
 The click handler disabled the reward button before sending its request. That prevented an ordinary double-click in the browser, but client-side controls are not a security boundary: I could still send requests directly from the console or an intercepting proxy.
 
-> **Code placeholder:** Insert the relevant `dashboard.js` source here.
+```js
+document.getElementById('nav-username').textContent = data.username;
+document.getElementById('balance').textContent = data.balance.toLocaleString(undefined, { maximumFractionDigits: 2 });
+
+const tierBadge = document.getElementById('tier-badge');
+tierBadge.textContent = data.tier;
+tierBadge.className = 'tier-badge ' + data.tier.toLowerCase();
+
+const tbody = document.querySelector('#prices-table tbody');
+tbody.innerHTML = '';
+for (const p of data.prices) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${p.symbol}</td><td class="price-val">$${p.price_usd.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>`;
+    tbody.appendChild(tr);
+}
+
+const claimBtn = document.getElementById('claim-btn');
+const claimStatus = document.getElementById('claim-status');
+if (countdownTimer) clearInterval(countdownTimer);
+
+if (data.canClaim) {
+    claimBtn.disabled = false;
+    claimStatus.textContent = 'Reward is available to claim now.';
+} else {
+    claimBtn.disabled = true;
+    let remaining = data.secondsUntilClaim;
+    function updateCountdown() {
+        const h = Math.floor(remaining / 3600);
+        const m = Math.floor((remaining % 3600) / 60);
+        const s = remaining % 60;
+        claimStatus.textContent = `Next claim in: ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+        if (remaining <= 0) {
+            clearInterval(countdownTimer);
+            claimBtn.disabled = false;
+            claimStatus.textContent = 'Reward is available to claim now.';
+        }
+        remaining--;
+    }
+    updateCountdown();
+    countdownTimer = setInterval(updateCountdown, 1000);
+}
+
+const pct = Math.min(100, (data.balance / WHALE_THRESHOLD) * 100);
+document.getElementById('progress-fill').style.width = pct + '%';
+document.getElementById('progress-label').textContent =
+    `${data.balance.toLocaleString()} / ${WHALE_THRESHOLD.toLocaleString()} PONZI`;
+
+const vaultBtn = document.getElementById('vault-btn');
+vaultBtn.disabled = data.balance < WHALE_THRESHOLD;```
 
 I tried sending another `POST` request to `/claim` manually, but the server responded with `429 Too Many Requests`. The response said that the reward had already been claimed and included the number of seconds remaining before another claim would be allowed.
 
