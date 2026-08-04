@@ -66,6 +66,15 @@ The script confirmed several useful details. It set the Whale Vault threshold to
 The click handler disabled the reward button before sending its request. That prevented an ordinary double-click in the browser, but client-side controls are not a security boundary: I could still send requests directly from the console or an intercepting proxy.
 
 ```js
+const WHALE_THRESHOLD = 150;
+let countdownTimer = null;
+async function loadDashboard() {
+    const resp = await fetch('/dashboard/api/me');
+    if (resp.status === 401) {
+        window.location.href = '/auth/login';
+        return;
+    }
+    const data = await resp.json();
 document.getElementById('nav-username').textContent = data.username;
 document.getElementById('balance').textContent = data.balance.toLocaleString(undefined, { maximumFractionDigits: 2 });
 
@@ -113,7 +122,54 @@ document.getElementById('progress-label').textContent =
     `${data.balance.toLocaleString()} / ${WHALE_THRESHOLD.toLocaleString()} PONZI`;
 
 const vaultBtn = document.getElementById('vault-btn');
-vaultBtn.disabled = data.balance < WHALE_THRESHOLD;```
+vaultBtn.disabled = data.balance < WHALE_THRESHOLD;
+}
+document.getElementById('claim-btn').addEventListener('click', async () => {
+    const btn = document.getElementById('claim-btn');
+    btn.disabled = true;
+    const status = document.getElementById('claim-status');
+    try {
+        const resp = await fetch('/claim', { method: 'POST' });
+        const json = await resp.json();
+        if (resp.ok) {
+            status.textContent = Claimed! +${json.reward} PONZI. PONZI price: $${json.priceSnapshot};
+            await loadDashboard();
+        } else {
+            status.textContent = json.error || 'Claim failed.';
+            btn.disabled = false;
+        }
+    } catch (e) {
+        status.textContent = 'Network error.';
+        btn.disabled = false;
+    }
+});
+document.getElementById('vault-btn').addEventListener('click', async () => {
+    const result = document.getElementById('vault-result');
+    result.classList.add('hidden');
+    try {
+        const resp = await fetch('/vault');
+        const json = await resp.json();
+        if (resp.ok) {
+            result.textContent = json.flag;
+            result.classList.remove('hidden');
+        } else {
+            result.textContent = json.error || 'Vault locked.';
+            result.style.borderColor = 'var(--red)';
+            result.style.color = 'var(--red)';
+            result.style.background = 'rgba(248,81,73,0.08)';
+            result.classList.remove('hidden');
+        }
+    } catch (e) {
+        result.textContent = 'Network error.';
+        result.classList.remove('hidden');
+    }
+});
+document.getElementById('logout-btn').addEventListener('click', async () => {
+    await fetch('/auth/logout', { method: 'POST' });
+    window.location.href = '/auth/login';
+});
+loadDashboard();
+```
 
 I tried sending another `POST` request to `/claim` manually, but the server responded with `429 Too Many Requests`. The response said that the reward had already been claimed and included the number of seconds remaining before another claim would be allowed.
 
