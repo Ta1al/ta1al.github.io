@@ -117,12 +117,6 @@ jobs:
       - name: Validate generated site and asset budgets
         run: npm run validate:site
 
-      - name: Install browser test runtime
-        run: npx playwright install --with-deps chromium
-
-      - name: Test browser behavior and accessibility
-        run: npm run test:e2e:built
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:

@@ -19,7 +19,7 @@
     "format:check": "prettier --check package.json playwright.config.mjs eslint.config.js .stylelintrc.json assets/css assets/js schemas scripts tests",
     "lint": "npm run lint:js && npm run lint:css && npm run format:check",
     "check": "npm run validate:data && npm test && npm run lint && npm run build && npm run validate:site",
-    "check:full": "npm run check && npm run test:e2e"
+    "check:full": "npm run check && npm run test:e2e:built"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",
