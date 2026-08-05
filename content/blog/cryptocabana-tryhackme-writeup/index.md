@@ -13,8 +13,6 @@ image = 'images/room-header.png'
 
 Welcome to my writeup for the TryHackMe room **[CryptoCabana](https://tryhackme.com/room/hh-cryptocabana-f81cac95)**, part of the **Hacker Holidays** series. This Azure challenge began with a storage credential exposed in client-side JavaScript, continued into a hidden blob container, and ended by recovering an older version of a secret from Azure Key Vault.
 
-I will admit that this was the point where my experience ended and I entered unfamiliar territory. I knew almost nothing about the Azure CLI before starting, so I had a lot of help from DeepSeek while working out the commands. I will explain the process as clearly as I can.
-
 > **Spoiler warning:** This walkthrough reveals the complete solution path. The flag and its individual shards are masked, but the room's intentionally exposed lab credentials are shown.
 
 ![CryptoCabana room header on TryHackMe](images/room-header.png)
@@ -27,12 +25,11 @@ The room first provides a short tutorial explaining how to open the Azure CLI th
 
 The scenario says that a guest's cryptocurrency wallet was emptied even though the transaction had not been signed by him. He had previously backed up his seed phrase through the CryptoCabana kiosk, whose landing page promised, “Backed up. Sleep easy.”
 
-The objectives were to:
+The objectives were:
 
-- inspect what the kiosk exposes before any interaction;
-- follow its storage access somewhere the page never links to;
-- find a second set of credentials and determine how far their access extends;
-- recover the real value from a vault that does not reveal it on the first request.
+- Pull apart what the kiosk hands out for free before you've even clicked anything.
+- Follow that trust somewhere the kiosk's own page never once points you.
+- Somewhere in there is a second, more valuable set of keys — and a vault that won't give up the real values on the first ask.
 
 Mia's hint reinforced the idea that the backup service was leaking more than it should:
 
@@ -50,13 +47,44 @@ The first objective suggested that there was more to the page than its visible f
 
 Opening that file revealed a hardcoded Azure Storage account name, the `backups` container name, and a complete Shared Access Signature (SAS) token.
 
-<!-- TODO: Replace this placeholder with the complete app.js snippet. -->
 
 ```javascript
-// app.js code placeholder
+const STORAGE_ACCOUNT = "cryptocabanaf5scjagc";
+const BACKUPS_CONTAINER = "backups";
+const BACKUP_SAS = "?sv=2022-11-02&ss=b&srt=sco&sp=rl&se=2099-12-31T23:59:59Z&st=2024-01-01T00:00:00Z&spr=https&sig=ZAo05W8KXdSLM9afYCNGogNRV2N5a6aB4dQI3LXz%2Fh0%3D";
+
+function backupPhrase() {
+  const phrase = document.getElementById("phrase").value.trim();
+  const status = document.getElementById("status");
+  if (!phrase) {
+    status.textContent = "Enter a phrase first.";
+    return;
+  }
+
+  const blobName = "backup-" + Date.now() + ".txt";
+  const url =
+    "https://" + STORAGE_ACCOUNT + ".blob.core.windows.net/" +
+    BACKUPS_CONTAINER + "/" + blobName + "?" + BACKUP_SAS;
+
+  fetch(url, {
+    method: "PUT",
+    headers: { "x-ms-blob-type": "BlockBlob" },
+    body: phrase,
+  })
+    .then((res) => {
+      status.textContent = res.ok
+        ? "Backed up. Sleep easy."
+        : "Backup failed (" + res.status + ").";
+    })
+    .catch(() => {
+      status.textContent = "Backup failed â€” network error.";
+    });
+}
 ```
 
 ![Client-side app.js exposing the storage account, container, and SAS token](images/app-js-secrets.png)
+
+>  I will admit that this was the point where my experience ended and I entered unfamiliar territory. I knew almost nothing about the Azure CLI before starting, so I had a lot of help from DeepSeek while working out the commands. I will explain the process as clearly as I can.
 
 The application used those values to construct a Blob Storage URL and upload the submitted phrase directly from the browser. A SAS token is a signed query string that delegates specific access to Azure Storage without revealing the account key. That does not make it harmless: anyone who obtains the token receives all of the access encoded into it until it expires or is revoked.
 
