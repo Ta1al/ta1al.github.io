@@ -393,7 +393,7 @@ Background worker executes the payload
 Flag is written to /shells/pwn/out.txt
 ```
 
-This room really took a long time. The SVG route looked promising at first, and I probably stayed with it longer than I should have. Finding the application source through LFI was the turning point because it showed that the real vulnerability was not an allowed file extension—it was how the server extracted the archive and processed hooks afterward.
+This room really took a long time. The SVG route looked promising at first, and I probably stayed with it longer than I should have. Finding the application source through LFI was the turning point because it showed that the real vulnerability was not an allowed file extension, it was how the server extracted the archive and processed hooks afterward.
 
 I also have to thank the TryHackMe Discord server. Their LFI hints helped me get unstuck and pointed me toward the part of the application I needed to investigate.
 
