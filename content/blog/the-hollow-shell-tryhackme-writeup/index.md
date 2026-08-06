@@ -8,19 +8,32 @@ categories = ['Writeups']
 tags = ['TryHackMe', 'Web Security', 'LFI', 'File Upload', 'Archive Abuse']
 topics = ['tryhackme']
 toc = true
+image = 'images/room-banner.png'
 +++
 
 Welcome to my writeup for the TryHackMe room **The Hollow Shell**. This one was a web challenge on a non-standard port, with a login page, an upload flow, and enough weird file handling to make the actual path to code execution feel like a small maze.
 
 > **Spoiler warning:** This walkthrough reveals the room's solution path and the final flag, but the flag itself is masked.
 
+![The Hollow Shell room banner](images/room-banner.png)
+
 ## Getting In
 
 The room exposed a URL on **port 5000** instead of the usual port 80, so the first thing I did was open the site directly on that port.
 
+![Nmap scan showing the web service open on port 5000](images/nmap-port-scan.png)
+
 The page presented a login form. The source code of the login page gave away the credentials, so there was no need to brute-force anything.
 
+![Byte Lotus staff sign-in page](images/staff-login.png)
+
+Viewing the page source revealed the staff username and passphrase in an HTML comment.
+
+![Login page source revealing the hardcoded staff credentials](images/login-source-credentials.png)
+
 Once logged in, the application showed an upload form for a shell package. The upload accepted a ZIP archive with a `shell.json` manifest in this format:
+
+![Authenticated shell upload page with the archive requirements](images/shell-upload-page.png)
 
 ```json
 {
@@ -106,6 +119,8 @@ That gave me the real exploit path:
 My payload did two jobs: it gathered basic system information and searched for flag files, then wrote the results to a file I could fetch back over HTTP.
 
 The archive content was structured so the traversal landed in the hooks directory. The manifest stayed valid because the app only checked the JSON shape and the declared asset extensions.
+
+![Application confirmation after accepting the crafted shell archive](images/upload-confirmation.png)
 
 A simplified version of the payload looked like this:
 
