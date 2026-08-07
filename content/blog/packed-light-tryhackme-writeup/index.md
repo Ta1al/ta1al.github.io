@@ -1,12 +1,13 @@
 +++
 title = 'Packed Light | TryHackMe Room Writeup'
 date = '2026-07-30T22:48:57+05:00'
-lastmod = '2026-07-31T12:34:00+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of Packed Light, a TryHackMe network forensics challenge about recovering XOR-encrypted keystrokes from HTTP cookies.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'Network Forensics', 'Wireshark', 'PCAP', 'Python', 'Hacker Holidays']
 topics = ['tryhackme', 'digital-forensics']
+keyClues = ['updates.py', 'hotel_sess_state', '34.41.103.191:8080', 'sendltr()', 'Base64 and XOR']
 toc = true
 image = 'images/room-header.png'
 +++

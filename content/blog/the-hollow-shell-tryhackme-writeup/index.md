@@ -1,12 +1,13 @@
 +++
 title = 'The Hollow Shell | TryHackMe Room Writeup'
 date = '2026-08-06T00:00:00+05:00'
-lastmod = '2026-08-06T00:00:00+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of The Hollow Shell, a TryHackMe web challenge that combines a login leak, archive upload abuse, LFI, and server-side hook execution.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'Web Security', 'LFI', 'File Upload', 'Archive Abuse']
 topics = ['tryhackme']
+keyClues = ['shell.json', 'app.py', 'theme_worker.py', '../../hooks/pwn.py', 'curl --path-as-is']
 toc = true
 image = 'images/room-banner.png'
 +++

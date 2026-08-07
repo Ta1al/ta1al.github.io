@@ -75,6 +75,9 @@
         "topics": {
           "$ref": "#/$defs/topicList"
         },
+        "keyClues": {
+          "$ref": "#/$defs/stringList"
+        },
         "series": {
           "$ref": "#/$defs/stringList"
         },

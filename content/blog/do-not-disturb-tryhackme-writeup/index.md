@@ -1,12 +1,13 @@
 +++
 title = 'Do Not Disturb | TryHackMe Room Writeup'
 date = '2026-08-04T09:15:00+05:00'
-lastmod = '2026-08-04T09:15:00+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A walkthrough of Do Not Disturb, a TryHackMe Boot2Root room involving NoSQL injection, EJS template injection, an exposed Node.js inspector, and disk-group privilege escalation.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'NoSQL Injection', 'EJS', 'Node.js', 'Linux Privilege Escalation', 'Hacker Holidays']
 topics = ['tryhackme']
+keyClues = ['attendant', 'username[$gt]=b', 'processor.js on port 9229', 'pipelinesvc', '/dev/nvme0n1p1']
 toc = true
 image = 'images/room-header.png'
 +++

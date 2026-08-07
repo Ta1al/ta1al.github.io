@@ -23,7 +23,18 @@
   {{ end }}
 
   <div class="article__layout">
-    <div class="prose">{{ $page.Content }}</div>
+    <div class="prose">
+      {{ with $page.Params.keyClues }}
+        <section class="article-reference" aria-labelledby="walkthrough-quick-reference">
+          <h2 id="walkthrough-quick-reference">Walkthrough quick reference</h2>
+          <p>Distinctive clues, files, accounts, and techniques covered in this solution:</p>
+          <ul>
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        </section>
+      {{ end }}
+      {{ $page.Content }}
+    </div>
     <aside class="article-aside{{ if $isProject }} project-links{{ end }}"{{ if $isProject }} aria-label="Case study navigation and project links"{{ end }}>
       {{ if $showToc }}
         <div class="toc" id="article-toc" data-article-toc>

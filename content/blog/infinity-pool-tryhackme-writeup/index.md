@@ -1,12 +1,13 @@
 +++
 title = 'Infinity Pool | TryHackMe Room Writeup'
 date = '2026-08-07T09:00:00+05:00'
-lastmod = '2026-08-07T09:00:00+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A walkthrough of Infinity Pool, a TryHackMe Boot2Root room involving command injection, exposed internal configuration, FreePBX, and a root-owned automation API.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'Web Security', 'Command Injection', 'FreePBX', 'Linux Privilege Escalation', 'Hacker Holidays']
 topics = ['tryhackme']
+keyClues = ['/internal/netcheck', '/api/config', 'FreePBXUCPTemplateCreator', '/jobs/export', 'report command injection']
 toc = true
 image = 'images/room-banner.png'
 +++

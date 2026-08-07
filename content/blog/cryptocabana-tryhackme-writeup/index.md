@@ -1,12 +1,13 @@
 +++
 title = 'CryptoCabana | TryHackMe Room Writeup'
 date = '2026-08-05T10:14:21+05:00'
-lastmod = '2026-08-05T10:14:21+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of CryptoCabana, a TryHackMe Azure challenge involving a leaked SAS token, exposed service-principal credentials, and Key Vault secret versions.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'Azure', 'Cloud Security', 'Azure Storage', 'Azure Key Vault', 'Hacker Holidays']
 topics = ['tryhackme', 'cloud-security']
+keyClues = ['cryptocabanaf5scjagc', 'seed_phrase.txt', 'backup-service-account.json', 'master-key', 'key-shard-2']
 toc = true
 image = 'images/room-header.png'
 +++

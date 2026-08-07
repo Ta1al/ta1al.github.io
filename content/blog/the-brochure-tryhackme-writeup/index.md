@@ -1,12 +1,13 @@
 +++
 title = 'The Brochure | TryHackMe Room Writeup'
 date = '2026-07-25T00:00:00+05:00'
-lastmod = '2026-07-31T12:34:00+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A beginner-friendly OSINT walkthrough of The Brochure, the warmup room for TryHackMe’s Hacker Holiday series.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'OSINT']
 topics = ['tryhackme', 'osint']
+keyClues = ['@thebytelotusresort', '@veratheconcierge', 'Vera the concierge', 'Base64 fragments', 'Byte Lotus Resort']
 toc = true
 image = 'images/room-banner.png'
 +++

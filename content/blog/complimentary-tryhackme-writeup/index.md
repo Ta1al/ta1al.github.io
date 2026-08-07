@@ -1,12 +1,13 @@
 +++
 title = 'Complimentary | TryHackMe Room Writeup'
 date = '2026-07-30T11:30:00+05:00'
-lastmod = '2026-07-31T12:34:00+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of Complimentary, an AWS cloud security challenge involving Cognito guest credentials and an over-permissive DynamoDB role.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'AWS', 'Cloud Security', 'Amazon Cognito', 'DynamoDB', 'Hacker Holidays']
 topics = ['tryhackme', 'cloud-security']
+keyClues = ['Amazon Cognito Identity Pool', 'us-east-1:836c0949-292d-485b-b532-52d5ca7bb688', 'complimentary-GuestWellnessProfiles', 'guest_id', 'dynamodb:Scan']
 toc = true
 image = 'images/room-header.png'
 +++

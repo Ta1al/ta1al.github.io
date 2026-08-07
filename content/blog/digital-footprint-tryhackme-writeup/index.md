@@ -1,12 +1,13 @@
 +++
 title = 'Digital Footprint | TryHackMe Room Writeup'
 date = '2026-02-06T00:00:00+05:00'
-lastmod = '2026-07-31T12:34:00+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A beginner-friendly TryHackMe Digital Footprint OSINT walkthrough covering EXIF metadata, WARC archives, reverse-image search, and document metadata.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'OSINT']
 topics = ['tryhackme', 'osint']
+keyClues = ['edited-house-1763031553617.jpg', 'ADT Armed Response', 'The Rectory', 'warc-acme.com', 'Spire of Dublin']
 toc = true
 image = 'images/thumbnail.png'
 +++

@@ -1,12 +1,13 @@
 +++
 title = 'Towel on the Sunbed | TryHackMe Room Writeup'
 date = '2026-08-04T15:27:43+05:00'
-lastmod = '2026-08-04T15:27:43+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of Towel on the Sunbed, a TryHackMe web challenge involving a race condition in a daily reward mechanism.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'Web Security', 'Race Condition', 'JavaScript', 'Hacker Holidays']
 topics = ['tryhackme']
+keyClues = ['/js/dashboard.js', '/claim', '429 Too Many Requests', 'Promise.all()', '150 PONZI']
 toc = true
 image = 'images/room-header.png'
 +++

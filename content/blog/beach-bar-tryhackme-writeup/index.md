@@ -1,12 +1,13 @@
 +++
 title = 'Beach Bar | TryHackMe Room Writeup'
 date = '2026-07-31T22:21:41+05:00'
-lastmod = '2026-07-31T22:21:41+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of Beach Bar, a TryHackMe Linux challenge involving exposed credentials, unsafe YAML deserialization, and a password leaked through a root process.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'Web Security', 'YAML', 'Python', 'Linux Privilege Escalation', 'Hacker Holidays']
 topics = ['tryhackme']
+keyClues = ['dj:dj', '!!python/object/apply', 'bartender', 'jukeboxd.py', '/proc/<PID>/cmdline']
 toc = true
 image = 'images/room-header.png'
 +++

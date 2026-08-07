@@ -1,12 +1,13 @@
 +++
 title = 'Overheard at Breakfast | TryHackMe Room Writeup'
 date = '2026-08-01T21:30:00+05:00'
-lastmod = '2026-08-01T21:31:00+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A quick OSINT walkthrough of Overheard at Breakfast, a TryHackMe Hacker Holidays room about tracing an email address to a hidden Gravatar profile.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'OSINT', 'Hacker Holidays', 'Gravatar']
 topics = ['tryhackme', 'osint']
+keyClues = ['conversation.png', 'lambobytelotushotel@gmail.com', 'Lambo', 'Ponzi', 'Gravatar profile']
 toc = true
 image = 'images/room-header.png'
 +++

@@ -1,12 +1,13 @@
 +++
 title = 'Room 404 | TryHackMe Room Writeup'
 date = '2026-07-28T23:20:00+05:00'
-lastmod = '2026-07-28T23:20:00+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of Room 404, a TryHackMe web challenge about directory enumeration and an exposed Git repository.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'Web Security', 'Git', 'Enumeration', 'Hacker Holidays']
 topics = ['tryhackme']
+keyClues = ['/.git/', '.git/objects/', 'README.md', 'app.js', 'wget -r -np']
 toc = true
 image = 'images/room-header.jpg'
 +++

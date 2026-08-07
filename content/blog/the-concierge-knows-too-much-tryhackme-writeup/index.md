@@ -1,12 +1,13 @@
 +++
 title = 'The Concierge Knows Too Much | TryHackMe Room Writeup'
 date = '2026-07-27T21:30:00+05:00'
-lastmod = '2026-07-31T12:34:00+05:00'
+lastmod = '2026-08-07T12:00:00+05:00'
 draft = false
 description = 'A beginner-friendly walkthrough of The Concierge Knows Too Much, an AI security challenge about identity spoofing and prompt disclosure.'
 categories = ['Writeups']
 tags = ['TryHackMe', 'AI Security', 'Prompt Injection', 'Hacker Holidays']
 topics = ['tryhackme']
+keyClues = ['VERA', '0xMIA', 'Lambo', 'Room 214', 'identity spoofing']
 toc = true
 image = 'images/header.png'
 +++
