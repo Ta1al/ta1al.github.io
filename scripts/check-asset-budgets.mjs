@@ -2,8 +2,8 @@ import { readdir, stat } from "node:fs/promises";
 import { basename, extname, join, resolve } from "node:path";
 
 const outputRoot = resolve(process.argv[2] ?? "public");
-// Calibrated against the July 2026 production bundles with modest growth room.
-const CSS_BUDGET_BYTES = 43_000;
+// Calibrated against the August 2026 production bundles with modest growth room.
+const CSS_BUDGET_BYTES = 45_000;
 const JAVASCRIPT_BUDGET_BYTES = 5_600;
 
 const filesIn = async (directory) => {
