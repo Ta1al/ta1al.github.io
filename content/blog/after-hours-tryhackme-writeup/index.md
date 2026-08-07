@@ -9,7 +9,7 @@ tags = ['TryHackMe', 'Digital Forensics', 'Windows', 'WMI', 'PowerShell', '.NET'
 topics = ['tryhackme', 'digital-forensics']
 keyClues = ['OBJECTS.DATA', 'Win32_HardwareTelemetry', 'ConfigData', 'DeflateStream', 'ILSpy']
 toc = true
-image = 'images/image.png'
+image = 'images/room-banner.png'
 +++
 
 Welcome to my writeup for the TryHackMe room **[After Hours](https://tryhackme.com/room/hh-afterhours-b090d1f0)**, part of the **Hacker Holidays** series. This was a Windows forensics challenge about finding malicious configuration data hidden inside a WMI repository, extracting an embedded .NET payload, and following one final Base64 clue to the flag.
@@ -18,7 +18,7 @@ This room was completely new territory for me. I did not know anything about the
 
 > **Spoiler warning:** This walkthrough reveals the complete solution path, but the final flag is masked.
 
-![After Hours room banner on TryHackMe](images/image.png)
+![After Hours room banner on TryHackMe](images/room-banner.png)
 
 ## Concierge Briefing
 
@@ -44,7 +44,7 @@ After some research, I learned that these files make up a Windows **WMI reposito
 
 Mia's story supplied the most useful hint. She said that the usual autorun and persistence tools would not catch this one and that the raw data had to be examined manually.
 
-![Mia's story hinting that the WMI repository must be searched by hand](<images/image copy.png>)
+![Mia's story hinting that the WMI repository must be searched by hand](images/mia-story-hint.png)
 
 ## Extracting Strings from the Repository
 
@@ -75,7 +75,7 @@ grep -EIn '[A-Za-z0-9+/]{80,}={0,2}' ascii.txt utf16.txt
 
 This produced several interesting results, including a long encoded PowerShell command.
 
-![Long Base64 strings and an encoded PowerShell command found in the repository](<images/image copy 2.png>)
+![Long Base64 strings and an encoded PowerShell command found in the repository](images/base64-search-results.png)
 
 I copied the PowerShell string into CyberChef and used **From Base64**, followed by decoding the result as **UTF-16LE**. The decoded script contained the most important clue in the room:
 
@@ -98,7 +98,7 @@ while ($r -gt 0) {
 ) | Out-Null
 ```
 
-![CyberChef decoding the PowerShell command and revealing the custom WMI class](<images/image copy 4.png>)
+![CyberChef decoding the PowerShell command and revealing the custom WMI class](images/cyberchef-powershell-decoded.png)
 
 The script did not retrieve its payload from a normal file. Instead, it accessed a custom WMI class named `Win32_HardwareTelemetry` in the `ROOT\cimv2` namespace and read its `ConfigData` property. It then Base64-decoded and decompressed that value, loaded the result directly as a .NET assembly, and invoked its entry point from memory.
 
@@ -140,7 +140,7 @@ file payload.exe
 payload.exe: PE32 executable for MS Windows 4.00 (GUI), Intel i386 Mono/.Net assembly, 3 sections
 ```
 
-![The file command identifying the extracted payload as a .NET assembly](<images/image copy 3.png>)
+![The file command identifying the extracted payload as a .NET assembly](images/payload-file-type.png)
 
 ## Decompiling the .NET Payload
 
@@ -161,11 +161,11 @@ if (string.Equals(
 }
 ```
 
-![ILSpy showing the environment check and hidden net user command](<images/image copy 5.png>)
+![ILSpy showing the environment check and hidden net user command](images/ilspy-decompiled-payload.png)
 
 The supposed password in the `net user` command was one last Base64 string. Decoding it with CyberChef revealed the TryHackMe flag.
 
-![CyberChef decoding the embedded account password into the masked flag](<images/image copy 7.png>)
+![CyberChef decoding the embedded account password into the masked flag](images/cyberchef-flag-decoded.png)
 
 ## Why the Technique Worked
 
