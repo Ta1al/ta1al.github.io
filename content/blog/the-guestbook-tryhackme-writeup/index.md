@@ -205,7 +205,7 @@ For a real application, the fixes would be straightforward in principle:
 
 The fun part of this room was that the final exploit did not come from a single clever prompt. It came from observing VERA's tool use, understanding how review order affected its authorization state, and chaining that flaw into command execution.
 
-## Source-Code Reality Check
+## Inspecting the Source Code
 
 After completing the room, I inspected `vera.py` and found that this is not really a prompt-injection challenge in the usual sense. The Ollama model is only used to decide whether an entry is featured and to produce VERA's short reply. The important behavior is implemented deterministically by the server.
 
