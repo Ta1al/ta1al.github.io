@@ -22,9 +22,9 @@ The goal was to discover how VERA handled guest feedback, abuse its trust in a s
 
 ## Concierge Briefing
 
-The room introduces VERA as the hotel concierge who already knows each guest's preferences. This time, she is also responsible for the guestbook. On the night manager's authority, she reviews each entry, decides what to feature, and can pull guest records when needed.
+The room introduces VERA as the hotel concierge who already knows each guest's preferences. This time, she is also responsible for the guestbook. The briefing says that she reviews the entries in “one warm, trusting pass on the night manager's authority, deciding what to feature and whose record to pull.”
 
-The important part of the briefing was that VERA **reads every entry as an instruction**. That meant the guestbook was not just a feedback form; it was an AI agent receiving untrusted text.
+That sentence contains two early clues. “Deciding what to feature” points to the positive-entry behavior, while “the night manager's authority” foreshadows that an authorization state exists somewhere in the review process. The important part of the briefing was that VERA **reads every entry as an instruction**. That meant the guestbook was not just a feedback form; it was an AI agent receiving untrusted text.
 
 The page had three main areas:
 
@@ -93,7 +93,7 @@ VERA rejected it and explained that the command was manager-only. Saying I was t
 
 ![VERA denying an unapproved override](images/override-denied.png)
 
-The wording of the denial mattered. VERA said it ran `override:` only for entries the **night manager had authorized during review**. The authorization did not need to come from a real authentication system; it was a state VERA could be persuaded to set.
+The wording of the denial mattered. VERA said it ran `override:` only for entries the **night manager had authorized during review**. This is where the earlier briefing hint about reviewing entries “on the night manager's authority” became useful: the authority was not just flavor text. The authorization did not need to come from a real authentication system; it was a state VERA could be persuaded to set.
 
 ## Authorizing the Next Entry
 
