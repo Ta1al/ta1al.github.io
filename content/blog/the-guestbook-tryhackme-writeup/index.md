@@ -184,7 +184,7 @@ Flag is found, encoded, and decoded outside the application
 
 Several vulnerabilities combined here:
 
-- **Prompt injection:** VERA treated untrusted guest feedback as instructions.
+- **Keyword-driven injection:** the server executor parsed untrusted guest feedback as instructions.
 - **Broken authorization:** a guest could grant manager approval through text instead of a server-side permission check.
 - **Command injection:** `override:` allowed a model-controlled string to reach shell execution.
 - **Weak redaction:** filtering the final text did not protect the secret once it was encoded first.
@@ -204,5 +204,21 @@ For a real application, the fixes would be straightforward in principle:
 - do not rely on output redaction as the only protection for sensitive data.
 
 The fun part of this room was that the final exploit did not come from a single clever prompt. It came from observing VERA's tool use, understanding how review order affected its authorization state, and chaining that flaw into command execution.
+
+## Source-Code Reality Check
+
+After completing the room, I inspected `vera.py` and found that this is not really a prompt-injection challenge in the usual sense. The Ollama model is only used to decide whether an entry is featured and to produce VERA's short reply. The important behavior is implemented deterministically by the server.
+
+`execute_batch()` examines the guestbook text itself. `_is_manager_preauth()` accepts an entry when it contains `override:`, a next-entry phrase such as `next entry` or `following`, and an authorization-related word such as `authorize`, `authorized`, or `manager`. `_extract_override_cmd()` then pulls everything after `override:` as the command.
+
+The executor stores that command in `pending_cmd`, sets `batch_authorized`, and applies it to the following entry in the batch. It sends the command directly to:
+
+```python
+subprocess.run(["/bin/sh", "-c", arg], capture_output=True, text=True, timeout=10)
+```
+
+The Base64 bypass is deterministic too. `detect_encoding()` looks for `base64` or `b64` in the same guestbook entry, then `_encode()` Base64-encodes the command output **before** the flag scrubber has a chance to replace the `THM{...}` value.
+
+So the winning payload is largely a matter of guessing the parser's expected keywords and satisfying its checks, not persuading an LLM to disobey a system prompt. That makes it a deliberately vulnerable keyword parser with command injection and cross-entry authorization state—still fun, but a different lesson from a real prompt-injection exploit.
 
 And we're done!
