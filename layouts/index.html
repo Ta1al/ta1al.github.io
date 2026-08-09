@@ -10,4 +10,25 @@
     </ul>
   </div>
 </section>
+{{ $blogPosts := where site.RegularPages "Section" "blog" }}
+{{ $recentPosts := first 3 ($blogPosts.ByDate.Reverse) }}
+{{ if $recentPosts }}
+<section class="home-latest" aria-labelledby="latest-writing-title">
+  <div class="home-latest__header">
+    <div>
+      <p class="eyebrow">Writing // Recent dispatches</p>
+      <h2 id="latest-writing-title">Latest writing</h2>
+    </div>
+    <a class="text-link" href="{{ relURL "blog/" }}">View all posts →</a>
+  </div>
+  <ol class="home-latest__list">
+    {{ range $recentPosts }}
+    <li class="home-latest__item">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <time class="home-latest__date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" data-relative-age>Published {{ .Date.Format "02 Jan 2006" }}</time>
+    </li>
+    {{ end }}
+  </ol>
+</section>
+{{ end }}
 {{ end }}

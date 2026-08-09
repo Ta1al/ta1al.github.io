@@ -1,5 +1,33 @@
 import { listenForHorizontalSwipe, trapTabKey } from "./lib/interactions.mjs";
 
+const relativeAgeFormatter = new Intl.RelativeTimeFormat(undefined, {
+  numeric: "always",
+});
+const relativeAgeUnits = [
+  ["year", 31_557_600],
+  ["month", 2_629_800],
+  ["day", 86_400],
+  ["hour", 3_600],
+  ["minute", 60],
+];
+
+for (const timestamp of document.querySelectorAll("[data-relative-age]")) {
+  const publishedAt = new Date(timestamp.dateTime);
+  if (Number.isNaN(publishedAt.valueOf())) continue;
+
+  const elapsedSeconds = (Date.now() - publishedAt.valueOf()) / 1_000;
+  if (Math.abs(elapsedSeconds) < 60) {
+    timestamp.textContent = "Published just now";
+    continue;
+  }
+
+  const [unit, seconds] = relativeAgeUnits.find(
+    ([, threshold]) => Math.abs(elapsedSeconds) >= threshold,
+  );
+  const value = Math.trunc(elapsedSeconds / seconds);
+  timestamp.textContent = `Published ${relativeAgeFormatter.format(-value, unit)}`;
+}
+
 const header = document.querySelector(".site-header");
 
 if (header) {
