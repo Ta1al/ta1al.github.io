@@ -17,6 +17,7 @@
     "lint:js": "eslint assets/js .github/scripts scripts tests",
     "lint:css": "stylelint \"assets/css/**/*.css\"",
     "format:check": "prettier --check package.json playwright.config.mjs eslint.config.js .stylelintrc.json assets/css assets/js schemas scripts tests",
+    "format:fix": "prettier --write package.json playwright.config.mjs eslint.config.js .stylelintrc.json assets/css assets/js schemas scripts tests",
     "lint": "npm run lint:js && npm run lint:css && npm run format:check",
     "check": "npm run validate:data && npm test && npm run lint && npm run build && npm run validate:site",
     "check:full": "npm run check && npm run test:e2e:built"
