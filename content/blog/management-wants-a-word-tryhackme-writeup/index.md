@@ -7,7 +7,7 @@ description = 'A walkthrough of Management Wants a Word, a TryHackMe Windows for
 categories = ['Writeups']
 tags = ['TryHackMe', 'Windows Forensics', 'DPAPI', 'Chrome', 'VeraCrypt', 'Hacker Holidays']
 topics = ['tryhackme']
-keyClues = ['minivera', 'VeraSecretVault', 'Wh4t1sV3raD0inG0nTh1sH0st', 'S-1-5-21-2529683458-431225740-1723070931-1000', 'important_invoice_byte_lotus.pdf']
+keyClues = ['KAPE triage', 'SAM & SYSTEM hives', 'NT hash (minivera)', 'DPAPI master key', 'Chrome AES-GCM key', 'Saved Chrome credential', 'VeraCrypt container', 'Invoice flag']
 toc = true
 image = 'images/room-banner.png'
 +++
