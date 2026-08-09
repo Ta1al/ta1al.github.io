@@ -58,7 +58,7 @@ test("homepage lists the three newest blog posts with live publication ages", as
   page,
 }) => {
   await page.clock.install({ time: new Date("2026-08-10T07:00:00Z") });
-  await gotoWithoutPageErrors(page, "/");
+  await page.goto("/", { waitUntil: "domcontentloaded" });
 
   const recentWriting = page.getByRole("region", { name: "Latest writing" });
   await expect(recentWriting.getByRole("listitem")).toHaveCount(3);
@@ -90,6 +90,21 @@ test("homepage lists the three newest blog posts with live publication ages", as
     "2026-08-08T23:21:00+05:00",
   );
   await expect(timestamps.nth(0)).toHaveText("Published 1 day ago");
+});
+
+test("homepage keeps only the latest post visible on mobile", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+
+  const recentWriting = page.getByRole("region", { name: "Latest writing" });
+  await expect(recentWriting.locator(".home-latest__item:visible")).toHaveCount(
+    1,
+  );
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollHeight <= window.innerHeight,
+    ),
+  ).toBe(true);
 });
 
 test("menu traps focus, identifies the current section, and restores focus", async ({
