@@ -62,7 +62,7 @@ test("homepage lists the newest blog post with a live publication age", async ({
 
   const recentWriting = page.getByRole("region", { name: "Latest writing" });
   await expect(recentWriting.getByRole("listitem")).toHaveCount(1);
-  await expect(recentWriting.getByRole("link")).toHaveCount(2);
+  await expect(recentWriting.getByRole("link")).toHaveCount(1);
   await expect(
     recentWriting.locator(".home-latest__item > a"),
   ).toHaveText("The Guestbook | TryHackMe Room Writeup");
@@ -70,8 +70,8 @@ test("homepage lists the newest blog post with a live publication age", async ({
     recentWriting.getByRole("link", { name: "The Guestbook | TryHackMe Room Writeup" }),
   ).toHaveAttribute("href", "/blog/the-guestbook-tryhackme-writeup/");
   await expect(
-    recentWriting.getByRole("link", { name: "View all posts →" }),
-  ).toHaveAttribute("href", "/blog/");
+    recentWriting.getByRole("link", { name: /view all posts/i }),
+  ).toHaveCount(0);
 
   const timestamps = recentWriting.locator("time[data-relative-age]");
   await expect(timestamps).toHaveCount(1);

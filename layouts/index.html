@@ -13,10 +13,7 @@
   {{ $recentPosts := first 1 ($blogPosts.ByDate.Reverse) }}
   {{ if $recentPosts }}
   <section class="home-latest" aria-labelledby="latest-writing-title">
-    <div class="home-latest__header">
-      <h2 id="latest-writing-title">Latest writing</h2>
-      <a href="{{ relURL "blog/" }}">View all posts →</a>
-    </div>
+    <h2 id="latest-writing-title">Latest writing</h2>
     <ol class="home-latest__list">
       {{ range $recentPosts }}
       <li class="home-latest__item">
