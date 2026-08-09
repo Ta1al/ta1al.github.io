@@ -54,37 +54,27 @@ async function gotoWithoutPageErrors(page, path) {
   expect(errors).toEqual([]);
 }
 
-test("homepage lists the three newest blog posts with live publication ages", async ({
+test("homepage lists the newest blog post with a live publication age", async ({
   page,
 }) => {
   await page.clock.install({ time: new Date("2026-08-10T07:00:00Z") });
   await page.goto("/", { waitUntil: "domcontentloaded" });
 
   const recentWriting = page.getByRole("region", { name: "Latest writing" });
-  await expect(recentWriting.getByRole("listitem")).toHaveCount(3);
-  await expect(recentWriting.getByRole("link")).toHaveCount(4);
+  await expect(recentWriting.getByRole("listitem")).toHaveCount(1);
+  await expect(recentWriting.getByRole("link")).toHaveCount(2);
   await expect(
     recentWriting.locator(".home-latest__item > a"),
-  ).toHaveText([
-    "The Guestbook | TryHackMe Room Writeup",
-    "After Hours | TryHackMe Room Writeup",
-    "Infinity Pool | TryHackMe Room Writeup",
-  ]);
+  ).toHaveText("The Guestbook | TryHackMe Room Writeup");
   await expect(
     recentWriting.getByRole("link", { name: "The Guestbook | TryHackMe Room Writeup" }),
   ).toHaveAttribute("href", "/blog/the-guestbook-tryhackme-writeup/");
-  await expect(
-    recentWriting.getByRole("link", { name: "After Hours | TryHackMe Room Writeup" }),
-  ).toHaveAttribute("href", "/blog/after-hours-tryhackme-writeup/");
-  await expect(
-    recentWriting.getByRole("link", { name: "Infinity Pool | TryHackMe Room Writeup" }),
-  ).toHaveAttribute("href", "/blog/infinity-pool-tryhackme-writeup/");
   await expect(
     recentWriting.getByRole("link", { name: "View all posts →" }),
   ).toHaveAttribute("href", "/blog/");
 
   const timestamps = recentWriting.locator("time[data-relative-age]");
-  await expect(timestamps).toHaveCount(3);
+  await expect(timestamps).toHaveCount(1);
   await expect(timestamps.nth(0)).toHaveAttribute(
     "datetime",
     "2026-08-08T23:21:00+05:00",

@@ -275,7 +275,7 @@ a {
 }
 .home-latest__list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -381,9 +381,6 @@ a {
     gap: 0.75rem;
     padding: 0;
     border-left: 0;
-  }
-  .home-latest__item:nth-child(n + 2) {
-    display: none;
   }
   .home-latest__item > a {
     min-width: 0;

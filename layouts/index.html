@@ -10,7 +10,7 @@
     </ul>
   </div>
   {{ $blogPosts := where site.RegularPages "Section" "blog" }}
-  {{ $recentPosts := first 3 ($blogPosts.ByDate.Reverse) }}
+  {{ $recentPosts := first 1 ($blogPosts.ByDate.Reverse) }}
   {{ if $recentPosts }}
   <section class="home-latest" aria-labelledby="latest-writing-title">
     <div class="home-latest__header">
