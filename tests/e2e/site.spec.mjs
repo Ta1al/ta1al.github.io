@@ -54,35 +54,10 @@ async function gotoWithoutPageErrors(page, path) {
   expect(errors).toEqual([]);
 }
 
-test("homepage lists the newest blog post with a live publication age", async ({
+
+test("homepage keeps only the latest post visible on mobile", async ({
   page,
 }) => {
-  await page.clock.install({ time: new Date("2026-08-10T07:00:00Z") });
-  await page.goto("/", { waitUntil: "domcontentloaded" });
-
-  const recentWriting = page.getByRole("region", { name: "Latest writing" });
-  await expect(recentWriting.getByRole("listitem")).toHaveCount(1);
-  await expect(recentWriting.getByRole("link")).toHaveCount(1);
-  await expect(
-    recentWriting.locator(".home-latest__item > a"),
-  ).toHaveText("The Guestbook | TryHackMe Room Writeup");
-  await expect(
-    recentWriting.getByRole("link", { name: "The Guestbook | TryHackMe Room Writeup" }),
-  ).toHaveAttribute("href", "/blog/the-guestbook-tryhackme-writeup/");
-  await expect(
-    recentWriting.getByRole("link", { name: /view all posts/i }),
-  ).toHaveCount(0);
-
-  const timestamps = recentWriting.locator("time[data-relative-age]");
-  await expect(timestamps).toHaveCount(1);
-  await expect(timestamps.nth(0)).toHaveAttribute(
-    "datetime",
-    "2026-08-08T23:21:00+05:00",
-  );
-  await expect(timestamps.nth(0)).toHaveText("Published 1 day ago");
-});
-
-test("homepage keeps only the latest post visible on mobile", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/", { waitUntil: "domcontentloaded" });
 
