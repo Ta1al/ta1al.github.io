@@ -54,7 +54,6 @@ async function gotoWithoutPageErrors(page, path) {
   expect(errors).toEqual([]);
 }
 
-
 test("homepage keeps only the latest post visible on mobile", async ({
   page,
 }) => {
