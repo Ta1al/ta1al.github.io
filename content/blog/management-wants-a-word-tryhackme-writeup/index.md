@@ -1,7 +1,7 @@
 +++
 title = 'Management Wants a Word | TryHackMe Room Writeup'
-date = '2026-08-09T09:00:00+05:00'
-lastmod = '2026-08-09T09:00:00+05:00'
+date = '2026-08-09T22:30:00+05:00'
+lastmod = '2026-08-09T22:40:00+05:00'
 draft = false
 description = 'A walkthrough of Management Wants a Word, a TryHackMe Windows forensics room involving a KAPE dump, cracked local credentials, DPAPI master keys, Chrome secrets, and a VeraCrypt container hiding the flag.'
 categories = ['Writeups']
