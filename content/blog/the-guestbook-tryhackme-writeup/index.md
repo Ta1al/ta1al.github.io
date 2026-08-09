@@ -1,7 +1,7 @@
 +++
 title = 'The Guestbook | TryHackMe Room Writeup'
-date = '2026-08-08T12:00:00+05:00'
-lastmod = '2026-08-08T12:00:00+05:00'
+date = '2026-08-08T23:21:00+05:00'
+lastmod = '2026-08-08T23:22:00+05:00'
 draft = false
 description = 'A walkthrough of The Guestbook, a TryHackMe AI security challenge where VERA turns guestbook entries into manager-authorized shell commands.'
 categories = ['Writeups']
