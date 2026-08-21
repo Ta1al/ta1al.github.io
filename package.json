@@ -23,14 +23,14 @@
     "check:full": "npm run check && npm run test:e2e:built"
   },
   "devDependencies": {
-    "@axe-core/playwright": "^4.12.1",
+    "@axe-core/playwright": "^4.13.0",
     "@eslint/js": "latest",
-    "@playwright/test": "^1.61.1",
+    "@playwright/test": "^1.62.1",
     "ajv": "latest",
     "ajv-formats": "latest",
     "eslint": "latest",
     "globals": "latest",
-    "html-validate": "^11.5.6",
+    "html-validate": "^11.8.0",
     "prettier": "latest",
     "smol-toml": "latest",
     "stylelint": "latest",
