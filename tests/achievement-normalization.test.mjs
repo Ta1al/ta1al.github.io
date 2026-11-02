@@ -30,7 +30,7 @@ test("keeps the six curated achievements in an explicit order", async () => {
     curated.map((item) => item.title),
     [
       "CompTIA Security+",
-      "Bronze Medal and 3.8 CGPA",
+      "Bronze Medal and 3.79 CGPA",
       "NSCT top 0.2%",
       "SOC Level 1",
       "365 Day Streak",

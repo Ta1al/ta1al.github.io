@@ -53,7 +53,7 @@ export async function buildAchievements({ preferLocalImages = true } = {}) {
         ? "Certification"
         : "Academic distinction",
     title:
-      item.title === "Bronze Medal" ? "Bronze Medal and 3.8 CGPA" : item.title,
+      item.title === "Bronze Medal" ? "Bronze Medal and 3.79 CGPA" : item.title,
     detailTitle: item.title,
     issuer: item.institution,
     subtitle: `${item.institution} // ${item.degree}`,

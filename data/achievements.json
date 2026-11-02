@@ -1020,7 +1020,7 @@
     "id": "personal-bronze-medal",
     "provider": "distinctions",
     "kind": "Academic distinction",
-    "title": "Bronze Medal and 3.8 CGPA",
+    "title": "Bronze Medal and 3.79 CGPA",
     "detailTitle": "Bronze Medal",
     "issuer": "Sargodha University",
     "subtitle": "Sargodha University // BS Computer Science",
@@ -1034,7 +1034,7 @@
     "metrics": [
       {
         "label": "Academic record",
-        "value": "3.8 CGPA"
+        "value": "79 CGPA"
       }
     ],
     "curated": true,
