@@ -6,7 +6,7 @@
     "email": "mail@ta1al.com",
     "url": "https://ta1al.com",
     "download": "files/Muhammad_Talal_Ahmed_SOC_Resume.pdf",
-    "summary": "CompTIA Security+ certified Computer Science graduate with hands-on experience deploying and monitoring Wazuh, integrating pfSense and endpoint logs, investigating security alerts, and automating high-severity notifications. Skilled in alert triage, IOC analysis, incident documentation, Windows and Linux systems, TCP/IP networking, and network traffic analysis. Seeking an L1 SOC Analyst role where I can contribute to security monitoring, incident investigation, and continuous improvement of SOC operations.",
+    "summary": "CompTIA Security+ certified Computer Science graduate (CGPA 3.79, Bronze Medal) with hands-on SOC experience from two assessed internship programmes. Deploys and tunes Wazuh, writes detection rules, and hunts through endpoint, firewall, and Windows event telemetry. Publishes public writeups on forensics, AI security, and cloud attack paths.",
     "profiles": [
       {
         "network": "GitHub",
@@ -21,6 +21,19 @@
     ]
   },
   "work": [
+    {
+      "name": "SecureNetics",
+      "position": "SOC Analyst Intern",
+      "startDate": "2026-07-01",
+      "endDate": "2026-10-01",
+      "summary": "SOC Internship Programme \u00b7 Team Epsilon \u00b7 8 assessed assignments",
+      "highlights": [
+        "Completed an eight-week SOC internship programme, delivering an assessed technical report each week across log analysis, Wazuh deployment, threat hunting, DFIR, and SOC operations.",
+        "Built the lab environment the programme ran on: Ubuntu Server 24.04 with an all-in-one Wazuh stack and a Linux Mint monitored endpoint in VMware.",
+        "Produced 8 structured reports with evidence, analysis, and recommendations, written for a reviewing analyst.",
+        "Wrote a custom correlation rule for repeated SSH failures from a single source and analysed how IP rotation, slow brute force, and password spraying would evade it."
+      ]
+    },
     {
       "name": "ITSOLERA PVT LTD",
       "position": "SOC Analyst Intern",
@@ -54,11 +67,14 @@
       "studyType": "BS",
       "startDate": "2022-01-01",
       "endDate": "2026-01-01",
-      "score": "3.8 CGPA (Bronze Medal)",
+      "score": "3.79 (Bronze Medal)",
       "courses": [
+        "Software Engineering",
+        "Web Development",
+        "Database Systems",
+        "Computer Networks",
         "Network Security",
-        "Information Security",
-        "Artificial Intelligence"
+        "Information Security"
       ],
       "highlights": [
         "President - Programming Society",
